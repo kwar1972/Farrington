@@ -1,69 +1,75 @@
-@extends('layouts.master') 
+@extends('layouts.frontend') 
 @section('content')
-<div class="login-box">
-    <div class="login-logo">
-        Laravel Starter
-    </div>
-    <div class="card">
-        <div class="card-body login-card-body">
-            <p class="login-box-msg">{{ __('Login') }}</p>
-
-            <form action="{{ route('login') }}" method="post">
-                @csrf
-                <div class="input-group mb-3">
-                    <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
-                    <div class="input-group-append">
-                        <span class="fa fa-envelope input-group-text"></span> @if ($errors->has('email'))
-                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span> @endif
-                    </div>
-                </div>
-                <div class="input-group mb-3">
-                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-                    <div class="input-group-append">
-                        <span class="fa fa-lock input-group-text"></span> @if ($errors->has('password'))
-                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span> @endif
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="checkbox icheck">
-                            <label>
-                <input type="checkbox"> Remember Me
-              </label>
+    <!-- Login -->
+    <section class="container g-py-150">
+            <div class="row justify-content-center">
+              <div class="col-sm-8 col-lg-6">
+                <div class="g-brd-around g-brd-gray-light-v4 g-bg-black-opacity-0_4 rounded g-py-40 g-px-30">
+                  <header class="text-center mb-4">
+                    <h2 class="h2 g-color-primary g-font-weight-600"><p class="login-box-msg">{{ __('Login') }}</p></h2>
+                  </header>
+      
+                  <!-- Form -->
+                  <form class="g-py-15" action="{{ route('login') }}" method="post">
+                        @csrf
+                    <div class="mb-4">
+                      <div class="input-group g-brd-primary--focus pl-5">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v4 g-color-gray-dark-v5"><i class="icon-finance-067 u-line-icon-pro g-color-white"></i></span>
                         </div>
+                        <input id="email" name="email" type="email" class="form-control g-color-black g-bg-white g-brd-gray-light-v4 g-py-15 g-px-15 {{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" placeholder="Email" required autofocus>
+                        <div class="input-group-append">
+                                @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
+                                @endif 
+                        </div>
+                      </div>
                     </div>
-                    <!-- /.col -->
-                    <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    <div class="g-mb-35">
+                      <div class="input-group g-brd-primary--focus mb-4 pl-5">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v4 g-color-gray-dark-v5"><i class="icon-media-094 u-line-icon-pro g-color-white"></i></span>
+                        </div>
+                        <input id="password" name="password" type="password" class="form-control g-color-black g-bg-white g-brd-gray-light-v4 g-py-15 g-px-15{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="Password"  required>
+                        <div class="input-group-append">
+                          @if ($errors->has('password'))
+                            <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('password') }}</strong></span>
+                          @endif
+                        </div>
+                      </div>
+      
+                      <div class="row justify-content-between">
+                        <div class="col align-self-center">
+                          <label class="form-check-inline u-check g-font-size-12 g-pl-25 mb-0 g-color-white">
+                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0 g-color-white" type="checkbox">
+                            <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0 g-color-white">
+                              <i class="fa g-rounded-2 g-color-white" data-check-icon="&#xf00c"></i>
+                            </div>
+                            Keep signed in
+                          </label>
+                        </div>
+                        <div class="col align-self-center text-right">
+                          <a class="g-font-size-12" href="#!">Forgot password?</a>
+                        </div>
+                      </div>
                     </div>
-                    <!-- /.col -->
+      
+                    <div class="mb-4">
+                      <button class="btn btn-md btn-block u-btn-primary g-py-13" type="submit">Login</button>
+                    </div>
+                  </form>
+                  <!-- End Form -->
+      
+                  <footer class="text-center">
+                    <p class="g-font-size-16 mb-0 g-color-white">Don't have an account? <a class="g-font-weight-600" href="/register">signup</a>
+                    </p>
+                  </footer>
                 </div>
-            </form>
-
-            <div class="social-auth-links text-center mb-3">
-                <p>- OR -</p>
-                <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook-f mr-2"></i> Sign in using Facebook
-        </a>
-                <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus-g mr-2"></i> Sign in using Google+
-        </a>
+              </div>
             </div>
-            <!-- /.social-auth-links -->
-
-            <p class="mb-1">
-                <a href="#">I forgot my password</a>
-            </p>
-            <p class="mb-0">
-                <a href="{{route('register')}}" class="text-center">Register a new membership</a>
-            </p>
-        </div>
-        <!-- /.login-card-body -->
-    </div>
-</div>
-<!-- /.login-box -->
+          </section>
+          <!-- End Login -->
 @endsection

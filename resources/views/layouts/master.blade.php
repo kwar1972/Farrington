@@ -11,13 +11,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="csrf-token" content={{csrf_token()}}>
 
-    <title>Laravel Starter</title>
-    <link rel="stylesheet" href="/css/app.css"></link>
+    <title>Farrington</title>
+    <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/dist/plugins/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/dist/css/adminlte.min.css">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
     <!-- iCheck -->
     <link rel="stylesheet" href="/dist/plugins/iCheck/flat/blue.css">
     <!-- Morris chart -->
