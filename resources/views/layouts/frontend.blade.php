@@ -69,7 +69,7 @@
         <div class="js-mega-menu collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
           <ul class="navbar-nav text-uppercase g-font-weight-600 mx-auto">
             <li class="nav-item g-mx-20--lg">
-              <a href="#!" class="nav-link px-0 g-color-primary--hover">Home
+              <a href="/" class="nav-link px-0 g-color-primary--hover">Home
             
           </a>
             </li>
