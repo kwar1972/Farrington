@@ -6,3 +6,17 @@
     -o-background-size: cover;
     background-size: cover;
 }
+.page-link{
+    background-color: #343A40 !important;
+    border-color: #343A40 !important; 
+    color: white !important; 
+}
+.page-item.active .page-link{
+    color: #18A5BC !important; 
+}
+a{
+    color: #18A5BC !important; 
+}
+.g-color-white{
+    color: white !important;
+}

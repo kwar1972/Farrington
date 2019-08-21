@@ -4,7 +4,7 @@
     <a href="index3.html" class="brand-link">
     <img src="/img/logo.png" alt="Laravel Starter" class="brand-image img-circle elevation-3"
    style="opacity: .8">
-<span class="brand-text font-weight-light">Farrington</span>
+<span class="brand-text font-weight-light g-color-white">Farrington</span>
 </a>
 
     <!-- Sidebar -->
@@ -15,7 +15,7 @@
                 <img src="/img/profile.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block"> {{auth()->user()->name!=null ? auth()->user()->name : "Administrator"}} </a>
+                <a href="#" class="d-block g-color-white"> {{auth()->user()->name!=null ? auth()->user()->name : "Administrator"}} </a>
             </div>
         </div>
 
@@ -23,17 +23,17 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="home" class="nav-link">
                 <i class="nav-icon fa fa-dashboard"></i>
-                <p>
+                <p class="g-color-white">
                   Dashboard
                 </p>
               </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="userman" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
-                <p>
+                <p class="g-color-white">
                   User Manager
                 </p>
               </a>
@@ -41,7 +41,7 @@
                 <li class="nav-item">
                   <a href="#" class="nav-link">
               <i class="nav-icon fas fa-money-check-alt"></i>
-              <p>
+              <p class="g-color-white">
                 Ticker Manager
               </p>
             </a>
@@ -49,7 +49,7 @@
               <li class="nav-item">
                 <a href="#" class="nav-link">
             <i class="nav-icon fas fa-exchange-alt"></i>
-            <p>
+            <p class="g-color-white">
               Transactions
             </p>
           </a>

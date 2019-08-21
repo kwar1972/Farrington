@@ -8,11 +8,11 @@ class DashboardController extends Controller
 {
     public function versionone()
     {
-        return view('dashboard.v1');
+        return view('dashboard.dashboard');
     }
-    public function versiontwo()
+    public function usernman()
     {
-        return view('dashboard.v2');
+        return view('dashboard.userman');
     }
     public function versionthree()
     {
