@@ -10,12 +10,13 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
+        <div class="user-panel mt-2 pb-0 mb-0 d-flex">
+            <div class="image mt-0 mb-0 pb-0">
                 <img src="/img/profile.png" class="img-circle elevation-2" alt="User Image">
             </div>
-            <div class="info">
-                <a href="#" class="d-block g-color-white-user-i"> {{auth()->user()->name!=null ? auth()->user()->name : "Administrator"}} </a>
+            <div class="info mt-0 pt-0">
+                <p class="g-color-info f-size-12 mb-0">Welcome!</p>
+                <a href="#" class="d-block g-color-white-user-i f-size-12 mt-0"> {{auth()->user()->name .' '.auth()->user()->lastname}} </a>
             </div>
         </div>
 

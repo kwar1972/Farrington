@@ -3,7 +3,6 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
             <!-- Modal form-->
-            
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog  modal-xl">
                 <div class="modal-content">
@@ -64,7 +63,7 @@
                       <div class="row mb-5">
                           <div class="col-3 f-size-14 mb-0">
                             <p class="mb-0"><b>Account number:</b></p>
-                            <p class="f-size-14 mt-1" id="acc">.211654612354654-45/4585</p>
+                            <p class="f-size-14 mt-1" id="acc">211654612354654-45/4585</p>
                           </div>
                           <div class="col-3 f-size-14 mb-0">
                             <p class="mb-0"><b>SWIFT:</b></p>
@@ -131,7 +130,165 @@
               </div>
             </div>
           </div>
-            <!-- end of modal ------------------------------>
+            <!-- end of View modal ------------------------------>
+            <!-- Modal Holdings-->
+            <div class="modal fade" id="myModalHolding" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  style="z-index: 1051;">
+              <div class="modal-dialogH  modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header g-bg-grey">
+                    <h4 class="modal-title g-color-white" id="myModalLabel">User Details</h4>
+                    <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <p><b>Personal Information</b></p>
+                          <hr>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>Name:</b></p>
+                          <p class="f-size-14 mt-1" id="nameh"></p>
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>Lastame:</b></p>
+                          <p class="f-size-14 mt-1" id="lastnameh"></p>
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>Email:</b></p>
+                          <p class="f-size-14 mt-1" id="emailh"></p>
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>phone:</b></p>
+                          <p class="f-size-14 mt-1" id="phoneh"></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>Mobile:</b></p>
+                          <p class="f-size-14 mt-1" id="mobileh"></p>
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>Address:</b></p>
+                          <p class="f-size-14 mt-1" id="addrh"></p>
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>State / City:</b></p>
+                          <p class="f-size-14 mt-1" id="stateh"></p>
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>Country:</b></p>
+                          <p class="f-size-14 mt-1" id="countryh"></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <hr>
+                          <p><b>Bank Details</b></p>
+                          <hr>
+                        </div>
+                      </div>
+                      <div class="row mb-5">
+                          <div class="col-3 f-size-14 mb-0">
+                            <p class="mb-0"><b>Account number:</b></p>
+                            <p class="f-size-14 mt-1" id="acch">211654612354654-45/4585</p>
+                          </div>
+                          <div class="col-3 f-size-14 mb-0">
+                            <p class="mb-0"><b>SWIFT:</b></p>
+                            <p class="f-size-14 mt-1" id="swifth">LALXX896</p>
+                          </div>
+                          <div class="col-3 f-size-14 mb-0">
+                            <p class="mb-0"><b>Routing:</b></p>
+                            <p class="f-size-14 mt-1" id="routingh">31354343457420004534</p>
+                          </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>Currency:</b></p>
+                          <p class="f-size-14 mt-1" id="coinh">Dolar (USD)</p>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <hr>
+                            <p><b>System Information</b></p>
+                          <hr>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-3 f-size-14 mb-0">
+                            <p class="mb-0"><b>Validated:</b></p>
+                            <p class="f-size-14 mt-1" id="validatedh"></p>
+                          </div>
+                          <div class="col-3 f-size-14 mb-0">
+                            <p class="mb-0"><b>Status:</b></p>
+                            <p class="f-size-14 mt-1" id="statush"></p>
+                          </div>
+                          <div class="col-3 f-size-14 mb-0">
+                            <p class="mb-0"><b>Role:</b></p>
+                            <p class="f-size-14 mt-1" id="roleh"></p>
+                          </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>Created:</b></p>
+                          <p class="f-size-14 mt-1" id="createdh"></p>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-3 f-size-14 mb-0">
+                          <p class="mb-0"><b>Updated:</b></p>
+                          <p class="f-size-14 mt-1" id="updatedh"></p>
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
+                          
+                        </div>
+                      </div>
+                      
+                      
+                    
+                </div>
+                <div id="btnClusterH" class="modal-footer g-bg-grey" id="modal-footerq">
+                      
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- end of modal Holdings------------------------------>
+            <!-- Modal System-->
+            <div class="modal fade" id="myModalSystem" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  style="z-index: 1052;">
+                <div class="modal-dialogS  modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header g-bg-grey">
+                      <h4 class="modal-title g-color-white" id="myModalLabel">User Details</h4>
+                      <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <table id="tablesystem" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
+                            <thead>
+                              <tr>
+                                <th class="text-center">User</th>
+                                <th class="text-center">Last Login</th>
+                                <th class="text-center">IP Address</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                              </tr>
+                            </tbody>
+                          </table>
+                  </div>
+                  <div id="btnClusterS" class="modal-footer g-bg-grey" id="modal-footerq">
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!-- end of modal System------------------------------>
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -215,6 +372,7 @@
 <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
+<script type="text/javascript" charset="utf8" src="{{ asset('assets/js/usermodals.js') }}"></script>
 
 <script>
   $(document).ready(function() {
@@ -246,102 +404,5 @@
         });
     });
   });
-</script>
-<script>
-  $(document).ajaxSend(function(event, request, settings) {
-    $('#loaderDiv').show();
-  });
-
-  $(document).ajaxComplete(function(event, request, settings) {
-    $('#loaderDiv').hide();
-  });
-</script>
-<script language="javascript">
-  function open_viewModal(id)
-  {
-    $.ajax({
-      type:'GET',
-      url:'/userdetail/'+id,
-      'contentType': 'application/json',
-    }).done( function(data) {
-      var name = data.name;
-      var lastname = data.lastname;
-      console.log(id);
-      setModalBox();
-      $('#myModal').modal('show');
-  
-    function setModalBox()
-    {
-      $('#name').html(data.name);
-      $('#lastname').html(data.lastname);
-      $('#email').html(data.email);
-      $('#phone').html(data.phone);
-      $('#mobile').html(data.mobile);
-      $('#addr').html(data.addr);
-      $('#state').html(data.state+' / '+ data.city);
-      $('#validated').html(data.email_verified_at);
-      if (data.isactive == '1'){
-        $('#status').html('<span class="badge badge-pill badge-primary">Active</span>');
-      }else{
-        $('#status').html('<span class="badge badge-pill badge-danger">Inactive</span>');
-      }
-      if (data.isadmin == '1'){
-        $('#role').html('<span class="badge badge-pill badge-danger">Admin</span>');
-      }else{
-        $('#role').html('<span class="badge badge-pill badge-success">User</span>');
-      }
-      $('#created').html(data.created_at);
-      $('#updated').html(data.updated_at);
-      $('#myModal').attr('class', 'modal fade bs-example-modal-lg').attr('aria-labelledby','myLargeModalLabel');
-      $('.modal-dialog').attr('class','modal-dialog modal-lg');
-      $('#btnCluster').html('<p class="btn btn-sm btn-outline-success"><b>System Activity</b></p> <p id="holdingsbtn" class="btn btn-sm btn-outline-info" onClick="holdingModalBox(' + data.id + ')"><b>Holding</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Close</p>');
-    }
-    
-  });
-};
-</script>
-<script>
-  function holdingModalBox(id)
-  {
-    $('#myModal').modal('toggle');
-    $.ajax({
-      type:'GET',
-      url:'/userdetail/'+id,
-      'contentType': 'application/json',
-    }).done( function(data) {
-      var name = data.name;
-      var lastname = data.lastname;
-    
-      console.log(id);
-      setModalBox();
-      $('#myModal').modal('show');
-      function setModalBox()
-    {
-      $('#name').html(data.name);
-      $('#lastname').html(data.lastname);
-      $('#email').html(data.email);
-      $('#phone').html(data.phone);
-      $('#mobile').html(data.mobile);
-      $('#addr').html(data.addr);
-      $('#state').html(data.state + data.city);
-      $('#validated').html(data.email_verified_at);
-      if (data.isactive == '1'){
-        $('#status').html('<span class="badge badge-pill badge-primary">Active</span>');
-      }else{
-        $('#status').html('<span class="badge badge-pill badge-danger">Inactive</span>');
-      }
-      if (data.isadmin == '1'){
-        $('#role').html('<span class="badge badge-pill badge-danger">Admin</span>');
-      }else{
-        $('#role').html('<span class="badge badge-pill badge-success">User</span>');
-      }
-      $('#created').html(data.created_at);
-      $('#updated').html(data.updated_at);
-      $('#myModal').attr('class', 'modal fade bs-example-modal-lg').attr('aria-labelledby','myLargeModalLabel');
-      $('.modal-dialog').attr('class','modal-dialog modal-lg');
-      $('#btnCluster').html('<p class="btn btn-sm btn-outline-warning"><b>System Activity</b></p> <p id="holdingsbtn" class="btn btn-sm btn-outline-info" onClick="holdingModalBox(' + data.id + ')"><b>Holding</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p>');
-    }
-  });
-};
 </script>
 @stop

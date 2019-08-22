@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/userslogins/{id}', 'LoginController@show');
 Auth::routes();
 
 // Route::get('/dashboard/home', 'DashboardController@versionone')->name('home');
