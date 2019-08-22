@@ -1,5 +1,5 @@
 <!-- Main Footer -->
-<footer class="main-footer">
+<footer class="main-footer g-bg-black-opacity-0_9 text-center">
     <!-- Default to the left -->
     <strong>Farrington System</strong>
   </footer>

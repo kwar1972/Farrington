@@ -1,0 +1,36 @@
+.page-link{
+    background-color: #343A40 !important;
+    border-color: #343A40 !important; 
+    color: white !important; 
+}
+.page-item.active .page-link{
+    color: #18A5BC !important; 
+}
+a{
+    color: #18A5BC !important; 
+}
+.g-color-white{
+    color: white ;
+}
+.g-color-white-i{
+    color: white !important;
+}
+.g-color-white-user-i{
+    color: white !important;
+}
+.g-bg-black-opacity-0_9{
+    background-color: black !important;
+    opacity: 0.9 !important;
+}
+.g-color-white-i:hover{
+    color: black !important;
+}
+.g-bg-grey{
+    background-color: #343a40;
+}
+.f-size-14{
+    font-size: 14px;    
+}
+.ml-10{
+    margin-left: 30px;
+}

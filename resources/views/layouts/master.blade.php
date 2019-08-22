@@ -19,7 +19,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Theme style -->
     <link rel="stylesheet" href="/dist/css/adminlte.min.css">
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom2.css') }}">
     <!-- iCheck -->
     <link rel="stylesheet" href="/dist/plugins/iCheck/flat/blue.css">
     <!-- Datatables -->
