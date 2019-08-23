@@ -5,8 +5,6 @@
       url:'/userdetail/'+id,
       'contentType': 'application/json',
     }).done( function(data) {
-      var name = data.name;
-      var lastname = data.lastname;
       console.log(id);
       setModalBox();
       $('#myModal').modal('show');
@@ -49,12 +47,10 @@
       url:'/userdetail/'+id,
       'contentType': 'application/json',
     }).done( function(data) {
-      var name = data.name;
-      var lastname = data.lastname;
-    
       console.log(id);
       setModalBox();
       $('#myModalHolding').modal('show');
+
       function setModalBox()
       {
         $('#nameh').html(data.name);
@@ -79,7 +75,7 @@
         $('#updatedh').html(data.updated_at);
         $('#myModalHolding').attr('class', 'modal fade bs-example-modal-lg').attr('aria-labelledby','myLargeModalLabel');
         $('.modal-dialogH').attr('class','modal-dialog modal-lg');
-        $('#btnClusterH').html('<p class="btn btn-sm btn-outline-success" onClick="open_systemModal(' + data.id + ')"><b>System Activity</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Close</p>');
+        $('#btnClusterH').html('<p class="btn btn-sm btn-outline-success" onClick="open_systemModal(' + data.id + ')"><b>System Activity</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
       }
     });
   };
@@ -93,11 +89,12 @@
     }).done( function(data) {
       $('#myModalSystem').modal('show');
       setModalBox();
+      
       function setModalBox()
       {
         $('#myModalSystem').attr('class', 'modal fade bs-example-modal-lg').attr('aria-labelledby','myLargeModalLabel');
         $('.modal-dialogS').attr('class','modal-dialog modal-lg');
-        $('#btnClusterS').html('<p id="holdingsbtn" class="btn btn-sm btn-outline-info" onClick="holdingModalBox(' + data.id + ')"><b>Holding</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Close</p>');
+        $('#btnClusterS').html('<p id="holdingsbtn" class="btn btn-sm btn-outline-info" onClick="holdingModalBox(' + data.id + ')"><b>Holding</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
       }
       console.log(data);
       $('#tablesystem').dataTable( {

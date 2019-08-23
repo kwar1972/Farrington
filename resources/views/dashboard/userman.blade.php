@@ -284,6 +284,7 @@
                           </table>
                   </div>
                   <div id="btnClusterS" class="modal-footer g-bg-grey" id="modal-footerq">
+                    
                   </div>
                 </div>
               </div>
@@ -376,6 +377,7 @@
 
 <script>
   $(document).ready(function() {
+    
     $("#loaderDiv").show();
     $.ajax({
     'url': "users",
@@ -396,12 +398,13 @@
                 { "data": "lastname" },
                 { "data": "email" },
                 { mRender: function (data, type, row) {
-                      var linkEdit = '<div class="btn-group"><p class="viewBtn btn btn-sm btn-info font-weight-bold" type="button" onClick="open_viewModal(' + row.id + ');" data-childid="' + row.id + '"><i class="fa fa-eye"></i></p><p class="editBtn btn btn-sm btn-success font-weight-bold" type="button" data-childid="' + row.id + '"><i class="fa fa-edit"></i></p><p class="delBtn btn btn-sm btn-danger font-weight-bold" data-childdelid="' + row.id + '"><i class="fa fa-trash"></i></p></div>';
-                      return  linkEdit
+                    var linkEdit = '<div class="btn-group"><p class="btn btn-sm btn-warning font-weight-bold" onClick="open_systemModal(' + row.id + ');" data-toggle="tooltip" data-placement="left" title="System Activity!"><i class="fas fa-cog"></i></p><p class="btn btn-sm btn-success font-weight-bold" type="button" onClick="open_tradesModal(' + row.id + ');"><i class="fas fa-chart-line"></i></p><p class="btn btn-sm btn-info font-weight-bold" type="button" onClick="holdingModalBox(' + row.id + ');"><i class="fas fa-layer-group"></i></p><p class="btn btn-sm btn-primary font-weight-bold" onClick="open_viewModal(' + row.id + ');"><i class="fa fa-edit"></i></p></div>';
+                    return  linkEdit
                   },
                 },
               ]
         });
+        $('[data-toggle="tooltip"]').tooltip();   
     });
   });
 </script>
