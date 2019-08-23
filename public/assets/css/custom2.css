@@ -40,3 +40,10 @@ a{
 .g-color-info{
     color: #18A5BC !important;
 }
+@media (min-width: 576px) {
+    .modal-system-custom {
+        max-width: 100% !important;
+        margin: auto !important;
+        width: 100% !important;
+    }    
+}

@@ -132,7 +132,7 @@
           </div>
             <!-- end of View modal ------------------------------>
             <!-- Modal Holdings-->
-            <div class="modal fade" id="myModalHolding" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  style="z-index: 1051;">
+            <div class="modal fade" id="myModalHolding" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialogH  modal-xl">
                 <div class="modal-content">
                   <div class="modal-header g-bg-grey">
@@ -261,14 +261,14 @@
           </div>
             <!-- end of modal Holdings------------------------------>
             <!-- Modal System-->
-            <div class="modal fade" id="myModalSystem" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  style="z-index: 1052;">
+            <div class="modal fade" id="myModalSystem" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialogS  modal-xl">
                   <div class="modal-content">
                     <div class="modal-header g-bg-grey">
                       <h4 class="modal-title g-color-white" id="myModalLabel">User Details</h4>
                       <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body modal-dialog modal-system-custom">
                         <table id="tablesystem" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
                             <thead>
                               <tr>
@@ -283,7 +283,7 @@
                             </tbody>
                           </table>
                   </div>
-                  <div id="btnClusterS" class="modal-footer g-bg-grey" id="modal-footerq">
+                  <div id="btnClusterS" class="modal-footer g-bg-grey" id="modal_footerq">
                     
                   </div>
                 </div>
