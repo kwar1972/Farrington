@@ -1,5 +1,4 @@
-  function open_viewModal(id)
-  {
+  function open_viewModal(id) {
     $.ajax({
       type:'GET',
       url:'/userdetail/'+id,
@@ -9,8 +8,7 @@
       setModalBox();
       $('#myModal').modal('show');
   
-    function setModalBox()
-    {
+    function setModalBox() {
       $('#name').html(data.name);
       $('#lastname').html(data.lastname);
       $('#email').html(data.email);
@@ -19,12 +17,12 @@
       $('#addr').html(data.addr);
       $('#state').html(data.state+' / '+ data.city);
       $('#validated').html(data.email_verified_at);
-      if (data.isactive == '1'){
+      if (data.isactive == '1') {
         $('#status').html('<span class="badge badge-pill badge-primary">Active</span>');
-      }else{
+      }else {
         $('#status').html('<span class="badge badge-pill badge-danger">Inactive</span>');
       }
-      if (data.isadmin == '1'){
+      if (data.isadmin == '1') {
         $('#role').html('<span class="badge badge-pill badge-danger">Admin</span>');
       }else{
         $('#role').html('<span class="badge badge-pill badge-success">User</span>');
@@ -39,8 +37,7 @@
   });
 };
 
-  function holdingModalBox(id)
-  {
+  function holdingModalBox(id) {
     
     $.ajax({
       type:'GET',
@@ -51,8 +48,7 @@
       setModalBox();
       $('#myModalHolding').modal('show');
 
-      function setModalBox()
-      {
+      function setModalBox() {
         $('#nameh').html(data.name);
         $('#lastnameh').html(data.lastname);
         $('#emailh').html(data.email);
@@ -61,9 +57,9 @@
         $('#addrh').html(data.addr);
         $('#stateh').html(data.state + data.city);
         $('#validatedh').html(data.email_verified_at);
-        if (data.isactive == '1'){
+        if (data.isactive == '1') {
           $('#statush').html('<span class="badge badge-pill badge-primary">Active</span>');
-        }else{
+        }else {
           $('#statush').html('<span class="badge badge-pill badge-danger">Inactive</span>');
         }
         if (data.isadmin == '1'){
@@ -80,8 +76,7 @@
     });
   };
 
-  function open_systemModal(id)
-  {
+  function open_systemModal(id) {
     $.ajax({
     'url': "/userslogins/"+id,
     'method': "GET",
@@ -90,14 +85,13 @@
       $('#myModalSystem').modal('show');
       setModalBox();
       
-      function setModalBox()
-      {
+      function setModalBox() {
         $('#myModalSystem').attr('class', 'modal fade bs-example-modal-lg').attr('aria-labelledby','myLargeModalLabel');
         $('.modal-dialogS').attr('class','modal-dialog modal-lg');
-        $('#btnClusterS').html('<p id="holdingsbtn" class="btn btn-sm btn-outline-info" onClick="holdingModalBox(' + data.id + ')"><b>Holding</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
+        $('#btnClusterS').html('<p id="holdingsbtn" class="btn btn-sm btn-outline-info" onClick="holdingModalBox(' + data.id + ')"><b>Holding</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal" onClick="killtablesystem()"><b>Close</b></p>');
       }
       console.log(data);
-      $('#tablesystem').dataTable( {
+      $('#tablesystem').dataTable({
         "aaData": data,
         "columnDefs": [
           {
@@ -110,5 +104,11 @@
           { "data": "last_login_ip" },
         ]
       });
+      $('#myModalSystem').on('hidden.bs.modal', function () {
+        $('#tablesystem').DataTable().clear().destroy();
+      })
     });
   };
+  function killtablesystem() {
+    $('#tablesystem').DataTable().clear().destroy();
+  }
