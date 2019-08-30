@@ -14,8 +14,16 @@ class DashboardController extends Controller
     {
         return view('dashboard.userman');
     }
+    public function tickerman()
+    {
+        return view('dashboard.tickerman');
+    }
     public function versionthree()
     {
         return view('dashboard.v3');
+    }
+    public function test()
+    {
+        return view('dashboard.test');
     }
 }

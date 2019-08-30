@@ -37,6 +37,9 @@ a{
 .ml-10{
     margin-left: 30px;
 }
+.pt-1{
+    margin-top: 50px !important;
+}
 .g-color-info{
     color: #18A5BC !important;
 }

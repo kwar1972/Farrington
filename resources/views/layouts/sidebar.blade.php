@@ -16,7 +16,7 @@
             </div>
             <div class="info mt-0 pt-0">
                 <p class="g-color-info f-size-12 mb-0">Welcome!</p>
-                <a href="#" class="d-block g-color-white-user-i f-size-12 mt-0"> {{auth()->user()->name .' '.auth()->user()->lastname}} </a>
+                <a href="#" id="sideusername" class="d-block g-color-white-user-i f-size-12 mt-0"> {{auth()->user()->name .' '.auth()->user()->lastname}} </a>
             </div>
         </div>
 
@@ -40,7 +40,7 @@
               </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="tickerman" class="nav-link">
               <i class="nav-icon fas fa-money-check-alt g-color-white"></i>
               <p class="g-color-white">
                 Ticker Manager
@@ -48,7 +48,7 @@
             </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="test" class="nav-link">
             <i class="nav-icon fas fa-exchange-alt g-color-white"></i>
             <p class="g-color-white">
               Transactions

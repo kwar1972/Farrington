@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
+use Carbon\Carbon;
 use App;
 use App\User;
 
@@ -40,7 +41,7 @@ class UsermanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -77,7 +78,36 @@ class UsermanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->lastname = $request->lastname;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->mobile = $request->mobile;
+        $user->addr = $request->addr;
+        $user->state = $request->state;
+        $user->country = $request->country;
+        // $user->account = $request->account;
+        // $user->swift = $request->swift;
+        // $user->routing = $request->routing;
+        // $user->coin = $request->coin;
+        $user->isadmin = $request->isadmin;
+        $user->isactive = $request->isactive;
+        $user->created_at = Carbon::now()->toDateTimeString();
+        $user->updated_at = Carbon::now()->toDateTimeString();
+        try {
+            $user->save();
+            $message = '1';
+
+            return response()->json(['success' => $message], 200);
+
+        } catch (\Exception $exception) 
+        {
+            $message = '0'.$exception->getCode();
+
+            return response()->json(['success' => $message], 200);
+        }
     }
 
     /**
@@ -88,6 +118,18 @@ class UsermanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        try {
+            $user->delete();
+            $message = '1';
+
+            return response()->json(['success' => $message], 200);
+
+        } catch (\Exception $exception) 
+        {
+            $message = '0'.$exception->getCode();
+
+            return response()->json(['success' => $message], 200);
+        }
     }
 }

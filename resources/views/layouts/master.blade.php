@@ -14,6 +14,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <title>Farrington</title>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/dist/plugins/font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap Toggle -->
+    <link href="{{asset('css/bootstrap-toggle.min.css')}}" rel="stylesheet" type="text/css" />
+    <!-- Swal -->
+    <link href="{{ asset('assets/css/sweetalert2.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/swal-forms.css') }}" rel="stylesheet">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
@@ -40,9 +45,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <!-- IonIcons -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Boostrap Toggle -->
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition">
     @guest @yield('content') @else
     <div class="wrapper" id="app">
         <!-- Header -->

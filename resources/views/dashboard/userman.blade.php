@@ -3,11 +3,11 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
             <!-- Modal form-->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog  modal-xl">
+            <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-lg">
                 <div class="modal-content">
                   <div class="modal-header g-bg-grey">
-                    <h4 class="modal-title g-color-white" id="myModalLabel">User Details</h4>
+                    <h4 id="userTitle" class="modal-title g-color-white" id="myModalLabel"></h4>
                     <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   </div>
                   <div class="modal-body">
@@ -19,38 +19,38 @@
                       </div>
                       <div class="row">
                         <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Name:</b></p>
-                          <p class="f-size-14 mt-1" id="name"></p>
+                          <label class="mb-1" class="mb-0"><b>Name:</b></label>
+                          <input type="text" class="form-control" id="name" name="name" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Lastame:</b></p>
-                          <p class="f-size-14 mt-1" id="lastname"></p>
+                          <label class="mb-1" class="mb-0"><b>Lastame:</b></label>
+                          <input type="text" class="form-control" id="lastname" name="lastname" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Email:</b></p>
-                          <p class="f-size-14 mt-1" id="email"></p>
+                          <label class="mb-1" class="mb-0"><b>Email:</b></label>
+                          <input type="text" class="form-control" id="email" name="email" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>phone:</b></p>
-                          <p class="f-size-14 mt-1" id="phone"></p>
+                          <label class="mb-1" class="mb-0"><b>phone:</b></label>
+                          <input type="text" class="form-control" id="phone" name="phone" value="">
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Mobile:</b></p>
-                          <p class="f-size-14 mt-1" id="mobile"></p>
+                          <label class="mb-1" class="mb-0"><b>Mobile:</b></label>
+                          <input type="text" class="form-control" id="mobile" name="mobile" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Address:</b></p>
-                          <p class="f-size-14 mt-1" id="addr"></p>
+                          <label class="mb-1" class="mb-0"><b>Address:</b></label>
+                          <input type="text" class="form-control" id="addr" name="addr" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>State / City:</b></p>
-                          <p class="f-size-14 mt-1" id="state"></p>
+                          <label class="mb-1" class="mb-0"><b>State / City:</b></label>
+                          <input type="text" class="form-control" id="state" name="state" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Country:</b></p>
-                          <p class="f-size-14 mt-1" id="country"></p>
+                          <label class="mb-1" class="mb-0"><b>Country:</b></label>
+                          <input type="text" class="form-control" id="country" name="country" value="">
                         </div>
                       </div>
                       <div class="row">
@@ -60,62 +60,59 @@
                           <hr>
                         </div>
                       </div>
-                      <div class="row mb-5">
+                      <div class="row mb-2">
                           <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Account number:</b></p>
-                            <p class="f-size-14 mt-1" id="acc">211654612354654-45/4585</p>
+                            <label class="mb-1" class="mb-0"><b>Account number:</b></label>
+                            <input type="text" class="form-control" id="account" name="account" value="">
                           </div>
                           <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>SWIFT:</b></p>
-                            <p class="f-size-14 mt-1" id="swift">LALXX896</p>
+                            <label class="mb-1" class="mb-0"><b>SWIFT:</b></label>
+                            <input type="text" class="form-control" id="swift" name="swift" value="">
                           </div>
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Routing:</b></p>
-                            <p class="f-size-14 mt-1" id="routing">31354343457420004534</p>
+                          <div class="col-4 f-size-14 mb-0">
+                            <label class="mb-1" class="mb-0"><b>Routing:</b></label>
+                            <input type="text" class="form-control" id="routing" name="routing" value="">
                           </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Currency:</b></p>
-                          <p class="f-size-14 mt-1" id="coin">Dolar (USD)</p>
+                        <div class="col-2 f-size-14 mb-0">
+                          <label class="mb-1" class="mb-0"><b>Currency:</b></label>
+                          <input type="text" class="form-control" id="coin" name="coin" value="">
                         </div>
                         
                       </div>
-                      <div class="row">
+                      <div id="usersysteminfoT" class="row">
                         <div class="col-12">
                           <hr>
                             <p><b>System Information</b></p>
                           <hr>
                         </div>
                       </div>
-                      <div class="row">
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Validated:</b></p>
-                            <p class="f-size-14 mt-1" id="validated"></p>
+                      <div id="usersysteminfo" class="row">
+                          <div class="col-4 f-size-14 mb-0">
+                            <label class="mb-1" class="mb-0"><b>Validated:</b></label>
+                            <input type="text" class="form-control" id="validated" name="validated" value="">
                           </div>
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Status:</b></p>
-                            <p class="f-size-14 mt-1" id="status"></p>
+                          
+                          <div class="col-4 f-size-14 mb-0">
+                            <label class="mb-1" class="mb-0"><b>Created:</b></label>
+                            <input type="text" class="form-control" id="created" name="created" value="">
                           </div>
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Role:</b></p>
-                            <p class="f-size-14 mt-1" id="role"></p>
+                          <div class="col-4 f-size-14 mb-0">
+                            <label class="mb-1" class="mb-0"><b>Last Updated:</b></label>
+                            <input type="text" class="form-control" id="updated" name="updated" value="">
                           </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Created:</b></p>
-                          <p class="f-size-14 mt-1" id="created"></p>
-                        </div>
-                        
                       </div>
-                      <div class="row">
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Updated:</b></p>
-                          <p class="f-size-14 mt-1" id="updated"></p>
-                        </div>
+                      <div id="userstatus" class="row mt-4">
                         <div class="col-3 f-size-14 mb-0">
                           
                         </div>
                         <div class="col-3 f-size-14 mb-0">
-                          
-                        </div>
+                            <label><b>Role:</b></label>&nbsp;
+                            <input id="role" type="checkbox" checked data-toggle="toggle" data-onstyle="outline-danger" data-offstyle="outline-success" data-id="" data-on="Admin" data-loaded="0" data-off="User" data-width="80" data-size="sm">
+                          </div>
+                        <div class="col-3 f-size-14 mb-0">
+                            <label><b>Status:</b></label>&nbsp;
+                            <input id="active" type="checkbox" checked data-toggle="toggle" data-onstyle="outline-primary" data-offstyle="outline-danger" data-id="" data-on="Enabled" data-loaded="0" data-off="Disabled" data-width="80" data-size="sm">
+                          </div>
                         <div class="col-3 f-size-14 mb-0">
                           
                         </div>
@@ -132,8 +129,8 @@
           </div>
             <!-- end of View modal ------------------------------>
             <!-- Modal Holdings-->
-            <div class="modal fade" id="myModalHolding" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialogH  modal-xl">
+            <div class="modal fade bs-example-modal-lg" id="myModalHolding" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-lg">
                 <div class="modal-content">
                   <div class="modal-header g-bg-grey">
                     <h4 class="modal-title g-color-white" id="myModalLabel">User Details</h4>
@@ -261,15 +258,15 @@
           </div>
             <!-- end of modal Holdings------------------------------>
             <!-- Modal System-->
-            <div class="modal fade" id="myModalSystem" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialogS  modal-xl">
+            <div class="modal fade bs-example-modal-lg" id="myModalSystem" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1055;">
+                <div class="modal-dialog  modal-lg">
                   <div class="modal-content">
                     <div class="modal-header g-bg-grey">
                       <h4 class="modal-title g-color-white" id="myModalLabel">User Details</h4>
                       <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                     </div>
-                    <div class="modal-body modal-dialog modal-system-custom">
-                        <table id="tablesystem" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
+                    <div class="modal-body modal-system-custom">
+                        <table id="tablesystem" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%;z-index: 1056;">
                             <thead>
                               <tr>
                                 <th class="text-center">User</th>
@@ -295,7 +292,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">User Manager <a href="adduser" class="btn btn-sm btn-primary g-color-white-user-i" data-toggle="tooltip" data-placement="right" title="Create User">Add new user</a></h1>
+            <h1 class="m-0 text-dark">User Manager <button  class="btn btn-sm btn-primary g-color-white-user-i" data-toggle="tooltip" data-placement="right" title="Create User" onclick="open_createModal()">Add new user</button></h1>
             
           </div>
           <!-- /.col -->
@@ -326,6 +323,7 @@
                     <th class="text-center">name</th>
                     <th class="text-center">lastname</th>
                     <th class="text-center">email</th>
+                    <th class="text-center">Status</th>
                     <th class="text-center">Actions</th>
                   </tr>
                 </thead>
@@ -374,38 +372,10 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
 <script type="text/javascript" charset="utf8" src="{{ asset('assets/js/usermodals.js') }}"></script>
+<!-- Swal -->
+<script src="{{asset('assets/js/sweetalert2.all.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('assets/js/swal-forms.js')}}" type="text/javascript"></script>
+<!-- Boostrap Toggle -->
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>
 
-<script>
-  $(document).ready(function() {
-    
-    $("#loaderDiv").show();
-    $.ajax({
-    'url': "users",
-    'method': "GET",
-    'contentType': 'application/json',
-    }).done( function(data) {
-      console.log(data);
-        $('#tableuser').dataTable( {
-              "aaData": data,
-              "columnDefs": [
-                {
-                  "className": "text-center", "targets": "_all"
-                },
-              ],
-              "columns": [
-                { "data": "id" },
-                { "data": "name" },
-                { "data": "lastname" },
-                { "data": "email" },
-                { mRender: function (data, type, row) {
-                    var linkEdit = '<div class="btn-group"><p class="btn btn-sm btn-warning font-weight-bold" onClick="open_systemModal(' + row.id + ');" data-toggle="tooltip" data-placement="left" title="System Activity!"><i class="fas fa-cog"></i></p><p class="btn btn-sm btn-success font-weight-bold" type="button" onClick="open_tradesModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Trades"><i class="fas fa-chart-line"></i></p><p class="btn btn-sm btn-info font-weight-bold" type="button" onClick="holdingModalBox(' + row.id + ');" data-toggle="tooltip" data-placement="bottom" title="Holdings"><i class="fas fa-layer-group"></i></p><p class="btn btn-sm btn-primary font-weight-bold" onClick="open_viewModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></p><p class="btn btn-sm btn-danger font-weight-bold" onClick="deleteconfirm(' + row.id + ');" data-toggle="tooltip" data-placement="right" title="Delete"><i class="fa fa-trash"></i></p></div>';
-                    return  linkEdit
-                  },
-                },
-              ]
-        });
-        $('[data-toggle="tooltip"]').tooltip();   
-    });
-  });
-</script>
 @stop
