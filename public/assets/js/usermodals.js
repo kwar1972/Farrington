@@ -1,6 +1,7 @@
 $(document).ready(function() {
   settableUser();
 });
+
 function settableUser() {  
   $("#loaderDiv").show();
   $.ajax({
@@ -60,9 +61,14 @@ function open_createModal(){
   $('#coin').val('');
   $('#validated').val('');
   $('#userTitle').html('User Create');
+  $('#createpass').show();
+  $('#createpass2').show();
+  $('#sendveriemail').hide();
   $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formUC()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
   $('#myModal').modal('show');
+  
 };
+
 function open_viewModal(id) {
   $.ajax({
     type:'GET',
@@ -76,6 +82,9 @@ function open_viewModal(id) {
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
+    $('#createpass').hide();
+    $('#createpass2').hide();
+    $('#sendveriemail').html('<label class="mb-1" class="mb-0"><b>Send Validation E-mail:</b></label><br><button class="btn btn-outline-success btn-sm" onClick="sendveriemail('+ data.id +')">Send!</button>');
     $('#userTitle').html('User Edit');
     $('#name').val(data.name);
     $('#lastname').val(data.lastname);
@@ -179,6 +188,93 @@ $('#myModal').on('hidden.bs.modal', function () {
     });
   };
 
+function save_formUC(){
+  $("#form1").validate({
+    rules: {
+      name: "required",
+      lastname: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 5
+      }
+    },
+    // Specify validation error messages
+    messages: {
+      name: "Please enter your firstname",
+      lastname: "Please enter your lastname",
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long"
+      },
+      email: "Please enter a valid email address"
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+   
+  });
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    
+    timer: 3000
+  })
+  if($('#role').prop("checked") == true) {
+    userRole = 1;
+  } else {
+    userRole = 0;
+  }
+  if($('#active').prop("checked") == true) {
+    userActive = 1;
+  } else {
+    userActive = 0;
+  }
+  var username = $('#name').val();
+  var lastname = $('#lastname').val();
+  var data = {
+    "name" : $('#name').val(),
+    "lastname" : $('#lastname').val(),
+    "email" : $('#email').val(),
+    "phone" : $('#phone').val(),
+    "mobile" : $('#mobile').val(),
+    "addr" : $('#addr').val(),
+    "state" : $('#state').val(),
+    "country" : $('#country').val(),
+    "account" : $('#account').val(),
+    "swift" : $('#swift').val(),
+    "routing" : $('#routing').val(),
+    "coin" : $('#coin').val(),
+    "isadmin" : userRole,
+    "isactive" : userActive
+  }
+      $.ajax({
+        type:'GET',
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      },
+        url:'/usercreate/',
+        data: data,
+        dataType: 'json',
+      }).done( function(data) {
+        if(data.success == 1){
+          Toast.fire({
+              background: '#007bff',
+              type: 'success',
+              title: '<span style="color: #fff !important;">User successfully Created!</span>'
+          });
+      } else {
+          Toast.fire({
+              background: '#dc3545',
+              type: 'error',
+              title: '<span style="color: #fff !important;">Somethig happend!</span>'
+      });    
+    }
+  })
+};
 
 function save_formUE(id){
   const Toast = Swal.mixin({
@@ -271,6 +367,50 @@ function deleteconfirm(id){
           Toast.fire({
               type: 'success',
               title: 'User successfully deleted!'
+          });
+          $('#tableuser').DataTable().destroy();
+          settableUser();
+      } else {
+          Toast.fire({
+              type: 'error',
+              title: 'Somethig happend!'
+          });    
+      }
+    })
+     
+    } else {
+    }
+  })
+};
+
+function sendveriemail(id){
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000
+  })
+  Swal.fire({
+    title: 'Are you sure?',
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, send it!',
+    cancelButtonText: 'No, cancel!',
+    cancelButtonColor: '#d33',
+    reverseButtons: false
+  }).then((result) => {
+    if (result.value) {
+      $.ajax({
+        type:'GET',
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      },
+        url:'/resenduseremail/'+id
+      }).done( function(data) {
+        if(data.success == 1){
+          Toast.fire({
+              type: 'success',
+              title: 'Verification email successfully sent!'
           });
           $('#tableuser').DataTable().destroy();
           settableUser();

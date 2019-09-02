@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
 use App;
 use App\User;
@@ -41,7 +42,33 @@ class UsermanController extends Controller
      */
     public function store(Request $request)
     {
-        
+        $user = New User;
+        $user->name = $request->name;
+        $user->lastname = $request->lastname;
+        $user->password = Hash::make($request->password);
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->mobile = $request->mobile;
+        $user->addr = $request->addr;
+        $user->state = $request->state;
+        $user->country = $request->country;
+        $user->validated = '1';
+        $user->isadmin = '0';
+        $user->isactive = '1';
+        $user->created_at = Carbon::now()->toDateTimeString();
+        $user->updated_at = Carbon::now()->toDateTimeString();
+        try {
+            $user->save();
+            $message = '1';
+
+            return response()->json(['success' => $message], 200);
+
+        } catch (\Exception $exception) 
+        {
+            $message = '0'.$exception->getCode();
+
+            return response()->json(['success' => $message], 200);
+        }
     }
 
     /**
@@ -64,9 +91,22 @@ class UsermanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function resendVerificationEmail($id)
     {
-        //
+        $user = User::find($id);
+        try {
+            $user->sendEmailVerificationNotification();
+            $message = '1';
+
+            return response()->json(['success' => $message], 200);
+
+        } catch (\Exception $exception) 
+        {
+            $message = '0'.$exception->getCode();
+
+            return response()->json(['success' => $message], 200);
+        }
+        
     }
 
     /**
@@ -78,7 +118,6 @@ class UsermanController extends Controller
      */
     public function update(Request $request, $id)
     {
-
         $user = User::find($id);
         $user->name = $request->name;
         $user->lastname = $request->lastname;
@@ -88,10 +127,6 @@ class UsermanController extends Controller
         $user->addr = $request->addr;
         $user->state = $request->state;
         $user->country = $request->country;
-        // $user->account = $request->account;
-        // $user->swift = $request->swift;
-        // $user->routing = $request->routing;
-        // $user->coin = $request->coin;
         $user->isadmin = $request->isadmin;
         $user->isactive = $request->isactive;
         $user->created_at = Carbon::now()->toDateTimeString();

@@ -65,7 +65,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Ticker Manager <button class="btn btn-sm btn-primary g-color-white-user-i" onClick="open_createModal()" data-toggle="tooltip" data-placement="right" title="Create Ticker">Add new ticker</button></h1>
+            <h1 class="m-0 text-dark"><i class="nav-icon fas fa-money-check-alt"></i> Ticker Manager <button class="btn btn-sm btn-primary g-color-white-user-i" onClick="open_createModal()" data-toggle="tooltip" data-placement="right" title="Create Ticker">Add new ticker</button></h1>
             
           </div>
           <!-- /.col -->
@@ -90,7 +90,7 @@
         <div class="container-fluid">
             <div>
               <table id="tableticker" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
-                <thead>
+                <thead class="g-bg-color-darkgrey g-color-white">
                   <tr>
                     <th class="text-center">id</th>
                     <th class="text-center">Ticker</th>

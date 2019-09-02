@@ -118,13 +118,15 @@ $("#active").change(function() {
             console.log(data.success);
              if(data.success == 1){
                 Toast.fire({
+                    background: '#007bff',
                     type: 'success',
-                    title: 'The ticker has been Enabled'
+                    title: '<span style="color: #fff !important;">The ticker has been Enabled</span>'
                 });
             } else {
                 Toast.fire({
+                    background: '#dc3545',
                     type: 'warning',
-                    title: 'The ticker has been disabled'
+                    title: '<span style="color: #fff !important;">The ticker has been disabled</span>'
                 });
             }
         }
@@ -157,13 +159,15 @@ function save_formTC(){
       }).done( function(data) {
         if(data.success == 1){
           Toast.fire({
+              background: '#007bff',
               type: 'success',
-              title: 'Ticker successfully created!'
+              title: '<span style="color: #fff !important;">Ticker successfully created!</span>'
           });
       } else {
           Toast.fire({
+              background: '#dc3545',
               type: 'error',
-              title: 'Somethig happend!'
+              title: '<span style="color: #fff !important;">Somethig happend!</span>'
           });    
       }
     })
@@ -195,13 +199,15 @@ console.log(data);
     }).done( function(data) {
       if(data.success == 1){
         Toast.fire({
+            background: '#007bff',
             type: 'success',
-            title: 'Ticker successfully updated!'
+            title: '<span style="color: #fff !important;">Ticker successfully updated!</span>'
         });
     } else {
         Toast.fire({
+            background: '#dc3545',
             type: 'error',
-            title: 'Somethig happend!'
+            title: '<span style="color: #fff !important;">Somethig happend!</span>'
         });    
     }
   })
@@ -234,15 +240,17 @@ function deleteconfirm(id){
       }).done( function(data) {
         if(data.success == 1){
           Toast.fire({
+              background: '#007bff',
               type: 'success',
-              title: 'Ticker successfully deleted!'
+              title: '<span style="color: #fff !important;">Ticker successfully deleted!</span>'
           });
           $('#tableticker').DataTable().destroy();
           tableticker();
       } else {
           Toast.fire({
+              background: '#dc3545',
               type: 'error',
-              title: 'Somethig happend!'
+              title: '<span style="color: #fff !important;">Somethig happend!</span>'
           });    
       }
     })

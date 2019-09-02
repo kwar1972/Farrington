@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 // Route::get('/dashboard/home', 'DashboardController@versionone')->name('home');
 
@@ -29,9 +29,12 @@ Route::get('home', 'DashboardController@versionone')->name('home')->middleware('
 Route::get('userman', 'DashboardController@usernman')->name('userman')->middleware('verified');
 Route::get('users', 'UsermanController@index')->name('users')->middleware('verified');
 Route::get('/userdetail/{id}', 'UsermanController@show')->middleware('verified');
+Route::get('/usercreate', 'UsermanController@store')->middleware('verified');
 Route::get('/useredit/{id}', 'UsermanController@update')->middleware('verified');
 Route::get('/userdelete/{id}', 'UsermanController@destroy')->middleware('verified');
-Route::get('/userslogins/{id}', 'LoginController@show');
+Route::get('/userslogins/{id}', 'LoginController@show')->middleware('verified');
+Route::get('/resenduseremail/{id}', 'UsermanController@resendVerificationEmail')->middleware('verified');
+
 
 //Ticker Manager
 Route::get('tickerman', 'DashboardController@tickerman')->name('userman')->middleware('verified');

@@ -22,6 +22,9 @@ a{
     background-color: black !important;
     opacity: 0.9 !important;
 }
+.g-bg-color-darkgrey{
+    background-color: #343A40 !important;
+}
 .g-color-white-i:hover{
     color: black !important;
 }

@@ -11,6 +11,7 @@
                     <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   </div>
                   <div class="modal-body">
+                      <form id="form1" action="">
                       <div class="row">
                         <div class="col-12">
                           <p><b>Personal Information</b></p>
@@ -18,6 +19,7 @@
                         </div>
                       </div>
                       <div class="row">
+                        
                         <div class="col-3 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Name:</b></label>
                           <input type="text" class="form-control" id="name" name="name" value="">
@@ -51,6 +53,21 @@
                         <div class="col-3 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Country:</b></label>
                           <input type="text" class="form-control" id="country" name="country" value="">
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div id="createpass" class="col-3 f-size-14 mb-0">
+                          <label class="mb-1" class="mb-0"><b>Password:</b></label>
+                          <input type="password" class="form-control" id="password" name="password" value="">
+                        </div>
+                        <div id="createpass2" class="col-3 f-size-14 mb-0">
+                          <label class="mb-1" class="mb-0"><b>Password confirmation:</b></label>
+                          <input type="password" class="form-control" id="passwordC" name="passwordC" value="">
+                        </div>
+                        <div id="sendveriemail" class="col-12 f-size-14 mb-0 text-center">
+                          
+                        </div>
+                        <div class="col-3 f-size-14 mb-0">
                         </div>
                       </div>
                       <div class="row">
@@ -119,7 +136,7 @@
                       </div>
                       
                       
-                    
+                    </form>
                 </div>
                 <div id="btnCluster" class="modal-footer g-bg-grey" id="modal-footerq">
                       
@@ -179,6 +196,7 @@
                           <p class="f-size-14 mt-1" id="countryh"></p>
                         </div>
                       </div>
+                      
                       <div class="row">
                         <div class="col-12">
                           <hr>
@@ -292,7 +310,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">User Manager <button  class="btn btn-sm btn-primary g-color-white-user-i" data-toggle="tooltip" data-placement="right" title="Create User" onclick="open_createModal()">Add new user</button></h1>
+            <h1 class="m-0 text-dark"><i class="nav-icon fas fa-users"></i> User Manager <button  class="btn btn-sm btn-primary g-color-white-user-i" data-toggle="tooltip" data-placement="right" title="Create User" onclick="open_createModal()">Add new user</button></h1>
             
           </div>
           <!-- /.col -->
@@ -317,7 +335,7 @@
         <div class="container-fluid">
             <div>
               <table id="tableuser" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
-                <thead>
+                <thead class="g-bg-color-darkgrey g-color-white">
                   <tr>
                     <th class="text-center">id</th>
                     <th class="text-center">name</th>
