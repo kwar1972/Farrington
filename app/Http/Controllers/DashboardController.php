@@ -26,4 +26,8 @@ class DashboardController extends Controller
     {
         return view('dashboard.test');
     }
+    public function transman()
+    {
+        return view('dashboard.transactions');
+    }
 }

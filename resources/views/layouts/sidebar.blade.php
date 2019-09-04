@@ -48,7 +48,7 @@
             </a>
               </li>
               <li class="nav-item">
-                <a href="test" class="nav-link">
+                <a href="transman" class="nav-link">
             <i class="nav-icon fas fa-exchange-alt g-color-white"></i>
             <p class="g-color-white">
               Transactions
