@@ -23,16 +23,32 @@ function settableUser() {
               { "data": "lastname" },
               { "data": "email" },
               { mRender: function (data, type, row) {
-              var enabledStatus = '<span class="badge badge-pill badge-primary">Enabled</span>';
-              var disabledStatus = '<span class="badge badge-pill badge-danger">Disabled</span>';
-              console.log(row.isactive);
-              if(row.isactive == 1){
-                return  enabledStatus
-              }else{
-                return  disabledStatus
-              };
-            },
-           },
+                  var enabledStatus = '<span class="badge badge-pill badge-primary">Enabled</span>';
+                  var disabledStatus = '<span class="badge badge-pill badge-danger">Disabled</span>';
+                  if(row.isactive == 1){
+                    return  enabledStatus
+                  }else{
+                    return  disabledStatus
+                  };
+                },
+              },
+              { mRender: function (data, type, row) {
+                  var roleClient = '<span class="badge badge-pill badge-success">Client</span>';
+                  var roleAgent = '<span class="badge badge-pill badge-primary">Agent</span>';
+                  var roleAdmin = '<span class="badge badge-pill badge-danger">Admin</span>';
+                  var roleLoader = '<span class="badge badge-pill badge-secondary">Loader</span>';
+                  switch(row.isadmin) {
+                    case 2:
+                      return roleAdmin
+                    case 3:
+                      return roleAgent
+                    case 4:
+                      return roleLoader
+                    case 5:
+                      return roleClient
+                  } 
+                }
+              },
               { mRender: function (data, type, row) {
                   var linkEdit = '<div class="btn-group"><p class="btn btn-sm btn-warning font-weight-bold" onClick="open_systemModal(' + row.id + ');" data-toggle="tooltip" data-placement="left" title="System Activity!"><i class="fas fa-cog"></i></p><p class="btn btn-sm btn-success font-weight-bold" type="button" onClick="open_tradesModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Trades"><i class="fas fa-chart-line"></i></p><p class="btn btn-sm btn-info font-weight-bold" type="button" onClick="holdingModalBox(' + row.id + ');" data-toggle="tooltip" data-placement="bottom" title="Holdings"><i class="fas fa-layer-group"></i></p><p class="btn btn-sm btn-primary font-weight-bold" onClick="open_viewModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></p><p class="btn btn-sm btn-danger font-weight-bold" onClick="deleteconfirm(' + row.id + ');" data-toggle="tooltip" data-placement="right" title="Delete" onClick="deleteconfirm(' + row.id + ');"><i class="fa fa-trash"></i></p></div>';
                   return  linkEdit
@@ -45,9 +61,9 @@ function settableUser() {
 };
 
 function open_createModal(){
-  $('#usersysteminfoT').hide();
+  $('#usersysteminfoT').show();
   $('#usersysteminfo').hide();
-  $('#userstatus').hide();
+  $('#userstatus').show();
   $('#name').val('');
   $('#lastname').val('');
   $('#email').val('');
@@ -100,6 +116,23 @@ function open_viewModal(id) {
     $('#validated').val(data.email_verified_at);
     $('#created').val(data.created_at);
     $('#updated').val(data.updated_at);
+    switch(data.isadmin) {
+      case 2:
+        $('#customRadio1').prop('checked', true);
+        break;
+      case 3:
+        $('#customRadio2').prop('checked', true);
+        break;
+      case 4:
+        $('#customRadio3').prop('checked', true);
+        break;
+      case 5:
+        $('#customRadio5').prop('checked', true);
+        break;
+    } 
+    if(data.isadmin == '5'){
+      $( "#x" ).prop( "checked", true );
+    }
     if (data.isactive == '1') {
       $('#active').bootstrapToggle('on');
     }else {
@@ -189,52 +222,19 @@ $('#myModal').on('hidden.bs.modal', function () {
   };
 
 function save_formUC(){
-  $("#form1").validate({
-    rules: {
-      name: "required",
-      lastname: "required",
-      email: {
-        required: true,
-        email: true
-      },
-      password: {
-        required: true,
-        minlength: 5
-      }
-    },
-    // Specify validation error messages
-    messages: {
-      name: "Please enter your firstname",
-      lastname: "Please enter your lastname",
-      password: {
-        required: "Please provide a password",
-        minlength: "Your password must be at least 5 characters long"
-      },
-      email: "Please enter a valid email address"
-    },
-    // Make sure the form is submitted to the destination defined
-    // in the "action" attribute of the form when valid
-   
-  });
-  const Toast = Swal.mixin({
+    const Toast = Swal.mixin({
     toast: true,
     position: 'top-end',
     showConfirmButton: false,
     
     timer: 3000
   })
-  if($('#role').prop("checked") == true) {
-    userRole = 1;
-  } else {
-    userRole = 0;
-  }
+  
   if($('#active').prop("checked") == true) {
     userActive = 1;
   } else {
     userActive = 0;
   }
-  var username = $('#name').val();
-  var lastname = $('#lastname').val();
   var data = {
     "name" : $('#name').val(),
     "lastname" : $('#lastname').val(),
@@ -248,7 +248,7 @@ function save_formUC(){
     "swift" : $('#swift').val(),
     "routing" : $('#routing').val(),
     "coin" : $('#coin').val(),
-    "isadmin" : userRole,
+    "isadmin" : $('input:radio[name=customRadio]:checked').val(),
     "isactive" : userActive
   }
       $.ajax({
@@ -281,7 +281,6 @@ function save_formUE(id){
     toast: true,
     position: 'top-end',
     showConfirmButton: false,
-    
     timer: 3000
   })
   if($('#role').prop("checked") == true) {
@@ -309,7 +308,7 @@ function save_formUE(id){
     "swift" : $('#swift').val(),
     "routing" : $('#routing').val(),
     "coin" : $('#coin').val(),
-    "isadmin" : userRole,
+    "isadmin" : $('input:radio[name=customRadio]:checked').val(),
     "isactive" : userActive
   }
       $.ajax({
@@ -365,15 +364,17 @@ function deleteconfirm(id){
       }).done( function(data) {
         if(data.success == 1){
           Toast.fire({
+              background: '#007bff',
               type: 'success',
-              title: 'User successfully deleted!'
+              title: '<span style="color: #fff !important;">User successfully deleted!</span>'
           });
           $('#tableuser').DataTable().destroy();
           settableUser();
       } else {
           Toast.fire({
+              background: '#dc3545',
               type: 'error',
-              title: 'Somethig happend!'
+              title: '<span style="color: #fff !important;">Somethig happend!</span>'
           });    
       }
     })

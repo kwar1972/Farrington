@@ -119,19 +119,36 @@
                           </div>
                       </div>
                       <div id="userstatus" class="row mt-4">
-                        <div class="col-3 f-size-14 mb-0">
-                          
+                        <div class="col-4 f-size-14 mb-0 text-right">
+                            <label class="mb-1" class="mb-0"><b>Roles:</b></label>
                         </div>
-                        <div class="col-3 f-size-14 mb-0">
-                            <label><b>Role:</b></label>&nbsp;
-                            <input id="role" type="checkbox" checked data-toggle="toggle" data-onstyle="outline-danger" data-offstyle="outline-success" data-id="" data-on="Admin" data-loaded="0" data-off="User" data-width="80" data-size="sm">
+                        <div class="col-2 f-size-14 mb-0">
+                            <div class="form-group">
+                                <div class="custom-control custom-radio">
+                                  <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" value="2">
+                                  <label for="customRadio1" class="custom-control-label">Admin</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" value="3">
+                                  <label for="customRadio2" class="custom-control-label">Agent</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 f-size-14 mb-0 text-left">
+                            <div class="form-group">
+                                <div class="custom-control custom-radio">
+                                  <input class="custom-control-input" type="radio" id="customRadio3"  name="customRadio" value="4">
+                                  <label for="customRadio3" class="custom-control-label">Loader</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                  <input class="custom-control-input" type="radio" id="customRadio4"  name="customRadio" value="5">
+                                  <label for="customRadio4" class="custom-control-label">Client</label>
+                                </div>
+                            </div>
                           </div>
-                        <div class="col-3 f-size-14 mb-0">
+                        <div class="col-4 f-size-14 mb-0">
                             <label><b>Status:</b></label>&nbsp;
                             <input id="active" type="checkbox" checked data-toggle="toggle" data-onstyle="outline-primary" data-offstyle="outline-danger" data-id="" data-on="Enabled" data-loaded="0" data-off="Disabled" data-width="80" data-size="sm">
-                          </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          
                         </div>
                       </div>
                       
@@ -342,6 +359,7 @@
                     <th class="text-center">lastname</th>
                     <th class="text-center">email</th>
                     <th class="text-center">Status</th>
+                    <th class="text-center">Role</th>
                     <th class="text-center">Actions</th>
                   </tr>
                 </thead>

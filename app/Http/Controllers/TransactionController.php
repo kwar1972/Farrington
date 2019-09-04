@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App;
+use App\User;
+use App\Ticket;
 use App\Transaction;
 
 class TransactionController extends Controller
@@ -19,8 +21,32 @@ class TransactionController extends Controller
      */
     public function index()
     {
-        $transactions = Transaction::with('getUsers')->get();
+        $transactions = Transaction::with('getUsers')->with('getAgent')->with('getTicker')->get();
         return response()->json($transactions, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
+        JSON_UNESCAPED_UNICODE);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function transuser(){
+        $users = User::where('isadmin','5')->get();
+        //dd($users);
+        return response()->json($users, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
+        JSON_UNESCAPED_UNICODE);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function transagent(){
+        $users = User::where('isadmin','3')->get();
+        //dd($users);
+        return response()->json($users, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
         JSON_UNESCAPED_UNICODE);
     }
 

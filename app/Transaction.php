@@ -21,6 +21,14 @@ class Transaction extends Model
     ];
 
     public function getUsers(){
-        return $this->belongsToMany('App\User');
+        return $this->hasOne('App\User', 'id', 'userid');
+    }
+
+    public function getAgent(){
+        return $this->hasOne('App\User', 'id', 'agentid');
+    }
+
+    public function getTicker(){
+        return $this->hasOne('App\Ticker', 'id', 'tickerid');
     }
 }

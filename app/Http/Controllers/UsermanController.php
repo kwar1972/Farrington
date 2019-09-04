@@ -53,7 +53,7 @@ class UsermanController extends Controller
         $user->state = $request->state;
         $user->country = $request->country;
         $user->validated = '1';
-        $user->isadmin = '0';
+        $user->isadmin = $request->isadmin;
         $user->isactive = '1';
         $user->created_at = Carbon::now()->toDateTimeString();
         $user->updated_at = Carbon::now()->toDateTimeString();

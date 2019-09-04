@@ -49,6 +49,8 @@ Route::get('/tickerdelete/{id}', 'TickerController@destroy')->middleware('verifi
 //Transaction Manager
 
 Route::get('transman', 'DashboardController@transman')->name('userman')->middleware('verified');
+Route::get('transuser', 'TransactionController@transuser')->name('transuser')->middleware('verified');
+Route::get('transagent', 'TransactionController@transagent')->name('transagent')->middleware('verified');
 // Route::get('transmanlist', 'TransactionController@index')->middleware('verified');
 // Route::get('transman', 'TickerController@index')->name('tickers')->middleware('verified');
 // Route::get('/transman/{id}', 'TickerController@show')->middleware('verified');
