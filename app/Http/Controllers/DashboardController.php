@@ -26,8 +26,8 @@ class DashboardController extends Controller
     {
         return view('dashboard.test');
     }
-    public function transman()
+    public function trademan()
     {
-        return view('dashboard.transactions');
+        return view('dashboard.trades');
     }
 }

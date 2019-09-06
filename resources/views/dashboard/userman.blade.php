@@ -358,8 +358,8 @@
                     <th class="text-center">name</th>
                     <th class="text-center">lastname</th>
                     <th class="text-center">email</th>
-                    <th class="text-center">Status</th>
                     <th class="text-center">Role</th>
+                    <th class="text-center">Status</th>
                     <th class="text-center">Actions</th>
                   </tr>
                 </thead>

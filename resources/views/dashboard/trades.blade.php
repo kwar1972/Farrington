@@ -53,7 +53,13 @@
                         </div>
                         <div class="col-4 text-center">
                             <label class="mb-1" class="mb-0"><b>Status:</b></label>
-                            <input type="text" class="form-control" id="status" name="status" value="">
+                            <select class="form-control" id="status" name="status">
+                              <option value="1">Pending</option>
+                              <option value="2">Loader</option>
+                              <option value="3">TT</option>
+                              <option value="4">Confirmed</option>
+                              <option value="5">canceled</option>
+                            </select>
                         </div>
                         <div class="col-4 text-center">
 
@@ -68,14 +74,13 @@
             </div>
           </div>
             <!-- end of View modal ------------------------------>
-           
+        
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark"><i class="nav-icon fas fa-exchange-alt"></i> Transaction Manager <button  class="btn btn-sm btn-primary g-color-white-user-i" data-toggle="tooltip" data-placement="right" title="Create User" onclick="openCreateModal()">Add new transaction</button></h1>
-            
+            <h1 class="m-0 text-dark"><i class="nav-icon fas fa-exchange-alt"></i> Trade Manager <button  class="btn btn-sm btn-primary g-color-white-user-i" data-toggle="tooltip" data-placement="right" title="Create User" onclick="openCreateModal()">Add new transaction</button></h1>
           </div>
           <!-- /.col -->
           <div class="col-sm-6">
@@ -83,8 +88,6 @@
               <li class="breadcrumb-item"><a href="home">Home</a></li>
               <li class="breadcrumb-item"><a href="userman">User Manager</a></li>
             </ol>
-            <div class="spinner-border text-success spinner-border-lg">
-              </div>
           </div>
           <!-- /.col -->
         </div>
@@ -93,12 +96,12 @@
       </div>
       <!-- /.container-fluid -->
     </div>
-  
+    <div id="spinner"></div>
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
             <div>
-              <table id="tabletransactions" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
+              <table id="tabletrades" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
                 <thead class="g-bg-color-darkgrey g-color-white">
                   <tr>
                     <th class="text-center">id</th>
@@ -156,7 +159,7 @@
 <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
-<script type="text/javascript" charset="utf8" src="{{ asset('assets/js/transactions.js') }}"></script>
+<script type="text/javascript" charset="utf8" src="{{ asset('assets/js/trademodals.js') }}"></script>
 <!-- Swal -->
 <script src="{{asset('assets/js/sweetalert2.all.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/js/swal-forms.js')}}" type="text/javascript"></script>

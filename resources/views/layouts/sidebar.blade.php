@@ -48,10 +48,10 @@
             </a>
               </li>
               <li class="nav-item">
-                <a href="transman" class="nav-link">
+                <a href="trademan" class="nav-link">
             <i class="nav-icon fas fa-exchange-alt g-color-white"></i>
             <p class="g-color-white">
-              Transactions
+              Trades Manager
             </p>
           </a>
             </li>

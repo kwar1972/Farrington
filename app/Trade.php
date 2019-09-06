@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use App\User;
 
-class Transaction extends Model
+class Trade extends Model
 {
     const STATUS_PENDING      = 1;
     const STATUS_APPROVED     = 2;
