@@ -157,6 +157,9 @@ $('#myModal').on('hidden.bs.modal', function () {
   $('#tableuser').DataTable().destroy();
   settableUser();
 });
+$('#myModalTrades').on('hidden.bs.modal', function () {
+  $('#tabletrades').DataTable().destroy();
+});
 
   function holdingModalBox(id) {
     $.ajax({
@@ -203,7 +206,7 @@ $('#myModal').on('hidden.bs.modal', function () {
       setModalBox();
       
       function setModalBox() {
-        $('#btnClusterS').html('<p id="holdingsbtn" class="btn btn-sm btn-outline-info" onClick="holdingModalBox(' + data.id + ')"><b>Holding</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal" onClick="killtablesystem()"><b>Close</b></p>');
+        $('#btnClusterS').html('<p id="holdingsbtn" class="btn btn-sm btn-outline-info" onClick="holdingModalBox(' + data.id + ')"><b>Holding</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
       }
       $('#tablesystem').dataTable({
         "aaData": data,
@@ -216,6 +219,38 @@ $('#myModal').on('hidden.bs.modal', function () {
           { "data": "name" },
           { "data": "last_login_at" },
           { "data": "last_login_ip" },
+        ]
+      });
+    });
+  };
+
+  function open_tradesModal(id) {
+    $.ajax({
+    'url': "/tradelist/"+id,
+    'method': "GET",
+    'contentType': 'application/json',
+    }).done( function(data) {
+      $('#myModalTrades').modal('show');
+      setModalBox();
+      
+      function setModalBox() {
+        $('#btnClusterS').html('<p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
+      }
+      $('#tabletrades').dataTable({
+        "aaData": data,
+        "columnDefs": [
+          {
+            "className": "text-center", "targets": "_all"
+          },
+        ],
+        "columns": [
+          { "data": "id" },
+          { "data": "userid" },
+          { "data": "tickerid" },
+          { "data": "agentid" },
+          { "data": "amount" },
+          { "data": "price" },
+          { "data": "total" },
         ]
       });
     });

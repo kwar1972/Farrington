@@ -60,6 +60,21 @@ class TradesController extends Controller
         //
     }
 
+    public function tradelist($id)
+    {
+        $trades = Trade::where('userid', $id)->get();
+        
+        return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
+        JSON_UNESCAPED_UNICODE);
+    }
+
+    public function getHoldings($id)
+    {
+        $holdings = Trade::where('userid', $id)->get();
+        return response()->json($holdings, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
+        JSON_UNESCAPED_UNICODE);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
