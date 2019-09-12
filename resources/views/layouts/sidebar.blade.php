@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="z-index: 1;">
   <!-- Brand Logo -->
-  <a href="index3.html" class="brand-link">
+  <a href="/" class="brand-link">
   {{-- <img src="/img/logo.png" alt="Laravel Starter" class="brand-image img-circle elevation-3"
  style="opacity: .8"> --}}
 <span class="brand-text font-weight-light g-color-white pl-5">Baxter & Grant</span>
@@ -10,7 +10,7 @@
   <!-- Sidebar -->
   <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-2 pb-0 mb-0 d-flex">
+      <div class="user-panel mt-2 pb-0 mb-0 d-flex pl-5">
           <div class="image mt-0 mb-0 pb-0">
               <img src="/img/profile.png" class="img-circle elevation-2" alt="User Image">
           </div>

@@ -16,6 +16,7 @@ $(document).ready(function() {
           }
       }
     });
+
     $.ajax({
       url: 'tickers',
       type: 'get',
@@ -26,10 +27,16 @@ $(document).ready(function() {
           for( var i = 0; i<len; i++){
               var id = response[i]['id'];
               var ticker = response[i]['ticker'];
-              $("#ticker").append("<option value='"+id+"'>"+ticker+"</option>");
+              var price = response[i]['price'];
+              $("#ticker").append("<option value='"+id+"' data-price='"+price+"'>"+ticker+"</option>");
+              
           }
+          var price = $('#ticker').find('option:selected').data('price');
+              console.log(price);
+              $('#price').val(price);
       }
     });
+
     $.ajax({
       url: 'tradeuser',
       type: 'get',
@@ -52,20 +59,88 @@ $(document).ready(function() {
   });
 
   // we used jQuery 'keyup' to trigger the computation as the user type
-$('#price').keyup(function () {
+$('#amount').keyup(function () {
  
   // initialize the sum (total price) to zero
   var sum = 0;
    
   // we use jQuery each() to loop through all the textbox with 'price' class
   // and compute the sum for each loop
-  $('#price').each(function() {
-      sum += Number($(this).val() * $('#amount').val());
+  $('#amount').each(function() {
+      sum += Number($(this).val() * $('#price').val());
   });
    
   // set the computed value to 'totalPrice' textbox
   $('#total').val(sum);
    
+});
+
+
+$('#ticker').change(function(){
+  $('#price').val($(this).children(':selected').data('price'));
+});
+
+
+
+$('#fee').keyup(function () {
+  var tot = 0;
+  var price = parseInt($("#price").val());
+  var amount = parseInt($("#amount").val());
+  $('#fee').each(function() {
+    var price = parseInt($("#price").val());
+    var amount = parseInt($("#amount").val());
+    var sum = (amount * price);
+    var fee = parseInt($(this).val());
+    var per = Number((sum) / 100) * fee;
+    tot  = (sum + per);
+  });
+  if(isNaN(tot)){
+    $('#total').val(price * amount);
+  }else{
+    $('#total').val(tot);
+  }
+});
+$('#ticker').change(function(){
+  $('#price').val($(this).children(':selected').data('price'));
+});
+
+
+
+$('#fee').change(function () {
+  var tot = 0;
+  var price = parseInt($("#price").val());
+  var amount = parseInt($("#amount").val());
+  $('#fee').each(function() {
+    var price = parseInt($("#price").val());
+    var amount = parseInt($("#amount").val());
+    var sum = (amount * price);
+    var fee = parseInt($(this).val());
+    var per = Number((sum) / 100) * fee;
+    tot  = (sum + per);
+  });
+  if(isNaN(tot)){
+    $('#total').val(price * amount);
+  }else{
+    $('#total').val(tot);
+  }
+});
+$('#price').change(function () {
+  var tot = 0;
+  var fee = parseInt($('#fee').val());
+  var amount = parseInt($("#amount").val());
+  $('#fee').each(function() {
+    var fee = parseInt($("#fee").val());
+    var amount = parseInt($("#amount").val());
+    var price = parseInt($(this).val());
+    var sum = (amount * price);
+    var per = Number((sum) / 100) * fee;
+    tot  = (sum + per);
+  });
+  if(isNaN(tot)){
+    $('#total').val(price * amount);
+  }else{
+    $('#total').val(tot);
+  }
 });
   
   function settableTrades() {  
@@ -102,6 +177,7 @@ $('#price').keyup(function () {
                 }},
                 { "data": "amount" },
                 { "data": "price" },
+                { "data": "fee" },
                 { "data": "total" },
                 { mRender: function (data, type, row) {
                   var enabledStatus = '<span class="badge badge-pill badge-primary">Pending</span>';
@@ -133,6 +209,11 @@ $('#price').keyup(function () {
   function openCreateModal(){
     $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTC()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
     $('#createModal').modal('show');
+    $('#amount').val(1);
+    var amount = $('#amount').val();
+    var price = $('#price').val();
+    $('#fee').val(0);
+    $('#total').val(amount * price);
   };
 
 
@@ -159,6 +240,7 @@ $('#price').keyup(function () {
     "agentid" : $('#agent').val(),
     "amount" : $('#amount').val(),
     "price" : $('#price').val(),
+    "fee" : $('#fee').val(),
     "total" : $('#total').val(),
     "status" : $('#status').val()
   }
@@ -205,6 +287,7 @@ function open_editModal(id) {
     $('#agent').val(data.agentid);
     $('#amount').val(data.amount);
     $('#price').val(data.price);
+    $('#fee').val(data.fee);
     $('#total').val(data.total);
     $("#status").val(data.status);
     $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTE(' + data.id + ')">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
@@ -225,6 +308,7 @@ function save_formTE(id){
     "agentid" : $('#agent').val(),
     "amount" : $('#amount').val(),
     "price" : $('#price').val(),
+    "fee" : $('#fee').val(),
     "total" : $('#total').val(),
     "status" : $('#status').val()
   }

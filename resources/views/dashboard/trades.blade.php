@@ -32,7 +32,7 @@
                           </select> 
                         </div>
                       </div>
-                      <div class="row">
+                      <div class="row pt-2">
                         <div class="col-4 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Amount:</b></label>
                           <input type="text" class="form-control" id="amount" name="amount" value="">
@@ -40,16 +40,17 @@
                         </div>
                         <div class="col-4 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Price:</b></label>
-                          <input type="text" class="form-control" id="price" name="price" value="">
+                          <input class="form-control" id="price" name="price" type="number" step="0.10" min="-9999999999.99" max="9999999999.99" value="">
                         </div>
+                        <div class="col-4 f-size-14 mb-0">
+                          <label class="mb-1" class="mb-0"><b>Fee (%):</b></label>
+                          <input class="form-control" id="fee" name="fee" type="number" step="1" min="-100" max="100.00" value="">
+                        </div>
+                      </div>
+                      <div class="row pt-2">
                         <div class="col-4 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Total:</b></label>
                           <input type="text" class="form-control" id="total" name="total" value="">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-4 text-center">
-                          
                         </div>
                         <div class="col-4 text-center">
                             <label class="mb-1" class="mb-0"><b>Status:</b></label>
@@ -110,6 +111,7 @@
                     <th class="text-center">Ticker</th>
                     <th class="text-center">Amount</th>
                     <th class="text-center">Price</th>
+                    <th class="text-center">Fee</th>
                     <th class="text-center">Total</th>
                     <th class="text-center">Status</th>
                     <th class="text-center">Actions</th>

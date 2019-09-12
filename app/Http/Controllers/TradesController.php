@@ -148,6 +148,7 @@ class TradesController extends Controller
         $trade->agentid = $request->agentid;
         $trade->amount = $request->amount;
         $trade->price = $request->price;
+        $trade->fee = $request->fee;
         $trade->total = $request->total;
         $trade->status = $request->status;
         $trade->updated_at = Carbon::now()->toDateTimeString();
