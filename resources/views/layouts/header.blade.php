@@ -5,6 +5,7 @@
         <li class="nav-item">
             <a class="nav-link g-color-white" data-widget="pushmenu" href="#"><i class="fa fa-bars g-color-white"></i></a>
         </li>
+        <li class="nav-item mt-2 g-color-white">Synapsis Trade System v1.0</li>
     </ul>
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
