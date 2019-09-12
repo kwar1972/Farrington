@@ -51,6 +51,10 @@
         <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
         <link href="vendors/animate-css/animate.css" rel="stylesheet">
         <link href="vendors/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line-pro/style.css') }}">
+        <!-- CSS Customization -->
+        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+        
         
         <!-- Extra plugin css -->
         <link href="vendors/stroke-icon/style.css" rel="stylesheet">
