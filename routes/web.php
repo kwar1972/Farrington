@@ -54,6 +54,40 @@ Route::get('contactus', function () {
 
 // BACKEND
 Auth::routes(['verify' => true]);
+//ADMINs
+Route::get('/userdelete/{id}', 'UsermanController@destroy')->middleware('role:admin');
+Route::get('/tickerdelete/{id}', 'TickerController@destroy')->middleware('role:admin');
+
+
+Route::group(['middleware' => ['role:admin|loader|agent']], function () {
+  
+        // User Manager
+        Route::get('userman', 'DashboardController@usernman')->name('userman');
+        Route::get('users', 'UsermanController@index')->name('users');
+        Route::get('/userdetail/{id}', 'UsermanController@show');
+        Route::get('/usercreate', 'UsermanController@store');
+        Route::get('/useredit/{id}', 'UsermanController@update');
+        Route::get('/userslogins/{id}', 'LoginController@show');
+        Route::get('/resenduseremail/{id}', 'UsermanController@resendVerificationEmail');
+        //Ticker Manager
+        Route::get('tickerman', 'DashboardController@tickerman')->name('userman');
+        Route::get('tickers', 'TickerController@index')->name('tickers');
+        Route::get('/tickerdetail/{id}', 'TickerController@show');
+        Route::post('/tickeredit/{id}', 'TickerController@update');
+        Route::get('/tickercreate', 'TickerController@store');
+        Route::get('/swapticker', 'TickerController@swapticker');
+        
+        //Trades Manager
+        Route::get('trademan', 'DashboardController@trademan')->name('trademan');
+        Route::get('trademanlist', 'TradesController@index');
+        Route::get('tradeuser', 'TradesController@tradeuser')->name('tradeuser');
+        Route::get('tradeagent', 'TradesController@tradeagent')->name('tradeagent');
+        Route::get('tradesave', 'TradesController@store')->name('tradesave');
+        Route::get('/tradedelete/{id}', 'TradesController@destroy');
+        Route::get('/tradedetail/{id}', 'TradesController@edit');
+        Route::get('/tradeedit/{id}', 'TradesController@update');
+        Route::get('/tradelist/{id}', 'TradesController@tradelist');
+});
 
 // Route::get('/dashboard/home', 'DashboardController@versionone')->name('home');
 
