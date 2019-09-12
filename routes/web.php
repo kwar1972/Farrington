@@ -52,8 +52,13 @@ Route::get('contactus', function () {
     return view('frontend.contactus');
 });
 
-// BACKEND
+Route::get('/getHoldings/{id}', 'TradesController@getHoldings');
+Route::get('roles', 'permController@preTorole');
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
 Auth::routes(['verify' => true]);
+Route::get('home', 'DashboardController@versionone')->name('home')->middleware('verified');
+
 //ADMINs
 Route::get('/userdelete/{id}', 'UsermanController@destroy')->middleware('role:admin');
 Route::get('/tickerdelete/{id}', 'TickerController@destroy')->middleware('role:admin');
@@ -88,49 +93,6 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
         Route::get('/tradeedit/{id}', 'TradesController@update');
         Route::get('/tradelist/{id}', 'TradesController@tradelist');
 });
-
-// Route::get('/dashboard/home', 'DashboardController@versionone')->name('home');
-
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
-Route::get('transmanlist', 'TransactionController@index');
-Auth::routes(['verify' => true]);
-
-Route::get('home', 'DashboardController@versionone')->name('home')->middleware('verified');
-
-// User Manager
-Route::get('userman', 'DashboardController@usernman')->name('userman')->middleware('verified');
-Route::get('users', 'UsermanController@index')->name('users')->middleware('verified');
-Route::get('/userdetail/{id}', 'UsermanController@show')->middleware('verified');
-Route::get('/usercreate', 'UsermanController@store')->middleware('verified');
-Route::get('/useredit/{id}', 'UsermanController@update')->middleware('verified');
-Route::get('/userdelete/{id}', 'UsermanController@destroy')->middleware('verified');
-Route::get('/userslogins/{id}', 'LoginController@show')->middleware('verified');
-Route::get('/resenduseremail/{id}', 'UsermanController@resendVerificationEmail')->middleware('verified');
-
-
-//Ticker Manager
-Route::get('tickerman', 'DashboardController@tickerman')->name('userman')->middleware('verified');
-Route::get('tickers', 'TickerController@index')->name('tickers')->middleware('verified');
-Route::get('/tickerdetail/{id}', 'TickerController@show')->middleware('verified');
-Route::post('/tickeredit/{id}', 'TickerController@update')->middleware('verified');
-Route::get('/tickercreate', 'TickerController@store')->middleware('verified');
-Route::get('/swapticker', 'TickerController@swapticker')->middleware('verified');
-Route::get('/tickerdelete/{id}', 'TickerController@destroy')->middleware('verified');
-
-
-//Transaction Manager
-
-Route::get('transman', 'DashboardController@transman')->name('userman')->middleware('verified');
-Route::get('transuser', 'TransactionController@transuser')->name('transuser')->middleware('verified');
-Route::get('transagent', 'TransactionController@transagent')->name('transagent')->middleware('verified');
-// Route::get('transmanlist', 'TransactionController@index')->middleware('verified');
-// Route::get('transman', 'TickerController@index')->name('tickers')->middleware('verified');
-// Route::get('/transman/{id}', 'TickerController@show')->middleware('verified');
-// Route::post('/transman/{id}', 'TickerController@update')->middleware('verified');
-// Route::get('/transman', 'TickerController@store')->middleware('verified');
-// Route::get('/transman', 'TickerController@swapticker')->middleware('verified');
-// Route::get('/transman/{id}', 'TickerController@destroy')->middleware('verified');
-
 
 //TEST
 Route::get('test', 'DashboardController@test')->name('test')->middleware('verified');
