@@ -44,7 +44,7 @@
                   <a href="tickerman" class="nav-link">
               <i class="nav-icon fas fa-money-check-alt g-color-white"></i>
               <p class="g-color-white">
-                Dashboard
+                Ticker Manager
               </p>
             </a>
               </li>
@@ -56,7 +56,15 @@
             </p>
           </a>
             </li>
-          @else  
+          @else
+            <li class="nav-item">
+                <a href="home" class="nav-link">
+                <i class="nav-icon fa fa-dashboard g-color-white"></i>
+                <p class="g-color-white">
+                Dashboard
+                </p>
+                </a>
+            </li>  
             <li class="nav-item">
                 <a href="trademan" class="nav-link">
                 <i class="nav-icon fas fa-user-circle g-color-white"></i>
