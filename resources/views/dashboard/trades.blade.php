@@ -58,7 +58,7 @@
                               <option value="2">Loader</option>
                               <option value="3">TT</option>
                               <option value="4">Confirmed</option>
-                              <option value="5">canceled</option>
+                              <option value="5">Canceled</option>
                             </select>
                         </div>
                         <div class="col-4 text-center">

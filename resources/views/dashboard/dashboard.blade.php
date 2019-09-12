@@ -90,6 +90,37 @@
   <!-- Main content -->
   <section class="content">
     <div class="container-fluid">
+      <!-- TradingView Widget BEGIN -->
+        <div class="row mb-2">
+          <div class="col-12">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                    "symbols": [
+                      {
+                        "title": "EUR/USD",
+                        "proName": "FX_IDC:EURUSD"
+                      },
+                      {
+                        "description": "USD/CAD",
+                        "proName": "OANDA:USDCAD"
+                      },
+                      {
+                        "description": "USD/HKD",
+                        "proName": "FX:USDHKD"
+                      }
+                    ],
+                    "colorTheme": "dark",
+                    "isTransparent": false,
+                    "displayMode": "adaptive",
+                    "locale": "es"
+                    }
+                  </script>
+              </div>
+          </div>
+        </div>
+      <!-- TradingView Widget END -->
       <!-- Small boxes (Stat box) -->
       <div class="row">
         <div class="col-lg-3 col-6">
@@ -154,6 +185,7 @@
         <!-- ./col -->
       </div>
       <!-- /.row -->
+      
       <!-- Main row -->
       <div class="row">
         <!-- Left col -->
