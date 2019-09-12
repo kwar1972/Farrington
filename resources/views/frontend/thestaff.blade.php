@@ -4,7 +4,7 @@
     
 <!-- Mirrored from galaxyanalytics.net/demos/consultplus/theme/index by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jul 2019 09:15:02 GMT -->
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:57:36 GMT -->
+<!-- Mirrored from baxtergrant.com/thestaff.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:00:52 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8">
@@ -38,27 +38,13 @@
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
+        
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify.css') }}">
-        <!-- CSS Unify -->
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-core.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-components.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-globals.css') }}">
-         <!-- CSS Global Icons -->
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-awesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/icons/css/all.css" rel="stylesheet') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line/css/simple-line-icons.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-etlinefont/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line-pro/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-hs/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/animate.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/slick-carousel/slick/slick.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/typedjs/typed.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hamburgers/hamburgers.min.css') }}">
+
+       
+        
+ <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Rev slider css -->
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
         <link href="vendors/revolution/css/layers.css" rel="stylesheet">
@@ -78,9 +64,9 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-<style>
+        <style>
         
-.header_menu .navbar.navbar-default .navbar-header .navbar-brand {
+                .header_menu .navbar.navbar-default .navbar-header .navbar-brand {
     padding: 1px 0px 4px 12px;
     line-height: 75px;
     display: inline-block;
@@ -618,10 +604,204 @@ div.tp-parallax-wrap
                 </nav>
             </div>
         </header>
-  
-      @yield('content') 
+        <!--================Header Area =================-->
+ <!--================Header Area =================-->
+        
+        <!--================Banner Area =================-->
+        <section class="banner_area">
+            <div class="container">
+                <div class="banner_content">
+                    <h3>The Staff</h3>
+                </div>
+            </div>
+        </section>
+         <div class="banner_link sticky">
+         
+            <div class="container"> 
+                <div class="sticky">
+                <div class="abnner_link_inner" style="margin-top: -19px;">
+                    <a class="active" href="index-3">Home</a>
+                    <a href="#">Staff</a>
+                </div>
+            </div>
+        </div>
+    </div><div class="container"> 
+               <div class="pull-right">
+                <div class="sticky">
+                <div class="abnner_link_inner" style="margin-top: -23px;font-size: 12px;padding-top: 5px;">
+                    <a href="#"><i class="fa fa-phone"></i> +437 2077 5910 </a>&nbsp;
+                    <a href="mailto:support@baxtergrant.com?subject= Contact from from website"><i class="fa fa-envelope-o"></i> support@baxtergrant.com</a>&nbsp;
+                    <a href="#"><i class="icon icon-Timer"></i> Mon-Fri : 9 am to 5 pm</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+        <!--================End Banner Area =================-->
 
-    <!--================Footer Area =================-->
+         <!--================Staff Row 1 Area =================-->
+        <br><br>
+        <div class="container" style='    padding-left: 42px;
+    margin-right: 55px;
+}'>
+
+    
+            <div class="row row-margin-bottom">
+            <div class="col-md-12 no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-4">
+                            <img class="lib-img-show" src="img/Graham-Baxter-baxter-grant.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="lib-row lib-header">
+                                Graham Baxter<br>
+Co Founder, CEO
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                
+My main reasons for starting Baxter & Grant was this desire I had to create a transparent and open working environment. Working with many people in different companies, all having their flaws and strengths. My idea was to take all the strong points from my experience in my financial background and put them together in the same house. This is what I felt was needed for success, a fully informed and engaging work force to help all our clients in their financial lives whether it is a team based project or a one on one project. There is no job too small when it comes to someone’s finances and I believe it’s a necessity to make myself fully available to all my work force and clients. Having worked with so many families and businesses and more than $1Billion in assets, the most important thing I took with me is that each client whether it be an individual or a banking institute is unique. Baxter & Grant, was put together with the intention to create a corporate culture that removes the word “corporate” and focus on community, transparency being my number one principle. After many years in financial services, there have been occasions in which corporate profits supersede client service. As a fiduciary, Baxter & Grant will always maintain a strong commitment that prides itself on putting people before products. We are a private company, and are responsible to our clients, not to shareholder value.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12 no-padding lib-item" data-category="ui">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-4">
+                            <img class="lib-img" src="img/Jonathan-H-Grant-baxter-grant.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="lib-row lib-header">
+                                Jonathan H Grant<br>
+Co Founder, CEO
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                
+Hi I am the proud Co Founding partner of Baxter & Grant. I have 14 years of banking experience as a Vice President of Bankers Trust Company, where I was involved with management buyout financing, mergers and acquisition advisory assignments and other corporate finance activities. I have also served as Co-Head and Co-Founder of Global Technology Industry Team. I served as a Co-Head of Industrial at KKR & Co. L.P. and also served as its Head of Industrial Industry Team, North American Private Equity firm.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--================End Staff Row 1 Area =================-->
+        
+        <!--================Staff Row 2 Area =================-->
+           
+   
+    
+            <div class="row row-margin-bottom">
+            <div class="col-md-12 no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-4">
+                            <img class="lib-img-show" src="img/James-Colin-Jacobson-baxter-grant.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="lib-row lib-header">
+                                James Colin Jacobson<br>
+CFO, Head of Business Development
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                
+Hi I am the head of business development at Baxter & Grant. I obtained my CFA designation in 1998, and I am a proud member of the South African Institute of Chartered Accountants. I have a Post Graduate Diploma in Accounting and Bachelor of Commerce from the University of Natal – Durban. I entered into the hedge fund industry in 1996 since them I have gained a lot of experience in all aspects of distribution I take great pride in my work, there is no better feeling than making life changing decisions and getting it right. My main roles consist of product development and financial marketing. I moved to Austria in the year of 2013, and since joining the Baxter & Grant family I have acquired a thorough knowledge of the highly diverse qualified Investor markets.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12 no-padding lib-item" data-category="ui">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-4">
+                            <img class="lib-img" src="img/Sandra-Lienhart-baxter-grant.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="lib-row lib-header">
+                                 Sandra Leinhart<br>
+COO, Head of Operations and Due Dilligence
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                               
+Hi I am Sandra and head of operations and due diligence at Baxter & Grant. I have broad-based experience in many aspects of international financial services, with many years in management transactions implementation and business development. My experience in transaction execution consists of conducting all due diligence and risk assessments on target acquisitions, as well as negotiating legal contracts. In business development I have revamped many departments providing them with key tools to boost efficiency within various banks and financial services companies (Deloitte Consulting, Toyo Trust, Daiwa Securities, Nedbank and KBL) to meet strategic objectives.
+<br>
+I hold an MBA in International Banking from City University, Zurich Campus, and a BA in International Relations from Lake Forest College (Illinois, USA).<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--================End Staff Row 2 Area =================-->
+        
+        <!--================Staff Row 3 Area =================-->
+             
+    
+    
+            <div class="row row-margin-bottom">
+            <div class="col-md-12 no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-4">
+                            <img class="lib-img-show" src="img/Simon-Finch-baxter-grant.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="lib-row lib-header">
+                                Simon Finch<br>
+Chief Human Resources Officer
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+
+Hi I am the chief resource officer at Baxter & Grant. I currently hold a degree in Classics from Cambridge University and I am qualified solicitor of England and Wales. I joined Baxter & Grant in March 2010. as the Chief Human Resources Officer, focusing on strategic projects and operational support for the people of Baxter & Grant and advising on talent matters in relation to the portfolio companies. Prior to joining Baxter & Grant, I was at Goldman Sachs, spending 5 years in the Human Capital Management and Legal Department. Previously, I was a lawyer at Freshfields Bruckhaus Deringer and Slaughter & May.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-12 no-padding lib-item" data-category="ui">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-4">
+                            <img class="lib-img" src="img/Diana-Jones-baxter-grant.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="lib-row lib-header">
+                                 Diana Jones<br>
+Head of Legal, Risk and Compliance
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                               
+
+Hi my name is Diana Jones and I am Head of Legal, Risk and Compliance, I have extensive experience in legal, compliance and product development for alternative asset managers as well as legal and structuring expertise for derivative products in investment banking. I have held various senior legal positions with such firms as EIM, UBP, Credit Suisse and Morgan Stanley. I am also a qualified English solicitor with a Master of Law from the University of Des Sciences Sociales in Toulouse. <br>I moved to Austria to join the Baxter & Grant family in 2012. The decision to move was the glowing reports I had heard about Baxter & Grant’s approach on the world of finance, fresh and innovative. This was also a great opportunity to move forward in my career.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+        <!--================End Staff Row 3 Area =================-->
+
+<br><br>
+ </div>
+
+
+
+
+
+ <!--================Footer Area =================-->
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -721,35 +901,20 @@ We operate in an industry built on trust. This can only be achieved through comm
         </footer>
         <br><br><br>
         <!--================End Footer Area =================-->
+       
+        
+        
+        
+        
+        
         
         
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        {{-- <script src="js/jquery-2.2.4.js"></script> --}}
+        <script src="js/jquery-2.2.4.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        {{-- <script src="js/bootstrap.min.js"></script> --}}
-        <!-- JS Global Compulsory -->
-        <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
-
-
-        <!-- JS Implementing Plugins -->
-        <script src="{{ asset('assets/vendor/appear.js') }}"></script>
-        <script src="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.js') }}"></script>
-        <script src="{{ asset('assets/vendor/slick-carousel/slick/slick.js') }}"></script>
-        <script src="{{ asset('assets/vendor/typedjs/typed.min.js') }}"></script>
-
-        <!-- JS Unify -->
-        <script src="{{ asset('assets/js/hs.core.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.header.js') }}"></script>
-        <script src="{{ asset('assets/js/helpers/hs.hamburgers.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.tabs.js') }}"></script>
-        <script src="{{ asset('assets/js/components/text-animation/hs.text-slideshow.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.go-to.js') }}"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!-- Rev slider js -->
         <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
         <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -865,5 +1030,5 @@ function scrollFunction() {
 
 
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:58:58 GMT -->
+<!-- Mirrored from baxtergrant.com/thestaff.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:01:02 GMT -->
 </html>

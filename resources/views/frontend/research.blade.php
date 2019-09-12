@@ -4,7 +4,7 @@
     
 <!-- Mirrored from galaxyanalytics.net/demos/consultplus/theme/index by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jul 2019 09:15:02 GMT -->
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:57:36 GMT -->
+<!-- Mirrored from baxtergrant.com/research.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:03:35 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8">
@@ -38,27 +38,13 @@
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
+        
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify.css') }}">
-        <!-- CSS Unify -->
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-core.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-components.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-globals.css') }}">
-         <!-- CSS Global Icons -->
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-awesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/icons/css/all.css" rel="stylesheet') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line/css/simple-line-icons.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-etlinefont/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line-pro/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-hs/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/animate.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/slick-carousel/slick/slick.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/typedjs/typed.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hamburgers/hamburgers.min.css') }}">
+
+       
+        
+ <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Rev slider css -->
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
         <link href="vendors/revolution/css/layers.css" rel="stylesheet">
@@ -78,9 +64,9 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-<style>
+        <style>
         
-.header_menu .navbar.navbar-default .navbar-header .navbar-brand {
+                .header_menu .navbar.navbar-default .navbar-header .navbar-brand {
     padding: 1px 0px 4px 12px;
     line-height: 75px;
     display: inline-block;
@@ -618,10 +604,231 @@ div.tp-parallax-wrap
                 </nav>
             </div>
         </header>
-  
-      @yield('content') 
+        <!--================Header Area =================-->
+ <!--================Header Area =================-->
+        
+        <!--================Banner Area =================-->
+        <section class="banner_area_research">
+            <div class="container">
+                <div class="banner_content">
+                    <h3>Research</h3>
+                </div>
+            </div>
+        </section>
+         <div class="banner_link sticky">
+         
+            <div class="container"> 
+                <div class="sticky">
+                <div class="abnner_link_inner" style="margin-top: -19px;">
+                    <a class="active" href="index-3">Home</a>
+                    <a href="#">Research</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--================End Banner Area =================-->
 
-    <!--================Footer Area =================-->
+
+        <!--================Info Boxes Area =================-->
+        <section class="banner_info">
+            <div class="container-fluid">
+               <div class="row">
+           <div class="col-xs-6 col-sm-4" style="background-color:#6ec1e4;color:#6ec1e4;">
+            <div class="col-xs-4" style="background-color:#6ec1e4;color:#2c8bd3;margin-top:15px;margin-bottom:15px;height:110px;"">
+              <br>
+            <i class="fa fa-plus pull-right" aria-hidden="true" style="font-size: 50px;"></i>
+            </div>
+                <div class="col-xs-8">
+          <h3 class="elementor-icon-box-title">
+            <br> 
+                    <a href="trading_platforms">View <br>Our</a><br>
+                
+                 <a href="trading_platforms">Trading Products</a></p></h3>
+                <br>
+            </div>
+            </div>
+          <div class="col-xs-6 col-sm-4" style="background-color:#2c8bd3;color:#6ec1e4;">
+            <div class="col-xs-4" style="background-color:#2c8bd3;color:#6ec1e4;margin-top:15px;margin-bottom:15px;height:110px;">
+             <br>
+            <i class="fa fa-users pull-right" aria-hidden="true" style="font-size: 50px;"></i>
+            </div>
+                <div class="col-xs-8">
+            <h3 class="elementor-icon-box-title">
+                <br>  
+                    <a href="trading_platforms" style=" color: #6ec1e4;">Meet <br>Our</a><br>
+                
+                 <a href="trading_platforms" style=" color: #6ec1e4;">Management Team</a></p> </h3>
+                <br>
+            </div>
+             </div>
+           <div class="col-xs-6 col-sm-4" style="background-color:#6ec1e4;color:#6ec1e4;">
+            <div class="col-xs-4" style="background-color:#6ec1e4;color:#2c8bd3;margin-top:15px;margin-bottom:15px;height:110px;"">
+            <br>
+            <i class="fa fa-phone pull-right" aria-hidden="true" style="font-size: 50px;"></i>
+            </div>
+                <div class="col-xs-8">
+            <h3 class="elementor-icon-box-title">
+                <br>
+                <a href="trading_platforms">Call Now</a>
+                <a href="trading_platforms">+43720775910 </a><br>
+                <a href="trading_platforms">+43720775405 </a></h3>
+                 <br>
+            </div>
+             </div>
+        </div> 
+        </div>
+    </div>
+        <!--================End Info Boxes Area =================-->
+
+         <!--================Business Box Area =================-->
+        <section class="business_box_area">
+            <div class="container">
+                <div class="sec_middle_title">
+                    <h2><span>Research Service</span> for all kinds of investment</h2>
+                    <p style="font-size:17px">Baxter & Grant offers a comprehensive and innovative research program tailored to the financial services community. Baxter & Grant's investment research offerings provide an independent, targeted, and customized research program designed to support the generation of investment ideas, facilitate effective investment decisions, and evaluate technology companies.</p>
+                </div>
+
+                        <!--================Research Area =================-->
+                        
+        <section class="testimonials_area">
+            <div class="container" > <h2>Explore How Clients Use Us</h2>
+                <div class="testimonials_slider owl-carousel">
+                    <div class="item">
+                       <div class="media">
+
+                            <div class="media-left">
+                                <img src="img/image1.jpg">
+                                  <span>Monitor and Build Conviction in Existing Positions</span>
+                            </div>
+                             <div class="media-body">
+                                <p style="font-size:17px">Custom Survey<br>
+Custom Data Cuts<br>
+                                </p>                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="img/image11.jpg" alt="">
+                                <span>Generate New Ideas (long and short)</span>
+                                
+                            </div>
+                            <div class="media-body">
+                                <p style="font-size:17px">Analyst Conference Calls<br>
+
+Analyst Meetings<br>
+Web Conferences<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="img/image111.jpg" alt="">
+                                 <span>Launch Coverage on Companies, Sectors and Technologies</span>
+                            </div>
+                            <div class="media-body">
+                                <p style="font-size:17px">Market and Company Historical Data<br>
+
+Innovator Reports<br>
+
+Spending Guides<br>
+                                </p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media">
+                            <div class="media-left">
+                                 <img src="img/image1111.jpg" alt="">
+                                <span>Build and Maintain Company and Sector Models</span>
+                            </div>
+                             <div class="media-body">
+                                <p style="font-size:17px">Market Forecast<br>
+
+Custom Channel Checks and Surveys<br>
+
+Custom Swot Analysis<br>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media">
+                            <div class="media-left">
+                                 <img src="img/image1111.jpg" alt="">
+                                <span>Understand Emerging Technologies</span>
+                            </div>
+                             <div class="media-body">
+                                <p style="font-size:17px">Thematic Research <br>
+Published Reports<br>
+Company Primers<br>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media">
+                            <div class="media-left">
+                                 <img src="img/image1111.jpg" alt="">
+                                <span>Engage in Discussions with Industry Experts</span>
+                            </div>
+                             <div class="media-body">
+                                <p style="font-size:17px">Analyst conference calls/analyst meetings<br>
+                                   Web conferences<br>
+                                   Baxter & Grant Directions<br>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media">
+                            <div class="media-left">
+                                 <img src="img/image1111.jpg" alt="">
+                                <span>Industry Primers</span>
+                            </div>
+                             <div class="media-body">
+                                <p style="font-size:17px">Market reports<br>
+                                  Market and company historical data<<br>
+                                  Analyst conference calls/analyst meetings<br>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media">
+                            <div class="media-left">
+                                 <img src="img/image1111.jpg" alt="">
+                                <span>Custom Research Support</span>
+                            </div>
+                             <div class="media-body">
+                                <p style="font-size:17px">Custom survey work<br>
+                                  Custom datacuts<br>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End ResearchArea =================-->
+</div>
+           
+
+
+
+       
+
+
+
+ <!--================Footer Area =================-->
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -721,35 +928,20 @@ We operate in an industry built on trust. This can only be achieved through comm
         </footer>
         <br><br><br>
         <!--================End Footer Area =================-->
+       
+        
+        
+        
+        
+        
         
         
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        {{-- <script src="js/jquery-2.2.4.js"></script> --}}
+        <script src="js/jquery-2.2.4.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        {{-- <script src="js/bootstrap.min.js"></script> --}}
-        <!-- JS Global Compulsory -->
-        <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
-
-
-        <!-- JS Implementing Plugins -->
-        <script src="{{ asset('assets/vendor/appear.js') }}"></script>
-        <script src="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.js') }}"></script>
-        <script src="{{ asset('assets/vendor/slick-carousel/slick/slick.js') }}"></script>
-        <script src="{{ asset('assets/vendor/typedjs/typed.min.js') }}"></script>
-
-        <!-- JS Unify -->
-        <script src="{{ asset('assets/js/hs.core.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.header.js') }}"></script>
-        <script src="{{ asset('assets/js/helpers/hs.hamburgers.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.tabs.js') }}"></script>
-        <script src="{{ asset('assets/js/components/text-animation/hs.text-slideshow.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.go-to.js') }}"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!-- Rev slider js -->
         <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
         <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -865,5 +1057,5 @@ function scrollFunction() {
 
 
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:58:58 GMT -->
+<!-- Mirrored from baxtergrant.com/research.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:03:42 GMT -->
 </html>

@@ -3,7 +3,8 @@
     <!-- Login -->
     <section class="container g-py-150">
             <div class="row justify-content-center">
-              <div class="col-sm-8 col-lg-6">
+                <div class="col-sm-4 col-lg-4"></div>
+              <div class="col-sm-4 col-lg-4">
                 <div class="g-brd-around g-brd-gray-light-v4 g-bg-black-opacity-0_4 rounded g-py-40 g-px-30">
                   <header class="text-center mb-4">
                     <h2 class="h2 g-color-primary g-font-weight-600"><p class="login-box-msg">{{ __('Login') }}</p></h2>
@@ -69,6 +70,7 @@
                   </footer>
                 </div>
               </div>
+              <div class="col-sm-4 col-lg-4"></div>
             </div>
           </section>
           <!-- End Login -->

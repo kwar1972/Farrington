@@ -2,25 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from galaxyanalytics.net/demos/consultplus/theme/index by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jul 2019 09:15:02 GMT -->
+<!-- Mirrored from galaxyanalytics.net/demos/consultplus/theme/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jul 2019 09:15:02 GMT -->
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:57:36 GMT -->
+<!-- Mirrored from baxtergrant.com/account_types.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:01:02 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="canonical" href="index"/>
+        <link rel="canonical" href="index.html"/>
         <meta property="og:site_name" content="Baxter & Grant"/>
         <meta property="og:title" content="Baxter & Grant"/>
-        <meta property="og:url" content="index"/>
+        <meta property="og:url" content="index.html"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
         <meta property="og:image" content="../www.baxtergrant.com/img/bglogo.png"/>
         <meta property="og:image:width" content="216"/>
         <meta property="og:image:height" content="108"/>
         <meta itemprop="name" content="TS Securities"/>
-        <meta itemprop="url" content="index"/>
+        <meta itemprop="url" content="index.html"/>
         <meta itemprop="description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
         <meta itemprop="thumbnailUrl" content="../www.baxtergrant.com/img/bglogo.png"/>
         <link rel="image_src" href="../www.baxtergrantcom/img/bglogo.png" />
@@ -38,27 +38,13 @@
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
+        
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify.css') }}">
-        <!-- CSS Unify -->
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-core.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-components.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-globals.css') }}">
-         <!-- CSS Global Icons -->
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-awesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/icons/css/all.css" rel="stylesheet') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line/css/simple-line-icons.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-etlinefont/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line-pro/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-hs/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/animate.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/slick-carousel/slick/slick.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/typedjs/typed.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hamburgers/hamburgers.min.css') }}">
+
+       
+        
+ <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Rev slider css -->
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
         <link href="vendors/revolution/css/layers.css" rel="stylesheet">
@@ -78,9 +64,9 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-<style>
+        <style>
         
-.header_menu .navbar.navbar-default .navbar-header .navbar-brand {
+                .header_menu .navbar.navbar-default .navbar-header .navbar-brand {
     padding: 1px 0px 4px 12px;
     line-height: 75px;
     display: inline-block;
@@ -618,10 +604,171 @@ div.tp-parallax-wrap
                 </nav>
             </div>
         </header>
-  
-      @yield('content') 
+        <!--================Header Area =================-->
+ <!--================Header Area =================-->
+        
+        <!--================Banner Area =================-->
+       
+        <section class="banner_area_types">
+           <div class="container"> 
+                <div class="sticky">
+                <div class="abanner_link_inner" style="margin-top: 1px;">
+                    <a class="active" href="index-3">Home</a>
+                    <a href="#">Account Types</a>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+                <div class="banner_content">
+                    <h3>Account Types</h3>
+                </div>
+            </div>
+        </section>
+         <div class="banner_link sticky">
+         
+            <div class="container"> 
+               <div class="pull-right">
+                <div class="sticky">
+                <div class="abnner_link_inner" style="margin-top: -23px;font-size: 12px;padding-top: 5px;">
+                    <a href="#"><i class="fa fa-phone"></i> +437 2077 5910 </a>&nbsp;
+                    <a href="mailto:support@baxtergrant.com?subject= Contact from from website"><i class="fa fa-envelope-o"></i> support@baxtergrant.com</a>&nbsp;
+                    <a href="#"><i class="icon icon-Timer"></i> Mon-Fri : 9 am to 5 pm</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+        <!--================End Banner Area =================-->
 
-    <!--================Footer Area =================-->
+        <!--================Start Price table Area =================-->
+     <section class="our_workers_area">
+            <div class="container">
+                <div class="section_title">
+                    <h2>Trading Account Types</h2>
+                    <p>Baxter & Grant understand that each trader is different. We have developed our account types to suit whatever your style. To assist you in selecting the appropriate account we've outlined a few of the features below.
+</p>
+                </div>
+    
+    <div class="snip1214">
+      <div class="plan">
+        <br><br>
+        <div class="plan-cost" style="
+    margin-bottom: 20px;
+"><span class="plan-price"></span><span class="plan-type"></span></div>
+        <ul class="plan-features">
+          <li><i class="ion-checkmark"> </i>Minimum Deposit</li>
+          <li><i class="ion-checkmark"> </i>Minimum Lot Size</li>
+          <li><i class="ion-checkmark"> </i>Spreads</li>
+          <li><i class="ion-checkmark"> </i>Trading Platforms</li>
+          <li><i class="ion-checkmark"> </i>Daily Analysis</li>
+          <li><i class="ion-checkmark"> </i>Account Manager</li>
+          <li><i class="ion-checkmark"> </i>Mobile Trading</li>
+          <li><i class="ion-checkmark"> </i>24 Hour Support</li>
+           <li><i class="ion-checkmark"> </i>Free Bank Wire</li>
+        </ul>
+        <div class="select"><a href="#"></a></div>
+      </div>
+      <div class="plan">
+        <h3 class="plan-title">
+          BEGINNER
+        </h3>
+         <!--<div class="plan-cost"><span class="plan-price">Register</span></div> -->
+        <ul class="plan-features">
+          <li><i class="ion-checkmark"> </i>250 USD</li>
+          <li><i class="ion-checkmark"> </i>0.1</li>
+          <li><i class="ion-checkmark"> </i>Floating</li>
+          <li><i class="ion-checkmark"> </i>Meta Trader 4</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>No</li>
+        </ul>
+       <!--  <div class="plan-select"><a href="">Select</a></div>-->
+      </div>
+      <div class="plan featured">
+        <h3 class="plan-title">
+          SILVER
+        </h3>
+        <!-- <div class="plan-cost"><span class="plan-price">Register</span></div>-->
+        <ul class="plan-features">
+          <li><i class="ion-checkmark"> </i>5,000 USD</li>
+          <li><i class="ion-checkmark"> </i>0.1</li>
+          <li><i class="ion-checkmark"> </i>Floating</li>
+          <li><i class="ion-checkmark"> </i>Meta Trader 4</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>No</li>
+        </ul>
+        <!-- <div class="plan-select"><a href="">Select</a></div>-->
+      </div>
+          <div class="plan">
+            <h3 class="plan-title">
+              GOLD
+            </h3>
+            <!-- <div class="plan-cost"><span class="plan-price">Register</span></div>-->
+            <ul class="plan-features">
+              <li><i class="ion-checkmark"> </i>20,000 USD</li>
+          <li><i class="ion-checkmark"> </i>0.1</li>
+          <li><i class="ion-checkmark"> </i>Fixed</li>
+          <li><i class="ion-checkmark"> </i>Meta Trader 4</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+            </ul>
+            <!--  <div class="plan-select"><a href="">Select</a></div>-->
+          </div>
+          <div class="plan">
+            <h3 class="plan-title">
+              PLATINUM
+            </h3>
+           
+            <ul class="plan-features">
+              <li><i class="ion-checkmark"> </i>100,000 USD</li>
+          <li><i class="ion-checkmark"> </i>0.1</li>
+          <li><i class="ion-checkmark"> </i>Fixed</li>
+          <li><i class="ion-checkmark"> </i>Meta Trader 4</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+          <li><i class="ion-checkmark"> </i>Yes</li>
+            </ul>
+           
+          </div>
+        </div>
+      </div>  
+ </section>
+        <!--================End Price table Area =================-->
+
+          <!--================End Trading Benefits Area =================-->     
+
+               <br><br>
+               <div class="container">
+                 <div class="info" style="background-color:#f4f4f4;">
+                <center><br>
+                  <h4 class="alert-heading" style="font-size: 30px;
+    padding-bottom: 10px;"><strong>NOT A CLIENT?</strong> OPEN A TRADING ACCOUNT TODAY</h4>
+                  <p style="font-size: 20px;padding-bottom: 10px;"> Take advantage of our competitive trading Strategies</p>
+                  <p> <a class="button button2" href="live_account" style="background-color: #fbfdfb;
+    border: 2px #000;">Register</a>
+                  <a class="button button2" href="account_types" style="background-color: #fbfdfb;
+    border: 2px #000;">Account Types</a></p>
+              </center><br>
+                 </div>
+               </div>
+
+                <br><br>
+
+ </div>
+
+ <!--================Footer Area =================-->
+
+
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -721,35 +868,20 @@ We operate in an industry built on trust. This can only be achieved through comm
         </footer>
         <br><br><br>
         <!--================End Footer Area =================-->
+       
+        
+        
+        
+        
+        
         
         
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        {{-- <script src="js/jquery-2.2.4.js"></script> --}}
+        <script src="js/jquery-2.2.4.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        {{-- <script src="js/bootstrap.min.js"></script> --}}
-        <!-- JS Global Compulsory -->
-        <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
-
-
-        <!-- JS Implementing Plugins -->
-        <script src="{{ asset('assets/vendor/appear.js') }}"></script>
-        <script src="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.js') }}"></script>
-        <script src="{{ asset('assets/vendor/slick-carousel/slick/slick.js') }}"></script>
-        <script src="{{ asset('assets/vendor/typedjs/typed.min.js') }}"></script>
-
-        <!-- JS Unify -->
-        <script src="{{ asset('assets/js/hs.core.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.header.js') }}"></script>
-        <script src="{{ asset('assets/js/helpers/hs.hamburgers.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.tabs.js') }}"></script>
-        <script src="{{ asset('assets/js/components/text-animation/hs.text-slideshow.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.go-to.js') }}"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!-- Rev slider js -->
         <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
         <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -766,9 +898,9 @@ We operate in an industry built on trust. This can only be achieved through comm
         <script src="vendors/isotope/isotope.pkgd.min.js"></script>
         <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
         <script src="vendors/bootstrap-selector/js/bootstrap-select.min.js"></script>
-        <script src="js/responsiveslides.min"></script>
-        <script src="js/responsiveslides"></script>
-        <script src="lib/owl.carousel.min"></script>
+        <script src="js/responsiveslides.min.html"></script>
+        <script src="js/responsiveslides.html"></script>
+        <script src="lib/owl.carousel.min.html"></script>
         <script src="js/theme.js"></script>
 
         <script>
@@ -865,5 +997,5 @@ function scrollFunction() {
 
 
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:58:58 GMT -->
+<!-- Mirrored from baxtergrant.com/account_types.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:01:02 GMT -->
 </html>

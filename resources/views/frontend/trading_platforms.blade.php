@@ -4,7 +4,7 @@
     
 <!-- Mirrored from galaxyanalytics.net/demos/consultplus/theme/index by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jul 2019 09:15:02 GMT -->
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:57:36 GMT -->
+<!-- Mirrored from baxtergrant.com/trading_platforms.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:03:42 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8">
@@ -38,27 +38,13 @@
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
+        
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify.css') }}">
-        <!-- CSS Unify -->
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-core.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-components.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-globals.css') }}">
-         <!-- CSS Global Icons -->
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-awesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/icons/css/all.css" rel="stylesheet') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line/css/simple-line-icons.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-etlinefont/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line-pro/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-hs/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/animate.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/slick-carousel/slick/slick.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/typedjs/typed.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hamburgers/hamburgers.min.css') }}">
+
+       
+        
+ <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Rev slider css -->
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
         <link href="vendors/revolution/css/layers.css" rel="stylesheet">
@@ -78,9 +64,9 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-<style>
+        <style>
         
-.header_menu .navbar.navbar-default .navbar-header .navbar-brand {
+                .header_menu .navbar.navbar-default .navbar-header .navbar-brand {
     padding: 1px 0px 4px 12px;
     line-height: 75px;
     display: inline-block;
@@ -618,10 +604,157 @@ div.tp-parallax-wrap
                 </nav>
             </div>
         </header>
-  
-      @yield('content') 
+        <!--================Header Area =================-->
+ <!--================Header Area =================-->
+        
+        <!--================Banner Area =================-->
+        <section class="banner_area_trading">
+            <div class="container">
+                <div class="banner_content">
+                    <h3>Trading Platforms</h3>
+                </div>
+            </div>
+        </section>
+         <div class="banner_link sticky">
+         
+           <div class="container"> 
+               <div class="pull-right">
+                <div class="sticky">
+                <div class="abnner_link_inner" style="margin-top: -23px;font-size: 12px;padding-top: 5px;">
+                    <a href="#"><i class="fa fa-phone"></i> +437 2077 5910 </a>&nbsp;
+                    <a href="mailto:support@baxtergrant.com?subject= Contact from from website"><i class="fa fa-envelope-o"></i> support@baxtergrant.com</a>&nbsp;
+                    <a href="#"><i class="icon icon-Timer"></i> Mon-Fri : 9 am to 5 pm</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+        <!--================End Banner Area =================-->
 
-    <!--================Footer Area =================-->
+         <!--================Business Box Area =================-->
+
+         <section class="latest_news_area">
+            <div class="container">
+                <div class="section_title">
+                    <h2>Trading Platforms</h2>
+                    <p>Baxter & Grant have source the best selection of Online trading platforms to give you more freedom at the touch of a button.<br>
+                </div>
+                <div class="row latest_news_inner">
+                    <div class="col-md-3 col-sm-6" style="border:2px;border-color:black;">
+                        <div class="latest_n_item">
+                            <div class="l_n_image">
+                                <img src="img/baxter-and-grant-austria-trading-company.jpg" alt="">
+                            </div>
+                           <h4>Live Integrated Reports</h4>
+                            <p>Check out the latest economic news, updates and important events of the global market around the world. With full antivirus protection and secure AES-256 encryption. </p>
+                            
+                        </div>
+                    </div>
+                     <div class="col-md-3 col-sm-6" style="border:2px;border-color:black;">
+                        <div class="latest_n_item">
+                            <div class="l_n_image">
+                                <img src="img/baxter-and-grant-austria-stock-market-company.jpg" alt="">
+                                
+                            </div>
+                            <h4>Powerful Trading Charts</h4>
+                            <p>Be one step ahead of the market’s next move!  Analyze trends and grab opportunities as they occur with the help of over 60 indicators, interactive chart tools and timeframes.</p>
+                            
+                        </div>
+                    </div>
+                      <div class="col-md-3 col-sm-6" style="border:2px;border-color:black;">
+                        <div class="latest_n_item">
+                            <div class="l_n_image">
+                                <img src="img/baxter-and-grant-investment-company.jpg" alt="">
+                                
+                            </div>
+                            <h4>Guaranteed Pricing</h4>
+                            <p> NO requotes, NO slippage!
+                                Plus,<br>
+                            Direct access to a wide range of global assets, including forex currencies, metals, commodities, stocks and indices</p>
+                          
+                        </div>
+                    </div>
+                     <div class="col-md-3 col-sm-6" style="border:2px;border-color:black;">
+                        <div class="latest_n_item">
+                            <div class="l_n_image">
+                                <img src="img/baxter-and-grant-investment-online-trading.jpg" alt="">
+                                
+                            </div>
+                           <h4>Secure Trading on the Go</h4>
+                            <p>Forex and Derivative Trading with the highest security standards! MetaTrader4 allows you to trade instantly from any web browser, Android or iPhone/iPad device.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Latest News Area =================-->
+
+
+</p>
+                </div>
+        <!--================End Contact Area =================-->
+
+        <div class="content-div home-divide visible-desktop">
+<div class="container"><hr /></div>
+</div>
+<div class="content-div extra2 home-platforms visible-desktop">
+<div class="container">
+    <div class="row margin-bottom-30">
+          <div class="col-md-6">
+            <img class="img-responsive pull-right" src="img/trading-execution.jpg" alt="" style="opacity: 1;" />
+        </div>
+<div class="col-md-6">
+<h1><span class="weight-700">Robust Trading</span> Execution</h1><br
+<p class="lead">MetaTrader 4, a platform you can depend on!</p><br>
+<h5><i class="fa fa-check color"></i> Access Global Markets</h5>
+<p class="txt-2">Direct access to a wide range of global assets, including forex currencies, metals, commodities, stocks and indices</p><br>
+<h5><i class="fa fa-check color"></i> Powerful Trading Charts</h5>
+<p class="txt-2">Be one step ahead of the market’s next move!  Analyze trends and grab opportunities as they occur with the help of over 60 indicators, interactive chart tools and timeframes.</p><br>
+<h5><i class="fa fa-check color"></i> Guaranteed Pricing</h5>
+<p class="txt-2">NO requotes, NO slippage!</p><br>
+<h5><i class="fa fa-check color"></i> Secure Trading on the Go</h5>
+<p class="txt-2">Forex and Derivative Trading with the highest security standards! MetaTrader4 allows you to trade instantly from any web browser, Android or iPhone/iPad device.</p><br><br>
+</div>
+</div>
+<!--<div class="row margin-bottom-30"><center><a class="btn-small btn-bordered-secondary" href="platforms/metatrader-4-desktop">Download MT4 <em>.exe</em></a> <a class="btn-small btn-bordered-primary" href="platforms/android-trader"><i class="fa fa-android"></i> MT4 for Android </a> <a class="btn-small btn-bordered-primary" href="platforms/iphone-trader"><i class="fa fa-apple"></i> MT4 for iPhone</a> <a href="platforms/fsm-web-trader" class="btn-small btn-bordered-primary"><i class="fa fa-html5"></i> MT4 WebTrader</a></center></div></div>
+</div>
+        <!--================End Contact Area =================-->
+<div class="content-div content-grey extra1 home-education visible-desktop ">
+<div class="container"><div class="row">
+<ul class="list-features">
+<li class="span6 bordered">
+<section class="block-features block-home-education margin-bottom-30">
+<h4 class="margin-bottom-20"> <br></h4>
+<div id="posts"></div>
+</section>
+</li>
+<li class="span6 bordered">
+
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--================Footer Area =================-->
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -721,35 +854,20 @@ We operate in an industry built on trust. This can only be achieved through comm
         </footer>
         <br><br><br>
         <!--================End Footer Area =================-->
+       
+        
+        
+        
+        
+        
         
         
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        {{-- <script src="js/jquery-2.2.4.js"></script> --}}
+        <script src="js/jquery-2.2.4.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        {{-- <script src="js/bootstrap.min.js"></script> --}}
-        <!-- JS Global Compulsory -->
-        <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
-
-
-        <!-- JS Implementing Plugins -->
-        <script src="{{ asset('assets/vendor/appear.js') }}"></script>
-        <script src="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.js') }}"></script>
-        <script src="{{ asset('assets/vendor/slick-carousel/slick/slick.js') }}"></script>
-        <script src="{{ asset('assets/vendor/typedjs/typed.min.js') }}"></script>
-
-        <!-- JS Unify -->
-        <script src="{{ asset('assets/js/hs.core.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.header.js') }}"></script>
-        <script src="{{ asset('assets/js/helpers/hs.hamburgers.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.tabs.js') }}"></script>
-        <script src="{{ asset('assets/js/components/text-animation/hs.text-slideshow.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.go-to.js') }}"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!-- Rev slider js -->
         <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
         <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -865,5 +983,5 @@ function scrollFunction() {
 
 
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:58:58 GMT -->
+<!-- Mirrored from baxtergrant.com/trading_platforms.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:03:50 GMT -->
 </html>

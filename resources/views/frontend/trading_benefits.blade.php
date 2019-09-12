@@ -4,7 +4,7 @@
     
 <!-- Mirrored from galaxyanalytics.net/demos/consultplus/theme/index by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jul 2019 09:15:02 GMT -->
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:57:36 GMT -->
+<!-- Mirrored from baxtergrant.com/trading_benefits.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:00:49 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8">
@@ -38,27 +38,13 @@
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
+        
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify.css') }}">
-        <!-- CSS Unify -->
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-core.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-components.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-globals.css') }}">
-         <!-- CSS Global Icons -->
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-awesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/icons/css/all.css" rel="stylesheet') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line/css/simple-line-icons.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-etlinefont/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line-pro/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-hs/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/animate.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/slick-carousel/slick/slick.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/typedjs/typed.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hamburgers/hamburgers.min.css') }}">
+
+       
+        
+ <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Rev slider css -->
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
         <link href="vendors/revolution/css/layers.css" rel="stylesheet">
@@ -78,9 +64,9 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-<style>
+        <style>
         
-.header_menu .navbar.navbar-default .navbar-header .navbar-brand {
+                .header_menu .navbar.navbar-default .navbar-header .navbar-brand {
     padding: 1px 0px 4px 12px;
     line-height: 75px;
     display: inline-block;
@@ -618,10 +604,152 @@ div.tp-parallax-wrap
                 </nav>
             </div>
         </header>
-  
-      @yield('content') 
+        <!--================Header Area =================-->
+ <!--================Header Area =================-->
+        
+        <!--================Banner Area =================-->
+        <section class="banner_area_benefits">
+            <div class="container">
+                <div class="banner_content">
+                    <h3>Trading Benefits</h3>
+                </div>
+            </div>
+        </section>
+         <div class="banner_link sticky">
+         
+            <div class="container"> 
+               <div class="pull-right">
+                <div class="sticky">
+                <div class="abnner_link_inner" style="margin-top: -23px;font-size: 12px;padding-top: 5px;">
+                    <a href="#"><i class="fa fa-phone"></i> +437 2077 5910 </a>&nbsp;
+                    <a href="mailto:support@baxtergrant.com?subject= Contact from from website"><i class="fa fa-envelope-o"></i> support@baxtergrant.com</a>&nbsp;
+                    <a href="#"><i class="icon icon-Timer"></i> Mon-Fri : 9 am to 5 pm</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+        <!--================End Banner Area =================-->
 
-    <!--================Footer Area =================-->
+        <!--================Trading Benefits Area =================-->
+
+         <section class="business_box_area">
+            <div class="container">
+                <div class="sec_middle_title">
+                    <h2><span>BENEFITS OF TRADING </span> WITH Baxter & Grant.</h2>
+                    <p style="font-size:17px">Benefits and trading conditions ideal for individual traders.</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="business_box_item">
+                            <div class="business_image">
+                                <img src="img/baxter_and_grant_trading_platforms.jpg" alt="">
+                            </div>
+                            <div class="business_text">
+                                <a href="#"><h4>MORE THAN 600 
+TRADING INSTRUMENTS</h4></a>
+                                <h5>Trade a wide array of forex currencies, pairs, minors, commodities, futures, shares, indices, and Derivatives.</h5><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="business_box_item">
+                            <div class="business_image">
+                                <img src="img/baxter_and_grant_no_extra_charges.jpg" alt="">
+                            </div>
+                            <div class="business_text">
+                                <a href="#"><h4>TIGHT SPREADS 
+WITHOUT EXTRA CHARGES</h4></a>
+                                <h5>Get as low as 2 pips on our currencies and other pairs without being charged extra on fees and commissions.</h5><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="business_box_item">
+                            <div class="business_image">
+                                <img src="img/baxter_and_grant_strong_leverage.jpg" alt="">
+                            </div>
+                            <div class="business_text">
+                                <a href="#"><h4>UP TO 400:1 LEVERAGE</h4></a>
+                                <h5>Trade on large positions through a wide range of leverages offered on various account types..</h5>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--================End Trading Benefits Area =================-->
+
+        <!--================End Trading Benefits Area =================-->         
+
+
+                           <div class="container">
+                                
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="business_box_item">
+                                                    <div class="business_text" style="border-left-color: white;">
+                                                    <br><h4>CUSTOMER SERVICE</h4><br>
+                                                    <p>
+                                                        <i class="fas fa-thumbs-up"></i> Dedicated Account Manager<br>
+                                                        <i class="fas fa-thumbs-up"></i> Wide Language Support<br>
+                                                        <i class="fas fa-thumbs-up"></i> Step-by-Step Assistance<br>
+                                                        <i class="fas fa-thumbs-up"></i> 24/5 Chat and Technical Support<br><br>
+                                                     </p>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="business_box_item">
+                                                    <div class="business_text" style="border-left-color: white;">
+                                                    <br><h4>DIVERSE TRADING ACCOUNT TYPES</h4><br>
+                                                    <i class="fas fa-thumbs-up"></i> Wide Selection Of Account Types<br>
+                                                        <i class="fas fa-thumbs-up"></i> Business Account<br>
+                                                        <i class="fas fa-thumbs-up"></i> Margin Account<br>
+                                                        <i class="fas fa-thumbs-up"></i> Cash Account<br>
+                                                        <br><br>
+                                                      </div>  
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="business_box_item">
+                                                    <div class="business_text" style="border-left-color: white;">
+                                                    <br><h4>TRANSPARENCY GUARANTEE</h4><br>
+                                                    <i class="fas fa-thumbs-up"></i> Quick Withdrawal Requests<br>
+                                                        <i class="fas fa-thumbs-up"></i> Diverse Deposit Methods<br>
+                                                        <i class="fas fa-thumbs-up"></i> No Hidden Charges<br>
+
+                                                        <br>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   
+
+        <!--================End Trading Benefits Area =================-->     
+
+               <br><br>
+               <div class="container">
+                 <div class="info" style="background-color:#f4f4f4;">
+                <center><br>
+                  <h4 class="alert-heading" style="font-size: 30px;
+    padding-bottom: 10px;"><strong>NOT A CLIENT?</strong> OPEN A TRADING ACCOUNT TODAY</h4>
+                  <p style="font-size: 20px;padding-bottom: 10px;"> Take advantage of our competitive trading Strategies</p>
+                  <p> <a class="button button2" href="live_account" style="background-color: #fbfdfb;
+    border: 2px #000;">Register</a>
+                  <a class="button button2" href="account_types" style="background-color: #fbfdfb;
+    border: 2px #000;">Account Types</a></p>
+              </center><br>
+                 </div>
+               </div>
+
+                <br><br>
+
+ </div>
+
+ <!--================Footer Area =================-->
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -721,35 +849,20 @@ We operate in an industry built on trust. This can only be achieved through comm
         </footer>
         <br><br><br>
         <!--================End Footer Area =================-->
+       
+        
+        
+        
+        
+        
         
         
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        {{-- <script src="js/jquery-2.2.4.js"></script> --}}
+        <script src="js/jquery-2.2.4.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        {{-- <script src="js/bootstrap.min.js"></script> --}}
-        <!-- JS Global Compulsory -->
-        <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
-
-
-        <!-- JS Implementing Plugins -->
-        <script src="{{ asset('assets/vendor/appear.js') }}"></script>
-        <script src="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.js') }}"></script>
-        <script src="{{ asset('assets/vendor/slick-carousel/slick/slick.js') }}"></script>
-        <script src="{{ asset('assets/vendor/typedjs/typed.min.js') }}"></script>
-
-        <!-- JS Unify -->
-        <script src="{{ asset('assets/js/hs.core.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.header.js') }}"></script>
-        <script src="{{ asset('assets/js/helpers/hs.hamburgers.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.tabs.js') }}"></script>
-        <script src="{{ asset('assets/js/components/text-animation/hs.text-slideshow.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.go-to.js') }}"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!-- Rev slider js -->
         <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
         <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -865,5 +978,5 @@ function scrollFunction() {
 
 
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:58:58 GMT -->
+<!-- Mirrored from baxtergrant.com/trading_benefits.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:00:52 GMT -->
 </html>

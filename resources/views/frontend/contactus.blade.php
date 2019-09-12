@@ -4,7 +4,7 @@
     
 <!-- Mirrored from galaxyanalytics.net/demos/consultplus/theme/index by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jul 2019 09:15:02 GMT -->
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:57:36 GMT -->
+<!-- Mirrored from baxtergrant.com/contactus.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:05:35 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8">
@@ -38,27 +38,13 @@
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
+        
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify.css') }}">
-        <!-- CSS Unify -->
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-core.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-components.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/unify-globals.css') }}">
-         <!-- CSS Global Icons -->
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-awesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/icons/css/all.css" rel="stylesheet') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line/css/simple-line-icons.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-etlinefont/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line-pro/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/icon-hs/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/animate.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/slick-carousel/slick/slick.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/typedjs/typed.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/hamburgers/hamburgers.min.css') }}">
+
+       
+        
+ <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Rev slider css -->
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
         <link href="vendors/revolution/css/layers.css" rel="stylesheet">
@@ -78,9 +64,9 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-<style>
+        <style>
         
-.header_menu .navbar.navbar-default .navbar-header .navbar-brand {
+                .header_menu .navbar.navbar-default .navbar-header .navbar-brand {
     padding: 1px 0px 4px 12px;
     line-height: 75px;
     display: inline-block;
@@ -618,10 +604,224 @@ div.tp-parallax-wrap
                 </nav>
             </div>
         </header>
-  
-      @yield('content') 
+        <!--================Header Area =================-->
+ <!--================Header Area =================-->
+        
+        <!--================Banner Area =================-->
+         <section class="banner_area">
+           <div class="container"> 
+                <div class="sticky">
+                <div class="abanner_link_inner" style="margin-top: 1px;">
+                    <a class="active" href="index-3">Home</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+                <div class="banner_content">
+                    <h3>Contact Us</h3>
+                </div>
+            </div>
+        </section>
+         <div class="banner_link sticky">
+         
+            <div class="container"> 
+               <div class="pull-right">
+                <div class="sticky">
+                <div class="abnner_link_inner" style="margin-top: -23px;font-size: 12px;padding-top: 5px;">
+                    <a href="#"><i class="fa fa-phone"></i> +437 2077 5910 </a>&nbsp;
+                    <a href="mailto:support@baxtergrant.com?subject= Contact from from website"><i class="fa fa-envelope-o"></i> support@baxtergrant.com</a>&nbsp;
+                    <a href="#"><i class="icon icon-Timer"></i> Mon-Fri : 9 am to 5 pm</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+        <!--================End Banner Area =================-->
 
-    <!--================Footer Area =================-->
+        <!--================Contact Us Area =================-->
+        <section class="contact_us_area">
+            <div class="container">
+                 <div class="section_title">
+                        <h2>Feel Free to drop us a Message</h2>
+                        <p>At Baxter & Grant we pride ourselves in giving you the best possible service
+We operate in an industry built on trust. This can only be achieved through communication and experienced support.
+
+At Baxter & Grant we prefer the hands on 24/7 approach, we are always available to assist with any and all problems, whether it be face to face or over the phone.
+
+If you are interested in knowing more about the services we offer. Our Account Executives are awaiting your call to discuss your existing financial background and help you make smart decisions that best meet your financial needs.
+
+Have questions about background screening? Our entire team receives specialized training regularly to ensure you’re receiving the best information possible. From basic questions, complex compliance inquiries, and investment advice we’re here to help!</p>
+                    </div>                 
+                </div>  
+                 <div class="container">
+ <section class="contact" id="sc-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact-header">
+                        <div class="row">
+                            <div class="col-md-6">
+                                
+                                <h3>If you have any questions feel free to contact us!</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-img">
+                                    <img class="img-responsive" src="img/h_muller.jpg" alt="Contact Image"/>
+                                </div>
+                                <div class="contact-person">Hannah Muller</div>
+                                <div class="contact-title">Customer Services Manager</div>
+                                <div class="contact-phone"><i class="fa fa-mobile"></i>+437 2077 5910</div>
+                            </div>
+                        </div>
+                    </div>
+               
+            
+
+ <form action="https://baxtergrant.com/system_users/formtools/process.php" method="post">
+<input type="hidden" name="form_tools_initialize_form" value="1" />
+<input type="hidden" name="form_tools_form_id" value="1" />
+
+    <div class="messages">
+     <div class="col-md-12 contact_success" style="display:none;">
+                     <div class="alert alert-success alert-dismissible" >
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                        <strong>Success!</strong> Contact form successfully submitted. Thank you, I will get back to you soon!.
+                     </div>
+                  
+                   <div class="col-md-10 col-md-offset-1 contact_error" style="display:none;">
+                     <div class="alert alert-danger alert-dismissible">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                        <strong>Error!</strong> There was an error while submitting the form. Please try again later.
+                     </div>
+                   </div>
+       </div>
+    </div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phone">Phone</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>*</strong> These fields are required. .</p>
+            </div>
+            
+        </div>
+    </div>
+
+</form>
+        </div>
+    </section>
+    <!--Contact end-->
+                            
+
+
+                    </div>
+                </div>
+                <div class="contact_us_details">
+                    <div class="row">
+                        
+                        <div class="col-md-4">
+                            <div class="c_details_item">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="#">support@baxtergrant.com</a>
+                                        <a href="#">clients@baxtergrant.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="c_details_item">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p>Stella-Klein-Löw-Weg 15, 1020 Wien, Österreich, Austria</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="c_details_item">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="#">+437 2077 5910 </a>
+                                        <a href="#">+437 2077 5911 </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Contact Us Area =================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--================Footer Area =================-->
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -721,35 +921,20 @@ We operate in an industry built on trust. This can only be achieved through comm
         </footer>
         <br><br><br>
         <!--================End Footer Area =================-->
+       
+        
+        
+        
+        
+        
         
         
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        {{-- <script src="js/jquery-2.2.4.js"></script> --}}
+        <script src="js/jquery-2.2.4.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        {{-- <script src="js/bootstrap.min.js"></script> --}}
-        <!-- JS Global Compulsory -->
-        <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
-
-
-        <!-- JS Implementing Plugins -->
-        <script src="{{ asset('assets/vendor/appear.js') }}"></script>
-        <script src="{{ asset('assets/vendor/hs-megamenu/src/hs.megamenu.js') }}"></script>
-        <script src="{{ asset('assets/vendor/slick-carousel/slick/slick.js') }}"></script>
-        <script src="{{ asset('assets/vendor/typedjs/typed.min.js') }}"></script>
-
-        <!-- JS Unify -->
-        <script src="{{ asset('assets/js/hs.core.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.header.js') }}"></script>
-        <script src="{{ asset('assets/js/helpers/hs.hamburgers.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.tabs.js') }}"></script>
-        <script src="{{ asset('assets/js/components/text-animation/hs.text-slideshow.js') }}"></script>
-        <script src="{{ asset('assets/js/components/hs.go-to.js') }}"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!-- Rev slider js -->
         <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
         <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -865,5 +1050,5 @@ function scrollFunction() {
 
 
 
-<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:58:58 GMT -->
+<!-- Mirrored from baxtergrant.com/contactus.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 17:05:36 GMT -->
 </html>
