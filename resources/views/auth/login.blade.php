@@ -13,55 +13,29 @@
                   <!-- Form -->
                   <form class="g-py-15" action="{{ route('login') }}" method="post">
                         @csrf
-                    <div class="mb-4">
-                      <div class="input-group g-brd-primary--focus pl-5">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v4 g-color-gray-dark-v5"><i class="icon-finance-067 u-line-icon-pro g-color-white"></i></span>
-                        </div>
-                        <input id="email" name="email" type="email" class="form-control g-color-black g-bg-white g-brd-gray-light-v4 g-py-15 g-px-15 {{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" placeholder="Email" required autofocus>
-                        <div class="input-group-append">
-                                @if ($errors->has('email'))
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $errors->first('email') }}</strong>
-                                </span>
-                                @endif 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="g-mb-35">
-                      <div class="input-group g-brd-primary--focus mb-4 pl-5">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v4 g-color-gray-dark-v5"><i class="icon-media-094 u-line-icon-pro g-color-white"></i></span>
-                        </div>
-                        <input id="password" name="password" type="password" class="form-control g-color-black g-bg-white g-brd-gray-light-v4 g-py-15 g-px-15{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="Password"  required>
-                        <div class="input-group-append">
-                          @if ($errors->has('password'))
-                            <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('password') }}</strong></span>
-                          @endif
-                        </div>
-                      </div>
-      
-                      <div class="row justify-content-between">
-                        <div class="col align-self-center">
-                          <label class="form-check-inline u-check g-font-size-12 g-pl-25 mb-0 g-color-white">
-                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0 g-color-white" type="checkbox">
-                            <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0 g-color-white">
-                              <i class="fa g-rounded-2 g-color-white" data-check-icon="&#xf00c"></i>
-                            </div>
-                            Keep signed in
-                          </label>
-                        </div>
-                        <div class="col align-self-center text-right">
-                          <a class="g-font-size-12" href="#!">Forgot password?</a>
-                        </div>
-                      </div>
-                    </div>
-      
-                    <div class="mb-4">
-                      <button class="btn btn-md btn-block u-btn-primary g-py-13" type="submit">Login</button>
-                    </div>
-                  </form>
+                          <table border='0' cellspacing='0' cellpadding='0' align=center>
+                            <tr id='cat'>
+                            <tr> <td bgcolor='#f1f1f1' ><font face='verdana, arial, helvetica' size='2' align='center'>  &nbsp;Login ID  &nbsp; &nbsp;
+                          </font></td> <td bgcolor='#f1f1f1' align='center'><font face='verdana, arial, helvetica' size='2' >
+                          <input type ='text' class='bginput' name='accountId' ></font></td></tr>
+                          
+                          <tr> <td bgcolor='#ffffff' ><font face='verdana, arial, helvetica' size='2' align='center'>  &nbsp;Password  
+                          </font></td> <td bgcolor='#ffffff' align='center'><font face='verdana, arial, helvetica' size='2' >
+                          <input type ='password' class='bginput' name='password' ></font></td></tr>
+                          
+                          <tr> <td bgcolor='#f1f1f1' colspan='2' align='center'><font face='verdana, arial, helvetica' size='2' align='center'>  
+                          <input type='submit' value='Submit'> <input type='reset' value='Reset'>
+                          </font></td> </tr>
+                          
+                          
+                          <tr> <td bgcolor='#ffffff' ><font face='verdana, arial, helvetica' size='2' align='center'> &nbsp;<a href='signup.php'>New Member Sign UP</a></font></td> <td bgcolor='#ffffff' align='center'><font face='verdana, arial, helvetica' size='2' ><a href=forgot-password.php>
+                          Forgot Password</a> ?</font></td></tr>
+                          
+                          <tr> <td bgcolor='#f1f1f1' colspan='2' align='center'><font face='verdana, arial, helvetica' size='2' align='center'>  
+                          &nbsp;</font></td> </tr>
+                          
+                          
+                          </table></center></form>
                   <!-- End Form -->
       
                   <footer class="text-center">

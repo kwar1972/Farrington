@@ -584,7 +584,7 @@ div.tp-parallax-wrap
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Client Area</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="{{ route('login') }}">Client Login</a></li>
+                                        <li><a href="http://farrington.local/php/files/">Client Login</a></li>
                                          <!--<li><a href="register.php">Register</a></li>-->
                                     </ul>
                                 </li>
