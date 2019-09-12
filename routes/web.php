@@ -51,7 +51,6 @@ Route::get('faq', function () {
 Route::get('contactus', function () {
     return view('frontend.contactus');
 });
-
 Route::get('/getHoldings/{id}', 'TradesController@getHoldings');
 Route::get('roles', 'permController@preTorole');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

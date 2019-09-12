@@ -16,6 +16,15 @@ class Kernel extends ConsoleKernel
         //
     ];
 
+    protected $routeMiddleware = [
+        // ...
+        'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
+        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
+        'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
+        'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class,
+    ];
+
     /**
      * Define the application's command schedule.
      *

@@ -20,71 +20,71 @@
           </div>
       </div>
 
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-              @hasanyrole('admin|agent|loader')
-              <li class="nav-item">
-                  <a href="home" class="nav-link">
-              <i class="nav-icon fa fa-dashboard g-color-white"></i>
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                @hasanyrole('admin|agent|loader')
+                <li class="nav-item">
+                    <a href="home" class="nav-link">
+                <i class="nav-icon fa fa-dashboard g-color-white"></i>
+                <p class="g-color-white">
+                  Dashboard
+                </p>
+              </a>
+                </li>
+                <li class="nav-item">
+                    <a href="userman" class="nav-link">
+                <i class="nav-icon fas fa-users g-color-white"></i>
+                <p class="g-color-white">
+                  User Manager
+                </p>
+              </a>
+                </li>
+                <li class="nav-item">
+                  <a href="tickerman" class="nav-link">
+              <i class="nav-icon fas fa-money-check-alt g-color-white"></i>
               <p class="g-color-white">
                 Dashboard
               </p>
             </a>
               </li>
               <li class="nav-item">
-                  <a href="userman" class="nav-link">
-              <i class="nav-icon fas fa-users g-color-white"></i>
-              <p class="g-color-white">
-                User Manager
-              </p>
-            </a>
-              </li>
-              <li class="nav-item">
-                <a href="tickerman" class="nav-link">
-            <i class="nav-icon fas fa-money-check-alt g-color-white"></i>
+                <a href="trademan" class="nav-link">
+            <i class="nav-icon fas fa-exchange-alt g-color-white"></i>
             <p class="g-color-white">
-              Ticker Manager
+              Trades Manager
             </p>
           </a>
             </li>
+          @else  
             <li class="nav-item">
-              <a href="trademan" class="nav-link">
-          <i class="nav-icon fas fa-exchange-alt g-color-white"></i>
-          <p class="g-color-white">
-            Trades Manager
-          </p>
-        </a>
-          </li>
-        @else  
-          <li class="nav-item">
-              <a href="trademan" class="nav-link">
-              <i class="nav-icon fas fa-user-circle g-color-white"></i>
-              <p class="g-color-white">
-              My Account
-              </p>
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="trademan" class="nav-link">
-              <i class="nav-icon fas fa-exchange-alt g-color-white"></i>
-              <p class="g-color-white">
-              Trades
-              </p>
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="trademan" class="nav-link">
-              <i class="nav-icon fas fa-hand-holding-usd g-color-white"></i>
-              <p class="g-color-white">
-              Holdings
-              </p>
-              </a>
-          </li>
-        @endhasanyrole
-          </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-  </div>
-  <!-- /.sidebar -->
+                <a href="trademan" class="nav-link">
+                <i class="nav-icon fas fa-user-circle g-color-white"></i>
+                <p class="g-color-white">
+                My Account
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="trademan" class="nav-link">
+                <i class="nav-icon fas fa-exchange-alt g-color-white"></i>
+                <p class="g-color-white">
+                Trades
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="trademan" class="nav-link">
+                <i class="nav-icon fas fa-hand-holding-usd g-color-white"></i>
+                <p class="g-color-white">
+                Holdings
+                </p>
+                </a>
+            </li>
+          @endhasanyrole
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
 </aside>

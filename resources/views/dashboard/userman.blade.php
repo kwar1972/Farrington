@@ -163,135 +163,73 @@
           </div>
             <!-- end of View modal ------------------------------>
             <!-- Modal Holdings-->
-            <div class="modal fade bs-example-modal-lg" id="myModalHolding" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal fade bs-example-modal-lg" id="myModalHolding" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1055;">
+                <div class="modal-dialog  modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header g-bg-grey">
+                      <h4 class="modal-title g-color-white" id="myModalLabel">Client's Trades</h4>
+                      <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    </div>
+                    <div class="modal-body modal-system-custom">
+                        <table id="tabletrades" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%;z-index: 1056;">
+                            <thead>
+                              <tr>
+                                <th class="text-center">id</th>
+                                <th class="text-center">Client</th>
+                                <th class="text-center">Ticker</th>
+                                <th class="text-center">Agent</th>
+                                <th class="text-center">Amount</th>
+                                <th class="text-center">Price</th>
+                                <th class="text-center">Total</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                              </tr>
+                            </tbody>
+                          </table>
+                  </div>
+                  <div id="btnClusterS" class="modal-footer g-bg-grey" id="modal_footerq">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of modal Holdings------------------------------>
+            <!-- Modal Trades-->
+            <div class="modal fade bs-example-modal-lg" id="myModalTrades" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1055;">
               <div class="modal-dialog  modal-lg">
                 <div class="modal-content">
                   <div class="modal-header g-bg-grey">
-                    <h4 class="modal-title g-color-white" id="myModalLabel">User Details</h4>
+                    <h4 class="modal-title g-color-white" id="myModalLabel">Client's Trades</h4>
                     <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   </div>
-                  <div class="modal-body">
-                      <div class="row">
-                        <div class="col-12">
-                          <p><b>Personal Information</b></p>
-                          <hr>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Name:</b></p>
-                          <p class="f-size-14 mt-1" id="nameh"></p>
-                        </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Lastame:</b></p>
-                          <p class="f-size-14 mt-1" id="lastnameh"></p>
-                        </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Email:</b></p>
-                          <p class="f-size-14 mt-1" id="emailh"></p>
-                        </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>phone:</b></p>
-                          <p class="f-size-14 mt-1" id="phoneh"></p>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Mobile:</b></p>
-                          <p class="f-size-14 mt-1" id="mobileh"></p>
-                        </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Address:</b></p>
-                          <p class="f-size-14 mt-1" id="addrh"></p>
-                        </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>State / City:</b></p>
-                          <p class="f-size-14 mt-1" id="stateh"></p>
-                        </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Country:</b></p>
-                          <p class="f-size-14 mt-1" id="countryh"></p>
-                        </div>
-                      </div>
-                      
-                      <div class="row">
-                        <div class="col-12">
-                          <hr>
-                          <p><b>Bank Details</b></p>
-                          <hr>
-                        </div>
-                      </div>
-                      <div class="row mb-5">
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Account number:</b></p>
-                            <p class="f-size-14 mt-1" id="acch">211654612354654-45/4585</p>
-                          </div>
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>SWIFT:</b></p>
-                            <p class="f-size-14 mt-1" id="swifth">LALXX896</p>
-                          </div>
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Routing:</b></p>
-                            <p class="f-size-14 mt-1" id="routingh">31354343457420004534</p>
-                          </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Currency:</b></p>
-                          <p class="f-size-14 mt-1" id="coinh">Dolar (USD)</p>
-                        </div>
-                        
-                      </div>
-                      <div class="row">
-                        <div class="col-12">
-                          <hr>
-                            <p><b>System Information</b></p>
-                          <hr>
-                        </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Validated:</b></p>
-                            <p class="f-size-14 mt-1" id="validatedh"></p>
-                          </div>
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Status:</b></p>
-                            <p class="f-size-14 mt-1" id="statush"></p>
-                          </div>
-                          <div class="col-3 f-size-14 mb-0">
-                            <p class="mb-0"><b>Role:</b></p>
-                            <p class="f-size-14 mt-1" id="roleh"></p>
-                          </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Created:</b></p>
-                          <p class="f-size-14 mt-1" id="createdh"></p>
-                        </div>
-                        
-                      </div>
-                      <div class="row">
-                        <div class="col-3 f-size-14 mb-0">
-                          <p class="mb-0"><b>Updated:</b></p>
-                          <p class="f-size-14 mt-1" id="updatedh"></p>
-                        </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          
-                        </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          
-                        </div>
-                        <div class="col-3 f-size-14 mb-0">
-                          
-                        </div>
-                      </div>
-                      
-                      
-                    
+                  <div class="modal-body modal-system-custom">
+                      <table id="tabletrades" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%;z-index: 1056;">
+                          <thead>
+                            <tr>
+                              <th class="text-center">id</th>
+                              <th class="text-center">Client</th>
+                              <th class="text-center">Ticker</th>
+                              <th class="text-center">Agent</th>
+                              <th class="text-center">Amount</th>
+                              <th class="text-center">Price</th>
+                              <th class="text-center">Total</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
                 </div>
-                <div id="btnClusterH" class="modal-footer g-bg-grey" id="modal-footerq">
-                      
+                <div id="btnClusterS" class="modal-footer g-bg-grey" id="modal_footerq">
+                  
                 </div>
               </div>
             </div>
           </div>
-            <!-- end of modal Holdings------------------------------>
+            <!-- end of modal Trade------------------------------>
             <!-- Modal System-->
             <div class="modal fade bs-example-modal-lg" id="myModalSystem" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1055;">
                 <div class="modal-dialog  modal-lg">
@@ -358,8 +296,8 @@
                     <th class="text-center">name</th>
                     <th class="text-center">lastname</th>
                     <th class="text-center">email</th>
-                    <th class="text-center">Status</th>
                     <th class="text-center">Role</th>
+                    <th class="text-center">Status</th>
                     <th class="text-center">Actions</th>
                   </tr>
                 </thead>

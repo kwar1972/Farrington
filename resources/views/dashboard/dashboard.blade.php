@@ -1,5 +1,6 @@
 @extends('layouts.master') 
 @section('content')
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -9,6 +10,69 @@
         <div class="col-sm-6">
           <h1 class="m-0 text-dark">Dashboard</h1>
         </div>
+        @if ($message = Session::get('success'))
+
+          <div class="alert alert-success alert-block">
+          
+          	<button type="button" class="close" data-dismiss="alert">×</button>	
+          
+                  <strong>{{ $message }}</strong>
+          
+          </div>
+
+          @endif
+
+
+          @if ($message = Session::get('error'))
+
+          <div class="alert alert-danger alert-block">
+          
+          	<button type="button" class="close" data-dismiss="alert">×</button>	
+          
+                  <strong>{{ $message }}</strong>
+          
+          </div>
+
+          @endif
+
+
+          @if ($message = Session::get('warning'))
+
+          <div class="alert alert-warning alert-block">
+          
+          	<button type="button" class="close" data-dismiss="alert">×</button>	
+          
+          	<strong>{{ $message }}</strong>
+          
+          </div>
+
+          @endif
+
+
+          @if ($message = Session::get('info'))
+
+          <div class="alert alert-info alert-block">
+          
+          	<button type="button" class="close" data-dismiss="alert">×</button>	
+          
+          	<strong>{{ $message }}</strong>
+          
+          </div>
+
+          @endif
+
+
+          @if ($errors->any())
+                  
+          <div class="alert alert-danger">
+          
+          	<button type="button" class="close" data-dismiss="alert">×</button>	
+          
+          	Please check the form below for errors
+          
+          </div>
+          
+          @endif
         <!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -27,7 +91,7 @@
   <section class="content">
     <div class="container-fluid">
       <!-- TradingView Widget BEGIN -->
-      <div class="row mb-2">
+        <div class="row mb-2">
           <div class="col-12">
             <div class="tradingview-widget-container">
                 <div class="tradingview-widget-container__widget"></div>
@@ -121,6 +185,7 @@
         <!-- ./col -->
       </div>
       <!-- /.row -->
+      
       <!-- Main row -->
       <div class="row">
         <!-- Left col -->
