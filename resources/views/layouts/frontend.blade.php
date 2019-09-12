@@ -1,29 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from galaxyanalytics.net/demos/consultplus/theme/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jul 2019 09:15:02 GMT -->
+<!-- Mirrored from galaxyanalytics.net/demos/consultplus/theme/index by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jul 2019 09:15:02 GMT -->
+
+<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:57:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="canonical" href="https://www.baxtergrant.com"/>
+        <link rel="canonical" href="index"/>
         <meta property="og:site_name" content="Baxter & Grant"/>
         <meta property="og:title" content="Baxter & Grant"/>
-        <meta property="og:url" content="https://www.baxtergrant.com/"/>
+        <meta property="og:url" content="index"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
-        <meta property="og:image" content="https://www.baxtergrant.com/img/bglogo.png"/>
+        <meta property="og:image" content="../www.baxtergrant.com/img/bglogo.png"/>
         <meta property="og:image:width" content="216"/>
         <meta property="og:image:height" content="108"/>
         <meta itemprop="name" content="TS Securities"/>
-        <meta itemprop="url" content="https://www.baxtergrant.com"/>
+        <meta itemprop="url" content="index"/>
         <meta itemprop="description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
-        <meta itemprop="thumbnailUrl" content="https://www.baxtergrant.com/img/bglogo.png"/>
-        <link rel="image_src" href="https://www.baxtergrantcom/img/bglogo.png" />
+        <meta itemprop="thumbnailUrl" content="../www.baxtergrant.com/img/bglogo.png"/>
+        <link rel="image_src" href="../www.baxtergrantcom/img/bglogo.png" />
         <meta itemprop="image" content=""/>
         <meta name="twitter:title" content="Baxter & Grant"/>
-        <meta name="twitter:image" content="https://www.baxtergrantcom/img/bglogo.png"/>
-        <meta name="twitter:url" content="https://www.baxtergrantcom"/>
+        <meta name="twitter:image" content="../www.baxtergrantcom/img/bglogo.png"/>
+        <meta name="twitter:url" content="https://www.baxtergrantcom/"/>
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
 
@@ -40,7 +44,7 @@
 
        
         
- <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Rev slider css -->
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
         <link href="vendors/revolution/css/layers.css" rel="stylesheet">
@@ -50,11 +54,9 @@
         
         <!-- Extra plugin css -->
         <link href="vendors/stroke-icon/style.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/d6ff15136e.js"></script>
+        <script src="http://kit.fontawesome.com/d6ff15136e.js"></script>
         <link href="css/style.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
-        <!-- CSS Customization -->
-        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,8 +64,9 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-<style>
-.header_menu .navbar.navbar-default .navbar-header .navbar-brand {
+        <style>
+        
+                .header_menu .navbar.navbar-default .navbar-header .navbar-brand {
     padding: 1px 0px 4px 12px;
     line-height: 75px;
     display: inline-block;
@@ -228,7 +231,7 @@ div.tp-parallax-wrap
 .no-padding {
     padding: 0;
 }
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(../code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:800);
 .snip1214 {
@@ -544,7 +547,7 @@ div.tp-parallax-wrap
                                 <span class="icon-bar"></span>
                             </button>
 
-                            <a class="navbar-brand" href="index.php"><img src="img/baxter_and_grant_logo.png" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+                            <a class="navbar-brand" href="index-2"><img src="img/baxter_and_grant_logo.png" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
   text-align: center;"></a>
                         </div>
 
@@ -552,36 +555,36 @@ div.tp-parallax-wrap
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="dropdown submenu active">
-                                    <a href="about_us.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+                                    <a href="about_us" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="company_profile.php">Company profile</a></li>
-                                        <li><a href="trading_benefits.php">Trading Benefits</a></li>
-                                        <li><a href="thestaff.php">Meet the team</a></li>
+                                        <li><a href="company_profile">Company profile</a></li>
+                                        <li><a href="trading_benefits">Trading Benefits</a></li>
+                                        <li><a href="thestaff">Meet the team</a></li>
 
                                     </ul>
                                 </li>
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trading Tools</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="account_types.php">Account Types</a></li>
-                                        <li><a href="live_account.php">Live Account</a></li>
-                                        <li><a href="research.php">Research</a></li>
-                                        <li><a href="trading_platforms.php">Trading Platforms</a></li>
+                                        <li><a href="account_types">Account Types</a></li>
+                                        <li><a href="live_account">Live Account</a></li>
+                                        <li><a href="research">Research</a></li>
+                                        <li><a href="trading_platforms">Trading Platforms</a></li>
                                     </ul>
                                 </li>
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="equities.php">Equity Stock</a></li>
-                                       <li><a href="forex.php">Forex Trader</a></li>
-                                        <li><a href="commodities.php">Commodites</a></li>
+                                        <li><a href="equities">Equity Stock</a></li>
+                                       <li><a href="forex">Forex Trader</a></li>
+                                        <li><a href="commodities">Commodites</a></li>
 
                                     </ul>
                                 </li>
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Client Area</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="http://farrington.local/php/files">Client Login</a></li>
+                                        <li><a href="{{ route('login') }}">Client Login</a></li>
                                          <!--<li><a href="register.php">Register</a></li>-->
                                     </ul>
                                 </li>
@@ -592,8 +595,8 @@ div.tp-parallax-wrap
                                         <li><a href="invest_news.php">Investment News</a></li>
                                     </ul>
                                 </li>-->
-                                <li><a href="faq.php">Faq</a></li>
-                                <li><a href="contact-us.php">Contact</a></li>
+                                <li><a href="faq">Faq</a></li>
+                                <li><a href="contactus">Contact</a></li>
                             </ul>
                            
                         </div> <!--/.navbar-collapse -->
@@ -601,201 +604,203 @@ div.tp-parallax-wrap
                 </nav>
             </div>
         </header>
-        <!--================Header Area =================-->
+        <!--================Header Area =================-->        <!--================Slider Area =================-->
       @yield('content') 
 
-     <!--================Footer Area =================-->
-     <footer class="footer_area">
-      <div class="footer_widget">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-4 col-xs-6">
-                      <aside class="f_widget about_widget">
-                          
-                          <p>At Baxter & Grant we pride ourselves in giving you the best possible service.
+ <!--================Footer Area =================-->
+
+        <!--================Footer Area =================-->
+        <footer class="footer_area">
+          <div class="footer_widget">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-4 col-xs-6">
+                          <aside class="f_widget about_widget">
+                              
+                              <p>At Baxter & Grant we pride ourselves in giving you the best possible service.
 We operate in an industry built on trust. This can only be achieved through communication and experienced support.</p>
-                          <a class="f_r_link" href="company-profile.php">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                          <ul class="f_social">
-                              <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                              <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                              <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                              <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>-->
-                          </ul>
-                      </aside>
-                  </div>
-                  <div class="col-md-2 col-xs-6">
-                      <aside class="f_widget link_widget">
-                          <div class="f_title">
-                              <h3>Client Area</h3>
-                          </div>
-                          <ul>
-                              <li><a href="sys_users/admin_sec/">Client Login</a></li>
-                              <li><a href="register.php">Register</a></li>
-                          </ul>
-                      </aside>
-                  </div>
-                  <div class="col-md-2 col-xs-6">
-                      <aside class="f_widget link_widget">
-                          <div class="f_title">
-                              <h3>Our Services</h3>
-                          </div>
-                          <ul>
-                               <li><a href="equities.php">Equity Stock</a></li>
-                                <!--================Footer Area ================= <li><a href="options.php">Options</a></li>
-                               <li><a href="margin_trading.php">Margin Trading</a></li>-->
-                               <li><a href="forex.php">Forex Trader</a></li>
-                               <li><a href="commodities.php">Commodites</a></li>
-                          </ul>
-                      </aside>
-                  </div>
-                  <div class="col-md-4 col-xs-6">
-                      <aside class="f_widget contact_widget">
-                          <div class="f_title">
-                              <h3>Contact Details</h3>
-                          </div>
-                          <div class="contact_inner">
-                              <div class="media">
-                                  <div class="media-left">
-                                      <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                  </div>
-                                  <div class="media-body">
-                                      <h4>Baxter Grant</h4>
-                                      <p>Stella-Klein-Löw-Weg 15,1020 Wien,Österreich,Austria</p>
-                                  </div>
+                              <a class="f_r_link" href="company_profile">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                              <ul class="f_social">
+                                  <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>-->
+                              </ul>
+                          </aside>
+                      </div>
+                      <div class="col-md-2 col-xs-6">
+                          <aside class="f_widget link_widget">
+                              <div class="f_title">
+                                  <h3>Client Area</h3>
                               </div>
-                              <div class="media">
-                                  <div class="media-left">
-                                      <i class="fa fa-phone" aria-hidden="true"></i>
+                              <ul>
+                                  <li><a href="{{ route('login') }}">Client Login</a></li>
+                                  <li><a href="register">Register</a></li>
+                              </ul>
+                          </aside>
+                      </div>
+                      <div class="col-md-2 col-xs-6">
+                          <aside class="f_widget link_widget">
+                              <div class="f_title">
+                                  <h3>Our Services</h3>
+                              </div>
+                              <ul>
+                                   <li><a href="equities">Equity Stock</a></li>
+                                    <!--================Footer Area ================= <li><a href="options.php">Options</a></li>
+                                   <li><a href="margin_trading.php">Margin Trading</a></li>-->
+                                   <li><a href="forex">Forex Trader</a></li>
+                                   <li><a href="commodities">Commodites</a></li>
+                              </ul>
+                          </aside>
+                      </div>
+                      <div class="col-md-4 col-xs-6">
+                          <aside class="f_widget contact_widget">
+                              <div class="f_title">
+                                  <h3>Contact Details</h3>
+                              </div>
+                              <div class="contact_inner">
+                                  <div class="media">
+                                      <div class="media-left">
+                                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="media-body">
+                                          <h4>Baxter Grant</h4>
+                                          <p>Stella-Klein-Löw-Weg 15,1020 Wien,Österreich,Austria</p>
+                                      </div>
                                   </div>
-                                  <div class="media-body">
-                                      <a href="tel:+43720775910">+437 2077 5910 </a>
+                                  <div class="media">
+                                      <div class="media-left">
+                                          <i class="fa fa-phone" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="media-body">
+                                          <a href="tel:+43720775910">+437 2077 5910 </a>
 
+                                      </div>
+                                  </div>
+                                  <div class="media">
+                                      <div class="media-left">
+                                          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="media-body">
+                                          <a href="mailto:support@baxtergrant.com">support@baxtergrant.com</a>
+                                      </div>
                                   </div>
                               </div>
-                              <div class="media">
-                                  <div class="media-left">
-                                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  </div>
-                                  <div class="media-body">
-                                      <a href="mailto:support@baxtergrant.com">support@baxtergrant.com</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </aside>
+                          </aside>
+                      </div>
+                  </div>
+              </div>
+          </div>  <br><br><br>
+          <div class="footer_copyright">
+              <div class="container">
+                  <div class="footer_copyright_inner">
+                      <div class="pull-left">
+                          <p>Copyright © Baxter + Grant <script>document.write(new Date().getFullYear());</script>. All rights reserved. </p>
+                      </div>
+                      <div class="pull-right">
+                          <h4>Created by: <a href="baxtergrant">Inhouse Design </a></h4>
+                      </div>
                   </div>
               </div>
           </div>
-      </div>  <br><br><br>
-      <div class="footer_copyright">
-          <div class="container">
-              <div class="footer_copyright_inner">
-                  <div class="pull-left">
-                      <p>Copyright © Baxter + Grant <script>document.write(new Date().getFullYear());</script>. All rights reserved. </p>
-                  </div>
-                  <div class="pull-right">
-                      <h4>Created by: <a href="baxtergrant.com">Inhouse Design </a></h4>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
-  <br><br><br>
-  <!--================End Footer Area =================-->
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-2.2.4.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Rev slider js -->
-  <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-  <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-  <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-  <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-  <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-  <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-  <!--gmaps Js-->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-  <script src="js/gmaps.min.js"></script>
-  
-  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-  <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-  <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script src="vendors/bootstrap-selector/js/bootstrap-select.min.js"></script>
-  <script src="js/responsiveslides.min.js"></script>
-  <script src="js/responsiveslides.js"></script>
-  <script src="lib/owl.carousel.min.js"></script>
-  <script src="js/theme.js"></script>
+      </footer>
+      <br><br><br>
+      <!--================End Footer Area =================-->
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery-2.2.4.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Rev slider js -->
+      <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+      <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+      <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+      <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+      <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+      <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+      <!--gmaps Js-->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+      <script src="js/gmaps.min.js"></script>
+      
+      <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+      <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+      <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+      <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <script src="vendors/bootstrap-selector/js/bootstrap-select.min.js"></script>
+      <script src="js/responsiveslides.min"></script>
+      <script src="js/responsiveslides"></script>
+      <script src="lib/owl.carousel.min"></script>
+      <script src="js/theme.js"></script>
 
-  <script>
+      <script>
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-document.getElementById("active").style.margin = "0px";
+  document.getElementById("active").style.margin = "0px";
 } else {
-document.getElementById("active").style.margin = "0px 0px 0px 263px;";
+  document.getElementById("active").style.margin = "0px 0px 0px 263px;";
 }
 }
 </script>
 
-  <script>
-  $(window).load(function(){
-          $('#onload').modal('show').options.keyboard = false; keyboard: false;
+      <script>
+      $(window).load(function(){
+              $('#onload').modal('show').options.keyboard = false; keyboard: false;
 
-      });</script>
-<script>
-  $('.owl-carousel').owlCarousel({
-rtl:true,
-loop:true,
-margin:10,
-nav:true,
-responsive:{
-  0:{
-      items:1
-  },
-  600:{
-      items:3
-  },
-  1000:{
-      items:5
+          });</script>
+  <script>
+      $('.owl-carousel').owlCarousel({
+  rtl:true,
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
   }
-}
 })
 </script>
 <script>
-$(function () {
+ $(function () {
 
-$('#contact-form').on('submit', function (e) {
+  $('#contact-form').on('submit', function (e) {
 
-e.preventDefault();
+    e.preventDefault();
 
-$.ajax({
-  type: 'post',
-  url: 'submitcontact.php',
-  data: $('#contact-form').serialize(),
-  success: function (response) {
-    if(response == 'good'){
-    $(".contact_success").css("display","block");
-   $('#contact-form').trigger("reset");
-     }else{
-     $(".contact_error").css("display","block");
-   }
-  }
-});
+    $.ajax({
+      type: 'post',
+      url: 'submitcontact.php',
+      data: $('#contact-form').serialize(),
+      success: function (response) {
+        if(response == 'good'){
+        $(".contact_success").css("display","block");
+       $('#contact-form').trigger("reset");
+         }else{
+         $(".contact_error").css("display","block");
+       }
+      }
+    });
 
-});
+  });
 
 });
 
@@ -803,31 +808,33 @@ $.ajax({
 <script>
 $(function () {
 
-$('#register-form').on('submit', function (e) {
+  $('#register-form').on('submit', function (e) {
 
-e.preventDefault();
+    e.preventDefault();
 
-$.ajax({
-  type: 'post',
-  url: 'submitregister.php',
- data: $('#register-form').serialize(),
-  success: function (response) {
-    if(response == 'good'){
-    $(".contact_success").css("display","block");
-   $('#register-form').trigger("reset");
-     }else{
-     $(".contact_error").css("display","block");
-   }
-  }
-});
+    $.ajax({
+      type: 'post',
+      url: 'submitregister.php',
+     data: $('#register-form').serialize(),
+      success: function (response) {
+        if(response == 'good'){
+        $(".contact_success").css("display","block");
+       $('#register-form').trigger("reset");
+         }else{
+         $(".contact_error").css("display","block");
+       }
+      }
+    });
 
-});
+  });
 
 });
 
 
 </script>
-</body>
+  </body>
 
 
+
+<!-- Mirrored from baxtergrant.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 16:58:58 GMT -->
 </html>
