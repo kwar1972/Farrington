@@ -86,6 +86,18 @@ class UsermanController extends Controller
     }
 
     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showClient($id)
+    {
+        $user = User::where('id',$id)->with('getTransactions')->get();
+        return view('client.mydetails')->with('user', $user);
+    }
+
+    /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id

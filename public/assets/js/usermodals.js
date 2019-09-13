@@ -50,7 +50,7 @@ function settableUser() {
                 },
               },
               { mRender: function (data, type, row) {
-                  var linkEdit = '<div class="btn-group"><p class="btn btn-sm btn-warning font-weight-bold" onClick="open_systemModal(' + row.id + ');" data-toggle="tooltip" data-placement="left" title="System Activity!"><i class="fas fa-cog"></i></p><p class="btn btn-sm btn-success font-weight-bold" type="button" onClick="open_tradesModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Trades"><i class="fas fa-chart-line"></i></p><p class="btn btn-sm btn-info font-weight-bold" type="button" onClick="holdingModalBox(' + row.id + ');" data-toggle="tooltip" data-placement="bottom" title="Holdings"><i class="fas fa-layer-group"></i></p><p class="btn btn-sm btn-primary font-weight-bold" onClick="open_viewModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></p><p class="btn btn-sm btn-danger font-weight-bold" onClick="deleteconfirm(' + row.id + ');" data-toggle="tooltip" data-placement="right" title="Delete" onClick="deleteconfirm(' + row.id + ');"><i class="fa fa-trash"></i></p></div>';
+                  var linkEdit = '<div class="btn-group"><p class="btn btn-sm btn-warning font-weight-bold" onClick="open_systemModal(' + row.id + ');" data-toggle="tooltip" data-placement="left" title="System Activity!"><i class="fas fa-cog"></i></p><p class="btn btn-sm btn-success font-weight-bold" type="button" data-toggle="tooltip" data-placement="top" title="Trades" onClick="open_tradesModal(' + row.id + ')"><i class="fas fa-chart-line"></i></p><p class="btn btn-sm btn-info font-weight-bold" type="button" onClick="holdingModalBox(' + row.id + ');" data-toggle="tooltip" data-placement="bottom" title="Holdings"><i class="fas fa-layer-group"></i></p><p class="btn btn-sm btn-primary font-weight-bold" onClick="open_viewModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></p><p class="btn btn-sm btn-danger font-weight-bold" onClick="deleteconfirm(' + row.id + ');" data-toggle="tooltip" data-placement="right" title="Delete" onClick="deleteconfirm(' + row.id + ');"><i class="fa fa-trash"></i></p></div>';
                   return  linkEdit
                 },
               },
@@ -225,11 +225,13 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
   };
 
   function open_tradesModal(id) {
+    console.log(id);
     $.ajax({
     'url': "/tradelist/"+id,
     'method': "GET",
     'contentType': 'application/json',
     }).done( function(data) {
+      console.log(data);
       $('#myModalTrades').modal('show');
       setModalBox();
       
@@ -250,6 +252,7 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
           { "data": "agentid" },
           { "data": "amount" },
           { "data": "price" },
+          { "data": "fee" },
           { "data": "total" },
         ]
       });

@@ -167,11 +167,11 @@
                 <div class="modal-dialog  modal-lg">
                   <div class="modal-content">
                     <div class="modal-header g-bg-grey">
-                      <h4 class="modal-title g-color-white" id="myModalLabel">Client's Trades</h4>
+                      <h4 class="modal-title g-color-white" id="myModalLabel">Client's Holdings</h4>
                       <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                     </div>
                     <div class="modal-body modal-system-custom">
-                        <table id="tabletrades" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%;z-index: 1056;">
+                        <table id="tableholdings" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%;z-index: 1056;">
                             <thead>
                               <tr>
                                 <th class="text-center">id</th>
@@ -180,6 +180,7 @@
                                 <th class="text-center">Agent</th>
                                 <th class="text-center">Amount</th>
                                 <th class="text-center">Price</th>
+                                <th class="text-center">Fee (%)</th>
                                 <th class="text-center">Total</th>
                               </tr>
                             </thead>
@@ -214,6 +215,7 @@
                               <th class="text-center">Agent</th>
                               <th class="text-center">Amount</th>
                               <th class="text-center">Price</th>
+                              <th class="text-center">Fee (%)</th>
                               <th class="text-center">Total</th>
                             </tr>
                           </thead>

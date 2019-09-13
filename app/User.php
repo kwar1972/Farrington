@@ -59,7 +59,7 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     public function getTransactions(){
-        return $this->hasMany('App\Transaction', 'userid');
+        return $this->hasMany('App\Trade', 'userid');
     }
 
 }

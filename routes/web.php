@@ -88,10 +88,15 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
         Route::get('tradeagent', 'TradesController@tradeagent')->name('tradeagent');
         Route::get('tradesave', 'TradesController@store')->name('tradesave');
         Route::get('/tradedelete/{id}', 'TradesController@destroy');
-        Route::get('/tradedetail/{id}', 'TradesController@edit');
+        Route::get('/tradedetail/{id}', 'TradesController@show');
         Route::get('/tradeedit/{id}', 'TradesController@update');
         Route::get('/tradelist/{id}', 'TradesController@tradelist');
 });
+
+// CLIENTS
+Route::get('/mydetails/{id}', 'UsermanController@showClient')->middleware('role:client');
+Route::get('/mydetaildgs/{id}', 'TickerController@clientDetail')->middleware('role:client');
+
 
 //TEST
 Route::get('test', 'DashboardController@test')->name('test')->middleware('verified');

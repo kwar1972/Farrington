@@ -66,7 +66,7 @@
                 </a>
             </li>  
             <li class="nav-item">
-                <a href="trademan" class="nav-link">
+            <a href="/mydetails/{{auth()->user()->id}}" class="nav-link">
                 <i class="nav-icon fas fa-user-circle g-color-white"></i>
                 <p class="g-color-white">
                 My Account
