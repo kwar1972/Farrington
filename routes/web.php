@@ -51,6 +51,7 @@ Route::get('faq', function () {
 Route::get('contactus', function () {
     return view('frontend.contactus');
 });
+
 Route::get('/getHoldings/{id}', 'TradesController@getHoldings');
 Route::get('roles', 'permController@preTorole');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
@@ -94,8 +95,12 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
 });
 
 // CLIENTS
-Route::get('/mydetails/{id}', 'UsermanController@showClient')->middleware('role:client');
-Route::get('/mydetaildgs/{id}', 'TickerController@clientDetail')->middleware('role:client');
+Route::get('/mydetails/{id}', 'UsermanController@showClient')->middleware('role:client|admin|loader|agent')->middleware('verified');
+Route::get('/clientdet/{id}', 'UsermanController@clientDetails')->middleware('role:client')->middleware('verified');
+Route::get('/clientbank/{id}', 'BankController@show')->middleware('role:client')->middleware('verified');
+Route::get('/saveclient/{id}', 'UsermanController@savedetails')->middleware('role:client')->middleware('verified');
+
+// Route::get('home', 'DashboardController@versionone')->name('home')->middleware('role:client')->middleware('verified');
 
 
 //TEST

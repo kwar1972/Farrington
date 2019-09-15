@@ -448,15 +448,17 @@ function sendveriemail(id){
       }).done( function(data) {
         if(data.success == 1){
           Toast.fire({
+              background: '#007bff',
               type: 'success',
-              title: 'Verification email successfully sent!'
+              title: '<span style="color: #fff !important;">Verification email successfully sent!</span>'
           });
           $('#tableuser').DataTable().destroy();
           settableUser();
       } else {
           Toast.fire({
+              background: '#dc3545',
               type: 'error',
-              title: 'Somethig happend!'
+              title: '<span style="color: #fff !important;">Somethig happend!</span>'
           });    
       }
     })

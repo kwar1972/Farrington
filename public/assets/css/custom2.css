@@ -15,6 +15,9 @@ a{
 .g-color-white-i{
     color: white !important;
 }
+.g-color-green-i{
+    color: #28A745 !important;
+}
 .g-color-white-user-i{
     color: white !important;
 }
@@ -27,6 +30,9 @@ a{
 }
 .g-color-white-i:hover{
     color: black !important;
+}
+.g-color-green-i:hover{
+    color: white !important;
 }
 .g-bg-grey{
     background-color: #343a40;
@@ -88,3 +94,24 @@ a{
     from {transform: rotate(0deg);}
     to {transform: rotate(359deg);}
  }
+ .g-bg-darkblue{
+     background-color: #0F1231 !important;
+ }
+.brdr-color-white{
+    border-color: white !important;
+}
+.brdr-color-grey{
+    border-color: #666666 !important;
+}
+.icon-circ{
+    display: inline-block;
+    border-radius: 70px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+}
+.g-color-red{
+    color: red !important;
+}
+.g-bg-navy{
+    background-color: #001f3f !important;
+}

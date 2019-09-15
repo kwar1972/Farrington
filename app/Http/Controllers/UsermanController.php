@@ -93,8 +93,16 @@ class UsermanController extends Controller
      */
     public function showClient($id)
     {
-        $user = User::where('id',$id)->with('getTransactions')->get();
+        $user = User::where('id',$id)->with('getTransactions')->with('getBank')->get();
+
         return view('client.mydetails')->with('user', $user);
+    }
+
+    public function clientDetails($id){
+        $user = User::find($id);
+
+        return response()->json($user, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
+        JSON_UNESCAPED_UNICODE);
     }
 
     /**
@@ -138,10 +146,45 @@ class UsermanController extends Controller
         $user->mobile = $request->mobile;
         $user->addr = $request->addr;
         $user->state = $request->state;
+        $user->zip = $request->zip;
         $user->country = $request->country;
         $user->isadmin = $request->isadmin;
         $user->isactive = $request->isactive;
         $user->created_at = Carbon::now()->toDateTimeString();
+        $user->updated_at = Carbon::now()->toDateTimeString();
+        try {
+            $user->save();
+            $message = '1';
+
+            return response()->json(['success' => $message], 200);
+
+        } catch (\Exception $exception) 
+        {
+            $message = '0'.$exception->getCode();
+
+            return response()->json(['success' => $message], 200);
+        }
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function savedetails(Request $request, $id)
+    {
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->lastname = $request->lastname;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->mobile = $request->mobile;
+        $user->addr = $request->addr;
+        $user->state = $request->state;
+        $user->zip = $request->zip;
+        $user->country = $request->country;
         $user->updated_at = Carbon::now()->toDateTimeString();
         try {
             $user->save();

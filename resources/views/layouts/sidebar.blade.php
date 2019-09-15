@@ -58,7 +58,7 @@
             </li>
           @else
             <li class="nav-item">
-                <a href="home" class="nav-link">
+                <a href="/home" class="nav-link">
                 <i class="nav-icon fa fa-dashboard g-color-white"></i>
                 <p class="g-color-white">
                 Dashboard

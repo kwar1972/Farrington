@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Permission\Traits\HasRoles;
 use App;
 Use App\Transaction;
+Use App\Bank;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -60,6 +61,10 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function getTransactions(){
         return $this->hasMany('App\Trade', 'userid');
+    }
+
+    public function getBank(){
+        return $this->hasMany('App\Bank', 'userid');
     }
 
 }

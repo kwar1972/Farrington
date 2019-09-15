@@ -93,6 +93,33 @@
       <!-- TradingView Widget BEGIN -->
         <div class="row mb-2">
           <div class="col-12">
+            <!-- TradingView Widget BEGIN -->
+{{-- <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+    {
+    "symbols": [
+      {
+        "description": "USD/CAD",
+        "proName": "OANDA:USDCAD"
+      },
+      {
+        "description": "EUR/USD",
+        "proName": "OANDA:EURUSD"
+      },
+      {
+        "description": "USD/HKD",
+        "proName": "OANDA:USDHKD"
+      }
+    ],
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "locale": "en"
+  }
+    </script>
+  </div> --}}
+  <!-- TradingView Widget END -->
             <div class="tradingview-widget-container">
                 <div class="tradingview-widget-container__widget"></div>
                   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
@@ -122,17 +149,17 @@
         </div>
       <!-- TradingView Widget END -->
       <!-- Small boxes (Stat box) -->
-      <div class="row">
+      <div class="row mt-4">
         <div class="col-lg-3 col-6">
           <!-- small box -->
           <div class="small-box bg-info">
             <div class="inner">
               <h3>150</h3>
 
-              <p>New Orders</p>
+              <p>Deposits</p>
             </div>
             <div class="icon">
-              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-donate"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -144,7 +171,7 @@
             <div class="inner">
               <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-              <p>Bounce Rate</p>
+              <p>Account Standing</p>
             </div>
             <div class="icon">
               <i class="fas fa-signal"></i>
@@ -159,10 +186,10 @@
             <div class="inner">
               <h3>44</h3>
 
-              <p>User Registrations</p>
+              <p>Holdings</p>
             </div>
             <div class="icon">
-              <i class="fas fa-user"></i>
+              <i class="fas fa-hand-holding-usd"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -170,14 +197,14 @@
         <!-- ./col -->
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-danger">
+          <div class="small-box bg-primary">
             <div class="inner">
               <h3>65</h3>
 
-              <p>Unique Visitors</p>
+              <p>Recommended</p>
             </div>
             <div class="icon">
-              <i class="fas fa-chart-line"></i>
+              <i class="fas fa-exclamation-triangle"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -187,91 +214,52 @@
       <!-- /.row -->
       
       <!-- Main row -->
-      <div class="row">
+      <div class="row pt-4">
         <!-- Left col -->
-        <section class="col-lg-7 connectedSortable">
-          <!-- Custom tabs (Charts with tabs)-->
-          <div class="card">
-            <div class="card-header d-flex p-0">
-              <h3 class="card-title p-3">
-                <i class="fa fa-pie-chart mr-1"></i> Sales
-              </h3>
-              <ul class="nav nav-pills ml-auto p-2">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#sales-chart" data-toggle="tab">Donut</a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body">
-              <div class="tab-content p-0">
-                <!-- Morris chart - Sales -->
-                <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;"></div>
-                <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div>
-              </div>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
+
+      </div>
+      <div class="row">
+            <!-- right col (We are only adding the ID to make the widgets sortable)-->
+            <section class="col-lg-12 connectedSortable">
+                <div class="card g-bg-navy">
+                    <div class="card-header d-flex p-0">
+                      <h3 class="card-title p-3 g-color-white">
+                        <i class="fa fa-chart-line mr-1 g-color-white"></i> My Stocks Performance
+                      </h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <div class="tab-content p-0">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-QCOM/" rel="noopener" target="_blank"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                            {
+                              "symbol": "NYSE:BABA",
+                              "width": "100%",
+                              "height": "100%",
+                              "locale": "en",
+                              "dateRange": "12m",
+                              "colorTheme": "dark",
+                              "trendLineColor": "#37a6ef",
+                              "underLineColor": "rgba(55, 166, 239, 0.15)",
+                              "isTransparent": true,
+                              "autosize": true,
+                              "largeChartUrl": "/chartbig/"
+                          }
+                            </script>
+                          </div>
+                          <!-- TradingView Widget END -->
+                      </div>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+                </section>
+                <!-- /.Left col -->
+
         </section>
-        <!-- /.Left col -->
-        <!-- right col (We are only adding the ID to make the widgets sortable)-->
-        <section class="col-lg-5 connectedSortable">
-
-
-          <!-- solid sales graph -->
-          <div class="card bg-info-gradient">
-            <div class="card-header no-border">
-              <h3 class="card-title">
-                <i class="fa fa-th mr-1"></i> Sales Graph
-              </h3>
-
-              <div class="card-tools">
-                <button type="button" class="btn bg-info btn-sm" data-widget="collapse">
-                  <i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn bg-info btn-sm" data-widget="remove">
-                  <i class="fa fa-times"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="chart" id="line-chart" style="height: 250px;"></div>
-            </div>
-            <!-- /.card-body -->
-            <div class="card-footer bg-transparent">
-              <div class="row">
-                <div class="col-4 text-center">
-                  <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgColor="#39CCCC">
-
-                  <div class="text-white">Mail-Orders</div>
-                </div>
-                <!-- ./col -->
-                <div class="col-4 text-center">
-                  <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgColor="#39CCCC">
-
-                  <div class="text-white">Online</div>
-                </div>
-                <!-- ./col -->
-                <div class="col-4 text-center">
-                  <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgColor="#39CCCC">
-
-                  <div class="text-white">In-Store</div>
-                </div>
-                <!-- ./col -->
-              </div>
-              <!-- /.row -->
-            </div>
-            <!-- /.card-footer -->
-          </div>
-          <!-- /.card -->
-
-          <!-- /.card -->
-        </section>
-        <!-- right col -->
       </div>
       <!-- /.row (main row) -->
     </div>
