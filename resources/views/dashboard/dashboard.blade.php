@@ -148,6 +148,7 @@
           </div>
         </div>
       <!-- TradingView Widget END -->
+      @hasanyrole('client')
       <!-- Small boxes (Stat box) -->
       <div class="row mt-4">
         <div class="col-lg-3 col-6">
@@ -212,7 +213,77 @@
         <!-- ./col -->
       </div>
       <!-- /.row -->
-      
+
+
+      @else
+
+
+       <!-- Small boxes (Stat box) -->
+       <div class="row mt-4">
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-info">
+            <div class="inner">
+              <h3>150</h3>
+
+              <p>Total Users</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-donate"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-success">
+            <div class="inner">
+              <h3>53<sup style="font-size: 20px"></sup></h3>
+
+              <p>Total Trades (usd)</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-signal"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-warning">
+            <div class="inner">
+            <h3>0</h3>
+
+              <p>Total Trades</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-primary">
+            <div class="inner">
+              <h3>0</h3>
+
+              <p>Banned Users</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+      <!-- /.row -->
+
+      @endhasanyrole
       <!-- Main row -->
       <div class="row pt-4">
         <!-- Left col -->
