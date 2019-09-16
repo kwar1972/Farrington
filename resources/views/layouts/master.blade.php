@@ -12,6 +12,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="csrf-token" content={{csrf_token()}}>
 
     <title>Baxter & Grant</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/dist/plugins/font-awesome/css/font-awesome.min.css">
     <!-- Bootstrap Toggle -->
@@ -49,6 +51,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Boostrap Toggle -->
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <!---DATEPICKER------->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 </head>
 
 <body class="hold-transition">

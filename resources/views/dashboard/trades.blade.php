@@ -7,7 +7,7 @@
               <div class="modal-dialog  modal-lg">
                 <div class="modal-content">
                   <div class="modal-header g-bg-grey">
-                    <h4 id="userTitle" class="modal-title g-color-white" id="myModalLabel">New Transaction</h4>
+                    <h4 id="userTitle" class="modal-title g-color-white" id="myModalLabel"></h4>
                     <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   </div>
                   <div class="modal-body">
@@ -52,19 +52,40 @@
                           <label class="mb-1" class="mb-0"><b>Total:</b></label>
                           <input type="text" class="form-control" id="total" name="total" value="">
                         </div>
-                        <div class="col-4 text-center">
+                        <div id="statusdiv" class="col-4 text-center">
                             <label class="mb-1" class="mb-0"><b>Status:</b></label>
                             <select class="form-control" id="status" name="status">
-                              <option value="1">Pending</option>
-                              <option value="2">Loader</option>
-                              <option value="3">TT</option>
-                              <option value="4">Confirmed</option>
-                              <option value="5">Canceled</option>
+                              <option value="Pending">Pending</option>
+                              <option value="Loader">Loader</option>
+                              <option value="TT">TT</option>
+                              <option value="Confirmed">Confirmed</option>
+                              <option value="Cancelled">Cancelled</option>
                             </select>
                         </div>
-                        <div class="col-4 text-center">
-
+                        <div id="depositdiv" class="col-4 text-center">
+                          <label class="mb-1" class="mb-0"><b>Deposit:</b></label>
+                          <div class='input-group date' id='deposit'>
+                              <input class="form-control" type='text' class="form-control" />
+                              <span class="input-group-addon">
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                              </span>
+                          </div>
                         </div>
+                      </div>
+                      <div id="purchaseddiv" class="row mt-2">
+                          <div id='purchaseddeiv' class="col-4 text-center">
+                            <label class="mb-1" class="mb-0"><b>Purchased:</b></label>
+                            <div class='input-group date' id='purchased'>
+                                <input class="form-control" type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                          </div>
+                      </div>
+                      <div class="col-4 text-center">
+                      </div>
+                      <div class="col-4 text-center">
+                      </div>
                       </div>
                     </form>
                 </div>
@@ -111,7 +132,7 @@
                     <th class="text-center">Ticker</th>
                     <th class="text-center">Amount</th>
                     <th class="text-center">Price</th>
-                    <th class="text-center">Fee</th>
+                    <th class="text-center">Fee (%)</th>
                     <th class="text-center">Total</th>
                     <th class="text-center">Status</th>
                     <th class="text-center">Actions</th>
@@ -167,5 +188,6 @@
 <script src="{{asset('assets/js/swal-forms.js')}}" type="text/javascript"></script>
 <!-- Boostrap Toggle -->
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>
+
 
 @stop

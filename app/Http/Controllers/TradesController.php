@@ -92,7 +92,7 @@ class TradesController extends Controller
         $trade->amount = $request->amount;
         $trade->price = $request->price;
         $trade->total = $request->total;
-        $trade->status = $request->status;
+        $trade->status = 'Pending';
         $trade->created_at = Carbon::now()->toDateTimeString();
         $trade->updated_at = Carbon::now()->toDateTimeString();
         try {
@@ -152,6 +152,8 @@ class TradesController extends Controller
         $trade->fee = $request->fee;
         $trade->total = $request->total;
         $trade->status = $request->status;
+        $trade->deposit_at = $request->deposit;
+        $trade->purchased_at = $request->purchased;
         $trade->updated_at = Carbon::now()->toDateTimeString();
         try {
             $trade->save();

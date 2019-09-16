@@ -99,7 +99,7 @@ Route::get('/mydetails/{id}', 'UsermanController@showClient')->middleware('role:
 Route::get('/clientdet/{id}', 'UsermanController@clientDetails')->middleware('role:client')->middleware('verified');
 Route::get('/clientbank/{id}', 'BankController@show')->middleware('role:client')->middleware('verified');
 Route::get('/saveclient/{id}', 'UsermanController@savedetails')->middleware('role:client')->middleware('verified');
-
+Route::get('/chartbig?tvwidgetsymbol={id}', 'UsermanController@savedetails')->middleware('role:client')->middleware('verified');
 // Route::get('home', 'DashboardController@versionone')->name('home')->middleware('role:client')->middleware('verified');
 
 

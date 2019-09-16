@@ -36,6 +36,6 @@ class CreateTableBank extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('banks');
     }
 }

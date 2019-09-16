@@ -1,4 +1,21 @@
 $(document).ready(function() {
+    $('#status').on('change', function(){
+      if($('#status').val() == 'Confirmed'){
+        $('#purchaseddeiv').show();
+      }else{
+        $('#purchaseddeiv').hide();
+      }
+    });
+    // Date Picker
+    $('#deposit').datepicker({
+      format: 'yyyy/mm/dd',
+      uiLibrary: 'bootstrap4'
+    });
+    $('#purchased').datepicker({
+      format: 'yyyy/mm/dd',
+      uiLibrary: 'bootstrap4'
+    });
+    // Set Tables
     settableTrades();
     $('[data-toggle="tooltip"]').tooltip();
     $.ajax({
@@ -32,7 +49,6 @@ $(document).ready(function() {
               
           }
           var price = $('#ticker').find('option:selected').data('price');
-              console.log(price);
               $('#price').val(price);
       }
     });
@@ -177,16 +193,30 @@ $('#price').change(function () {
                 }},
                 { "data": "amount" },
                 { "data": "price" },
-                { "data": "fee" },
+                { mRender: function (data, type, row) {
+                  var fee = row.fee+' %';
+                  return  fee
+                },
+              },
                 { "data": "total" },
                 { mRender: function (data, type, row) {
-                  var enabledStatus = '<span class="badge badge-pill badge-primary">Pending</span>';
-                  var disabledStatus = '<span class="badge badge-pill badge-danger">Cancelled</span>';
-                    if(row.status == 1){
-                      return  enabledStatus
-                    }else{
-                      return  disabledStatus
-                    };
+                  var pending = '<span class="badge badge-pill badge-primary">Pending</span>';
+                  var loader = '<span class="badge badge-pill badge-info">Loader</span>';
+                  var tt = '<span class="badge badge-pill badge-warning">TT</span>';
+                  var confirmed = '<span class="badge badge-pill badge-success">Confirmed</span>';
+                  var cancelled = '<span class="badge badge-pill badge-danger">Cancelled</span>';
+                  switch(row.status) {
+                    case "Pending":
+                        return pending
+                    case "Loader":
+                        return loader
+                    case "TT":
+                      return tt
+                    case "Confirmed":
+                        return confirmed
+                    case "Cancelled":
+                      return cancelled
+                  } 
                 },
                 },
                 { mRender: function (data, type, row) {
@@ -207,6 +237,10 @@ $('#price').change(function () {
   //-------------Create Modal
 
   function openCreateModal(){
+    $('#userTitle').html('New Trade');
+    $("#purchaseddeiv").hide();
+    $("#statusdiv").hide();
+    $('#depositdiv').hide();
     $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTC()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
     $('#createModal').modal('show');
     $('#amount').val(1);
@@ -216,6 +250,8 @@ $('#price').change(function () {
     $('#total').val(amount * price);
   };
 
+
+  
 
 //-------------Destroy and call datatable ---------------------------
   $('#createModal').on('hidden.bs.modal', function () {
@@ -241,8 +277,7 @@ $('#price').change(function () {
     "amount" : $('#amount').val(),
     "price" : $('#price').val(),
     "fee" : $('#fee').val(),
-    "total" : $('#total').val(),
-    "status" : $('#status').val()
+    "total" : $('#total').val()
   }
       $.ajax({
         type:'GET',
@@ -282,6 +317,15 @@ function open_editModal(id) {
   
   });
   function setModalBox(data) {
+    $("#statusdiv").show();
+    $('#depositdiv').show();
+    $('#userTitle').html('Edit Trade');
+    if(data.status == 'Confirmed'){
+      $('#purchaseddeiv').show();
+      $('#purchased').datepicker().children('input').val(data.purchased_at);
+    }else{
+      $('#purchaseddeiv').hide();
+    }
     $("#client").val(data.userid);
     $('#ticker').val(data.tickerid);
     $('#agent').val(data.agentid);
@@ -290,6 +334,7 @@ function open_editModal(id) {
     $('#fee').val(data.fee);
     $('#total').val(data.total);
     $("#status").val(data.status);
+    $('#deposit').datepicker().children('input').val(data.deposit_at);
     $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTE(' + data.id + ')">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
   }
 };
@@ -310,7 +355,9 @@ function save_formTE(id){
     "price" : $('#price').val(),
     "fee" : $('#fee').val(),
     "total" : $('#total').val(),
-    "status" : $('#status').val()
+    "status" : $('#status').val(),
+    "deposit" : $('#deposit').datepicker().children('input').val(),
+    "purchased" : $('#purchased').datepicker().children('input').val()
   }
       $.ajax({
         type:'GET',
@@ -383,3 +430,6 @@ function deleteconfirm(id){
     }
   })
 };
+
+
+

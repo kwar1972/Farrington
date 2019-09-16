@@ -147,8 +147,10 @@
     <section class="content mt-3">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-1 col-lg-1"></div>
-            <div class="col-sm-10 col-lg-10">
+          <div class="col-sm-6">
+          <div class="row">
+            {{-- <div class="col-sm-1 col-lg-1"></div> --}}
+            <div class="col-sm-12 col-lg-12">
             <!-- Profile Image -->
             <div class="card card-primary card-outline g-bg-color-darkgrey">
               
@@ -199,29 +201,30 @@
             </div>
             <!-- /.card -->
             </div>
-            <div class="col-sm-1 col-lg-1"></div>
+            {{-- <div class="col-sm-1 col-lg-1"></div> --}}
           </div>
+          </div>
+          <div class="col-sm-6">
           <div class="row">
-              <div class="col-sm-1 col-lg-1"></div>
-              <div class="col-sm-10 col-lg-10">
+              {{-- <div class="col-sm-1 col-lg-1"></div> --}}
+              <div class="col-sm-12 col-lg-12">
               <!-- Profile Image -->
               <div class="card card-primary card-outline g-bg-color-darkgrey">
                 
                 <div class="card-body box-profile">
                   <div class="text-center">
                       <h1 class="g-color-white">Bank Details</h1>
-                      <span class="fa-stack fa-lg mb-4" style="font-size: 64px;">
+                      <span class="fa-stack fa-lg " style="font-size: 64px;">
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-bank fa-stack-1x fa-inverse"></i>
                         </span> 
+                        <h3 id="namep" class="profile-username text-center g-color-white">{{auth()->user()->getBank[0]->bankname}}</h3>
                   </div>
+                  
                   <div class="row">
                       <div class="col-sm-1 col-lg-1"></div>
                       <div class="col-sm-10 col-lg-10">
-                  <ul class="list-group list-group-unbordered mb-3">
-                    <li class="list-group-item px-2 g-bg-color-darkgrey g-color-white brdr-color-grey">
-                      <b>Bank Name</b> <a class="float-right">{{auth()->user()->getBank[0]->bankname}}</a>
-                    </li>
+                  <ul class="list-group list-group-unbordered mb-3 mt-3">
                     <li class="list-group-item px-2 g-bg-color-darkgrey g-color-white brdr-color-grey">
                       <b>Country</b> <a class="float-right">{{auth()->user()->getBank[0]->country}}</a>
                     </li>
@@ -254,9 +257,10 @@
               </div>
               <!-- /.card -->
               </div>
-              <div class="col-sm-1 col-lg-1"></div>
+              {{-- <div class="col-sm-1 col-lg-1"></div> --}}
             </div>
-          
+          </div>
+        </div>
         </div>
     </section>
 </div>
