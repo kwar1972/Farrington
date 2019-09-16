@@ -17,7 +17,7 @@ class DashboardController extends Controller
             $trades = Trade::where('userid', $id)->with('getTicker')->get();
         //     return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
         // JSON_UNESCAPED_UNICODE);
-        dd($trades);
+        //dd($trades);
             return view('dashboard.dashboard')->with('trades', $trades);
         }else {
             return view('dashboard.dashboard');

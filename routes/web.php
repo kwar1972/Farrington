@@ -51,7 +51,7 @@ Route::get('faq', function () {
 Route::get('contactus', function () {
     return view('frontend.contactus');
 });
-
+Route::get('/tradelist/{id}', 'TradesController@tradelist');
 Route::get('/getHoldings/{id}', 'TradesController@getHoldings');
 Route::get('roles', 'permController@preTorole');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
@@ -91,7 +91,7 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
         Route::get('/tradedelete/{id}', 'TradesController@destroy');
         Route::get('/tradedetail/{id}', 'TradesController@show');
         Route::get('/tradeedit/{id}', 'TradesController@update');
-        Route::get('/tradelist/{id}', 'TradesController@tradelist');
+        
 });
 
 // CLIENTS

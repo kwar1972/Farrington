@@ -63,7 +63,7 @@ class TradesController extends Controller
 
     public function tradelist($id)
     {
-        $trades = Trade::where('userid', $id)->get();
+        $trades = Trade::where('userid', $id)->with('getTicker')->with('getAgent')->with('getUsers')->get();
         
         return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
         JSON_UNESCAPED_UNICODE);

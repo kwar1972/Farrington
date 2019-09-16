@@ -237,7 +237,7 @@
                 <div class="modal-dialog  modal-lg">
                   <div class="modal-content">
                     <div class="modal-header g-bg-grey">
-                      <h4 class="modal-title g-color-white" id="myModalLabel">User Details</h4>
+                      <h4 class="modal-title g-color-white" id="myModalLabel">User Logins</h4>
                       <button type="button" class="close pull-right" data-dismiss="modal"><span class=" g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                     </div>
                     <div class="modal-body modal-system-custom">
