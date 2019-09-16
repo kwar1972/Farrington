@@ -116,6 +116,7 @@ function open_viewModal(id) {
     $('#validated').val(data.email_verified_at);
     $('#created').val(data.created_at);
     $('#updated').val(data.updated_at);
+    console.log(data.isadmin);
     switch(data.isadmin) {
       case 2:
         $('#customRadio1').prop('checked', true);
@@ -127,7 +128,7 @@ function open_viewModal(id) {
         $('#customRadio3').prop('checked', true);
         break;
       case 5:
-        $('#customRadio5').prop('checked', true);
+        $('#customRadio4').prop('checked', true);
         break;
     } 
     if(data.isadmin == '5'){
