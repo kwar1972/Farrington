@@ -73,7 +73,7 @@ function open_createModal(){
   $('#state').val('');
   $('#account').val('');
   $('#swift').val('');
-  $('#routing').val('');
+  $('#iban').val('');
   $('#coin').val('');
   $('#validated').val('');
   $('#userTitle').html('User Create');
@@ -93,8 +93,140 @@ function open_viewModal(id) {
   }).done( function(data) {
     setModalBox();
     $('#myModal').modal('show');
-
+    
   function setModalBox() {
+    
+
+if( typeof data[0] != 'undefined'){
+    if(data[0].isadmin == 5 ){
+    $('#bankdet1').show();
+    $('#bankdet2').show();
+    $('#usersysteminfoT').show();
+    $('#usersysteminfo').show();
+    $('#userstatus').show();
+    $('#createpass').hide();
+    $('#createpass2').hide();
+    $('#sendveriemail').html('<label class="mb-1" class="mb-0"><b>Send Validation E-mail:</b></label><br><button class="btn btn-outline-success btn-sm" onClick="sendveriemail('+ data[0].id +')">Send!</button>');
+    $('#userTitle').html('User Edit');
+    $('#name').val(data[0].name);
+    $('#lastname').val(data[0].lastname);
+    $('#email').val(data[0].email);
+    $('#phone').val(data[0].phone);
+    $('#mobile').val(data[0].mobile);
+    $('#addr').val(data[0].addr);
+    $('#state').val(data[0].state+' / '+ data[0].city);
+    if(typeof data[0].get_bank[0] != 'undefined'){
+      $('#account').val(data[0].get_bank[0].account);
+      $('#swift').val(data[0].get_bank[0].swift);
+      $('#iban').val(data[0].get_bank[0].iban);
+      $('#coin').val(data[0].get_bank[0].currency);
+    }else{
+      $('#account').val('');
+      $('#swift').val('');
+      $('#iban').val('');
+      $('#coin').val('');
+    }
+    $('#validated').val(data[0].email_verified_at);
+    $('#created').val(data[0].created_at);
+    $('#updated').val(data[0].updated_at);
+    
+    switch(data[0].isadmin) {
+      case 2:
+        $('#customRadio1').prop('checked', true);
+        break;
+      case 3:
+        $('#customRadio2').prop('checked', true);
+        break;
+      case 4:
+        $('#customRadio3').prop('checked', true);
+        break;
+      case 5:
+        $('#customRadio4').prop('checked', true);
+        break;
+    } 
+    if(data[0].isadmin == '5'){
+      $( "#x" ).prop( "checked", true );
+    }
+    if (data[0].isactive == '1') {
+      $('#active').bootstrapToggle('on');
+    }else {
+      $('#active').bootstrapToggle('off');
+    }
+    if (data[0].isadmin == '1') {
+      $('#role').bootstrapToggle('on');
+    }else{
+      $('#role').bootstrapToggle('off');
+    }
+    $('#country').val(data[0].country);
+    $('#created').html(data[0].created_at);
+    $('#updated').html(data[0].updated_at);
+    $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formUE(' + data[0].id + ')">Save</p> <p id="closemodal" class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+
+
+  } else {
+
+    $('#bankdet1').hide();
+    $('#bankdet2').hide();
+    $('#usersysteminfoT').show();
+    $('#usersysteminfo').show();
+    $('#userstatus').show();
+    $('#createpass').hide();
+    $('#createpass2').hide();
+    $('#sendveriemail').html('<label class="mb-1" class="mb-0"><b>Send Validation E-mail:</b></label><br><button class="btn btn-outline-success btn-sm" onClick="sendveriemail('+ data[0].id +')">Send!</button>');
+    $('#userTitle').html('User Edit');
+    $('#name').val(data[0].name);
+    $('#lastname').val(data[0].lastname);
+    $('#email').val(data[0].email);
+    $('#phone').val(data[0].phone);
+    $('#mobile').val(data[0].mobile);
+    $('#addr').val(data[0].addr);
+    $('#state').val(data[0].state+' / '+ data[0].city);
+    $('#validated').val(data[0].email_verified_at);
+    $('#created').val(data[0].created_at);
+    $('#updated').val(data[0].updated_at);
+    
+    switch(data[0].isadmin) {
+      case 2:
+        $('#customRadio1').prop('checked', true);
+        break;
+      case 3:
+        $('#customRadio2').prop('checked', true);
+        break;
+      case 4:
+        $('#customRadio3').prop('checked', true);
+        break;
+      case 5:
+        $('#customRadio4').prop('checked', true);
+        break;
+    } 
+    if(data[0].isadmin == '5'){
+      $( "#x" ).prop( "checked", true );
+    }
+    if (data[0].isactive == '1') {
+      $('#active').bootstrapToggle('on');
+    }else {
+      $('#active').bootstrapToggle('off');
+    }
+    if (data[0].isadmin == '1') {
+      $('#role').bootstrapToggle('on');
+    }else{
+      $('#role').bootstrapToggle('off');
+    }
+    $('#country').val(data[0].country);
+    $('#created').html(data[0].created_at);
+    $('#updated').html(data[0].updated_at);
+    $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data[0]-dismiss="modal" onClick="save_formUE(' + data[0].id + ')">Save</p> <p id="closemodal" class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+  };
+
+
+
+
+
+}else{
+
+  if(data.isadmin == 5 ){
+    $('#bankdet1').show();
+    $('#bankdet2').show();
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
@@ -109,14 +241,14 @@ function open_viewModal(id) {
     $('#mobile').val(data.mobile);
     $('#addr').val(data.addr);
     $('#state').val(data.state+' / '+ data.city);
-    $('#account').val('211654612354654-45/4585');
-    $('#swift').val('LALXX896');
-    $('#routing').val('31354343457420004534');
-    $('#coin').val('Dolar (USD)');
+    $('#account').val('');
+    $('#swift').val('');
+    $('#iban').val('');
+    $('#coin').val('');
     $('#validated').val(data.email_verified_at);
     $('#created').val(data.created_at);
     $('#updated').val(data.updated_at);
-    console.log(data.isadmin);
+    
     switch(data.isadmin) {
       case 2:
         $('#customRadio1').prop('checked', true);
@@ -144,9 +276,70 @@ function open_viewModal(id) {
     }else{
       $('#role').bootstrapToggle('off');
     }
+    $('#country').val(data.country);
     $('#created').html(data.created_at);
     $('#updated').html(data.updated_at);
-    $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formUE(' + data.id + ')">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+    $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formUE(' + data.id + ')">Save</p> <p id="closemodal" class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+
+
+  } else {
+
+    $('#bankdet1').hide();
+    $('#bankdet2').hide();
+    $('#usersysteminfoT').show();
+    $('#usersysteminfo').show();
+    $('#userstatus').show();
+    $('#createpass').hide();
+    $('#createpass2').hide();
+    $('#sendveriemail').html('<label class="mb-1" class="mb-0"><b>Send Validation E-mail:</b></label><br><button class="btn btn-outline-success btn-sm" onClick="sendveriemail('+ data.id +')">Send!</button>');
+    $('#userTitle').html('User Edit');
+    $('#name').val(data.name);
+    $('#lastname').val(data.lastname);
+    $('#email').val(data.email);
+    $('#phone').val(data.phone);
+    $('#mobile').val(data.mobile);
+    $('#addr').val(data.addr);
+    $('#state').val(data.state+' / '+ data.city);
+    $('#validated').val(data.email_verified_at);
+    $('#created').val(data.created_at);
+    $('#updated').val(data.updated_at);
+    
+    switch(data.isadmin) {
+      case 2:
+        $('#customRadio1').prop('checked', true);
+        break;
+      case 3:
+        $('#customRadio2').prop('checked', true);
+        break;
+      case 4:
+        $('#customRadio3').prop('checked', true);
+        break;
+      case 5:
+        $('#customRadio4').prop('checked', true);
+        break;
+    } 
+    if(data.isadmin == '5'){
+      $( "#x" ).prop( "checked", true );
+    }
+    if (data.isactive == '1') {
+      $('#active').bootstrapToggle('on');
+    }else {
+      $('#active').bootstrapToggle('off');
+    }
+    if (data.isadmin == '1') {
+      $('#role').bootstrapToggle('on');
+    }else{
+      $('#role').bootstrapToggle('off');
+    }
+    $('#country').val(data.country);
+    $('#created').html(data.created_at);
+    $('#updated').html(data.updated_at);
+    $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formUE(' + data.id + ')">Save</p> <p id="closemodal" class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+  };
+
+
+
+};
   }
   });
 };
@@ -372,6 +565,7 @@ function save_formUE(id){
               type: 'success',
               title: '<span style="color: #fff !important;">User successfully updated!</span>'
           });
+          $('#myModal').modal('hide');
       } else {
           Toast.fire({
               background: '#dc3545',

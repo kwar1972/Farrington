@@ -64,7 +64,7 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     public function getBank(){
-        return $this->hasMany('App\Bank', 'userid');
+        return $this->hasMany('App\Bank', 'userid', 'id');
     }
 
 }

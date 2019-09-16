@@ -79,7 +79,7 @@ class UsermanController extends Controller
      */
     public function show($id)
     {
-        $user = User::find($id);
+        $user = User::where('id',$id)->with('getBank')->get();
         
         return response()->json($user, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
         JSON_UNESCAPED_UNICODE);

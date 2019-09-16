@@ -70,14 +70,14 @@
                         <div class="col-3 f-size-14 mb-0">
                         </div>
                       </div>
-                      <div class="row">
+                      <div id="bankdet1" class="row">
                         <div class="col-12">
                           <hr>
                           <p><b>Bank Details</b></p>
                           <hr>
                         </div>
                       </div>
-                      <div class="row mb-2">
+                      <div id="bankdet2" class="row mb-2">
                           <div class="col-3 f-size-14 mb-0">
                             <label class="mb-1" class="mb-0"><b>Account number:</b></label>
                             <input type="text" class="form-control" id="account" name="account" value="">
@@ -87,8 +87,8 @@
                             <input type="text" class="form-control" id="swift" name="swift" value="">
                           </div>
                           <div class="col-4 f-size-14 mb-0">
-                            <label class="mb-1" class="mb-0"><b>Routing:</b></label>
-                            <input type="text" class="form-control" id="routing" name="routing" value="">
+                            <label class="mb-1" class="mb-0"><b>IBAN:</b></label>
+                            <input type="text" class="form-control" id="iban" name="iban" value="">
                           </div>
                         <div class="col-2 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Currency:</b></label>
