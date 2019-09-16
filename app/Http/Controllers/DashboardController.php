@@ -3,12 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Spatie\Permission\Traits\HasRoles;
+use App;
+use App\User;
+use App\Trade;
 
 class DashboardController extends Controller
 {
     public function versionone()
-    {
-        return view('dashboard.dashboard');
+    {   
+        if(auth()->user()->hasRole('client')){
+            $id = auth()->user()->id;
+            $trades = Trade::where('userid', $id)->with('getTicker')->get();
+        //     return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
+        // JSON_UNESCAPED_UNICODE);
+        dd($trades);
+            return view('dashboard.dashboard')->with('trades', $trades);
+        }else {
+            return view('dashboard.dashboard');
+        }
     }
     public function usernman()
     {
@@ -31,3 +44,5 @@ class DashboardController extends Controller
         return view('dashboard.trades');
     }
 }
+//     return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
+        // JSON_UNESCAPED_UNICODE);

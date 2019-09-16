@@ -184,9 +184,9 @@
           <!-- small box -->
           <div class="small-box bg-warning">
             <div class="inner">
-              <h3>44</h3>
+            <h3>{{$trades}}</h3>
 
-              <p>Holdings</p>
+              <p>Latest Holdings</p>
             </div>
             <div class="icon">
               <i class="fas fa-hand-holding-usd"></i>
@@ -199,7 +199,7 @@
           <!-- small box -->
           <div class="small-box bg-primary">
             <div class="inner">
-              <h3>65</h3>
+              <h3>0</h3>
 
               <p>Recommended</p>
             </div>
@@ -246,7 +246,7 @@
                               "underLineColor": "rgba(55, 166, 239, 0.15)",
                               "isTransparent": true,
                               "autosize": true,
-                              "largeChartUrl": "/chartbig/"
+                              "largeChartUrl": "http://farrington.local/chartbig/"
                           }
                             </script>
                           </div>
