@@ -52,7 +52,7 @@
                           <label class="mb-1" class="mb-0"><b>Total:</b></label>
                           <input type="text" class="form-control" id="total" name="total" value="">
                         </div>
-                        <div id="statusdiv" class="col-4 text-center">
+                        <div id="statusdiv" class="col-4">
                             <label class="mb-1" class="mb-0"><b>Status:</b></label>
                             <select class="form-control" id="status" name="status">
                               <option value="Pending">Pending</option>
@@ -62,7 +62,7 @@
                               <option value="Cancelled">Cancelled</option>
                             </select>
                         </div>
-                        <div id="depositdiv" class="col-4 text-center">
+                        <div id="depositdiv" class="col-4">
                           <label class="mb-1" class="mb-0"><b>Deposit:</b></label>
                           <div class='input-group date' id='deposit'>
                               <input class="form-control" type='text' class="form-control" />
@@ -73,7 +73,7 @@
                         </div>
                       </div>
                       <div id="purchaseddiv" class="row mt-2">
-                          <div id='purchaseddeiv' class="col-4 text-center">
+                          <div id='purchaseddeiv' class="col-4">
                             <label class="mb-1" class="mb-0"><b>Purchased:</b></label>
                             <div class='input-group date' id='purchased'>
                                 <input class="form-control" type='text' class="form-control" />

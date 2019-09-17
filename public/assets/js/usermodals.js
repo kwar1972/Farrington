@@ -71,6 +71,10 @@ function open_createModal(){
   $('#mobile').val('');
   $('#addr').val('');
   $('#state').val('');
+  $('#bankname').val('');
+  $('#countrybank').val('');
+  $('#accid').val('');
+  $('#accname').val('');
   $('#account').val('');
   $('#swift').val('');
   $('#iban').val('');
@@ -80,6 +84,7 @@ function open_createModal(){
   $('#createpass').show();
   $('#createpass2').show();
   $('#sendveriemail').hide();
+  $('#customRadio4').prop('checked', true);
   $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formUC()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
   $('#myModal').modal('show');
   
@@ -101,6 +106,7 @@ if( typeof data[0] != 'undefined'){
     if(data[0].isadmin == 5 ){
     $('#bankdet1').show();
     $('#bankdet2').show();
+    $('#bankdet3').show();
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
@@ -116,11 +122,19 @@ if( typeof data[0] != 'undefined'){
     $('#addr').val(data[0].addr);
     $('#state').val(data[0].state+' / '+ data[0].city);
     if(typeof data[0].get_bank[0] != 'undefined'){
+      $('#bankname').val(data[0].get_bank[0].bankname);
+      $('#countrybank').val(data[0].get_bank[0].country);
+      $('#accid').val(data[0].get_bank[0].accid);
+      $('#accname').val(data[0].get_bank[0].accname);
       $('#account').val(data[0].get_bank[0].account);
       $('#swift').val(data[0].get_bank[0].swift);
       $('#iban').val(data[0].get_bank[0].iban);
       $('#coin').val(data[0].get_bank[0].currency);
     }else{
+      $('#bankname').val('');
+      $('#countrybank').val('');
+      $('#accid').val('');
+      $('#accname').val('');
       $('#account').val('');
       $('#swift').val('');
       $('#iban').val('');
@@ -167,6 +181,7 @@ if( typeof data[0] != 'undefined'){
 
     $('#bankdet1').hide();
     $('#bankdet2').hide();
+    $('#bankdet3').hide();
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
@@ -227,6 +242,7 @@ if( typeof data[0] != 'undefined'){
   if(data.isadmin == 5 ){
     $('#bankdet1').show();
     $('#bankdet2').show();
+    $('#bankdet3').show();
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
@@ -286,6 +302,7 @@ if( typeof data[0] != 'undefined'){
 
     $('#bankdet1').hide();
     $('#bankdet2').hide();
+    $('#bankdet3').hide();
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
