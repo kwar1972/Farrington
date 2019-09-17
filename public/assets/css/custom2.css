@@ -115,3 +115,16 @@ a{
 .g-bg-navy{
     background-color: #001f3f !important;
 }
+.badge-seconday{
+    background-color: #6c757d !important;
+    color: white !important;
+}
+.badge-indigo{
+    background-color: #6610f2 !important;
+    color: white !important;
+}
+.badge-orange{
+    background-color: #ff851b !important;
+    color: white !important;
+}
+

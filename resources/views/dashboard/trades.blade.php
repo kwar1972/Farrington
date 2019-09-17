@@ -56,9 +56,11 @@
                             <label class="mb-1" class="mb-0"><b>Status:</b></label>
                             <select class="form-control" id="status" name="status">
                               <option value="Pending">Pending</option>
-                              <option value="Loader">Loader</option>
-                              <option value="TT">TT</option>
+                              <option value="Paid">Paid</option>
                               <option value="Confirmed">Confirmed</option>
+                              <option value="Purchased">Purchased</option>
+                              <option value="Invoiced">Invoiced</option>
+                              <option value="Sold">Sold</option>
                               <option value="Cancelled">Cancelled</option>
                             </select>
                         </div>

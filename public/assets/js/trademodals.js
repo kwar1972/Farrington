@@ -1,11 +1,20 @@
 $(document).ready(function() {
     $('#status').on('change', function(){
-      if($('#status').val() == 'Confirmed'){
+      if($('#status').val() == 'Confirmed' || $('#status').val() == 'Purchased' || $('#status').val() == 'Invoiced' || $('#status').val() == 'Sold'){
         $('#purchaseddeiv').show();
       }else{
         $('#purchaseddeiv').hide();
       }
     });
+
+    $('#status').on('change', function(){
+      if($('#status').val() == 'Paid' || $('#status').val() == 'Confirmed' || $('#status').val() == 'Purchased' || $('#status').val() == 'Invoiced' || $('#status').val() == 'Sold'){
+        $('#depositdiv').show();
+      }else{
+        $('#depositdiv').hide();
+      }
+    });
+
     // Date Picker
     $('#deposit').datepicker({
       format: 'yyyy/mm/dd',
@@ -200,22 +209,28 @@ $('#price').change(function () {
               },
                 { "data": "total" },
                 { mRender: function (data, type, row) {
-                  var pending = '<span class="badge badge-pill badge-primary">Pending</span>';
-                  var loader = '<span class="badge badge-pill badge-info">Loader</span>';
-                  var tt = '<span class="badge badge-pill badge-warning">TT</span>';
+                  var pending = '<span class="badge badge-pill badge-seconday">Pending</span>';
+                  var Paid = '<span class="badge badge-pill badge-info">Paid</span>';
                   var confirmed = '<span class="badge badge-pill badge-success">Confirmed</span>';
-                  var cancelled = '<span class="badge badge-pill badge-danger">Cancelled</span>';
+                  var Purchased = '<span class="badge badge-pill badge-primary">Purchased</span>';
+                  var Invoiced = '<span class="badge badge-pill badge-orange">Invoiced</span>';
+                  var Sold = '<span class="badge badge-pill badge-indigo">Sold</span>';
+                  var Cancelled = '<span class="badge badge-pill badge-danger">Cancelled</span>';
                   switch(row.status) {
                     case "Pending":
                         return pending
-                    case "Loader":
-                        return loader
-                    case "TT":
-                      return tt
+                    case "Paid":
+                      return Paid
                     case "Confirmed":
                         return confirmed
+                    case "Purchased":
+                      return Purchased
+                    case "Invoiced":
+                      return Invoiced
+                    case "Sold":
+                      return Sold
                     case "Cancelled":
-                      return cancelled
+                      return Cancelled
                   } 
                 },
                 },
@@ -318,7 +333,11 @@ function open_editModal(id) {
   });
   function setModalBox(data) {
     $("#statusdiv").show();
-    $('#depositdiv').show();
+    if(data.status == 'Paid'){
+      $('#depositdiv').show();
+    }else if(data.status == 'Cancelled' || data.status == 'Pending' ){
+      $('#depositdiv').hide();
+    }
     $('#userTitle').html('Edit Trade');
     if(data.status == 'Confirmed'){
       $('#purchaseddeiv').show();
