@@ -1,11 +1,5 @@
 $(document).ready(function() {
-    const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        
-        timer: 3000
-    });
+    
   });
 
   function openclientData(id) {
@@ -20,7 +14,7 @@ $(document).ready(function() {
             function setModalBox() {
                 $('#name').val(data.name);
                 $('#lastname').val(data.lastname);
-                $('#emailp').val(data.email);
+                $('#email').val(data.email);
                 $('#password').val(data.password);
                 $('#phone').val(data.phone);
                 $('#mobile').val(data.mobile);
@@ -38,29 +32,7 @@ $(document).ready(function() {
         
         
   };
-
-  function openclientBank(id) {
-    $.ajax({
-        'url': '/clientbank/'+id,
-        'method': "GET",
-        'contentType': 'application/json',
-        }).done( function(data) {
-            setModalBox();
-            $('#modalBank').modal('show');
-            function setModalBox() {
-                $('#bankname').val(data[0].bankname);
-                $('#accid').val(data[0].accid);
-                $('#account').val(data[0].account);
-                $('#accname').val(data[0].accname);
-                $('#swift').val(data[0].swift);
-                $('#iban').val(data[0].iban);
-                $('#currency').val(data[0].currency);
-                $('#country2').val(data[0].country);
-                $('#btnClusterB').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="saveBank()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
-              }
-        });
-  };
-
+  
   function savePersonal(id) {
     const Toast = Swal.mixin({
         toast: true,
@@ -127,3 +99,145 @@ $(document).ready(function() {
     }
   })
 };
+
+  function openNewclientBank(id) {
+    setModalBox();
+    $('#modalBank').modal('show');
+    function setModalBox() {
+      $('#bankname').val('');
+      $('#accid').val('');
+      $('#account').val('');
+      $('#accname').val('');
+      $('#swift').val('');
+      $('#iban').val('');
+      $('#currency').val('');
+      $('#country2').val('');
+      $('#btnClusterB').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="saveNewBank('+id+')">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+     }
+  };
+
+  function saveNewBank(id){
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000
+  });
+
+    var bankname = $('#bankname').val();
+    var country2 = $('#country2').find(':selected').text();
+    var accid = $('#accid').val();
+    var account = $('#account').val();
+    var accname = $('#accname').val();
+    var swift = $('#swift').val();
+    var iban = $('#iban').val();
+    var currency = $('#currency').val();
+    var data = {
+      "bankname" : bankname,
+      "country" : country2,
+      "accid" : accid,
+      "account" : account,
+      "accname" : accname,
+      "swift" : swift,
+      "iban" : iban,
+      "currency" : currency
+    }
+    $.ajax({
+      url: '/savenewbank/'+id,
+      method: "GET",
+      contentType: 'application/json',
+      data: data,
+      dataType: 'json',
+    }).done(function(data){
+      $('#myModal').modal('hide');
+      $('#nameb').html(bankname);
+      $('#nameb').removeClass('g-color-red');
+      $('#nameb').addClass('g-color-white');
+      $('#accidb').html(accid);
+      $('#accountb').html(account);
+      $('#accnameb').html(accname);
+      $('#swiftb').html(swift);
+      $('#ibanb').html(iban);
+      $('#currencyb').html(currency);
+      $('#countryb').html(country2);
+      console.log(country2);
+      if(data.success == 1){
+        Toast.fire({
+            background: '#007bff',
+            type: 'success',
+            title: '<span style="color: #fff !important;">Bank details successfully saved!</span>'
+        });
+    } else {
+        Toast.fire({
+            background: '#dc3545',
+            type: 'error',
+            title: '<span style="color: #fff !important;">Somethig happend!</span>'
+    });    
+    }
+    });
+  };
+
+  function openclientBank(id) {
+    $.ajax({
+        url: '/clientbank/'+id,
+        method: "GET",
+        contentType: 'application/json',
+        }).done( function(data) {
+            setModalBox();
+            $('#modalBank').modal('show');
+            function setModalBox() {
+                $('#bankname').val(data[0].bankname);
+                $('#accid').val(data[0].accid);
+                $('#account').val(data[0].account);
+                $('#accname').val(data[0].accname);
+                $('#swift').val(data[0].swift);
+                $('#iban').val(data[0].iban);
+                $('#currency').val(data[0].currency);
+                $('#country2').val(data[0].country);
+                $('#btnClusterB').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="saveBank()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+              }
+        });
+  };
+
+  function saveBank(id){
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000
+  });
+    var data = {
+      "bankname" : $('#bankname').val(),
+      "country" : $('#country2').val(),
+      "accid" : $('#accid').val(),
+      "account" : $('#account').val(),
+      "accname" : $('#accname').val(),
+      "swift" : $('#swift').val(),
+      "iban" : $('#iban').val(),
+      "currency" : $('#currency').val()
+    }
+    $.ajax({
+      url: '/savebank/'+id,
+      method: "GET",
+      contentType: 'application/json',
+      data: data,
+      dataType: 'json',
+    }).done(function(data){
+      if(data.success == 1){
+        Toast.fire({
+            background: '#007bff',
+            type: 'success',
+            title: '<span style="color: #fff !important;">Bank details successfully updated!</span>'
+        });
+        $('#myModal').modal('hide');
+    } else {
+        Toast.fire({
+            background: '#dc3545',
+            type: 'error',
+            title: '<span style="color: #fff !important;">Somethig happend!</span>'
+    });    
+    }
+    });
+  };
+
+  

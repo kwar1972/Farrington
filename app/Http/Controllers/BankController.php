@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
+use Carbon\Carbon;
 use App;
 use App\Bank;
 
@@ -26,6 +28,61 @@ class BankController extends Controller
     public function create()
     {
         //
+    }
+
+    public function savebank(Request $request, $id){
+        $bank = Bank::find($id);
+        $bank->bankname = $request->bankname;
+        $bank->country = $request->country;
+        $bank->accid = $request->accid;
+        $bank->account = $request->account;
+        $bank->accname = $request->accname;
+        $bank->swift = $request->swift;
+        $bank->iban = $request->iban;
+        $bank->currency = $request->currency;
+        $bank->updated_at = Carbon::now()->toDateTimeString();
+
+        try {
+            $bank->save();
+            $message = '1';
+
+            return response()->json(['success' => $message], 200);
+
+        } catch (\Exception $exception) 
+        {
+            $message = '0'.$exception->getCode();
+
+            return response()->json(['success' => $message], 200);
+        }
+
+    }
+
+    public function savenewbank(Request $request, $id){
+        $bank = New Bank;
+        $bank->userid = $id;
+        $bank->bankname = $request->bankname;
+        $bank->country = $request->country;
+        $bank->accid = $request->accid;
+        $bank->account = $request->account;
+        $bank->accname = $request->accname;
+        $bank->swift = $request->swift;
+        $bank->iban = $request->iban;
+        $bank->currency = $request->currency;
+        $bank->updated_at = Carbon::now()->toDateTimeString();
+
+        try {
+            $bank->save();
+            $message = '1';
+
+            return response()->json(['success' => $message], 200);
+
+        } catch (\Exception $exception) 
+        {
+            $message = '0'.$exception->getCode();
+
+            return response()->json(['success' => $message], 200);
+        }
+
     }
 
     /**

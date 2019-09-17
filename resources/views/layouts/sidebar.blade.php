@@ -66,7 +66,7 @@
                 </a>
             </li>  
             <li class="nav-item">
-            <a href="/mydetails/{{auth()->user()->id}}" class="nav-link">
+            <a href="/mydetails" class="nav-link">
                 <i class="nav-icon fas fa-user-circle g-color-white"></i>
                 <p class="g-color-white">
                 My Account
@@ -74,7 +74,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="trademan" class="nav-link">
+                <a href="/mytrades" class="nav-link">
                 <i class="nav-icon fas fa-exchange-alt g-color-white"></i>
                 <p class="g-color-white">
                 Trades
@@ -82,7 +82,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="trademan" class="nav-link">
+                <a href="/myholdings" class="nav-link">
                 <i class="nav-icon fas fa-hand-holding-usd g-color-white"></i>
                 <p class="g-color-white">
                 Holdings

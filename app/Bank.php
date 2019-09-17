@@ -12,5 +12,5 @@ class Bank extends Model
         return $this->hasOne('App\User', 'id', 'userid');
     }
 
-
+    
 }

@@ -95,13 +95,16 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
 });
 
 // CLIENTS
-Route::get('/mydetails/{id}', 'UsermanController@showClient')->middleware('role:client|admin|loader|agent')->middleware('verified');
+Route::get('/mydetails', 'UsermanController@showClient')->middleware('role:client')->middleware('verified');
 Route::get('/clientdet/{id}', 'UsermanController@clientDetails')->middleware('role:client')->middleware('verified');
 Route::get('/clientbank/{id}', 'BankController@show')->middleware('role:client')->middleware('verified');
+Route::get('/savenewbank/{id}', 'BankController@savenewbank')->middleware('role:client')->middleware('verified');
+Route::get('/savebank/{id}', 'BankController@savebank')->middleware('role:client')->middleware('verified');
 Route::get('/saveclient/{id}', 'UsermanController@savedetails')->middleware('role:client')->middleware('verified');
 Route::get('/chartbig?tvwidgetsymbol={id}', 'UsermanController@savedetails')->middleware('role:client')->middleware('verified');
-// Route::get('home', 'DashboardController@versionone')->name('home')->middleware('role:client')->middleware('verified');
-
+Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:client')->middleware('verified');
+Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client')->middleware('verified');
+Route::get('/myholdings', 'UsermanController@clientHoldings')->middleware('role:client')->middleware('verified');
 
 //TEST
 Route::get('test', 'DashboardController@test')->name('test')->middleware('verified');

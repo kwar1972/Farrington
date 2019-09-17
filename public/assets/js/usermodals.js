@@ -110,8 +110,8 @@ if( typeof data[0] != 'undefined'){
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
-    $('#createpass').hide();
-    $('#createpass2').hide();
+    $('#createpass').show();
+    $('#createpass2').show();
     $('#sendveriemail').html('<label class="mb-1" class="mb-0"><b>Send Validation E-mail:</b></label><br><button class="btn btn-outline-success btn-sm" onClick="sendveriemail('+ data[0].id +')">Send!</button>');
     $('#userTitle').html('User Edit');
     $('#name').val(data[0].name);
@@ -119,6 +119,7 @@ if( typeof data[0] != 'undefined'){
     $('#email').val(data[0].email);
     $('#phone').val(data[0].phone);
     $('#mobile').val(data[0].mobile);
+    $('#password').val(data[0].password);
     $('#addr').val(data[0].addr);
     $('#state').val(data[0].state+' / '+ data[0].city);
     if(typeof data[0].get_bank[0] != 'undefined'){
@@ -185,13 +186,14 @@ if( typeof data[0] != 'undefined'){
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
-    $('#createpass').hide();
-    $('#createpass2').hide();
+    $('#createpass').show();
+    $('#createpass2').show();
     $('#sendveriemail').html('<label class="mb-1" class="mb-0"><b>Send Validation E-mail:</b></label><br><button class="btn btn-outline-success btn-sm" onClick="sendveriemail('+ data[0].id +')">Send!</button>');
     $('#userTitle').html('User Edit');
     $('#name').val(data[0].name);
     $('#lastname').val(data[0].lastname);
     $('#email').val(data[0].email);
+    $('#password').val(data[0].password);
     $('#phone').val(data[0].phone);
     $('#mobile').val(data[0].mobile);
     $('#addr').val(data[0].addr);
@@ -246,21 +248,18 @@ if( typeof data[0] != 'undefined'){
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
-    $('#createpass').hide();
-    $('#createpass2').hide();
+    $('#createpass').show();
+    $('#createpass2').show();
     $('#sendveriemail').html('<label class="mb-1" class="mb-0"><b>Send Validation E-mail:</b></label><br><button class="btn btn-outline-success btn-sm" onClick="sendveriemail('+ data.id +')">Send!</button>');
     $('#userTitle').html('User Edit');
     $('#name').val(data.name);
     $('#lastname').val(data.lastname);
     $('#email').val(data.email);
+    $('#password').val(data.password);
     $('#phone').val(data.phone);
     $('#mobile').val(data.mobile);
     $('#addr').val(data.addr);
     $('#state').val(data.state+' / '+ data.city);
-    $('#account').val('');
-    $('#swift').val('');
-    $('#iban').val('');
-    $('#coin').val('');
     $('#validated').val(data.email_verified_at);
     $('#created').val(data.created_at);
     $('#updated').val(data.updated_at);
@@ -306,13 +305,14 @@ if( typeof data[0] != 'undefined'){
     $('#usersysteminfoT').show();
     $('#usersysteminfo').show();
     $('#userstatus').show();
-    $('#createpass').hide();
-    $('#createpass2').hide();
+    $('#createpass').show();
+    $('#createpass2').show();
     $('#sendveriemail').html('<label class="mb-1" class="mb-0"><b>Send Validation E-mail:</b></label><br><button class="btn btn-outline-success btn-sm" onClick="sendveriemail('+ data.id +')">Send!</button>');
     $('#userTitle').html('User Edit');
     $('#name').val(data.name);
     $('#lastname').val(data.lastname);
     $('#email').val(data.email);
+    $('#password').val(data.password);
     $('#phone').val(data.phone);
     $('#mobile').val(data.mobile);
     $('#addr').val(data.addr);
@@ -499,10 +499,7 @@ function save_formUC(){
     "addr" : $('#addr').val(),
     "state" : $('#state').val(),
     "country" : $('#country').val(),
-    "account" : $('#account').val(),
-    "swift" : $('#swift').val(),
-    "routing" : $('#routing').val(),
-    "coin" : $('#coin').val(),
+    "password" : $('#password').val(),
     "isadmin" : $('input:radio[name=customRadio]:checked').val(),
     "isactive" : userActive
   }
@@ -560,9 +557,7 @@ function save_formUE(id){
     "state" : $('#state').val(),
     "country" : $('#country').val(),
     "account" : $('#account').val(),
-    "swift" : $('#swift').val(),
-    "routing" : $('#routing').val(),
-    "coin" : $('#coin').val(),
+    "password" : $('#password').val(),
     "isadmin" : $('input:radio[name=customRadio]:checked').val(),
     "isactive" : userActive
   }
