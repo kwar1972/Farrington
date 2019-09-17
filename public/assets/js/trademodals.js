@@ -258,11 +258,11 @@ $('#price').change(function () {
     $('#depositdiv').hide();
     $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTC()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
     $('#createModal').modal('show');
-    $('#amount').val(1);
+    $('#amount').val(' ');
     var amount = $('#amount').val();
     var price = $('#price').val();
-    $('#fee').val(0);
-    $('#total').val(amount * price);
+    $('#fee').val(' ');
+    $('#total').val(' ');
   };
 
 
