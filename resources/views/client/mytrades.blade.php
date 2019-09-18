@@ -138,6 +138,7 @@
               <th class="text-center">Total</th>
               <th class="text-center">Deposit</th>
               <th class="text-center">Purchased</th>
+              <th class="text-center">Created</th>
               <th class="text-center">Status</th>
             </tr>
           </thead>

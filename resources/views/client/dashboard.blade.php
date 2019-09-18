@@ -210,32 +210,22 @@
       <div class="row mt-4">
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-info">
-            <div class="inner">
-            <h3>{{$trades}} / {{$deposits}}</h3>
-
-              <p>Trades / Deposits</p>
-            </div>
-            <div class="icon">
-              <i class="fas fa-donate"></i>
-            </div>
-            <a href="/mytrades/" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
         </div>
         <!-- ./col -->
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-success">
-            <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-              <p>Account Standing</p>
+          <div class="small-box bg-info">
+              <div class="inner">
+              <h3>{{$trades}} / {{$deposits}}</h3>
+  
+                <p>Trades / Deposits</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-donate"></i>
+              </div>
+              <a href="/mytrades/" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
-            <div class="icon">
-              <i class="fas fa-signal"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
+         
         </div>
         <!-- ./col -->
         <div class="col-lg-3 col-6">
@@ -260,18 +250,7 @@
         </div>
         <!-- ./col -->
         <div class="col-lg-3 col-6">
-          <!-- small box -->
-          <div class="small-box bg-primary">
-            <div class="inner">
-              <h3>0</h3>
-
-              <p>Recommended</p>
-            </div>
-            <div class="icon">
-              <i class="fas fa-exclamation-triangle"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
+          
         </div>
         <!-- ./col -->
       </div>

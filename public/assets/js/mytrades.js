@@ -39,6 +39,7 @@ function settableTrades() {
                 { "data": "total" },
                 { "data": "deposit_at" },
                 { "data": "purchased_at" },
+                { "data": "created_at" },
                 { mRender: function (data, type, row) {
                   var pending = '<span class="badge badge-pill badge-seconday">Pending</span>';
                   var Paid = '<span class="badge badge-pill badge-info">Paid</span>';
