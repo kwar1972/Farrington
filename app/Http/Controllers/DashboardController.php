@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Support\Collection;
 use App;
 use App\User;
 use App\Trade;
@@ -14,11 +15,14 @@ class DashboardController extends Controller
     {   
         if(auth()->user()->hasRole('client')){
             $id = auth()->user()->id;
-            $ticker = Trade::where('status', '<>' , 'Cancelled')->with('getTicker')->get();
+            $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
             $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
             $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
-            $tickers = $ticker[0]->getTicker->get();
-            //dd($tickers);
+            
+            $tickers = $ticker->pluck('getTicker');
+            $tickers = $tickers->unique('ticker');
+         
+            
             return view('client.dashboard')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers);
         }else {
             return view('dashboard.dashboard');

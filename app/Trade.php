@@ -18,4 +18,5 @@ class Trade extends Model
     public function getTicker(){
         return $this->hasOne('App\Ticker', 'id', 'tickerid');
     }
+    
 }
