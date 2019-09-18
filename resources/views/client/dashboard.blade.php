@@ -205,7 +205,7 @@
           <!-- small box -->
           <div class="small-box bg-warning" style="min-height: 145px;">
             <div class="inner">
-              <div class="row">
+              <div class="row" style="min-height: 55px;">
                 @foreach($tickers as $ticker)
                 <div class="col-sm-6">
                    <h5 class="mb-1"><b>{{str_replace(":","",strstr($ticker->ticker, ':'))}}</b></h5>
