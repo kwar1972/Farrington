@@ -166,11 +166,12 @@ class UsermanController extends Controller
      */
     public function update(Request $request, $id)
     {
+        //dd($request);
         $user = User::find($id);
         $user->name = $request->name;
         $user->lastname = $request->lastname;
         $user->email = $request->email;
-        if($request->password !== ""){
+        if($request->password !== null){
         $user->password = Hash::make($request->password);
         };
         $user->phone = $request->phone;
