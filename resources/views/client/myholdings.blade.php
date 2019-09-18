@@ -2,7 +2,65 @@
 @section('content')
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    My HOLDINGS
+<!-- Content Header (Page header) -->
+<div class="content-header">
+<div class="container-fluid">
+<div class="row mb-2">
+<div class="col-sm-6">
+  <h1 class="m-0 text-dark"><i class="nav-icon fas fa-hand-holding-usd"></i> My Holdings </h1>
+  {{-- <button  class="btn btn-sm btn-primary g-color-white-user-i" data-toggle="tooltip" data-placement="right" title="Create User" onclick="openCreateModal()">Add new transaction</button> --}}
+</div>
+<!-- /.col -->
+<div class="col-sm-6">
+  <ol class="breadcrumb float-sm-right">
+    <li class="breadcrumb-item"><a href="home">Home</a></li>
+    <li class="breadcrumb-item"><a href="userman">My Holdings</a></li>
+  </ol>
+</div>
+<!-- /.col -->
+</div>
+
+<!-- /.row -->
+</div>
+<!-- /.container-fluid -->
+</div>
+<div id="spinner"></div>
+<!-- Main content -->
+<section class="content">
+<div class="container-fluid">
+  <div>
+    <table id="tabletrades" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
+      <thead class="g-bg-color-darkgrey g-color-white">
+        <tr>
+          <th class="text-center">Ticker</th>
+          <th class="text-center">Amount</th>
+          <th class="text-center">Paid Price</th>
+          <th class="text-center">Actual Price</th>
+          <th class="text-center">Sell Price</th>
+          <th class="text-center">Total Paid</th>
+          <th class="text-center">Total Position</th>
+          <th class="text-center">Total Earned</th>
+          <th class="text-center">Total Sold</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center">AWS</td>
+          <td class="text-center">1500</td>
+          <td class="text-center">15</td>
+          <td class="text-center">18</td>
+          <td class="text-center">19</td>
+          <td class="text-center">22500</td>
+          <td class="text-center">28500</td>
+          <td class="text-center">6000</td>
+          <td class="text-center">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</section>
+</div>
 </div>
 @endsection
  
