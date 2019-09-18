@@ -148,33 +148,6 @@
       <!-- TradingView Widget BEGIN -->
         <div class="row mb-2">
           <div class="col-12">
-            <!-- TradingView Widget BEGIN -->
-{{-- <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-    {
-    "symbols": [
-      {
-        "description": "USD/CAD",
-        "proName": "OANDA:USDCAD"
-      },
-      {
-        "description": "EUR/USD",
-        "proName": "OANDA:EURUSD"
-      },
-      {
-        "description": "USD/HKD",
-        "proName": "OANDA:USDHKD"
-      }
-    ],
-    "colorTheme": "dark",
-    "isTransparent": false,
-    "locale": "en"
-  }
-    </script>
-  </div> --}}
-  <!-- TradingView Widget END -->
             <div class="tradingview-widget-container">
                 <div class="tradingview-widget-container__widget"></div>
                   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
