@@ -1,6 +1,8 @@
 $(document).ready(function() {
+  'use strict'
     settableTrades()
-});
+})
+
 
 
 
@@ -37,9 +39,6 @@ function settableTrades() {
                 },
               },
                 { "data": "total" },
-                { "data": "deposit_at" },
-                { "data": "purchased_at" },
-                { "data": "created_at" },
                 { mRender: function (data, type, row) {
                   var pending = '<span class="badge badge-pill badge-seconday">Pending</span>';
                   var Paid = '<span class="badge badge-pill badge-info">Paid</span>';
@@ -66,12 +65,22 @@ function settableTrades() {
                   } 
                 },
                 },
+                { "data": "deposit_at" },
+                { "data": "purchased_at" },
+                { mRender: function (data, type, row) {
+                  var created = row.created_at.slice(0,10);
+                  return created
+                  } 
+                },
+                // { "data": "created_at" },
               ]
         });
-           
     },
     complete:function(){
       
     }
     });
   };
+
+
+  
