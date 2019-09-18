@@ -180,7 +180,16 @@ class UsermanController extends Controller
         $user->state = $request->state;
         $user->zip = $request->zip;
         $user->country = $request->country;
-        $user->isadmin = $request->isadmin;
+        switch ($request->isadmin){
+            case 2:
+                $user->assignRole('admin');
+            case 3:
+                $user->assignRole('loader');
+            case 4:
+                $user->assignRole('agent');
+            case 5:
+                $user->assignRole('client');
+        };
         $user->isactive = $request->isactive;
         $user->updated_at = Carbon::now()->toDateTimeString();
         try {
