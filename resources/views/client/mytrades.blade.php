@@ -130,14 +130,15 @@
           <thead class="g-bg-color-darkgrey g-color-white">
             <tr>
               <th class="text-center">Trade id</th>
-              <th class="text-center"></th>
+              <th class="text-center">Case</th>
               <th class="text-center">Ticker</th>
               <th class="text-center">Amount</th>
               <th class="text-center">Price</th>
               <th class="text-center">Fee (%)</th>
               <th class="text-center">Total</th>
+              <th class="text-center">Deposit</th>
+              <th class="text-center">Purchased</th>
               <th class="text-center">Status</th>
-              <th class="text-center">Actions</th>
             </tr>
           </thead>
           <tbody>

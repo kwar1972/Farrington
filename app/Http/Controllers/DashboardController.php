@@ -14,11 +14,12 @@ class DashboardController extends Controller
     {   
         if(auth()->user()->hasRole('client')){
             $id = auth()->user()->id;
-            $trades = Trade::where('userid', $id)->with('getTicker')->get();
-        //     return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
-        // JSON_UNESCAPED_UNICODE);
-        //dd($trades);
-            return view('dashboard.dashboard')->with('trades', $trades);
+            $ticker = Trade::where('userid', $id)->with('getTicker')->get();
+            $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
+            $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
+            $tickers = $ticker[0]->getTicker->get();
+         
+            return view('client.dashboard')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers);
         }else {
             return view('dashboard.dashboard');
         }

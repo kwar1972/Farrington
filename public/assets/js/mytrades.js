@@ -37,6 +37,8 @@ function settableTrades() {
                 },
               },
                 { "data": "total" },
+                { "data": "deposit_at" },
+                { "data": "purchased_at" },
                 { mRender: function (data, type, row) {
                   var pending = '<span class="badge badge-pill badge-seconday">Pending</span>';
                   var Paid = '<span class="badge badge-pill badge-info">Paid</span>';
@@ -62,11 +64,6 @@ function settableTrades() {
                       return Cancelled
                   } 
                 },
-                },
-                { mRender: function (data, type, row) {
-                    var linkEdit = '<div class="btn-group"><p class="btn btn-sm btn-primary font-weight-bold" onClick="open_editModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></p><p class="btn btn-sm btn-danger font-weight-bold" onClick="deleteconfirm(' + row.id + ');" data-toggle="tooltip" data-placement="right" title="Delete"><i class="fa fa-trash"></i></p></div>';
-                    return  linkEdit
-                  },
                 },
               ]
         });
