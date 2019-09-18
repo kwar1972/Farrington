@@ -243,7 +243,11 @@
           <div class="small-box bg-warning" style="min-height: 145px;">
             <div class="inner">
               <div class="row">
-                
+                @foreach($tickers as $ticker)
+                <div class="col-sm-6">
+                   <h5 class="mb-1"><b>{{str_replace(":","",strstr($ticker->ticker, ':'))}}</b></h5>
+                </div>
+                @endforeach
               </div>
 
               <p>Latest Holdings</p>
@@ -348,6 +352,10 @@
 
       </div>
       @foreach($tickers as $ticker)
+               
+                
+               
+                
       <div class="row">
             <!-- right col (We are only adding the ID to make the widgets sortable)-->
             <section class="col-lg-12 connectedSortable">
@@ -388,8 +396,8 @@
                   <!-- /.card -->
                 </section>
                 <!-- /.Left col -->
-              </div>
-              @endforeach
+      </div>
+      @endforeach
         </section>
       </div>
       <!-- /.row (main row) -->

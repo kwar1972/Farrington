@@ -125,7 +125,7 @@ class UsermanController extends Controller
         $id = auth()->user()->id;
         
         $trades = Trade::where('userid', $id)->with('getUsers')->with('getAgent')->with('getTicker')->get();
-        //dd($trades);
+        
         return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'], JSON_UNESCAPED_UNICODE);
     }
 
@@ -195,7 +195,7 @@ class UsermanController extends Controller
         try {
             $user->save();
             $message = '1';
-
+           
             return response()->json(['success' => $message], 200);
 
         } catch (\Exception $exception) 
@@ -219,6 +219,9 @@ class UsermanController extends Controller
         $user->name = $request->name;
         $user->lastname = $request->lastname;
         $user->email = $request->email;
+        if($request->password !== null){
+            $user->password = Hash::make($request->password);
+        };
         $user->phone = $request->phone;
         $user->mobile = $request->mobile;
         $user->addr = $request->addr;
