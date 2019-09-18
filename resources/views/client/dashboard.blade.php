@@ -243,11 +243,7 @@
           <div class="small-box bg-warning" style="min-height: 145px;">
             <div class="inner">
               <div class="row">
-                @foreach($tickers as $ticker)
-                <div class="col-sm-6">
-                   <h5 class="mb-1"><b>{{$ticker->ticker}}</b></h5>
-                </div>
-                @endforeach
+                
               </div>
 
               <p>Latest Holdings</p>
@@ -351,6 +347,7 @@
       <div class="row pt-4">
 
       </div>
+      @foreach($tickers as $ticker)
       <div class="row">
             <!-- right col (We are only adding the ID to make the widgets sortable)-->
             <section class="col-lg-12 connectedSortable">
@@ -369,7 +366,7 @@
                             <div class="tradingview-widget-copyright"><p onClick="OpenChartModal()" >Detailed Chart</p></div>
                             <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
                             {
-                              "symbol": "NYSE:BABA",
+                              "symbol": "{{$ticker->ticker}}",
                               "width": "100%",
                               "height": "100%",
                               "locale": "en",
@@ -391,7 +388,8 @@
                   <!-- /.card -->
                 </section>
                 <!-- /.Left col -->
-
+              </div>
+              @endforeach
         </section>
       </div>
       <!-- /.row (main row) -->
