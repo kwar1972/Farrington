@@ -62,8 +62,8 @@
   <div class="row">
       <div class="col-lg-3">
         <!-- About Me Box -->
-        <div class="card card-info" style="height: 470px;">
-            <div class="card-header">
+        <div class="card " style="height: 375px;">
+            <div class="card-header g-bg-navy g-color-white">
               <h3 class="card-title">Alibaba Stock Info</h3>
             </div>
             <!-- /.card-header -->
@@ -89,12 +89,7 @@
                 <span class="tag tag-success">468,707,672,064</span>
                 
               </p>
-  
-              <hr>
-  
-              <strong><i class="fa fa-sticky-note mr-1"></i> Notes</strong>
-  
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+              
             </div>
             <!-- /.card-body -->
           </div>
@@ -102,51 +97,20 @@
       </div>
       <div class="col-lg-9">
                  <!-- solid sales graph -->
-                 <div class="card bg-info">
+                 <div class="card g-bg-navy">
                     <div class="card-header border-0">
-                      <h3 class="card-title">
+                      <h3 class="card-title g-color-white">
                         <i class="fas fa-th mr-1"></i>
-                        Performance Graph
+                        Price progresion
                       </h3>
-      
-                      <div class="card-tools">
-                        <button type="button" class="btn bg-info btn-sm" data-card-widget="collapse">
-                          <i class="fas fa-minus"></i>
-                        </button>
-                        <button type="button" class="btn bg-info btn-sm" data-card-widget="remove">
-                          <i class="fas fa-times"></i>
-                        </button>
-                      </div>
                     </div>
                     <div class="card-body">
-                      <canvas class="chart" id="line-chart" style="height: 250px;"></canvas>
+                      <div class="chart" id="line-chart" style="height: 250px;"></div>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer bg-transparent">
-                      <div class="row">
-                        <div class="col-4 text-center">
-                          <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60"
-                                 data-fgColor="#39CCCC">
-      
-                          <div class="text-white">Mail-Orders</div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-4 text-center">
-                          <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60"
-                                 data-fgColor="#39CCCC">
-      
-                          <div class="text-white">Online</div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-4 text-center">
-                          <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60"
-                                 data-fgColor="#39CCCC">
-      
-                          <div class="text-white">In-Store</div>
-                        </div>
-                        <!-- ./col -->
-                      </div>
-                      <!-- /.row -->
+                      
+                  
                     </div>
                     <!-- /.card-footer -->
                   </div>
@@ -162,6 +126,7 @@
 <!-- JSGrid -->
 
 <!-- jQuery -->
+{{-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> --}}
 <script src="/dist/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>

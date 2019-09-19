@@ -32,7 +32,7 @@ $(document).ready(function() {
     xkey             : 'y',
     ykeys            : ['item1'],
     labels           : ['Item 1'],
-    lineColors       : ['#efefef'],
+    lineColors       : ['#17A2B8'],
     lineWidth        : 2,
     hideHover        : 'auto',
     gridTextColor    : '#fff',
