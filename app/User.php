@@ -10,6 +10,7 @@ use Spatie\Permission\Traits\HasRoles;
 use App;
 Use App\Transaction;
 Use App\Bank;
+Use App\Holding;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -65,6 +66,10 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function getBank(){
         return $this->hasMany('App\Bank', 'userid', 'id');
+    }
+
+    public function getHoldings(){
+        return $this->hasMany('App\Holding', 'userid', 'id');
     }
 
 }

@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App;
 use App\User;
-use App\Ticket;
+use App\Ticker;
 use App\Trade;
+use App\Holding;
 
 class TradesController extends Controller
 {
@@ -76,6 +77,39 @@ class TradesController extends Controller
         JSON_UNESCAPED_UNICODE);
     }
 
+    public function stockData($tickereal){
+        $curl = curl_init();
+        $ticker1 = $tickereal;
+       
+        
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 30000,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_SSL_VERIFYHOST => false,
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => array(
+                // Set Here Your Requesred Headers
+                'Access-Control-Allow-Origin: *',
+                'Content-Type: application/json',
+            ),
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+        
+        if ($err) {
+            echo "cURL Error #:" . $err;
+        } else {
+            $array = json_decode($response, true);
+            
+            $response = $array;
+            return $response;
+        }
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -91,11 +125,41 @@ class TradesController extends Controller
         $trade->agentid = $request->agentid;
         $trade->amount = $request->amount;
         $trade->price = $request->price;
+        $trade->fee = $request->fee;
         $trade->total = $request->total;
         $trade->status = 'Pending';
         $trade->created_at = Carbon::now()->toDateTimeString();
         $trade->updated_at = Carbon::now()->toDateTimeString();
+        
+        $amount = $request->amount;
+        $total = $request->total;
+        $tickerid = $request->tickerid;
+        $tickertemp = Ticker::find($tickerid);
+        $ticker = $tickertemp->ticker;
+        $tickereal = $ticker = preg_replace('/:/', '', strstr($ticker, ':'));
+        $client = auth()->user()->id;
+        $price = $this->stockData($tickereal);
+        $price = collect($price['data'], true);
+        $price = $price[0]['price'];
+
+        $holding = New Holding;
+        $holding->userid = $client;
+        $holding->ticker = $ticker;
+        $holding->amount = $request->amount;
+        $holding->price = $price;
+        $holding->paidprice = $total / $amount;
+        $holding->sellprice = $price;
+        $holding->totalpos = $request->amount * $price;
+        $holding->totalearn = $holding->totalpos - $request->total;
+        $holding->totalsold = 0;
+        $holding->total = $request->total;
+        $holding->fee = $request->fee;
+        $holding->created_at = Carbon::now()->toDateTimeString();
+        $holding->updated_at = Carbon::now()->toDateTimeString();
+
+
         try {
+            $holding->save();
             $trade->save();
             $message = '1';
 

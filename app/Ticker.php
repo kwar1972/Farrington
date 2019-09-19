@@ -7,7 +7,7 @@ use App\Trade;
 
 class Ticker extends Model
 {
-    public function trade(){
+    public function getUsers(){
         return $this->hasMany('App\Trade', 'tickerid', 'id');
     }
 }

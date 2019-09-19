@@ -129,27 +129,47 @@ class UsermanController extends Controller
         return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'], JSON_UNESCAPED_UNICODE);
     }
 
-    public function stockData($tickers){
+    public function stockData($tickers,$tickerscount){
         $curl = curl_init();
-        $ticker1 = $tickers[0]->ticker;
-        $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
-        $ticker2 = $tickers[1]->ticker;
-        $ticker2f = preg_replace('/:/', '', strstr($ticker2, ':'));
-        
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f.",".$ticker2f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_TIMEOUT => 30000,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_SSL_VERIFYHOST => false,
-            CURLOPT_SSL_VERIFYPEER => false,
-            CURLOPT_CUSTOMREQUEST => "GET",
-            CURLOPT_HTTPHEADER => array(
-                // Set Here Your Requesred Headers
-                'Access-Control-Allow-Origin: *',
-                'Content-Type: application/json',
-            ),
-        ));
+        if($tickerscount !== 1){
+            $ticker1 = $tickers[0]->ticker;
+            $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
+            $ticker2 = $tickers[1]->ticker;
+            $ticker2f = preg_replace('/:/', '', strstr($ticker2, ':'));
+            
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f.",".$ticker2f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_TIMEOUT => 30000,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_SSL_VERIFYHOST => false,
+                CURLOPT_SSL_VERIFYPEER => false,
+                CURLOPT_CUSTOMREQUEST => "GET",
+                CURLOPT_HTTPHEADER => array(
+                    // Set Here Your Requesred Headers
+                    'Access-Control-Allow-Origin: *',
+                    'Content-Type: application/json',
+                ),
+            ));
+        }else{
+            $ticker1 = $tickers[0]->ticker;
+            
+            $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_TIMEOUT => 30000,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_SSL_VERIFYHOST => false,
+                CURLOPT_SSL_VERIFYPEER => false,
+                CURLOPT_CUSTOMREQUEST => "GET",
+                CURLOPT_HTTPHEADER => array(
+                    // Set Here Your Requesred Headers
+                    'Access-Control-Allow-Origin: *',
+                    'Content-Type: application/json',
+                ),
+            ));
+        }
         $response = curl_exec($curl);
         $err = curl_error($curl);
         curl_close($curl);
@@ -167,15 +187,32 @@ class UsermanController extends Controller
 
     public function clientHoldings(){
         $id = auth()->user()->id;
-        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
-        $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
-        $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
-        $tickers = $ticker->pluck('getTicker');
-        $tickers = $tickers->unique('ticker');
-        $tickerdata = $this->stockData($tickers);
-        $tickerdata = collect($tickerdata['data'], true);
         
-        return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('tickerdata', $tickerdata);
+        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
+        if($deposits !== 0){
+            $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
+            $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
+            $tickers = $ticker->pluck('getTicker');
+            $tickers = $tickers->unique('ticker');
+            $tickerscount = $tickers->count();
+            //dd($tickerscount);
+            if($tickerscount !== 1){
+                dd($tickerscount);
+                $tickerdata = $this->stockData($tickers,$tickerscount);
+                $tickerdata = collect($tickerdata['data'], true);
+                return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('tickerdata', $tickerdata);
+            } else {
+                $tickerdata = $this->stockData($tickers,$tickerscount);
+                $tickerdata = collect($tickerdata['data'], true);
+                return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('tickerdata', $tickerdata);
+            }
+            
+        }else{
+
+            $nodata = 0;
+
+            return view('client.myholdings')->with('nodata', $nodata);
+        }
     }
 
     /**

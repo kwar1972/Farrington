@@ -28,7 +28,7 @@
 <!-- Main content -->
 <section class="content">
 <div class="container-fluid">
-  
+@if(!isset($nodata) || $nodata !== 0)  
   <div class="row mb-5">
     <div class="col-sm-12">
     <table id="tableholdings" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
@@ -133,6 +133,14 @@
       </div>
 </div>
 @endforeach
+@else
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h2>NO HOLDINGS TO DISPLAY</h2>
+  </div>
+</div>
+@endif
+</div>
 </section>
 </div>
 </div>
