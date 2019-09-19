@@ -115,7 +115,7 @@
                  <div class="card g-bg-navy">
                     <div class="card-header border-0">
                       <h3 class="card-title g-color-white">
-                        <i class="fas fa-th mr-1"></i>
+                        <i class="fas fa-chart-line mr-1"></i>
                         {{$ticker['symbol']}} - Intraday data (30 Days) - <span class="g-color-red">Coming soon..</span>
                       </h3>
                     </div>

@@ -174,10 +174,6 @@ class UsermanController extends Controller
         $tickers = $tickers->unique('ticker');
         $tickerdata = $this->stockData($tickers);
         $tickerdata = collect($tickerdata['data'], true);
-        //dd($tickerdata);
-        
-        
-        // $tickerdata = $tickerdata[0]->data;
         
         return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('tickerdata', $tickerdata);
     }

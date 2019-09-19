@@ -12,74 +12,74 @@ $(document).ready(function() {
     /* jQueryKnob */
   $('.knob').knob();
 
-  /* Morris.js Charts */
-  // Sales chart
-  $.ajax({
-    url: "/test",
-    method: "GET",
-    dataType: 'json',
-    contentType:'application/json',
-    header:('Access-Control-Allow-Origin: *'),
-    success:function data(data,a,b,c) {
-      console.log(data);
-    var ret = [
-        { y: 'data', a: 100, b: 90 ,c:50},
-        { y: '2007', a: 75,  b: 65 ,c:50},
-        { y: '2008', a: 50,  b: 40 ,c:50},
-        { y: '2009', a: 75,  b: 65 ,c:50},
-        { y: '2010', a: 50,  b: 40 ,c:50},
-        { y: '2011', a: 75,  b: 65 ,c:50},
-        { y: '2012', a: 100, b: 90 ,c:50}
-      ];
+//   /* Morris.js Charts */
+//   // Sales chart
+//   $.ajax({
+//     url: "/test",
+//     method: "GET",
+//     dataType: 'json',
+//     contentType:'application/json',
+//     header:('Access-Control-Allow-Origin: *'),
+//     success:function data(data,a,b,c) {
+//       console.log(data);
+//     var ret = [
+//         { y: 'data', a: 100, b: 90 ,c:50},
+//         { y: '2007', a: 75,  b: 65 ,c:50},
+//         { y: '2008', a: 50,  b: 40 ,c:50},
+//         { y: '2009', a: 75,  b: 65 ,c:50},
+//         { y: '2010', a: 50,  b: 40 ,c:50},
+//         { y: '2011', a: 75,  b: 65 ,c:50},
+//         { y: '2012', a: 100, b: 90 ,c:50}
+//       ];
      
-      if(a==false)
-      {
+//       if(a==false)
+//       {
           
-      for(var i = 0; i < ret.length; i++)
-        delete ret[i].a;        
-      }
-      if(b==false)
-      {
+//       for(var i = 0; i < ret.length; i++)
+//         delete ret[i].a;        
+//       }
+//       if(b==false)
+//       {
          
-      for(var i = 0; i < ret.length; i++)
-        delete ret[i].b;        
-      }
-      if(c==false)
-      {
+//       for(var i = 0; i < ret.length; i++)
+//         delete ret[i].b;        
+//       }
+//       if(c==false)
+//       {
          
-      for(var i = 0; i < ret.length; i++)
-        delete ret[i].c;        
-      }    
-       return ret;
-  }
-});
+//       for(var i = 0; i < ret.length; i++)
+//         delete ret[i].c;        
+//       }    
+//        return ret;
+//   }
+// });
   
-  var line = new Morris.Line({
-    element          : 'line-chart',
-    resize           : true,
-    data: data(),
-    xkey: 'y',
-    ykeys            : ['item1'],
-    ykeys: ['a', 'b','c'],
-    labels: ['High', 'Low','Close'],
-    colors: ['Red',"blue","green"],
-    // lineColors       : ['#17A2B8'],
-    lineWidth        : 2,
-    hideHover        : 'auto',
-    gridTextColor    : '#fff',
-    gridStrokeWidth  : 0.4,
-    pointSize        : 4,
-    pointStrokeColors: ['#efefef'],
-    gridLineColor    : '#efefef',
-    gridTextFamily   : 'Open Sans',
-    gridTextSize     : 10
-  });
+//   var line = new Morris.Line({
+//     element          : 'line-chart',
+//     resize           : true,
+//     data: data(),
+//     xkey: 'y',
+//     ykeys            : ['item1'],
+//     ykeys: ['a', 'b','c'],
+//     labels: ['High', 'Low','Close'],
+//     colors: ['Red',"blue","green"],
+//     // lineColors       : ['#17A2B8'],
+//     lineWidth        : 2,
+//     hideHover        : 'auto',
+//     gridTextColor    : '#fff',
+//     gridStrokeWidth  : 0.4,
+//     pointSize        : 4,
+//     pointStrokeColors: ['#efefef'],
+//     gridLineColor    : '#efefef',
+//     gridTextFamily   : 'Open Sans',
+//     gridTextSize     : 10
+//   });
 
  
 
   //Fix for charts under tabs
   
-    line.redraw()
+    // line.redraw()
 
 });
 
@@ -124,8 +124,6 @@ function settableHoldings() {
                   var amount = row.amount;
                   var sellprice = 59;
                   var tpos = (amount * sellprice);
-                  console.log(tpos);
-                  
                   return tpos;
                 }},
                 { mRender: function (data, type, row) {
@@ -134,8 +132,6 @@ function settableHoldings() {
                   var sellprice = 59;
                   var tpos = (amount * sellprice);
                   var tearn = (tpos - totp);
-                  console.log(tearn);
-                  
                   return tearn;
                 }},
                 { mRender: function (data, type, row) {
