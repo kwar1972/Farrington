@@ -20,7 +20,6 @@ class StockdataController extends Controller
             CURLOPT_SSL_VERIFYPEER => false,
             CURLOPT_CUSTOMREQUEST => "GET",
             CURLOPT_HTTPHEADER => array(
-                // Set Here Your Requesred Headers
                 'Access-Control-Allow-Origin: *',
                 'Content-Type: application/json',
             ),

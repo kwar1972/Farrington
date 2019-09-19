@@ -131,14 +131,29 @@ class UsermanController extends Controller
 
     public function stockData($tickers,$tickerscount){
         $curl = curl_init();
+        
         if($tickerscount !== 1){
-            $ticker1 = $tickers[0]->ticker;
-            $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
-            $ticker2 = $tickers[1]->ticker;
-            $ticker2f = preg_replace('/:/', '', strstr($ticker2, ':'));
+            $tickerfinal = array();
+            foreach($tickers as $tickers1){
+                $ticker1 = $tickers1->ticker;
+                $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
+                array_push($tickerfinal, $ticker1f.',');
+            }
+    
+            $str1 = "https://api.worldtradingdata.com/api/v1/stock?symbol=";
+            $str2 = "&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4";
             
+            function create_query_string($tickerfinal) {
+            
+                return implode($tickerfinal);
+            }
+            
+            $url = create_query_string($tickerfinal);
+            $url = substr_replace($url ,"", -1);
+            $url = $str1.$url.$str2; 
+           
             curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f.",".$ticker2f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+                CURLOPT_URL => $url,
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_TIMEOUT => 30000,
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
@@ -146,7 +161,6 @@ class UsermanController extends Controller
                 CURLOPT_SSL_VERIFYPEER => false,
                 CURLOPT_CUSTOMREQUEST => "GET",
                 CURLOPT_HTTPHEADER => array(
-                    // Set Here Your Requesred Headers
                     'Access-Control-Allow-Origin: *',
                     'Content-Type: application/json',
                 ),
@@ -164,7 +178,6 @@ class UsermanController extends Controller
                 CURLOPT_SSL_VERIFYPEER => false,
                 CURLOPT_CUSTOMREQUEST => "GET",
                 CURLOPT_HTTPHEADER => array(
-                    // Set Here Your Requesred Headers
                     'Access-Control-Allow-Origin: *',
                     'Content-Type: application/json',
                 ),
@@ -195,17 +208,10 @@ class UsermanController extends Controller
             $tickers = $ticker->pluck('getTicker');
             $tickers = $tickers->unique('ticker');
             $tickerscount = $tickers->count();
-            //dd($tickerscount);
-            if($tickerscount !== 1){
-                dd($tickerscount);
-                $tickerdata = $this->stockData($tickers,$tickerscount);
-                $tickerdata = collect($tickerdata['data'], true);
-                return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('tickerdata', $tickerdata);
-            } else {
-                $tickerdata = $this->stockData($tickers,$tickerscount);
-                $tickerdata = collect($tickerdata['data'], true);
-                return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('tickerdata', $tickerdata);
-            }
+            $tickerdata = $this->stockData($tickers,$tickerscount);
+            $tickerdata = collect($tickerdata['data'], true);
+            return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('tickerdata', $tickerdata);
+
             
         }else{
 
