@@ -53,50 +53,70 @@
     </table>
   </div>
   </div>
-  @foreach($tickers as $ticker)
+  @foreach($tickerdata as $ticker)
   <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-6">
         <!-- About Me Box -->
         <div class="card " style="height: 375px;">
             <div class="card-header g-bg-navy g-color-white">
-              <h3 class="card-title">{{$ticker->description}} Stock Info</h3>
+              <h3 class="card-title">{{$ticker['name']}}</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-              <strong><i class="fas fa-book mr-1"></i>Stock Exchange / Simbol</strong>
-  
-              <p class="text-muted">
-                  {{$ticker->ticker}}
-              </p>
-  
-              <hr>
-  
-              <strong><i class="fas fa-map-marker-alt mr-1"></i>Company Name</strong>
-  
-              <p class="text-muted">{{$ticker->description}}</p>
-  
-              <hr>
-  
-              <strong><i class="fas fa-pencil-alt mr-1"></i> Total Shares / Market Capital</strong>
-  
-              <p class="text-muted">
-                <span class="tag tag-danger">2,603,569,920 / </span>
-                <span class="tag tag-success">468,707,672,064</span>
+              <div class="row">
+                <div class="col-sm-6">
+                  <strong><i class="fas fa-book mr-1"></i>Stock Exchange / Simbol</strong>
+
+                  <p class="text-muted">
+                      {{$ticker['symbol']}}
+                  </p>
                 
-              </p>
-              
+                  <hr>
+                
+                  <strong><i class="fas fa-dollar-sign mr-1 mb-1"></i>Price variations</strong>
+                
+                  <p class="g-color-black"><b>Opening Price: </b>{{$ticker['price_open']}} usd.</p>
+                  <p><span class="g-color-green-op"><b>Day High: </b></span><span class="g-color-black">{{$ticker['day_high']}} usd.</span></p>
+                  <p><span class="g-color-red-op"><b>Day Low: </b></span><span class="g-color-black">{{$ticker['day_low']}} usd.</span></p>
+                  <p><span class="text-primary"><b>Close Yesterday: </b></span><span class="g-color-black">{{$ticker['close_yesterday']}} usd.</span></p>
+                  
+                </div>
+                <div class="col-sm-6">
+                    <strong><i class="fas fa-map-marker-alt mr-1"></i>Company Name</strong>
+                  
+                    <p class="text-muted">{{$ticker['name']}}</p>
+                  
+                    <hr>
+                    <strong><i class="fab fa-stack-exchange mr-1"></i>Stock Exchange / Simbol</strong>
+
+                    <p class="text-muted">
+                        {{$ticker['symbol']}}
+                    </p>
+                    
+                  
+                    <hr>
+                   
+                    <strong><i class="fas fa-search mr-1"></i> Total Shares / Market Capital</strong>
+                  
+                    <p class="text-muted">
+                      <span class="tag tag-danger">{{$ticker['shares']}} / </span>
+                      <span class="tag tag-success">{{$ticker['market_cap']}}</span>
+  
+                    </p>
+                </div>
+              </div>
             </div>
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-6">
                  <!-- solid sales graph -->
                  <div class="card g-bg-navy">
                     <div class="card-header border-0">
                       <h3 class="card-title g-color-white">
                         <i class="fas fa-th mr-1"></i>
-                        {{$ticker->ticker}} - Intraday data (30 Days) - <span class="g-color-red">Coming soon..</span>
+                        {{$ticker['symbol']}} - Intraday data (30 Days) - <span class="g-color-red">Coming soon..</span>
                       </h3>
                     </div>
                     <div class="card-body">

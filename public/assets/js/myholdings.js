@@ -14,72 +14,72 @@ $(document).ready(function() {
 
   /* Morris.js Charts */
   // Sales chart
-//   $.ajax({
-//     url: "https://intraday.worldtradingdata.com/api/v1/intraday?symbol=QCOM&range=1&interval=1&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
-//     method: "GET",
-//     dataType: 'json',
-//     contentType:'application/json',
-//     header:('Access-Control-Allow-Origin: *'),
-//     success:function data(data,a,b,c) {
-//       console.log(data);
-//     var ret = [
-//         { y: 'data', a: 100, b: 90 ,c:50},
-//         { y: '2007', a: 75,  b: 65 ,c:50},
-//         { y: '2008', a: 50,  b: 40 ,c:50},
-//         { y: '2009', a: 75,  b: 65 ,c:50},
-//         { y: '2010', a: 50,  b: 40 ,c:50},
-//         { y: '2011', a: 75,  b: 65 ,c:50},
-//         { y: '2012', a: 100, b: 90 ,c:50}
-//       ];
+  $.ajax({
+    url: "/test",
+    method: "GET",
+    dataType: 'json',
+    contentType:'application/json',
+    header:('Access-Control-Allow-Origin: *'),
+    success:function data(data,a,b,c) {
+      console.log(data);
+    var ret = [
+        { y: 'data', a: 100, b: 90 ,c:50},
+        { y: '2007', a: 75,  b: 65 ,c:50},
+        { y: '2008', a: 50,  b: 40 ,c:50},
+        { y: '2009', a: 75,  b: 65 ,c:50},
+        { y: '2010', a: 50,  b: 40 ,c:50},
+        { y: '2011', a: 75,  b: 65 ,c:50},
+        { y: '2012', a: 100, b: 90 ,c:50}
+      ];
      
-//       if(a==false)
-//       {
+      if(a==false)
+      {
           
-//       for(var i = 0; i < ret.length; i++)
-//         delete ret[i].a;        
-//       }
-//       if(b==false)
-//       {
+      for(var i = 0; i < ret.length; i++)
+        delete ret[i].a;        
+      }
+      if(b==false)
+      {
          
-//       for(var i = 0; i < ret.length; i++)
-//         delete ret[i].b;        
-//       }
-//       if(c==false)
-//       {
+      for(var i = 0; i < ret.length; i++)
+        delete ret[i].b;        
+      }
+      if(c==false)
+      {
          
-//       for(var i = 0; i < ret.length; i++)
-//         delete ret[i].c;        
-//       }    
-//        return ret;
-//   }
-// });
+      for(var i = 0; i < ret.length; i++)
+        delete ret[i].c;        
+      }    
+       return ret;
+  }
+});
   
-//   var line = new Morris.Line({
-//     element          : 'line-chart',
-//     resize           : true,
-//     data: data(),
-//     xkey: 'y',
-//     ykeys            : ['item1'],
-//     ykeys: ['a', 'b','c'],
-//     labels: ['High', 'Low','Close'],
-//     colors: ['Red',"blue","green"],
-//     // lineColors       : ['#17A2B8'],
-//     lineWidth        : 2,
-//     hideHover        : 'auto',
-//     gridTextColor    : '#fff',
-//     gridStrokeWidth  : 0.4,
-//     pointSize        : 4,
-//     pointStrokeColors: ['#efefef'],
-//     gridLineColor    : '#efefef',
-//     gridTextFamily   : 'Open Sans',
-//     gridTextSize     : 10
-//   });
+  var line = new Morris.Line({
+    element          : 'line-chart',
+    resize           : true,
+    data: data(),
+    xkey: 'y',
+    ykeys            : ['item1'],
+    ykeys: ['a', 'b','c'],
+    labels: ['High', 'Low','Close'],
+    colors: ['Red',"blue","green"],
+    // lineColors       : ['#17A2B8'],
+    lineWidth        : 2,
+    hideHover        : 'auto',
+    gridTextColor    : '#fff',
+    gridStrokeWidth  : 0.4,
+    pointSize        : 4,
+    pointStrokeColors: ['#efefef'],
+    gridLineColor    : '#efefef',
+    gridTextFamily   : 'Open Sans',
+    gridTextSize     : 10
+  });
 
  
 
-  // Fix for charts under tabs
+  //Fix for charts under tabs
   
-    // line.redraw()
+    line.redraw()
 
 });
 

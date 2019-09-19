@@ -55,6 +55,7 @@ Route::get('contactus', function () {
 Route::get('/getHoldings/{id}', 'TradesController@getHoldings');
 Route::get('roles', 'permController@preTorole');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('/test', 'StockdataController@datatest');
 
 Auth::routes(['verify' => true]);
 Route::get('home', 'DashboardController@versionone')->name('home')->middleware('verified');
@@ -106,5 +107,3 @@ Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:clie
 Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client')->middleware('verified');
 Route::get('/myholdings', 'UsermanController@clientHoldings')->middleware('role:client')->middleware('verified');
 
-//TEST
-Route::get('test', 'DashboardController@test')->name('test')->middleware('verified');

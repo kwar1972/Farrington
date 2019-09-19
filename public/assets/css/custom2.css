@@ -12,8 +12,19 @@ a{
 .g-color-white{
     color: white ;
 }
+.g-color-black{
+    color: black ;
+    opacity: 0.6;
+}
 .g-color-white-i{
     color: white !important;
+}
+.g-color-green{
+    color: #28A745 !important;
+}
+.g-color-green-op{
+    color: #28A745 !important;
+    opacity: 0.6;
 }
 .g-color-green-i{
     color: #28A745 !important;
@@ -108,6 +119,10 @@ a{
     border-radius: 70px;
     box-shadow: 0px 0px 2px #888;
     padding: 0.5em 0.6em;
+}
+.g-color-red-op{
+    color: red !important;
+    opacity: 0.6;
 }
 .g-color-red{
     color: red !important;

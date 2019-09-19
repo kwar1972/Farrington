@@ -129,6 +129,42 @@ class UsermanController extends Controller
         return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'], JSON_UNESCAPED_UNICODE);
     }
 
+    public function stockData($tickers){
+        $curl = curl_init();
+        $ticker1 = $tickers[0]->ticker;
+        $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
+        $ticker2 = $tickers[1]->ticker;
+        $ticker2f = preg_replace('/:/', '', strstr($ticker2, ':'));
+        
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f.",".$ticker2f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 30000,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_SSL_VERIFYHOST => false,
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => array(
+                // Set Here Your Requesred Headers
+                'Access-Control-Allow-Origin: *',
+                'Content-Type: application/json',
+            ),
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+        
+        if ($err) {
+            echo "cURL Error #:" . $err;
+        } else {
+            $array = json_decode($response, true);
+            
+            $response = $array;
+            return $response;
+        }
+    }
+
+
     public function clientHoldings(){
         $id = auth()->user()->id;
         $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
@@ -136,8 +172,14 @@ class UsermanController extends Controller
         $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
         $tickers = $ticker->pluck('getTicker');
         $tickers = $tickers->unique('ticker');
-        //dd($tickers);
-        return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers);
+        $tickerdata = $this->stockData($tickers);
+        $tickerdata = collect($tickerdata['data'], true);
+        //dd($tickerdata);
+        
+        
+        // $tickerdata = $tickerdata[0]->data;
+        
+        return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('tickerdata', $tickerdata);
     }
 
     /**
