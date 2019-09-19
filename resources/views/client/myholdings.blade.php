@@ -101,7 +101,7 @@
                     <div class="card-header border-0">
                       <h3 class="card-title g-color-white">
                         <i class="fas fa-th mr-1"></i>
-                        Price progresion
+                        NYSE:BABA - Intraday data (30 Days) - <span class="g-color-red">Coming soon..</span>
                       </h3>
                     </div>
                     <div class="card-body">
