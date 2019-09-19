@@ -9,6 +9,7 @@ use Carbon\Carbon;
 use App;
 use App\User;
 use App\Trade;
+use App\Holding;
 
 class UsermanController extends Controller
 {
@@ -197,6 +198,11 @@ class UsermanController extends Controller
         }
     }
 
+    public function holdingsList(){
+        $id = auth()->user()->id;
+        $holdings = Holding::where('userid',$id)->get();
+        return response()->json($holdings, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'], JSON_UNESCAPED_UNICODE);
+    }
 
     public function clientHoldings(){
         $id = auth()->user()->id;

@@ -89,7 +89,7 @@ $(document).ready(function() {
 function settableHoldings() {  
     $("#loaderDiv").show();
     $.ajax({
-    'url': "/mytradelist",
+    'url': "/myholdingslist",
     'method': "GET",
     'contentType': 'application/json',
     beforeSend: function(){
@@ -105,39 +105,15 @@ function settableHoldings() {
                 },
               ],
               "columns": [
-                { mRender: function (data, type, row) {
-                  var ticker = '<span>' + row.get_ticker.ticker +'</span>';
-                  return ticker;
-                }},
+                { "data": "ticker" },
                 { "data": "amount" },
                 { "data": "price" },
-                { mRender: function (data, type, row) {
-                  var val = 59;
-                  return val;
-                }},
-                { mRender: function (data, type, row) {
-                  var val = 59;
-                  return val;
-                }},
-                { "data": "total" },
-                { mRender: function (data, type, row) {
-                  var amount = row.amount;
-                  var sellprice = 59;
-                  var tpos = (amount * sellprice);
-                  return tpos;
-                }},
-                { mRender: function (data, type, row) {
-                  var totp = row.total;
-                  var amount = row.amount;
-                  var sellprice = 59;
-                  var tpos = (amount * sellprice);
-                  var tearn = (tpos - totp);
-                  return tearn;
-                }},
-                { mRender: function (data, type, row) {
-                  var val = 0;
-                  return val;
-                }},
+                { "data": "paidprice" },
+                { "data": "price" },
+                { "data": "sellprice" },
+                { "data": "totalpos" },
+                { "data": "totalearn" },
+                { "data": "totalsold" },
               ]
         });
     },

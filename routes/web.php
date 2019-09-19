@@ -106,4 +106,5 @@ Route::get('/chartbig?tvwidgetsymbol={id}', 'UsermanController@savedetails')->mi
 Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:client')->middleware('verified');
 Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client')->middleware('verified');
 Route::get('/myholdings', 'UsermanController@clientHoldings')->middleware('role:client')->middleware('verified');
+Route::get('/myholdingslist', 'UsermanController@holdingsList')->middleware('role:client')->middleware('verified');
 

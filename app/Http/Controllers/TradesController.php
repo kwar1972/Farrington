@@ -137,7 +137,7 @@ class TradesController extends Controller
         $tickertemp = Ticker::find($tickerid);
         $ticker = $tickertemp->ticker;
         $tickereal = $ticker = preg_replace('/:/', '', strstr($ticker, ':'));
-        $client = auth()->user()->id;
+        $client = $request->clientid;
         $price = $this->stockData($tickereal);
         $price = collect($price['data'], true);
         $price = $price[0]['price'];
