@@ -111,7 +111,37 @@ function settableHoldings() {
                 }},
                 { "data": "amount" },
                 { "data": "price" },
+                { mRender: function (data, type, row) {
+                  var val = 59;
+                  return val;
+                }},
+                { mRender: function (data, type, row) {
+                  var val = 59;
+                  return val;
+                }},
                 { "data": "total" },
+                { mRender: function (data, type, row) {
+                  var amount = row.amount;
+                  var sellprice = 59;
+                  var tpos = (amount * sellprice);
+                  console.log(tpos);
+                  
+                  return tpos;
+                }},
+                { mRender: function (data, type, row) {
+                  var totp = row.total;
+                  var amount = row.amount;
+                  var sellprice = 59;
+                  var tpos = (amount * sellprice);
+                  var tearn = (tpos - totp);
+                  console.log(tearn);
+                  
+                  return tearn;
+                }},
+                { mRender: function (data, type, row) {
+                  var val = 0;
+                  return val;
+                }},
               ]
         });
     },

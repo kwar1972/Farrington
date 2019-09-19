@@ -29,8 +29,9 @@
 <section class="content">
 <div class="container-fluid">
   
-  <div class="row">
-    <table id="tabletrades" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
+  <div class="row mb-5">
+    <div class="col-sm-12">
+    <table id="tableholdings" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
       <thead class="g-bg-color-darkgrey g-color-white">
         <tr>
           <th class="text-center">Ticker</th>
@@ -46,18 +47,11 @@
       </thead>
       <tbody>
         <tr>
-          <td class="text-center">AWS</td>
-          <td class="text-center">1500</td>
-          <td class="text-center">15</td>
-          <td class="text-center">18</td>
-          <td class="text-center">19</td>
-          <td class="text-center">22500</td>
-          <td class="text-center">28500</td>
-          <td class="text-center">6000</td>
-          <td class="text-center">0</td>
+       
         </tr>
       </tbody>
     </table>
+  </div>
   </div>
   <div class="row">
       <div class="col-lg-3">

@@ -20,8 +20,7 @@ class DashboardController extends Controller
             $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
             $tickers = $ticker->pluck('getTicker');
             $tickers = $tickers->unique('ticker');
-            // $tickervalue = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
-            // $tvalue = $tickervalue->groupBy('tickerid');
+            
             //dd($tvalue);
             return view('client.dashboard')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers);
         }else {
