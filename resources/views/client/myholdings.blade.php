@@ -53,26 +53,27 @@
     </table>
   </div>
   </div>
+  @foreach($tickers as $ticker)
   <div class="row">
       <div class="col-lg-3">
         <!-- About Me Box -->
         <div class="card " style="height: 375px;">
             <div class="card-header g-bg-navy g-color-white">
-              <h3 class="card-title">Alibaba Stock Info</h3>
+              <h3 class="card-title">{{$ticker->description}} Stock Info</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
               <strong><i class="fas fa-book mr-1"></i>Stock Exchange / Simbol</strong>
   
               <p class="text-muted">
-                  NYSE / BABA
+                  {{$ticker->ticker}}
               </p>
   
               <hr>
   
               <strong><i class="fas fa-map-marker-alt mr-1"></i>Company Name</strong>
   
-              <p class="text-muted">Alibaba Group Holding Limited</p>
+              <p class="text-muted">{{$ticker->description}}</p>
   
               <hr>
   
@@ -95,7 +96,7 @@
                     <div class="card-header border-0">
                       <h3 class="card-title g-color-white">
                         <i class="fas fa-th mr-1"></i>
-                        NYSE:BABA - Intraday data (30 Days) - <span class="g-color-red">Coming soon..</span>
+                        {{$ticker->ticker}} - Intraday data (30 Days) - <span class="g-color-red">Coming soon..</span>
                       </h3>
                     </div>
                     <div class="card-body">
@@ -111,6 +112,7 @@
                   <!-- /.card -->
       </div>
 </div>
+@endforeach
 </section>
 </div>
 </div>

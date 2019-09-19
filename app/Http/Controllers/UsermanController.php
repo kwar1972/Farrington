@@ -130,7 +130,14 @@ class UsermanController extends Controller
     }
 
     public function clientHoldings(){
-        return view('client.myholdings');
+        $id = auth()->user()->id;
+        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
+        $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
+        $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
+        $tickers = $ticker->pluck('getTicker');
+        $tickers = $tickers->unique('ticker');
+        //dd($tickers);
+        return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers);
     }
 
     /**
