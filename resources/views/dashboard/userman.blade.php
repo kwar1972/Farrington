@@ -802,9 +802,9 @@
                 <thead class="g-bg-color-darkgrey g-color-white">
                   <tr>
                     <th class="text-center">id</th>
-                    <th class="text-center">name</th>
+                    <th class="text-center">Name</th>
                     <th class="text-center">Surname</th>
-                    <th class="text-center">email</th>
+                    <th class="text-center">Email</th>
                     <th class="text-center">Role</th>
                     <th class="text-center">Status</th>
                     <th class="text-center">Actions</th>
