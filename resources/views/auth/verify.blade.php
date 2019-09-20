@@ -1,24 +1,27 @@
-@extends('layouts.frontend')
-
+@extends('layouts.frontend') 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Verify Your Email Address</div>
-
-                <div class="card-body">
-                    @if (session('resent'))
-                        <div class="alert alert-success" role="alert">
-                            A fresh verification link has been sent to your email address.
-                        </div>
-                    @endif
-
-                    Before proceeding, please check your email for a verification link.
-                    If you did not receive the email, <a href="{{ route('verification.resend') }}">click here to request another</a>.
+<section class="container" style="padding: 120px 0px 120px 0px;">
+            <div class="row">
+                <div class="col-sm-2 col-lg-2 aligncenter"></div>
+                <div class="col-sm-8 col-lg-8">
+                    <div class="pb-5  mt-5 aligncenter">
+                        <b>Verify Your Email Address</b>
+                    </div>
+                
+                    <div class=" aligncenter">
+                        @if (session('resent'))
+                            <div class="alert alert-success" role="alert">
+                                A fresh verification link has been sent to your email address.
+                            </div>
+                        @endif
+                            <p class="pb-5">Before proceeding, please check your email for a verification link. If you did not receive the email,</p>
+                        
+                         <a class="btn btn-success pt-2" href="{{ route('verification.resend') }}">click here to request another</a>.
+                    </div>
                 </div>
+                <div class="col-sm-2 col-lg-2 aligncenter"></
             </div>
-        </div>
-    </div>
-</div>
+          </section>
 @endsection
+
+

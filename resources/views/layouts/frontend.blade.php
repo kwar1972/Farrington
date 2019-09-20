@@ -16,17 +16,17 @@
         <meta property="og:url" content="index"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
-        <meta property="og:image" content="../www.baxtergrant.com/img/bglogo.png"/>
+        <meta property="og:image" content="https:/www.baxtergrant.com/img/bglogo.png"/>
         <meta property="og:image:width" content="216"/>
         <meta property="og:image:height" content="108"/>
         <meta itemprop="name" content="TS Securities"/>
         <meta itemprop="url" content="index"/>
         <meta itemprop="description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
-        <meta itemprop="thumbnailUrl" content="../www.baxtergrant.com/img/bglogo.png"/>
+        <meta itemprop="thumbnailUrl" content="https:/www.baxtergrant.com/img/bglogo.png"/>
         <link rel="image_src" href="../www.baxtergrantcom/img/bglogo.png" />
         <meta itemprop="image" content=""/>
         <meta name="twitter:title" content="Baxter & Grant"/>
-        <meta name="twitter:image" content="../www.baxtergrantcom/img/bglogo.png"/>
+        <meta name="twitter:image" content="https:/www.baxtergrantcom/img/bglogo.png"/>
         <meta name="twitter:url" content="https://www.baxtergrantcom/"/>
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
@@ -44,23 +44,24 @@
 
        
         
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        
         <!-- Rev slider css -->
-        <link href="vendors/revolution/css/settings.css" rel="stylesheet">
-        <link href="vendors/revolution/css/layers.css" rel="stylesheet">
-        <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
-        <link href="vendors/animate-css/animate.css" rel="stylesheet">
-        <link href="vendors/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="{{ asset('vendors/revolution/css/settings.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendors/revolution/css/layers.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendors/revolution/css/navigation.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendors/animate-css/animate.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendors/owl-carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('assets/vendor/icon-line-pro/style.css') }}">
         <!-- CSS Customization -->
         <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
         
         
         <!-- Extra plugin css -->
-        <link href="vendors/stroke-icon/style.css" rel="stylesheet">
+        <link href="{{ asset('vendors/stroke-icon/style.css') }}" rel="stylesheet">
         <script src="http://kit.fontawesome.com/d6ff15136e.js"></script>
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/responsive.css" rel="stylesheet">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,7 +71,7 @@
         <![endif]-->
         <style>
         
-                .header_menu .navbar.navbar-default .navbar-header .navbar-brand {
+.header_menu .navbar.navbar-default .navbar-header .navbar-brand {
     padding: 1px 0px 4px 12px;
     line-height: 75px;
     display: inline-block;
@@ -551,7 +552,7 @@ div.tp-parallax-wrap
                                 <span class="icon-bar"></span>
                             </button>
 
-                            <a class="navbar-brand" href="index-2"><img src="img/baxter_and_grant_logo.png" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+                            <a class="navbar-brand" href="index-2"><img src="{{ asset('img/baxter_and_grant_logo.png') }}" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
   text-align: center;"></a>
                         </div>
 
