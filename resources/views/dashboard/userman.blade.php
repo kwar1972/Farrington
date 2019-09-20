@@ -25,7 +25,7 @@
                           <input type="text" class="form-control" id="name" name="name" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
-                          <label class="mb-1" class="mb-0"><b>Lastame:</b></label>
+                          <label class="mb-1" class="mb-0"><b>Surname:</b></label>
                           <input type="text" class="form-control" id="lastname" name="lastname" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
@@ -803,7 +803,7 @@
                   <tr>
                     <th class="text-center">id</th>
                     <th class="text-center">name</th>
-                    <th class="text-center">lastname</th>
+                    <th class="text-center">Surname</th>
                     <th class="text-center">email</th>
                     <th class="text-center">Role</th>
                     <th class="text-center">Status</th>
