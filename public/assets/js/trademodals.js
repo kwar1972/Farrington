@@ -269,10 +269,10 @@ $('#price').change(function () {
   
 
 //-------------Destroy and call datatable ---------------------------
-  $('#createModal').on('hidden.bs.modal', function () {
-    $('#tabletrades').DataTable().destroy();
-    settableTrades();
-  });
+  // $('#createModal').on('hidden.bs.modal', function () {
+  //   $('#tabletrades').DataTable().destroy();
+  //   settableTrades();
+  // });
   
 
   //----------------- Save Trade ------------------------------------------------
@@ -304,11 +304,13 @@ $('#price').change(function () {
         dataType: 'json',
       }).done( function(data) {
         if(data.success == 1){
-          Toast.fire({
+                    Toast.fire({
               background: '#007bff',
               type: 'success',
               title: '<span style="color: #fff !important;">Trade successfully Created!</span>'
           });
+          $('#tabletrades').DataTable().destroy();
+          settableTrades();
       } else {
           Toast.fire({
               background: '#dc3545',
@@ -393,6 +395,8 @@ function save_formTE(id){
               type: 'success',
               title: '<span style="color: #fff !important;">Trade successfully updated!</span>'
           });
+          $('#tabletrades').DataTable().destroy();
+          settableTrades();
       } else {
           Toast.fire({
               background: '#dc3545',

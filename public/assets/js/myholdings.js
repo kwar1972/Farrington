@@ -92,10 +92,6 @@ function settableHoldings() {
     'url': "/myholdingslist",
     'method': "GET",
     'contentType': 'application/json',
-    beforeSend: function(){
-      
-     
-     },
      success:function(data) {
         $('#tableholdings').dataTable( {
               "aaData": data,
@@ -109,8 +105,8 @@ function settableHoldings() {
                 { "data": "amount" },
                 { "data": "price" },
                 { "data": "paidprice" },
-                { "data": "price" },
                 { "data": "sellprice" },
+                { "data": "total" },
                 { "data": "totalpos" },
                 { "data": "totalearn" },
                 { "data": "totalsold" },

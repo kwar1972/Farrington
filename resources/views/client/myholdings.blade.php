@@ -36,8 +36,8 @@
         <tr>
           <th class="text-center">Ticker</th>
           <th class="text-center">Amount</th>
+          <th class="text-center">Price</th>
           <th class="text-center">Paid Price</th>
-          <th class="text-center">Actual Price</th>
           <th class="text-center">Sell Price</th>
           <th class="text-center">Total Paid</th>
           <th class="text-center">Total Position</th>
@@ -46,9 +46,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
        
-        </tr>
       </tbody>
     </table>
   </div>
