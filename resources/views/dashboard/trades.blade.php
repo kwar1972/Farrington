@@ -44,7 +44,7 @@
                         </div>
                         <div class="col-4 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Fee (%):</b></label>
-                          <input class="form-control" id="fee" name="fee" type="number" step="1" min="-100" max="100.00" value="">
+                          <input class="form-control" id="fee" name="fee" type="number" step="1" min="-100" max="100.00" value="1">
                         </div>
                       </div>
                       <div class="row pt-2">
