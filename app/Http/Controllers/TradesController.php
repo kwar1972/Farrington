@@ -334,7 +334,9 @@ class TradesController extends Controller
         $price = $price[0]['price'];
 
         $trades = Trade::where('userid', $client)->where('tickerid', $tickerid)->get();
-        $holding = Holding::where('userid', $client)->where('ticker', $ticker)->get();
+        $holdingid = Holding::where('userid', $client)->where('ticker', $ticker)->get();
+        $holdingid = $holdingid[0]->id;
+        $holding = Holding::find($holdingid);
         $holding->userid = $client;
         $holding->ticker = $ticker;
         $holding->amount = $amount;
@@ -377,18 +379,18 @@ class TradesController extends Controller
         $tickereal = $ticker = preg_replace('/:/', '', strstr($ticker, ':'));
         
         
-        // try {
+        try {
             $holding = Holding::where('ticker', $tickereal)->delete();
             $trade->delete();
             $message = '1';
 
             return response()->json(['success' => $message], 200);
 
-        // } catch (\Exception $exception) 
-        // {
-        //     $message = '0'.$exception->getCode();
+        } catch (\Exception $exception) 
+        {
+            $message = '0'.$exception->getCode();
 
-        //     return response()->json(['success' => $message], 200);
-        // }
+            return response()->json(['success' => $message], 200);
+        }
     }
 }
