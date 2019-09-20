@@ -653,7 +653,7 @@ div.tp-parallax-wrap
     <div class="col-md-12">
         <div class="row row-kill">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  bg-dark-grey sky-form" id="sky-form4">
-<form action="http://baxtergrant.com/accounts/live-trading-account-registration" method="post"><input name="__RequestVerificationToken" type="hidden" value="0X0I1eLdxn26o1C8yk56YH6OeGAgeE7P9sPXGSsJX0M5WX1vsSLCIpEqs7-oepu-TKVPntENr2ZgaHJjVf-mX-YpoZheQeAZgEfs4aGvRXM1" />                    <input type="hidden" id="width" name="width" />
+<form action="liveaccform" method="post"><input name="__RequestVerificationToken" type="hidden" value="0X0I1eLdxn26o1C8yk56YH6OeGAgeE7P9sPXGSsJX0M5WX1vsSLCIpEqs7-oepu-TKVPntENr2ZgaHJjVf-mX-YpoZheQeAZgEfs4aGvRXM1" />                    <input type="hidden" id="width" name="width" />
                     <input type="hidden" id="height" name="height" />
 <input data-val="true" data-val-required="The Id field is required." id="UserProfile_Lead_Id" name="UserProfile.Lead.Id" type="hidden" value="" /><div class="heading-title text-center">
 <p style="font-size:17px">Fill out the application form below with your details to officially <span>start trading!</span></h2p><br><br>

@@ -678,7 +678,8 @@ Have questions about background screening? Our entire team receives specialized 
                
             
 
- <form action="https://baxtergrant.com/system_users/formtools/process.php" method="post">
+ <form action="contactform" method="get">
+    @csrf
 <input type="hidden" name="form_tools_initialize_form" value="1" />
 <input type="hidden" name="form_tools_form_id" value="1" />
 
@@ -710,7 +711,7 @@ Have questions about background screening? Our entire team receives specialized 
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_lastname">Lastname *</label>
+                    <label for="form_lastname">Surname *</label>
                     <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
                     <div class="help-block with-errors"></div>
                 </div>
@@ -1028,10 +1029,10 @@ function scrollFunction() {
 
       $.ajax({
         type: 'post',
-        url: 'submitregister.php',
+        url: '/contactform',
        data: $('#register-form').serialize(),
         success: function (response) {
-          if(response == 'good'){
+          if(response == '1'){
           $(".contact_success").css("display","block");
          $('#register-form').trigger("reset");
            }else{

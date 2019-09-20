@@ -52,10 +52,11 @@ Route::get('contactus', function () {
     return view('frontend.contactus');
 });
 
-Route::get('/getHoldings/{id}', 'TradesController@getHoldings');
-Route::get('roles', 'permController@preTorole');
+// Route::get('/getHoldings/{id}', 'TradesController@getHoldings');
+Route::get('/contactform', 'WebFormsController@contactform');
+Route::get('/liveaccform', 'WebFormsController@liveaccform');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
-Route::get('/stockprice/{id}', 'TradesController@stockPrice');
+
 
 Auth::routes(['verify' => true]);
 Route::get('home', 'DashboardController@versionone')->name('home')->middleware('verified');
