@@ -30,6 +30,7 @@ class WebFormsController extends Controller
     }
     public function liveaccform(Request $request)
     {
+        
         $this->validate($request, [ 'name' => 'required','surname' => 'required', 'email' => 'required|email','phone' => 'required', 'message' => 'required' ]);
          
         

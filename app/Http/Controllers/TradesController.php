@@ -340,13 +340,13 @@ class TradesController extends Controller
         $holding->userid = $client;
         $holding->ticker = $ticker;
         $holding->amount = $amount;
-        $holding->price = $pricepaid;
-        $holding->paidprice = ($pricepaid * $amount);
+        $holding->price = $price;
+        $holding->paidprice = $pricepaid;
         $holding->sellprice = $price;
         $holding->totalpos = ($amount * $price);
         $holding->totalearn = ($holding->totalpos - $total);
         $holding->totalsold = 0;
-        $holding->total = $total;
+        $holding->total = ($total * $pricepaid);
         $holding->fee = $fee;
         $holding->updated_at = Carbon::now()->toDateTimeString();
         try {
