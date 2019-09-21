@@ -228,20 +228,23 @@ class TradesController extends Controller
         
         if($trade2 >= 1 ){
             $trades = Trade::where('userid', $client)->where('tickerid', $tickerid)->get();
-            $holding = Holding::where('userid', $client)->where('ticker', $ticker)->get();
+            $holdingid = Holding::where('userid', $client)->where('ticker', $ticker)->get();
+            $holdingid = $holdingid[0]->id;
+            $holding = Holding::find($holdingid);
             $holding->userid = $client;
             $holding->ticker = $ticker;
-            $holding->amount = $amount;
-            $holding->price = $pricepaid;
-            $holding->paidprice = ($pricepaid * $amount);
+            $holding->amount =  $holding->amount + $amount;
+            $holding->price = $price;
+            $holding->paidprice = $pricepaid * $amount;
             $holding->sellprice = $price;
-            $holding->totalpos = ($amount * $price);
-            $holding->totalearn = ($holding->totalpos - $total);
+            $holding->totalpos = $amount * $price;
+            $holding->totalearn = $holding->totalpos - $holding->amount;
             $holding->totalsold = 0;
-            $holding->total = $total;
+            $holding->total = $holding->amount * $holding->paidprice;
             $holding->fee = $fee;
             $holding->updated_at = Carbon::now()->toDateTimeString();
         }else{
+            dd("PASO!");
             $holding = New Holding;
             $holding->userid = $client;
             $holding->ticker = $ticker;
@@ -258,19 +261,19 @@ class TradesController extends Controller
             $holding->updated_at = Carbon::now()->toDateTimeString();
             }
 
-        try {
+        // try {
             $holding->save();
             $trade->save();
             $message = '1';
 
             return response()->json(['success' => $message], 200);
 
-        } catch (\Exception $exception) 
-        {
-            $message = '0'.$exception->getCode();
+        // } catch (\Exception $exception) 
+        // {
+        //     $message = '0'.$exception->getCode();
 
-            return response()->json(['success' => $message], 200);
-        }
+        //     return response()->json(['success' => $message], 200);
+        // }
     }
 
     /**
@@ -346,7 +349,7 @@ class TradesController extends Controller
         $holding->totalpos = ($amount * $price);
         $holding->totalearn = ($holding->totalpos - $total);
         $holding->totalsold = 0;
-        $holding->total = ($total * $pricepaid);
+        $holding->total = $total;
         $holding->fee = $fee;
         $holding->updated_at = Carbon::now()->toDateTimeString();
         try {

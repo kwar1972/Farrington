@@ -92,11 +92,15 @@ $('#amount').keyup(function () {
   // we use jQuery each() to loop through all the textbox with 'price' class
   // and compute the sum for each loop
   $('#amount').each(function() {
-      sum += Number($(this).val() * $('#price').val());
+      var price = $("#price").val();
+      var fee = $('#fee').val();
+      sum += ($(this).val() * price);
+      var per = Number(sum / 100) * fee;
+      tot  = (sum + per);
   });
    
   // set the computed value to 'totalPrice' textbox
-  $('#total').val(sum);
+  $('#total').val(tot.toFixed(2));
    
 });
 
@@ -107,56 +111,61 @@ $('#ticker').change(function(){
 
 
 
-$('#fee').keyup(function () {
-  var tot = 0;
-  var price = parseInt($("#price").val());
-  var amount = parseInt($("#amount").val());
-  $('#fee').each(function() {
-    var price = parseInt($("#price").val());
-    var amount = parseInt($("#amount").val());
-    var sum = (amount * price);
-    var fee = parseInt($(this).val());
-    var per = Number((sum) / 100) * fee;
-    tot  = (sum + per);
-  });
-  if(isNaN(tot)){
-    $('#total').val(price * amount);
-  }else{
-    $('#total').val(tot);
-  }
-});
+
 $('#ticker').change(function(){
   $('#price').val($(this).children(':selected').data('price'));
+    var price = $("#price").val();
+    var amount = $("#amount").val();
+    var sum = (amount * price);
+    var fee = $(this).val();
+    var per = Number(sum / 100) * fee;
+    tot  = (sum + per);
+    if(isNaN(tot)){
+      $('#total').val(price * amount);
+    }else{
+      $('#total').val(tot.toFixed(2));
+    }
 });
 
 
+$('#fee').keyup(function () {
+  $('#fee').each(function() {
+    var price = $("#price").val();
+    var amount = $("#amount").val();
+    var sum = (amount * price);
+    var fee = $(this).val();
+    var per = Number(sum / 100) * fee;
+    tot  = (sum + per);
+  });
+  if(isNaN(tot)){
+    $('#total').val(price * amount);
+  }else{
+    $('#total').val(tot.toFixed(2));
+  }
+});
 
 $('#fee').change(function () {
-  var tot = 0;
-  var price = parseInt($("#price").val());
-  var amount = parseInt($("#amount").val());
   $('#fee').each(function() {
-    var price = parseInt($("#price").val());
-    var amount = parseInt($("#amount").val());
+    var price = $("#price").val();
+    var amount = $("#amount").val();
     var sum = (amount * price);
-    var fee = parseInt($(this).val());
-    var per = Number((sum) / 100) * fee;
+    var fee = $(this).val();
+    var per = Number(sum / 100) * fee;
     tot  = (sum + per);
   });
+
   if(isNaN(tot)){
     $('#total').val(price * amount);
   }else{
-    $('#total').val(tot);
+    $('#total').val(tot.toFixed(2));
   }
 });
+
 $('#price').change(function () {
-  var tot = 0;
-  var fee = parseInt($('#fee').val());
-  var amount = parseInt($("#amount").val());
-  $('#fee').each(function() {
-    var fee = parseInt($("#fee").val());
-    var amount = parseInt($("#amount").val());
-    var price = parseInt($(this).val());
+  $('#price').each(function() {
+    var fee = $("#fee").val();
+    var amount = $("#amount").val();
+    var price = $(this).val();
     var sum = (amount * price);
     var per = Number((sum) / 100) * fee;
     tot  = (sum + per);
@@ -164,9 +173,26 @@ $('#price').change(function () {
   if(isNaN(tot)){
     $('#total').val(price * amount);
   }else{
-    $('#total').val(tot);
+    $('#total').val(tot.toFixed(2));
   }
 });
+
+$('#price').keyup(function () {
+  $('#price').each(function() {
+    var fee = $("#fee").val();
+    var amount = $("#amount").val();
+    var price = $(this).val();
+    var sum = (amount * price);
+    var per = Number((sum) / 100) * fee;
+    tot  = (sum + per);
+  });
+  if(isNaN(tot)){
+    $('#total').val(price * amount);
+  }else{
+    $('#total').val(tot.toFixed(2));
+  }
+});
+
   
   function settableTrades() {  
     $("#loaderDiv").show();
