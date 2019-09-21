@@ -244,7 +244,6 @@ class TradesController extends Controller
             $holding->fee = $fee;
             $holding->updated_at = Carbon::now()->toDateTimeString();
         }else{
-            dd("PASO!");
             $holding = New Holding;
             $holding->userid = $client;
             $holding->ticker = $ticker;
@@ -261,19 +260,19 @@ class TradesController extends Controller
             $holding->updated_at = Carbon::now()->toDateTimeString();
             }
 
-        // try {
+        try {
             $holding->save();
             $trade->save();
             $message = '1';
 
             return response()->json(['success' => $message], 200);
 
-        // } catch (\Exception $exception) 
-        // {
-        //     $message = '0'.$exception->getCode();
+        } catch (\Exception $exception) 
+        {
+            $message = '0'.$exception->getCode();
 
-        //     return response()->json(['success' => $message], 200);
-        // }
+            return response()->json(['success' => $message], 200);
+        }
     }
 
     /**

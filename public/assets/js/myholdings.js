@@ -103,8 +103,6 @@ function settableHoldings() {
               "columns": [
                 { "data": "ticker" },
                 { "data": "amount" },
-                { "data": "price" },
-                { "data": "paidprice" },
                 { "data": "sellprice" },
                 { "data": "total" },
                 { "data": "totalpos" },
