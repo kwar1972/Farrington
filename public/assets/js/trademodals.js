@@ -275,6 +275,10 @@ $('#price').keyup(function () {
     });
   };
 
+
+  function StockPrice(){
+    
+  }
   //-------------Create Modal
 
   function openCreateModal(){

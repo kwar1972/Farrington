@@ -52,7 +52,7 @@ Route::get('contactus', function () {
     return view('frontend.contactus');
 });
 
-// Route::get('/getHoldings/{id}', 'TradesController@getHoldings');
+ Route::get('/myholdingslist', 'HoldingController@holdingsList');
 Route::get('/contactform', 'WebFormsController@contactform');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
@@ -106,6 +106,6 @@ Route::get('/saveclient/{id}', 'UsermanController@savedetails')->middleware('rol
 Route::get('/chartbig?tvwidgetsymbol={id}', 'UsermanController@savedetails')->middleware('role:client')->middleware('verified');
 Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:client')->middleware('verified');
 Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client')->middleware('verified');
-Route::get('/myholdings', 'UsermanController@clientHoldings')->middleware('role:client')->middleware('verified');
-Route::get('/myholdingslist', 'UsermanController@holdingsList')->middleware('role:client')->middleware('verified');
+Route::get('/myholdings', 'HoldingController@clientHoldings')->middleware('role:client')->middleware('verified');
+// Route::get('/myholdingslist', 'HoldingController@holdingsList')->middleware('role:client')->middleware('verified');
 

@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use App;
 use App\User;
 use App\Trade;
-use App\Holding;
+
 
 class UsermanController extends Controller
 {
@@ -204,29 +204,7 @@ class UsermanController extends Controller
         return response()->json($holdings, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'], JSON_UNESCAPED_UNICODE);
     }
 
-    public function clientHoldings(){
-        $id = auth()->user()->id;
-        
-        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
-        if($deposits !== 0){
-            $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
-            $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
-            $tickers = $ticker->pluck('getTicker');
-            $tickers = $tickers->unique('ticker');
-            $tickerscount = $tickers->count();
-            $tickerdata = $this->stockData($tickers,$tickerscount);
-            $tickerdata = collect($tickerdata['data'], true);
-            return view('client.myholdings')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('tickerdata', $tickerdata);
-
-            
-        }else{
-
-            $nodata = 0;
-
-            return view('client.myholdings')->with('nodata', $nodata);
-        }
-    }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
