@@ -152,19 +152,6 @@
 @endsection
  
 @section('javascript')
-<!-- JSGrid -->
-
-<!-- jQuery -->
-<script src="/dist/plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-
-</script>
-<!-- Bootstrap 4 -->
-<script src="/dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Sparkline -->
 <script src="/dist/plugins/sparkline/jquery.sparkline.min.js"></script>
 <!-- daterangepicker -->
@@ -189,7 +176,7 @@
 <script src="{{asset('assets/js/sweetalert2.all.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/js/swal-forms.js')}}" type="text/javascript"></script>
 <!-- Boostrap Toggle -->
-<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>
+{{-- <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script> --}}
 
 
 @stop
