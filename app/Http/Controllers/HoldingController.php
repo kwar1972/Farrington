@@ -24,7 +24,6 @@ class HoldingController extends Controller
                 $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
                 array_push($tickerfinal, $ticker1f.',');
             }
-    
             $str1 = "https://api.worldtradingdata.com/api/v1/stock?symbol=";
             $str2 = "&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4";
             
@@ -84,8 +83,8 @@ class HoldingController extends Controller
 
     public function clientHoldings()
     {
-        $id = auth()->user()->id;
-        
+        //$id = auth()->user()->id;
+        $id = 28;
         $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
 
         if($deposits !== 0){
@@ -110,9 +109,25 @@ class HoldingController extends Controller
 
     public function holdingsList()
     {   
-        $id = auth()->user()->id;;
-        $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getUsers')->with('getAgent')->with('getTicker')->get();
-        
+        //$id = auth()->user()->id;
+        $id = 28;
+        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
+
+        if($deposits !== 0){
+            $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
+            $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
+            $tickers = $ticker->pluck('getTicker');
+            $tickers = $tickers->unique('ticker');
+            $tickerscount = $tickers->count();
+            
+            $tickerdata = $this->stockData($tickers,$tickerscount);
+            
+            $tickerdata = collect($tickerdata['data'], true);
+        }
+
+        $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
+        //$trades->push($tickerdata);
+        //dd($trades);
         return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
         JSON_UNESCAPED_UNICODE);
     }

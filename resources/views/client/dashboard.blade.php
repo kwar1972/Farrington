@@ -310,7 +310,7 @@
 @endsection
  
 @section('javascript')
-<!-- jQuery -->
+{{-- <!-- jQuery -->
 <script src="/dist/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -323,7 +323,7 @@
 <script src="/dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Morris.js charts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="/dist/plugins/morris/morris.min.js"></script>
+<script src="/dist/plugins/morris/morris.min.js"></script> --}}
 <!-- Sparkline -->
 <script src="/dist/plugins/sparkline/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->

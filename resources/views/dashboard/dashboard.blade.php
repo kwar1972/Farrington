@@ -346,7 +346,7 @@
         <!-- Left col -->
 
       </div>
-      <div class="row">
+      {{-- <div class="row">
             <!-- right col (We are only adding the ID to make the widgets sortable)-->
             <section class="col-lg-12 connectedSortable">
                 <div class="card g-bg-navy">
@@ -386,7 +386,7 @@
                   <!-- /.card -->
                 </section>
                 <!-- /.Left col -->
-
+      </div> --}}
         </section>
       </div>
       <!-- /.row (main row) -->
@@ -419,8 +419,8 @@
 <script src="/dist/plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="/dist/js/adminlte.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+{{-- <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="/dist/js/demo.js"></script>
+<script src="/dist/js/demo.js"></script> --}}
 @stop

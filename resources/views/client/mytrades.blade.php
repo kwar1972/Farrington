@@ -154,7 +154,7 @@
 @endsection
  
 @section('javascript')
-<!-- JSGrid -->
+{{-- <!-- JSGrid -->
 
 <!-- jQuery -->
 <script src="/dist/plugins/jquery/jquery.min.js"></script>
@@ -166,7 +166,7 @@
 
 </script>
 <!-- Bootstrap 4 -->
-<script src="/dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> --}}
 <!-- Sparkline -->
 <script src="/dist/plugins/sparkline/jquery.sparkline.min.js"></script>
 <!-- daterangepicker -->
