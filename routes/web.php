@@ -52,7 +52,7 @@ Route::get('contactus', function () {
     return view('frontend.contactus');
 });
 
-Route::get('/stockprice/{$id}', 'HoldingController@stockprice');
+Route::get('/stockprice/{id}', 'HoldingController@stockprice');
 Route::get('/myholdingslist', 'HoldingController@holdingsList');
 Route::get('/contactform', 'WebFormsController@contactform');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
@@ -108,5 +108,5 @@ Route::get('/chartbig?tvwidgetsymbol={id}', 'UsermanController@savedetails')->mi
 Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:client')->middleware('verified');
 Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client')->middleware('verified');
 Route::get('/myholdings', 'HoldingController@clientHoldings')->middleware('role:client')->middleware('verified');
-// Route::get('/myholdingslist', 'HoldingController@holdingsList')->middleware('role:client')->middleware('verified');
+// Route::get('/stockprice/{id}', 'HoldingController@stockprice')->middleware('role:client')->middleware('verified');
 

@@ -106,7 +106,8 @@ $('#amount').keyup(function () {
 
 
 $('#ticker').change(function(){
-  $('#price').val($(this).children(':selected').data('price'));
+  price = getPrice();
+  console.log(price);
 });
 
 
@@ -279,9 +280,27 @@ $('#price').keyup(function () {
   function StockPrice(){
     
   }
+
+  //------------------function GET PRICE ------------
+function getPrice(){
+  var id = $('#ticker').val();
+    console.log(id);
+    $.ajax({
+      'url': "/stockprice/"+id,
+      'method': "GET",
+      'contentType': 'application/json',
+       success:function(data) {
+         console.log(data);
+         $('#price').val(data);
+       }
+      });
+}
+
   //-------------Create Modal
 
   function openCreateModal(){
+    
+    getPrice();
     $('#userTitle').html('New Trade');
     $("#purchaseddeiv").hide();
     $("#statusdiv").hide();
@@ -290,8 +309,8 @@ $('#price').keyup(function () {
     $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTC()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
     $('#createModal').modal('show');
     $('#amount').val(' ');
-    var amount = $('#amount').val();
-    var price = $('#price').val();
+    
+    
     $('#total').val(' ');
   };
 
@@ -381,7 +400,7 @@ function open_editModal(id) {
     $('#ticker').val(data.tickerid);
     $('#agent').val(data.agentid);
     $('#amount').val(data.amount);
-    $('#price').val(data.price);
+    getPrice();
     $('#fee').val(data.fee);
     $('#total').val(data.total);
     $("#status").val(data.status);
