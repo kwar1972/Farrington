@@ -12,11 +12,8 @@ function settableTrades() {
     'url': "/mytradelist",
     'method': "GET",
     'contentType': 'application/json',
-    beforeSend: function(){
-      
-     
-     },
      success:function(data) {
+      console.log(data);
         $('#tabletrades').dataTable( {
               "aaData": data,
               "columnDefs": [
@@ -77,7 +74,6 @@ function settableTrades() {
         });
     },
     complete:function(){
-      
     }
     });
   };

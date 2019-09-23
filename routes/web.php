@@ -52,7 +52,8 @@ Route::get('contactus', function () {
     return view('frontend.contactus');
 });
 
- Route::get('/myholdingslist', 'HoldingController@holdingsList');
+Route::get('/stockprice/{$id}', 'HoldingController@stockprice');
+Route::get('/myholdingslist', 'HoldingController@holdingsList');
 Route::get('/contactform', 'WebFormsController@contactform');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

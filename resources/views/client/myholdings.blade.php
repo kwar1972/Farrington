@@ -34,7 +34,7 @@
     <table id="tableholdings" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%">
       <thead class="g-bg-color-darkgrey g-color-white">
         <tr>
-          <th class="text-center">Tickerid</th>
+          <th class="text-center">Ticker</th>
           <th class="text-center">Amount</th>
           <th class="text-center">Sell Price</th>
           <th class="text-center">Total Paid</th>

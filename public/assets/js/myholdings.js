@@ -13,9 +13,6 @@ $(document).ready(function() {
   // $('.knob').knob();
 });
 
-
-
-
 function settableHoldings() {
     $("#loaderDiv").show();
     $.ajax({
@@ -23,24 +20,24 @@ function settableHoldings() {
     'method': "GET",
     'contentType': 'application/json',
      success:function(data) {
-       console.log(data);
-        $('#tableholdings').dataTable( {
-              "aaData": data,
-              "columnDefs": [
-                {
-                  "className": "text-center", "targets": "_all"
-                },
-              ],
-              "columns": [
-                { "data": "get_ticker.ticker" },
-                { "data": "amount" },
-                { "data": "sellprice" },
-                { "data": "total" },
-                { "data": "totalpos" },
-                { "data": "totalearn" },
-                { "data": "totalsold" },
-              ]
-        });
+      var arr = jQuery.makeArray( data );
+      $('#tableholdings').dataTable( {
+            "aaData": arr,
+            "columnDefs": [
+              {
+                "className": "text-center", "targets": "_all"
+              },
+            ],
+            "columns": [
+              { "data": "ticker" },
+              { "data": "amount" },
+              { "data": "pricesell", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
+              { "data": "totalpaid", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
+              { "data": "totpos", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
+              { "data": "totearn", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
+              { "data": "totsold", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
+            ]
+      });
     },
     complete:function(){
     }
