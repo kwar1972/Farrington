@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
+use Illuminate\Support\Arr;
 use App;
 use App\Trade;
 use App\Ticker;
@@ -154,24 +155,37 @@ class HoldingController extends Controller
             
             $tickerdata = collect($tickerdata['data'], true);
         }
-        
+        $trades = array();
         $tradesraw1 = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
         $tradesraw1 = $tradesraw1->toArray();
-
         foreach($tradesraw1 as $tradesraw){
-            
+            //dump($tradesraw);
             $ticker = $tradesraw['get_ticker']['ticker'];
             $amount = $tradesraw['amount'];
             $pricepaid = $tradesraw['price'];
-            $pricesell = $tickerdata->whereIn('symbol', 'BABA');
+            $ticker1 = preg_replace('/:/', '', strstr($ticker, ':'));
+            $pricesell = $tickerdata->where('symbol', $ticker1);
+            $pricesell = $pricesell->pluck('price');
             $pricesell = $pricesell->toArray();
-            $pricesell = $pricesell[0]['price'];
+            $key = array_keys($pricesell);
+            $key = $key[0];
+            $pricesell = $pricesell[$key];
             $totalpaid = $tradesraw['total'];
             $totpos = $amount * $pricesell;
             $totearn = $totalpaid - $totpos;
             $totsold = 0;
-            $trades = array();
-            $trades = ([
+            
+            // $trades[] = ([
+            //     'ticker' => $ticker,
+            //     'amount' => $amount,
+            //     'pricepaid' => $pricepaid,
+            //     'pricesell' => $pricesell,
+            //     'totalpaid' => $totalpaid,
+            //     'totpos' => $totpos,
+            //     'totearn' => $totearn,
+            //     'totsold' => $totsold
+            // ]);
+            array_push($trades, array(
                 'ticker' => $ticker,
                 'amount' => $amount,
                 'pricepaid' => $pricepaid,
@@ -179,9 +193,11 @@ class HoldingController extends Controller
                 'totalpaid' => $totalpaid,
                 'totpos' => $totpos,
                 'totearn' => $totearn,
-                'totsold' => $totsold
-            ]);
+                'totsold' => $totsold,
+            ));
+            
         }
+        //dd($trades);
         $trades = collect($trades, true);
         
         return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
