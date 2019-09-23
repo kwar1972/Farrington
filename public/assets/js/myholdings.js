@@ -33,11 +33,11 @@ function settableHoldings() {
               { "data": "ticker" },
               { "data": "amount" },
               { "data": "pricepaid" },
-              { "data": "pricesell", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
-              { "data": "totalpaid", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
-              { "data": "totpos", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
-              { "data": "totearn", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
-              { "data": "totsold", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
+              { "data": "pricesell", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
+              { "data": "totalpaid", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
+              { "data": "totpos", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
+              { "data": "totearn", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
+              { "data": "totsold", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
             ]
       });
     },
