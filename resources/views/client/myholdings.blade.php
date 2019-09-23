@@ -52,22 +52,28 @@
   </div>
   @foreach($tickerdata as $ticker)
   <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-3">
         <!-- About Me Box -->
-        <div class="card " style="height: 375px;">
+        <div class="card " style="height: 735px;">
             <div class="card-header g-bg-navy g-color-white">
               <h3 class="card-title">{{$ticker['name']}}</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                   <strong><i class="fas fa-book mr-1"></i>Stock Exchange / Simbol</strong>
 
                   <p class="text-muted">
                       {{$ticker['symbol']}}
                   </p>
-                
+
+                  <hr>
+
+                  <strong><i class="fas fa-map-marker-alt mr-1"></i>Company Name</strong>
+                  
+                  <p class="text-muted">{{$ticker['name']}}</p>
+                  
                   <hr>
                 
                   <strong><i class="fas fa-dollar-sign mr-1 mb-1"></i>Price variations</strong>
@@ -76,12 +82,6 @@
                   <p><span class="g-color-green-op"><b>Day High: </b></span><span class="g-color-black">{{$ticker['day_high']}} usd.</span></p>
                   <p><span class="g-color-red-op"><b>Day Low: </b></span><span class="g-color-black">{{$ticker['day_low']}} usd.</span></p>
                   <p><span class="text-primary"><b>Close Yesterday: </b></span><span class="g-color-black">{{$ticker['close_yesterday']}} usd.</span></p>
-                  
-                </div>
-                <div class="col-sm-6">
-                    <strong><i class="fas fa-map-marker-alt mr-1"></i>Company Name</strong>
-                  
-                    <p class="text-muted">{{$ticker['name']}}</p>
                   
                     <hr>
                     <strong><i class="fas fa-dollar-sign mr-1"></i>Stock Exchange / Price</strong>
@@ -100,24 +100,48 @@
                       <span class="tag tag-success">{{$ticker['market_cap']}}</span>
   
                     </p>
-                </div>
+                  </div>
               </div>
             </div>
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-9">
                  <!-- solid sales graph -->
                  <div class="card g-bg-navy">
                     <div class="card-header border-0">
                       <h3 class="card-title g-color-white">
                         <i class="fas fa-chart-line mr-1"></i>
-                        {{$ticker['symbol']}} - Intraday data (30 Days) - <span class="g-color-red">Coming soon..</span>
+                        {{$ticker['symbol']}} - Realtime data
                       </h3>
                     </div>
                     <div class="card-body">
-                      <div class="chart" id="line-chart{{$ticker['symbol']}}" style="height: 250px;"></div>
+                      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+<div id="tradingview_b2465{{$ticker['symbol']}}"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 980,
+  "height": 610,
+  "symbol": "{{$ticker['stock_exchange_short']}}:{{$ticker['symbol']}}",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "Dark",
+  "style": "1",
+  "locale": "es",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "save_image": false,
+  "details": true,
+  "container_id": "tradingview_b2465{{$ticker['symbol']}}"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer bg-transparent">
@@ -127,7 +151,7 @@
                     <!-- /.card-footer -->
                   </div>
                   <!-- /.card -->
-<script>
+{{-- <script>
 /* Morris.js Charts */
 // Sales chart
 function data(data,a,b,c) {
@@ -160,8 +184,8 @@ function data(data,a,b,c) {
         delete ret[i].c;
       }
        return ret;
-      }
-// });
+}
+
 
   var line{{$ticker['symbol']}} = new Morris.Line({
     element          : 'line-chart{{$ticker['symbol']}}',
@@ -172,7 +196,6 @@ function data(data,a,b,c) {
     ykeys            : ['a', 'b','c'],
     labels           : ['High', 'Low','Close'],
     colors           : ['Red',"blue","green"],
-    // lineColors       : ['#17A2B8'],
     lineWidth        : 2,
     hideHover        : 'auto',
     gridTextColor    : '#fff',
@@ -183,8 +206,9 @@ function data(data,a,b,c) {
     gridTextFamily   : 'Open Sans',
     gridTextSize     : 10
   });
+  
   line{{$ticker['symbol']}}.redraw()  
-</script>
+</script> --}}
       </div>
 </div>
 @endforeach
