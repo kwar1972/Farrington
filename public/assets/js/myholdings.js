@@ -20,6 +20,7 @@ function settableHoldings() {
     'method': "GET",
     'contentType': 'application/json',
      success:function(data) {
+       console.log(data);
       var arr = jQuery.makeArray( data );
       $('#tableholdings').dataTable( {
             "aaData": arr,
@@ -31,6 +32,7 @@ function settableHoldings() {
             "columns": [
               { "data": "ticker" },
               { "data": "amount" },
+              { "data": "pricepaid" },
               { "data": "pricesell", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
               { "data": "totalpaid", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },
               { "data": "totpos", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )  },

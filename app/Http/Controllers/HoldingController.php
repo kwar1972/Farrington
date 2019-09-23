@@ -172,19 +172,8 @@ class HoldingController extends Controller
             $pricesell = $pricesell[$key];
             $totalpaid = $tradesraw['total'];
             $totpos = $amount * $pricesell;
-            $totearn = $totalpaid - $totpos;
+            $totearn = $totpos - $totalpaid;
             $totsold = 0;
-            
-            // $trades[] = ([
-            //     'ticker' => $ticker,
-            //     'amount' => $amount,
-            //     'pricepaid' => $pricepaid,
-            //     'pricesell' => $pricesell,
-            //     'totalpaid' => $totalpaid,
-            //     'totpos' => $totpos,
-            //     'totearn' => $totearn,
-            //     'totsold' => $totsold
-            // ]);
             array_push($trades, array(
                 'ticker' => $ticker,
                 'amount' => $amount,
@@ -197,7 +186,7 @@ class HoldingController extends Controller
             ));
             
         }
-        //dd($trades);
+
         $trades = collect($trades, true);
         
         return response()->json($trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
