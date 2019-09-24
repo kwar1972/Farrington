@@ -90,61 +90,7 @@
         </div>
         
         @endif
-        <!-- Modal  Bank Details-->
-        <div class="modal fade bs-example-modal-lg" id="modalChart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog  modal-lg">
-            <div class="modal-content">
-              <div class="modal-header g-bg-grey">
-                <h4 id="userTitle" class="modal-title g-color-white" id="myModalLabel">Bank Information</h4>
-                <button type="button" class="close pull-right" data-dismiss="modal"><span class="g-color-white" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              </div>
-              <div class="modal-body">
-                  <form id="form1" action="">
-                  <div class="row mb-4">
-                    <div class="col-3 f-size-14 mb-0">
-                      <label class="mb-1" class="mb-0"><b>Bank Name:</b></label>
-                      <input type="text" class="form-control" id="bankname" name="bankname" value="">
-                    </div>
-                    <div class="col-3 f-size-14 mb-0">
-                      <label class="mb-1" class="mb-0"><b>Country:</b></label>
-                      <input type="text" class="form-control" id="country2" name="country2" value="">
-                    </div>
-                    <div class="col-3 f-size-14 mb-0">
-                      <label class="mb-1" class="mb-0"><b>Account ID:</b></label>
-                      <input type="text" class="form-control" id="accid" name="accid" value="">
-                    </div>
-                    <div class="col-3 f-size-14 mb-0">
-                      <label class="mb-1" class="mb-0"><b>Account Number:</b></label>
-                      <input type="text" class="form-control" id="account" name="account" value="">
-                    </div>
-                  </div>
-                  <div class="row mb-4">
-                    <div class="col-3 f-size-14 mb-0">
-                      <label class="mb-1" class="mb-0"><b>Account Name:</b></label>
-                      <input type="text" class="form-control" id="accname" name="accname" value="">
-                    </div>
-                    <div class="col-3 f-size-14 mb-0">
-                      <label class="mb-1" class="mb-0"><b>SWIFT/BIC:</b></label>
-                      <input type="text" class="form-control" id="swift" name="swift" value="">
-                    </div>
-                    <div class="col-3 f-size-14 mb-0">
-                      <label class="mb-1" class="mb-0"><b>IBAN:</b></label>
-                      <input type="text" class="form-control" id="iban" name="iban" value="">
-                    </div>
-                    <div class="col-3 f-size-14 mb-0">
-                      <label class="mb-1" class="mb-0"><b>Currency:</b></label>
-                      <input type="text" class="form-control" id="currency" name="currency" value="">
-                    </div>
-                  </div>
-                </form>
-            </div>
-            <div id="btnClusterB" class="modal-footer g-bg-grey" id="modal-footerq">
-                  
-            </div>
-          </div>
-        </div>
-      </div>
-        <!-- end of Bank Details modal ------------------------------>
+
       <!-- TradingView Widget BEGIN -->
         <div class="row mb-2">
           <div class="col-12">
@@ -190,7 +136,7 @@
             <div class="icon">
               <i class="fas fa-signal"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/mytrades" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -227,7 +173,7 @@
             <div class="icon">
               <i class="fas fa-hand-holding-usd"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/myholdings" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
