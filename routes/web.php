@@ -109,4 +109,4 @@ Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:clie
 Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client')->middleware('verified');
 Route::get('/myholdings', 'HoldingController@clientHoldings')->middleware('role:client')->middleware('verified');
 Route::get('/stockprice/{id}', 'HoldingController@stockprice')->middleware('role:client')->middleware('verified');
-Route::get('/myholdingslist', 'HoldingController@holdingsList')->middleware('role:client')->middleware('verified');
+Route::get('/myholdingslist', 'HoldingController@holdingsList')->middleware('role:admin|agent|loader|client')->middleware('verified');
