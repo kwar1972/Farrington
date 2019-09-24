@@ -32,13 +32,13 @@ function settableTrades() {
                   return ticker;
                 }},
                 { "data": "amount" },
-                { "data": "price" },
+                { "data": "price" , render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
                 { mRender: function (data, type, row) {
                   var fee = row.fee+' %';
                   return  fee
                 },
               },
-                { "data": "total" },
+                { "data": "total" , render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
                 { mRender: function (data, type, row) {
                   var pending = '<span class="badge badge-pill badge-seconday">Pending</span>';
                   var Paid = '<span class="badge badge-pill badge-info">Paid</span>';

@@ -25,7 +25,7 @@ function tableticker() {
               { "data": "ticker" },
               { "data": "description" },
               { "data": "quantity" },
-              { "data": "price" },
+              { "data": "price" , render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
               { mRender: function (data, type, row) {
                 var enabledStatus = '<span class="badge badge-pill badge-primary">Enabled</span>';
                 var disabledStatus = '<span class="badge badge-pill badge-danger">Disabled</span>';

@@ -237,13 +237,13 @@ $('#price').keyup(function () {
                   return ticker;
                 }},
                 { "data": "amount" },
-                { "data": "price" },
+                { "data": "price" , render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
                 { mRender: function (data, type, row) {
                   var fee = row.fee+' %';
                   return  fee
                 },
               },
-                { "data": "total" },
+                { "data": "total" , render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
                 { mRender: function (data, type, row) {
                   var pending = '<span class="badge badge-pill badge-seconday">Pending</span>';
                   var Paid = '<span class="badge badge-pill badge-info">Paid</span>';
@@ -293,14 +293,9 @@ function getPrice(){
       'url': "/stockprice/"+id,
       'method': "GET",
       'contentType': 'application/json',
-      beforeSend: function(){
-        $.LoadingOverlay("show");
-       },
       success:function(data){
-        console.log(data);
-        $.LoadingOverlay("hide");
-         
-         $('#price').val(data);
+        $.LoadingOverlay("hide")
+        $('#price').val(data)
        }
       });
 }
@@ -318,8 +313,6 @@ function getPrice(){
     $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTC()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
     $('#createModal').modal('show');
     $('#amount').val(' ');
-    
-    
     $('#total').val(' ');
   };
 
@@ -393,7 +386,7 @@ function open_editModal(id) {
       $.LoadingOverlay("show");
      },
   }).done( function(data) {
-    $.LoadingOverlay("hide");
+   
   setModalBox(data);
   
   
