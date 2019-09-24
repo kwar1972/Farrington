@@ -7,12 +7,15 @@ $(document).ready(function() {
 
 
 function settableTrades() {  
-    $("#loaderDiv").show();
     $.ajax({
     'url': "/mytradelist",
     'method': "GET",
     'contentType': 'application/json',
-     success:function(data) {
+    beforeSend: function(){
+      $.LoadingOverlay("show");
+     },
+    }).done( function(data) {
+      $.LoadingOverlay("hide");
       console.log(data);
         $('#tabletrades').dataTable( {
               "aaData": data,
@@ -73,10 +76,7 @@ function settableTrades() {
               ]
         });
     },
-    complete:function(){
-    }
-    });
-  };
+    )};
 
 
   

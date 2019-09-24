@@ -62,7 +62,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-sm-12">
-                  <strong><i class="fas fa-book mr-1"></i>Stock Exchange / Simbol</strong>
+                  <strong><i class="fas fa-book mr-1"></i>Stock Exchange / Symbol</strong>
 
                   <p class="text-muted">
                       {{$ticker['symbol']}}
@@ -109,7 +109,7 @@
       </div>
       <div class="col-lg-9">
                  <!-- solid sales graph -->
-                 <div class="card g-bg-navy">
+                 <div class="card g-bg-navy" style="min-height: 610px;">
                     <div class="card-header border-0">
                       <h3 class="card-title g-color-white">
                         <i class="fas fa-chart-line mr-1"></i>
@@ -119,19 +119,20 @@
                     <div class="card-body">
                       <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-<div id="tradingview_b2465{{$ticker['symbol']}}"></div>
+<div id="tradingview_b2465{{$ticker['symbol']}}" style="min-height: 610px !important; height: 610px !important;"></div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
   new TradingView.widget(
   {
-  "width": 980,
-  "height": 610,
+  "autosize": true,
+  // "width": 980,
+  // "height": 610,
   "symbol": "{{$ticker['stock_exchange_short']}}:{{$ticker['symbol']}}",
   "interval": "D",
   "timezone": "Etc/UTC",
   "theme": "Dark",
   "style": "1",
-  "locale": "es",
+  "locale": "en",
   "toolbar_bg": "#f1f3f6",
   "enable_publishing": false,
   "save_image": false,

@@ -7,7 +7,11 @@ $(document).ready(function() {
         'url': '/clientdet/'+id,
         'method': "GET",
         'contentType': 'application/json',
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
         }).done( function(data) {
+          $.LoadingOverlay("hide");
             console.log(data);
             setModalBox();
             $('#modalPersonal').modal('show');
@@ -71,7 +75,11 @@ $(document).ready(function() {
         url:'/saveclient/'+id,
         data: data,
         dataType: 'json',
-      }).done( function(data) {
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
+        }).done( function(data) {
+          $.LoadingOverlay("hide");
         
         $('#sideusername').html(username+' '+lastname);
         $('#namep').html(username+' '+lastname);
@@ -148,7 +156,11 @@ $(document).ready(function() {
       contentType: 'application/json',
       data: data,
       dataType: 'json',
-    }).done(function(data){
+      beforeSend: function(){
+        $.LoadingOverlay("show");
+       },
+      }).done( function(data) {
+        $.LoadingOverlay("hide");
       $('#myModal').modal('hide');
       $('#nameb').html(bankname);
       $('#nameb').removeClass('g-color-red');
@@ -182,7 +194,11 @@ $(document).ready(function() {
         url: '/clientbank/'+id,
         method: "GET",
         contentType: 'application/json',
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
         }).done( function(data) {
+          $.LoadingOverlay("hide");
             setModalBox();
             $('#modalBank').modal('show');
             function setModalBox() {
@@ -222,7 +238,11 @@ $(document).ready(function() {
       contentType: 'application/json',
       data: data,
       dataType: 'json',
-    }).done(function(data){
+      beforeSend: function(){
+        $.LoadingOverlay("show");
+       },
+      }).done( function(data) {
+        $.LoadingOverlay("hide");
       if(data.success == 1){
         Toast.fire({
             background: '#007bff',

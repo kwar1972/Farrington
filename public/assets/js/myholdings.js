@@ -14,13 +14,15 @@ $(document).ready(function() {
 });
 
 function settableHoldings() {
-    $("#loaderDiv").show();
     $.ajax({
     'url': "/myholdingslist",
     'method': "GET",
     'contentType': 'application/json',
-     success:function(data) {
-       console.log(data);
+    beforeSend: function(){
+      $.LoadingOverlay("show");
+     },
+    }).done( function(data) {
+      $.LoadingOverlay("hide");
       var arr = jQuery.makeArray( data );
       $('#tableholdings').dataTable( {
             "aaData": arr,
@@ -41,7 +43,5 @@ function settableHoldings() {
             ]
       });
     },
-    complete:function(){
-    }
-    });
-  };
+   
+    )};

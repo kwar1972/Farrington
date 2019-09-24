@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
     $('#status').on('change', function(){
       if($('#status').val() == 'Confirmed' || $('#status').val() == 'Purchased' || $('#status').val() == 'Invoiced' || $('#status').val() == 'Sold'){
         $('#purchaseddeiv').show();
@@ -26,12 +27,16 @@ $(document).ready(function() {
     });
     // Set Tables
     settableTrades();
-    $('[data-toggle="tooltip"]').tooltip();
+    
     $.ajax({
       url: 'tradeagent',
       type: 'get',
       contentType: 'application/json',
+      beforeSend: function(){
+        $.LoadingOverlay("show");
+       },
       success:function(response){
+        $.LoadingOverlay("hide");
           var len = response.length;
           $("#agent").empty();
           for( var i = 0; i<len; i++){
@@ -47,7 +52,11 @@ $(document).ready(function() {
       url: 'tickers',
       type: 'get',
       contentType: 'application/json',
+      beforeSend: function(){
+        $.LoadingOverlay("show");
+       },
       success:function(response){
+        $.LoadingOverlay("hide");
           var len = response.length;
           $("#ticker").empty();
           for( var i = 0; i<len; i++){
@@ -67,9 +76,10 @@ $(document).ready(function() {
       type: 'get',
       contentType: 'application/json',
       beforeSend: function(){
-        
+        $.LoadingOverlay("show");
        },
       success:function(response){
+        $.LoadingOverlay("hide");
           var len = response.length;
           $("#client").empty();
           for( var i = 0; i<len; i++){
@@ -196,16 +206,15 @@ $('#price').keyup(function () {
 
   
   function settableTrades() {  
-    $("#loaderDiv").show();
     $.ajax({
     'url': "trademanlist",
     'method': "GET",
     'contentType': 'application/json',
     beforeSend: function(){
-      
-     
+      $.LoadingOverlay("show");
      },
-     success:function(data) {
+    success:function(data){
+      $.LoadingOverlay("hide");
         $('#tabletrades').dataTable( {
               "aaData": data,
               "columnDefs": [
@@ -289,7 +298,11 @@ function getPrice(){
       'url': "/stockprice/"+id,
       'method': "GET",
       'contentType': 'application/json',
-       success:function(data) {
+      beforeSend: function(){
+        $.LoadingOverlay("show");
+       },
+      success:function(data){
+        $.LoadingOverlay("hide");
          console.log(data);
          $('#price').val(data);
        }
@@ -351,7 +364,11 @@ function getPrice(){
         url:'/tradesave/',
         data: data,
         dataType: 'json',
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
       }).done( function(data) {
+        $.LoadingOverlay("hide");
         if(data.success == 1){
                     Toast.fire({
               background: '#007bff',
@@ -376,13 +393,17 @@ function open_editModal(id) {
     type:'GET',
     url:'/tradedetail/'+id,
     'contentType': 'application/json',
+    beforeSend: function(){
+      $.LoadingOverlay("show");
+     },
   }).done( function(data) {
-    
+    $.LoadingOverlay("hide");
   setModalBox(data);
-  $('#createModal').modal('show');
+  
   
   });
   function setModalBox(data) {
+    $('#createModal').modal('show');
     $("#statusdiv").show();
     if(data.status == 'Paid'){
       $('#depositdiv').show();
@@ -437,7 +458,11 @@ function save_formTE(id){
         url:'/tradeedit/'+id,
         data: data,
         dataType: 'json',
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
       }).done( function(data) {
+        $.LoadingOverlay("hide");
         if(data.success == 1){
           Toast.fire({
               background: '#007bff',
@@ -479,7 +504,10 @@ function deleteconfirm(id){
         headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
       },
-        url:'/tradedelete/'+id
+        url:'/tradedelete/'+id,
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
       }).done( function(data) {
         if(data.success == 1){
           Toast.fire({

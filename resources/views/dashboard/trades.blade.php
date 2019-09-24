@@ -102,9 +102,12 @@
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
+          <div id="loader" class="overlay">
+              
+          </div>
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark"><i class="nav-icon fas fa-exchange-alt"></i> Trade Manager <button  class="btn btn-sm btn-primary g-color-white-user-i" data-toggle="tooltip" data-placement="right" title="Create User" onclick="openCreateModal()">Add new transaction</button></h1>
+            <h1 class="m-0 text-dark"><i class="nav-icon fas fa-exchange-alt"></i> Trade Manager <button  class="btn btn-sm btn-primary g-color-white-user-i" data-toggle="tooltip" data-placement="right" title="Create trade" onclick="openCreateModal()">Add new trade</button></h1>
           </div>
           <!-- /.col -->
           <div class="col-sm-6">

@@ -70,6 +70,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Morris.js charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="/dist/plugins/morris/morris.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
 </head>
 
 <body class="hold-transition">

@@ -3,13 +3,15 @@ $(document).ready(function() {
 });
 
 function settableUser() {  
-  $("#loaderDiv").show();
   $.ajax({
   'url': "users",
   'method': "GET",
   'contentType': 'application/json',
+  beforeSend: function(){
+    $.LoadingOverlay("show");
+   },
   }).done( function(data) {
-    console.log(data);
+    $.LoadingOverlay("hide");
       $('#tableuser').dataTable( {
             "aaData": data,
             "columnDefs": [
@@ -95,7 +97,11 @@ function open_viewModal(id) {
     type:'GET',
     url:'/userdetail/'+id,
     'contentType': 'application/json',
-  }).done( function(data) {
+    beforeSend: function(){
+      $.LoadingOverlay("show");
+     },
+    }).done( function(data) {
+      $.LoadingOverlay("hide");
     setModalBox();
     $('#myModal').modal('show');
     
@@ -377,7 +383,11 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
       type:'GET',
       url:'/userdetail/'+id,
       'contentType': 'application/json',
-    }).done( function(data) {
+      beforeSend: function(){
+        $.LoadingOverlay("show");
+       },
+      }).done( function(data) {
+        $.LoadingOverlay("hide");
       setModalBox();
       $('#myModalHolding').modal('show');
 
@@ -412,7 +422,11 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
     'url': "/userslogins/"+id,
     'method': "GET",
     'contentType': 'application/json',
+    beforeSend: function(){
+      $.LoadingOverlay("show");
+     },
     }).done( function(data) {
+      $.LoadingOverlay("hide");
       $('#myModalSystem').modal('show');
       setModalBox();
       
@@ -441,7 +455,11 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
     'url': "/tradelist/"+id,
     'method': "GET",
     'contentType': 'application/json',
+    beforeSend: function(){
+      $.LoadingOverlay("show");
+     },
     }).done( function(data) {
+      $.LoadingOverlay("hide");
       console.log(data);
       $('#myModalTrades').modal('show');
       setModalBox();
@@ -511,7 +529,11 @@ function save_formUC(){
         url:'/usercreate/',
         data: data,
         dataType: 'json',
-      }).done( function(data) {
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
+        }).done( function(data) {
+          $.LoadingOverlay("hide");
         if(data.success == 1){
           Toast.fire({
               background: '#007bff',
@@ -569,7 +591,11 @@ function save_formUE(id){
         url:'/useredit/'+id,
         data: data,
         dataType: 'json',
-      }).done( function(data) {
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
+        }).done( function(data) {
+          $.LoadingOverlay("hide");
         $('#sideusername').html(username+' '+lastname);
         if(data.success == 1){
           Toast.fire({
@@ -611,8 +637,12 @@ function deleteconfirm(id){
         headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
       },
-        url:'/userdelete/'+id
-      }).done( function(data) {
+        url:'/userdelete/'+id,
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
+        }).done( function(data) {
+          $.LoadingOverlay("hide");
         if(data.success == 1){
           Toast.fire({
               background: '#007bff',
@@ -657,8 +687,12 @@ function sendveriemail(id){
         headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
       },
-        url:'/resenduseremail/'+id
-      }).done( function(data) {
+        url:'/resenduseremail/'+id,
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
+        }).done( function(data) {
+          $.LoadingOverlay("hide");
         if(data.success == 1){
           Toast.fire({
               background: '#007bff',

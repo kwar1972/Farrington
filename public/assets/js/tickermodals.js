@@ -7,7 +7,11 @@ function tableticker() {
   'url': "tickers",
   'method': "GET",
   'contentType': 'application/json',
+  beforeSend: function(){
+    $.LoadingOverlay("show");
+   },
   }).done( function(data) {
+    $.LoadingOverlay("hide");
       $('#tableticker').dataTable( {
             "aaData": data,
             "rowId": data.id,
@@ -63,7 +67,11 @@ function open_viewModal(id) {
     type:'GET',
     url:'/tickerdetail/'+id,
     'contentType': 'application/json',
-  }).done( function(data) {
+    beforeSend: function(){
+      $.LoadingOverlay("show");
+     },
+    }).done( function(data) {
+      $.LoadingOverlay("hide");
     setModalBox();
     $('#myModal').modal('show');
 
@@ -114,7 +122,11 @@ $("#active").change(function() {
         type:'GET',
         url:'/swapticker/',
         data:{tickerId: tickerId, tickerVal: tickerVal},
-        success:function(data){
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
+        }).done( function(data) {
+          $.LoadingOverlay("hide");
             console.log(data.success);
              if(data.success == 1){
                 Toast.fire({
@@ -130,9 +142,10 @@ $("#active").change(function() {
                 });
             }
         }
-     });
+     );
   }
 });
+
 
 function save_formTC(){
   const Toast = Swal.mixin({
@@ -156,7 +169,11 @@ function save_formTC(){
         url:'/tickercreate/',
         data: data,
         dataType: 'json',
-      }).done( function(data) {
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
+        }).done( function(data) {
+          $.LoadingOverlay("hide");
         if(data.success == 1){
           Toast.fire({
               background: '#007bff',
@@ -196,7 +213,11 @@ console.log(data);
       url:'/tickeredit/'+id,
       data: data,
       dataType: 'json',
-    }).done( function(data) {
+      beforeSend: function(){
+        $.LoadingOverlay("show");
+       },
+      }).done( function(data) {
+        $.LoadingOverlay("hide");
       if(data.success == 1){
         Toast.fire({
             background: '#007bff',
@@ -236,8 +257,12 @@ function deleteconfirm(id){
         headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
       },
-        url:'/tickerdelete/'+id
-      }).done( function(data) {
+        url:'/tickerdelete/'+id,
+        beforeSend: function(){
+          $.LoadingOverlay("show");
+         },
+        }).done( function(data) {
+          $.LoadingOverlay("hide");
         if(data.success == 1){
           Toast.fire({
               background: '#007bff',
