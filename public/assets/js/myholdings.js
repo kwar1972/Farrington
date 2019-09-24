@@ -34,7 +34,7 @@ function settableHoldings() {
             "columns": [
               { "data": "ticker" },
               { "data": "amount" },
-              { "data": "pricepaid" },
+              { "data": "pricepaid", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
               { "data": "pricesell", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
               { "data": "totalpaid", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
               { "data": "totpos", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
