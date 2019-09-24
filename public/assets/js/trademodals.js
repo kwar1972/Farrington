@@ -207,7 +207,7 @@ $('#price').keyup(function () {
   
   function settableTrades() {  
     $.ajax({
-    'url': "trademanlist",
+    'url': 'trademanlist',
     'method': "GET",
     'contentType': 'application/json',
     beforeSend: function(){
