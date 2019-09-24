@@ -149,32 +149,6 @@
         <div class="row mb-2">
           <div class="col-12">
             <!-- TradingView Widget BEGIN -->
-{{-- <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-    {
-    "symbols": [
-      {
-        "description": "USD/CAD",
-        "proName": "OANDA:USDCAD"
-      },
-      {
-        "description": "EUR/USD",
-        "proName": "OANDA:EURUSD"
-      },
-      {
-        "description": "USD/HKD",
-        "proName": "OANDA:USDHKD"
-      }
-    ],
-    "colorTheme": "dark",
-    "isTransparent": false,
-    "locale": "en"
-  }
-    </script>
-  </div> --}}
-  <!-- TradingView Widget END -->
             <div class="tradingview-widget-container">
                 <div class="tradingview-widget-container__widget"></div>
                   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
@@ -219,7 +193,7 @@
             <div class="icon">
               <i class="fas fa-donate"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/mytrades" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -234,7 +208,7 @@
             <div class="icon">
               <i class="fas fa-signal"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/mytrades" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -249,7 +223,7 @@
             <div class="icon">
               <i class="fas fa-hand-holding-usd"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/myholdings" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -346,47 +320,6 @@
         <!-- Left col -->
 
       </div>
-      {{-- <div class="row">
-            <!-- right col (We are only adding the ID to make the widgets sortable)-->
-            <section class="col-lg-12 connectedSortable">
-                <div class="card g-bg-navy">
-                    <div class="card-header d-flex p-0">
-                      <h3 class="card-title p-3 g-color-white">
-                        <i class="fa fa-chart-line mr-1 g-color-white"></i> My Stocks Performance
-                      </h3>
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body">
-                      <div class="tab-content p-0">
-                        <!-- TradingView Widget BEGIN -->
-                        <div id="chart1" class="tradingview-widget-container">
-                            <div class="tradingview-widget-container__widget"></div>
-                            <div class="tradingview-widget-copyright"><p onClick="OpenChartModal()" >Detailed Chart</p></div>
-                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-                            {
-                              "symbol": "NYSE:BABA",
-                              "width": "100%",
-                              "height": "100%",
-                              "locale": "en",
-                              "dateRange": "12m",
-                              "colorTheme": "dark",
-                              "trendLineColor": "#37a6ef",
-                              "underLineColor": "rgba(55, 166, 239, 0.15)",
-                              "isTransparent": true,
-                              "autosize": true,
-                              "largeChartUrl": "http://farrington.local/chartbig"
-                            }
-                            </script>
-                          </div>
-                          <!-- TradingView Widget END -->
-                      </div>
-                    </div>
-                    <!-- /.card-body -->
-                  </div>
-                  <!-- /.card -->
-                </section>
-                <!-- /.Left col -->
-      </div> --}}
         </section>
       </div>
       <!-- /.row (main row) -->
