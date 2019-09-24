@@ -293,7 +293,6 @@ $('#price').keyup(function () {
   //------------------function GET PRICE ------------
 function getPrice(){
   var id = $('#ticker').val();
-    console.log(id);
     $.ajax({
       'url': "/stockprice/"+id,
       'method': "GET",
@@ -303,7 +302,7 @@ function getPrice(){
        },
       success:function(data){
         $.LoadingOverlay("hide");
-         console.log(data);
+         
          $('#price').val(data);
        }
       });
