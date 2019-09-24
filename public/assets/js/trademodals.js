@@ -286,10 +286,6 @@ $('#price').keyup(function () {
   };
 
 
-  function StockPrice(){
-    
-  }
-
   //------------------function GET PRICE ------------
 function getPrice(){
   var id = $('#ticker').val();
@@ -301,6 +297,7 @@ function getPrice(){
         $.LoadingOverlay("show");
        },
       success:function(data){
+        console.log(data);
         $.LoadingOverlay("hide");
          
          $('#price').val(data);
