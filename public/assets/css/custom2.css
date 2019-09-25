@@ -12,8 +12,22 @@ a{
 .g-color-white{
     color: white ;
 }
+.g-color-black{
+    color: black ;
+    opacity: 0.6;
+}
 .g-color-white-i{
     color: white !important;
+}
+.g-color-green{
+    color: #28A745 !important;
+}
+.g-color-green-op{
+    color: #28A745 !important;
+    opacity: 0.6;
+}
+.g-color-green-i{
+    color: #28A745 !important;
 }
 .g-color-white-user-i{
     color: white !important;
@@ -27,6 +41,9 @@ a{
 }
 .g-color-white-i:hover{
     color: black !important;
+}
+.g-color-green-i:hover{
+    color: white !important;
 }
 .g-bg-grey{
     background-color: #343a40;
@@ -53,3 +70,93 @@ a{
         width: 100% !important;
     }    
 }
+
+.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height:60px;
+    width:60px;
+    margin:0px auto;
+    -webkit-animation: rotation .6s infinite linear;
+    -moz-animation: rotation .6s infinite linear;
+    -o-animation: rotation .6s infinite linear;
+    animation: rotation .6s infinite linear;
+    border-left:6px solid rgba(0,174,239,.15);
+    border-right:6px solid rgba(0,174,239,.15);
+    border-bottom:6px solid rgba(0,174,239,.15);
+    border-top:6px solid rgba(0,174,239,.8);
+    border-radius:100%;
+ }
+ 
+ @-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(359deg);}
+ }
+ @-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(359deg);}
+ }
+ @-o-keyframes rotation {
+    from {-o-transform: rotate(0deg);}
+    to {-o-transform: rotate(359deg);}
+ }
+ @keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+ }
+ .g-bg-darkblue{
+     background-color: #0F1231 !important;
+ }
+ .g-color-lblue{
+    color: rgb(0, 61, 126)!important;
+}
+ .g-bg-lblue{
+    background-color: rgb(0, 61, 126)!important;
+}
+.g-bg-lblue2{
+    background-color: rgb(0, 43, 88) !important;
+}
+.brdr-color-white{
+    border-color: white !important;
+}
+.brdr-color-grey{
+    border-color: #666666 !important;
+}
+.icon-circ{
+    display: inline-block;
+    border-radius: 70px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+}
+.g-color-red-op{
+    color: red !important;
+    opacity: 0.6;
+}
+.g-color-red{
+    color: red !important;
+}
+.g-bg-navy{
+    background-color: #001f3f !important;
+}
+.badge-seconday{
+    background-color: #6c757d !important;
+    color: white !important;
+}
+.badge-indigo{
+    background-color: #6610f2 !important;
+    color: white !important;
+}
+.badge-orange{
+    background-color: #ff851b !important;
+    color: white !important;
+}
+.color-info{
+    color: #17A2B8 !important;
+}
+
+.formicon-dark{
+    background-color: rgb(153, 151, 151) !important;
+    color: white !important;
+}
+
