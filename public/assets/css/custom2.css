@@ -108,6 +108,9 @@ a{
  .g-bg-darkblue{
      background-color: #0F1231 !important;
  }
+ .g-color-lblue{
+    color: rgb(0, 61, 126)!important;
+}
  .g-bg-lblue{
     background-color: rgb(0, 61, 126)!important;
 }

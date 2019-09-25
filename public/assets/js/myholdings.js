@@ -39,13 +39,21 @@ function settableHoldings() {
               { "data": "totalpaid", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
               { "data": "totpos", render: $.fn.dataTable.render.number( ',', '.', 2, '$ ' )  },
               { mRender: function (data, type, row) {
-                if(row.totearn >= 0){
+                if(row.totearn == 0){
                   function currencyFormat(num) {
-                    return '$ ' + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+                    return '$ ' + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
                   }
                   var number = row.totearn;
                   var number2 = currencyFormat(number);
-                  var up = number2 +'<span class="g-color-green"> <i class="fas fa-sort-amount-up"></i></span>'
+                  var up = number2 +'<span class="g-color-lblue"> <i class="fas fa-equals"></i></span>';
+                  return up
+                }else if(row.totearn > 0){
+                  function currencyFormat(num) {
+                    return '$ ' + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+                  }
+                  var number = row.totearn;
+                  var number2 = currencyFormat(number);
+                  var up = number2 +'<span class="g-color-green"> <i class="fas fa-sort-amount-up"></i></span>';
                   return up
                 }else{
                   function currencyFormat(number) {
