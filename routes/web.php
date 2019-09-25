@@ -14,9 +14,7 @@
 // FRONTEND
 Route::get('/', function () {
     return view('welcome');
-
-
-
+});
 
 Route::get('/contactform', 'WebFormsController@contactform');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
