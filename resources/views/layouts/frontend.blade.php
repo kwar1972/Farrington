@@ -37,6 +37,11 @@
 
   <!-- CSS Customization -->
   <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <!-- Extra plugin css -->
+    <link href="{{ asset('vendors/stroke-icon/style.css') }}" rel="stylesheet">
+    <script src="http://kit.fontawesome.com/d6ff15136e.js"></script>
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
 </head>
 
 <body>
