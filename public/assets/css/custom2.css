@@ -108,6 +108,12 @@ a{
  .g-bg-darkblue{
      background-color: #0F1231 !important;
  }
+ .g-bg-lblue{
+    background-color: rgb(0, 61, 126)!important;
+}
+.g-bg-lblue2{
+    background-color: rgb(0, 43, 88) !important;
+}
 .brdr-color-white{
     border-color: white !important;
 }
@@ -144,5 +150,10 @@ a{
 }
 .color-info{
     color: #17A2B8 !important;
+}
+
+.formicon-dark{
+    background-color: rgb(153, 151, 151) !important;
+    color: white !important;
 }
 

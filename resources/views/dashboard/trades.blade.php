@@ -15,45 +15,83 @@
                       <div class="row">
                         <div class="col-4 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Client:</b></label>
+                          <div class='input-group'>
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text formicon-dark"><i class="fas fa-user"></i></span>
+                                </div>
                           <select class="form-control" id="client" name="client">
                            
                           </select> 
+                          </div>
                         </div>
                         <div class="col-4 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Ticker:</b></label>
+                          <div class='input-group'>
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text formicon-dark"><i class="fa fa-stack-overflow"></i></span>
+                                </div>
                           <select class="form-control" id="ticker" name="ticker">
                             
                           </select> 
+                          </div>
                         </div>
                         <div class="col-4 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Agent:</b></label>
+                          <div class='input-group'>
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text formicon-dark"><i class="fas fa-user-tie"></i></span>
+                                </div>
                           <select class="form-control" id="agent" name="agent">
                             
                           </select> 
+                          </div>
                         </div>
                       </div>
                       <div class="row pt-2">
                         <div class="col-4 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Amount:</b></label>
+                          <div class='input-group '>
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text formicon-dark"><i class="fas fa-sort-amount-up"></i></span>
+                                </div>
                           <input type="text" class="form-control" id="amount" name="amount" value="">
-                          
+                          </div>
                         </div>
                         <div class="col-4 f-size-14 mb-0">
                           <label class="mb-1" class="mb-0"><b>Price:</b></label>
+                          <div class='input-group'>
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text formicon-dark">$</span>
+                                </div>
                           <input class="form-control" id="price" name="price"  value="">
+                          </div>
                         </div>
                         <div class="col-4 f-size-14 mb-0">
-                          <label class="mb-1" class="mb-0"><b>Fee (%):</b></label>
+                          <label class="mb-1" class="mb-0"><b>Fee:</b></label>
+                          <div class='input-group'>
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text formicon-dark">%</i></span>
+                                </div>
                           <input class="form-control" id="fee" name="fee" type="number" step="1" min="-100" max="100.00" value="1">
+                        </div>
                         </div>
                       </div>
                       <div class="row pt-2">
                         <div class="col-4 f-size-14 mb-0">
-                          <label class="mb-1" class="mb-0"><b>Total:</b></label>
+                            <label class="mb-1" class="mb-0"><b>Total:</b></label>
+                            <div class='input-group'>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text formicon-dark"><i class="fas fa-dollar-sign"></i></span>
+                              </div>
                           <input type="text" class="form-control" id="total" name="total" value="">
+                        </div>
                         </div>
                         <div id="statusdiv" class="col-4">
                             <label class="mb-1" class="mb-0"><b>Status:</b></label>
+                            <div class='input-group'>
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text formicon-dark"><i class="fas fa-exclamation"></i></span>
+                                  </div>
                             <select class="form-control" id="status" name="status">
                               <option value="Pending">Pending</option>
                               <option value="Paid">Paid</option>
@@ -63,10 +101,14 @@
                               <option value="Sold">Sold</option>
                               <option value="Cancelled">Cancelled</option>
                             </select>
+                            </div>
                         </div>
                         <div id="depositdiv" class="col-4">
                           <label class="mb-1" class="mb-0"><b>Deposit:</b></label>
                           <div class='input-group date' id='deposit'>
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text formicon-dark"><i class="fas fa-calendar-alt"></i></span>
+                                </div>
                               <input class="form-control" type='text' class="form-control" />
                               <span class="input-group-addon">
                                   <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
@@ -78,6 +120,9 @@
                           <div id='purchaseddeiv' class="col-4">
                             <label class="mb-1" class="mb-0"><b>Purchased:</b></label>
                             <div class='input-group date' id='purchased'>
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text formicon-dark"><i class="fas fa-calendar-alt"></i></span>
+                                  </div>
                                 <input class="form-control" type='text' class="form-control" />
                                 <span class="input-group-addon">
                                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>

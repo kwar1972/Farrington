@@ -310,7 +310,7 @@ function getPrice(){
     $("#statusdiv").hide();
     $('#depositdiv').hide();
     $('#fee').val('1');
-    $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTC()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+    $('#btnCluster').html('<p class="btn btn-sm btn-outline-success" data-dismiss="modal" onClick="save_formTC()">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
     $('#createModal').modal('show');
     $('#amount').val(' ');
     $('#total').val(' ');
@@ -415,7 +415,7 @@ function open_editModal(id) {
     $('#total').val(data.total);
     $("#status").val(data.status);
     $('#deposit').datepicker().children('input').val(data.deposit_at);
-    $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTE(' + data.id + ')">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+    $('#btnCluster').html('<p class="btn btn-sm btn-outline-success" data-dismiss="modal" onClick="save_formTE(' + data.id + ')">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
   }
 };
 
