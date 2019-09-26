@@ -16,8 +16,9 @@ Route::get('/', function () {
     return view('coming');
 });
 
-
-
+Route::get('/webtest', function () {
+    return view('welcome');
+});
 
 Route::get('/contactform', 'WebFormsController@contactform');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
