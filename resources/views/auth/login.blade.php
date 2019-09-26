@@ -1,7 +1,7 @@
-@extends('layouts.frontend') 
+@extends('layouts.app') 
 @section('content')
     <!-- Login -->
-    <section class="container" style="padding: 120px 0px 120px 0px;">
+    <section class="container-fluid k-bg-img" style="padding: 120px 0px 120px 0px;">
             <div class="row justify-content-center">
                 
                 <div class="col-sm-3 col-lg-3"></div>
@@ -12,7 +12,7 @@
                         <i class="fas fa-microphone" style="font-size: 36px;"></i>
                       </div>
                       <div class="col-sm-11">
-                        <div class="row" style="font-size: 18px; font-weight: normal;">Welcome to Baxter & Grants client area!</div>
+                        <div class="row" style="font-size: 18px; font-weight: normal;">Welcome to Steiner Greves client area!</div>
                         
                         <div class="row"  style="font-weight: 200;">We are pleased to announce our new trading platform for 2019/2020.</div>
                       </div>

@@ -34,3 +34,6 @@
 .mt-5{
   margin-top: 15px;
 }
+.k-bg-img{
+  background-image: url(/img/header1.jpg);
+}
