@@ -160,7 +160,7 @@
 
             <article>
               <h3 class="h6 g-mb-2">
-            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">Incredible template</a>
+            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">Incredible work</a>
           </h3>
               <div class="small g-color-white-opacity-0_6">May 8, 2017</div>
             </article>
@@ -265,9 +265,9 @@
               </span>
             </div>
             <p class="mb-0">
-              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="mailto:info@htmlstream.com">info@htmlstream.com</a>
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="mailto:info@htmlstream.com">info@steinergreves.com</a>
               <br>
-              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">www.htmlstream.com</a>
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">www.steinergreves.com</a>
             </p>
           </div>
           <!-- End Email and Website -->
