@@ -13,44 +13,9 @@
 
 // FRONTEND
 Route::get('/', function () {
-    return view('frontend.index');
+    return view('welcome');
 });
-Route::get('company_profile', function () {
-    return view('frontend.company_profile');
-});
-Route::get('trading_benefits', function () {
-    return view('frontend.trading_benefits');
-});
-Route::get('thestaff', function () {
-    return view('frontend.thestaff');
-});
-Route::get('account_types', function () {
-    return view('frontend.account_types');
-});
-Route::get('live_account', function () {
-    return view('frontend.live_account');
-});
-Route::get('research', function () {
-    return view('frontend.research');
-});
-Route::get('trading_platforms', function () {
-    return view('frontend.trading_platforms');
-});
-Route::get('equities', function () {
-    return view('frontend.equities');
-});
-Route::get('forex', function () {
-    return view('frontend.forex');
-});
-Route::get('commodities', function () {
-    return view('frontend.commodities');
-});
-Route::get('faq', function () {
-    return view('frontend.faq');
-});
-Route::get('contactus', function () {
-    return view('frontend.contactus');
-});
+
 
 
 
