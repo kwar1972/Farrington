@@ -57,7 +57,7 @@ Route::get('contactus', function () {
 Route::get('/contactform', 'WebFormsController@contactform');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
+Route::get('/debug/{status}', 'HoldingController@checkDebug');
 
 Auth::routes(['verify' => true]);
 Route::get('home', 'DashboardController@versionone')->name('home')->middleware('verified');

@@ -182,6 +182,12 @@ class HoldingController extends Controller
         }
     }
 
+    public function checkDebug($status)
+    {
+        Artisan::call($status);
+        return "<h1>The website is..".$status."!!</h1>";
+    }
+
     public function holdingsList()
     {   
         $id = auth()->user()->id;
