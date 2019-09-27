@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/debug/{$state}', function ($state) {
+    dd($state);
+    Artisan::call($state);
+    
+    return redirect('home');
+});
