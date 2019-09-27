@@ -669,7 +669,7 @@
             </div>
           </div>
             <!-- end of View modal ------------------------------>
-            <!-- Modal Holdings-->
+            {{-- <!-- Modal Holdings-->
               <div class="modal fade bs-example-modal-lg" id="myModalHolding" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1055;">
                 <div class="modal-dialog  modal-lg">
                   <div class="modal-content">
@@ -703,7 +703,7 @@
                 </div>
               </div>
             </div>
-            <!-- end of modal Holdings------------------------------>
+            <!-- end of modal Holdings------------------------------> --}}
             <!-- Modal Trades-->
             <div class="modal fade bs-example-modal-lg" id="myModalTrades" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1055;">
               <div class="modal-dialog  modal-lg">
@@ -730,7 +730,7 @@
                           </tbody>
                         </table>
                 </div>
-                <div id="btnClusterS" class="modal-footer g-bg-grey" id="modal_footerq">
+                <div id="btnClusterT" class="modal-footer g-bg-grey" id="modal_footerq">
                   
                 </div>
               </div>
