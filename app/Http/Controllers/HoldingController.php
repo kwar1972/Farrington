@@ -11,6 +11,7 @@ use App;
 use App\Trade;
 use App\Ticker;
 use App\User;
+use Artisan;
 
 class HoldingController extends Controller
 {
