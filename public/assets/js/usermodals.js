@@ -475,11 +475,6 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
           },
         ],
         "columns": [
-          { "data": "id" },
-          { mRender: function (data, type, row) {
-            return row.get_users.name + ' ' + row.get_users.lastname
-          }
-          },
           { "data": "get_ticker.ticker" },
           { mRender: function (data, type, row) {
                 return row.get_agent.name + ' ' + row.get_agent.lastname
