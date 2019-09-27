@@ -716,8 +716,6 @@
                       <table id="tabletrades" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%;z-index: 1056;">
                           <thead>
                             <tr>
-                              <th class="text-center">id</th>
-                              <th class="text-center">Client</th>
                               <th class="text-center">Ticker</th>
                               <th class="text-center">Agent</th>
                               <th class="text-center">Amount</th>
