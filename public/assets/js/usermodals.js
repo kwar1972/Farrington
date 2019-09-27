@@ -412,7 +412,7 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
   //       }
   //       $('#createdh').html(data.created_at);
   //       $('#updatedh').html(data.updated_at);
-  //       $('#btnClusterH').html('<p class="btn btn-sm btn-outline-success" onClick="open_systemModal(' + data.id + ')"><b>System Activity</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
+  //       $('#btnClusterH').html('<p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
   //     }
   //   });
   // };
@@ -431,7 +431,7 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
       setModalBox();
       
       function setModalBox() {
-        $('#btnClusterS').html('<p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
+        $('#btnClusterS').html('</p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
       }
       $('#tablesystem').dataTable({
         "aaData": data,
