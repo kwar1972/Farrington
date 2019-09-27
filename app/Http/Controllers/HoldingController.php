@@ -11,6 +11,7 @@ use App;
 use App\Trade;
 use App\Ticker;
 use App\User;
+use Artisan;
 
 class HoldingController extends Controller
 {
@@ -180,6 +181,12 @@ class HoldingController extends Controller
 
             return view('client.myholdings')->with('nodata', $nodata);
         }
+    }
+
+    public function checkDebug($status)
+    {
+        Artisan::call($status);
+        return "<h1>The website is..".$status."!!</h1>";
     }
 
     public function holdingsList()

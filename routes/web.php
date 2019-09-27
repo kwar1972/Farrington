@@ -20,6 +20,8 @@ Route::get('/webtest', function () {
     return view('welcome');
 });
 
+Route::get('/debug/{status}', 'HoldingController@checkDebug');
+
 Route::get('/contactform', 'WebFormsController@contactform');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
