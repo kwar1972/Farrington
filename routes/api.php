@@ -17,9 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/debug/{$state}', function ($state) {
-   
-    Artisan::call($state);
-    
-    return redirect('home');
-});
+
