@@ -16,6 +16,10 @@ Route::get('/', function () {
     return view('web.coming');
 });
 
+Route::get('/webtest', function () {
+    return view('web.welcome');
+});
+
 Route::get('/whome', function () {
     return view('web.welcome');
 });
