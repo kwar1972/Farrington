@@ -1,4 +1,4 @@
-@extends('layouts.app') 
+@extends('layouts.web.app') 
 @section('content')
     <!-- Login -->
     <section class="container-fluid k-bg-img" style="padding: 120px 0px 120px 0px;">

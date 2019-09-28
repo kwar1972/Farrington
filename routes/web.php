@@ -13,11 +13,11 @@
 
 // FRONTEND
 Route::get('/', function () {
-    return view('coming');
+    return view('web.coming');
 });
 
-Route::get('/webtest', function () {
-    return view('welcome');
+Route::get('/whome', function () {
+    return view('web.welcome');
 });
 
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
