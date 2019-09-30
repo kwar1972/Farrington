@@ -16,46 +16,6 @@
     </section>
     <!-- End Promo Block -->
 
-    <!-- Icon Blocks -->
-    <div class="row no-gutters g-brd-bottom--lg g-brd-gray-light-v4">
-      <div class="col-lg-4 g-pa-60">
-        <!-- Icon Blocks -->
-        <div class="text-center">
-          <span class="d-inline-block u-icon-v3 u-icon-size--xl g-font-size-36 g-bg-primary g-color-white rounded-circle g-mb-20">
-              <i class="icon-finance-086 u-line-icon-pro"></i>
-            </span>
-          <h3 class="h4 g-color-gray-dark-v2 mb-3">Creative ideas</h3>
-          <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
-        </div>
-        <!-- End Icon Blocks -->
-      </div>
-
-      <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-pa-60">
-        <!-- Icon Blocks -->
-        <div class="text-center">
-          <span class="d-inline-block u-icon-v3 u-icon-size--xl g-font-size-36 g-bg-primary g-color-white rounded-circle g-mb-20">
-              <i class="icon-education-031 u-line-icon-pro"></i>
-            </span>
-          <h3 class="h4 g-color-gray-dark-v2 mb-3">Quality Service</h3>
-          <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
-        </div>
-        <!-- End Icon Blocks -->
-      </div>
-
-      <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-pa-60">
-        <!-- Icon Blocks -->
-        <div class="text-center">
-          <span class="d-inline-block u-icon-v3 u-icon-size--xl g-font-size-36 g-bg-primary g-color-white rounded-circle g-mb-20">
-              <i class="icon-finance-222 u-line-icon-pro"></i>
-            </span>
-          <h3 class="h4 g-color-gray-dark-v2 mb-3">Solutions</h3>
-          <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
-        </div>
-        <!-- End Icon Blocks -->
-      </div>
-    </div>
-    <!-- End Icon Blocks -->
-
     <!-- About Us -->
     <section class="g-py-100">
       <div class="container">
@@ -69,7 +29,7 @@
 
         <div class="row">
           <div class="col-lg-6 align-self-center">
-            <img class="img-fluid" src="img/financial.jpg" alt="Image description">
+            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/financial.jpg" alt="Image description">
           </div>
 
           <div class="col-lg-6 align-self-center g-pl-30--lg g-mb-50 g-mb-0--lg">
@@ -116,6 +76,117 @@
     </section>
     <!-- End About Us -->
 
+    <!-- Icon Blocks -->
+    <div class="row no-gutters g-brd-bottom--lg g-brd-gray-light-v4 mt-5">
+      <div class="row text-center">
+        <div class="col-md-4 g-mb-30">
+          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-1-hidden" data-src="img/service/service-1.jpg" data-caption="Lightbox Gallery">
+            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-1.jpg" alt="Image Description">
+            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Business Consulting </strong>
+          </a>
+          <img class="js-fancybox g-hidden-xs-up" data-fancybox="lightbox-gallery-13-2-hidden" data-src="img/service/business-consultant.jpg" data-caption="Lightbox Gallery">
+        </div>
+        <div class="col-md-4 g-mb-30">
+          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-2-hidden" data-src="img/service/service-2.jpg" data-caption="Lightbox Gallery">
+            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-2.jpg" alt="Image Description">
+            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Consultancy </strong>
+          </a>
+        </div>
+        <div class="col-md-4 g-mb-30">
+          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-3-hidden" data-src="img/service/service-3.jpg" data-caption="Lightbox Gallery">
+            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-3.jpg" alt="Image Description">
+            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Sales & Trade </strong>
+          </a>
+        </div>
+        <div class="col-md-4 g-mb-30">
+          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-4-hidden" data-src="img/service/service-4.jpg" data-caption="Lightbox Gallery">
+            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-4.jpg" alt="Image Description">
+            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Audit & Assurance </strong>
+          </a>
+        </div>
+        <div class="col-md-4 g-mb-30">
+          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-5-hidden" data-src="img/service/service-5.jpg" data-caption="Lightbox Gallery">
+            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-5.jpg" alt="Image Description">
+            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> investment planning </strong>
+          </a>
+        </div>
+        <div class="col-md-4 g-mb-30">
+          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-6-hidden" data-src="img/service/service-6.jpg" data-caption="Lightbox Gallery">
+            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-6.jpg" alt="Image Description">
+            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> financial analysis </strong>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Icon Blocks -->
+    <!-- Our Vision -->
+    <section class="g-flex-centered g-py-100 g-bg-darkgray-radialgradient-circle g-color-white-opacity-0_7g-mt-60">
+      <div class="container">
+          <div class="row">
+          <div class="col-md-6 w-100">
+          <header class="text-center g-width-60x--md mx-auto g-mb-60 g-mt-60">
+            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+              <h2 class="h3 u-heading-v2__title g-color-white text-uppercase g-font-weight-600">Our Focus</h2>
+            </div>
+            <h3 class="g-color-white">In <span class="g-color-primary">Steiner Greves</span></h3>
+            <p class="lead text-center g-color-white">Our objective and discipline further reaches to the way we manage our business</p>
+          </header>
+          </div>
+          <div class="col-md-6 w-100">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img src="img/baxter_and_grant_ask_about_no_fees.jpg" class="d-block w-100" alt="" style="max-height: 400px;">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/baxter_and_grant_free_caring_advice.jpg" class="d-block w-100" alt="..." style="max-height: 400px;">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/baxter_and_grant_free_advice.png" class="d-block w-100" alt="..." style="max-height: 400px;">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/baxter_and_grant_independant.jpg" class="d-block w-100" alt="..." style="max-height: 400px;">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/baxter_and_grant_no_hidden_fees.jpg" class="d-block w-100" alt="..." style="max-height: 400px;">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/baxter_and_grant_managed_accounts.jpg" class="d-block w-100" alt="..." style="max-height: 400px;">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/baxter_and_grant_time_is_money.png" class="d-block w-100" alt="..." style="max-height: 400px;">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our Vision -->
+    <div class="consult_policy_inner consult_policy_area ">
+        <i class="fa fa-line-chart g-color-white pb-4" style="font-size: 46px;"></i>
+        <h3 class="g-color-primary pb-4">Steiner Greves</h3>
+        <p class="g-color-white">Our objective and discipline further reaches to the way we manage our business:<br>
+
+            We pride ourself on giving you the best advice and act on behalf in a timely fashion, putting your best interests above all else.<br>
+            We ensure independent oversight of your assets by holding all client accounts at third-party custodians.<br>
+            Our fees are based on assets under management; hence, our interests are aligned with yours.<br>
+            The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.<br></p>
+        
+    </div>
     <!-- Our Pricing -->
     <section class="g-bg-secondary g-py-100">
       <div class="container">

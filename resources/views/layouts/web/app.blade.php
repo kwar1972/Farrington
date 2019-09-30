@@ -85,7 +85,12 @@
   <!-- JS Customization -->
   <script src="{{ asset('assets/js/custom.js') }}"></script>
 
-  <!-- JS Plugins Init. -->
+ <!-- JS Implementing Plugins -->
+ <script  src="{{ asset('assets/vendor/appear.js') }}"></script>
+
+ <!-- JS Unify -->
+ <script  src="{{ asset('assets/js/components/hs.onscroll-animation.js') }}"></script>
+
   <script>
     $(document).on('ready', function () {
         // initialization of carousel
@@ -128,14 +133,17 @@
           $.HSCore.components.HSTabs.init('[role="tablist"]');
         }, 200);
       });
+
+      $('#animated').hover(function(e){
+        $('#animated').init('[data-animation]');  
+        console.log('SI');
+      });
+
+  $(document).ready(function () {
+    // initialization of scroll animation
+    $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+  });
   </script>
-
-
-
-
-
-
-
 </body>
 
 </html>
