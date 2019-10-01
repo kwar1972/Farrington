@@ -37,39 +37,6 @@
             <p class="g-mb-40 text-justify">We recognize that your financial future represents a significant emotional investment, but we also know that it is critical to manage that future with logic and process rather than emotions alone. The <span class="g-color-primary">Steiner Greves</span> team will create a detailed road map tailored to your individual situation, supported by a globally diversified investment strategy. No one in the investment industry can predict the outcome of capital markets, what we can assure you is that if you put your faith in us, we will be developing a partnership based on respect and investment expertise.</p>
             <p class="g-mb-15"><strong>Quality and reliability</strong></p>
             <p class="g-mb-5 text-justify">At <span class="g-color-primary">Steiner Greves</span> we promise to always provide unbiased and astute advice based on rational experience and disciplined practice.</p>
-            {{-- <div class="row"> --}}
-              
-                  
-              {{-- <div class="col-sm-6">
-                <ul class="list-unstyled g-color-gray-dark-v4 g-mb-30 g-mb-0--sm">
-                  <li class="d-flex g-mb-10">
-                    <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Based on Botostrap 4
-                  </li>
-                  <li class="d-flex g-mb-10">
-                    <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Responsive Bootstrap Template
-                  </li>
-                  <li class="d-flex g-mb-10">
-                    <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Semantic HTML5/CSS3 Codes
-                  </li>
-                  
-                </ul>
-              </div>
-
-              <div class="col-sm-6">
-                <ul class="list-unstyled g-color-gray-dark-v4">
-                  <li class="d-flex g-mb-10">
-                    <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Over 2000+ UI Components
-                  </li>
-                  <li class="d-flex g-mb-10">
-                    <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Beautiful Eye Catching Demos
-                  </li>
-                  <li class="d-flex g-mb-10">
-                    <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Over 30+ Thematic Examples
-                  </li>
-                  
-                </ul>
-              </div> --}}
-            {{-- </div> --}}
           </div>
         </div>
       </div>
