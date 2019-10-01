@@ -54,7 +54,6 @@
 	letter-spacing: .26px;
 }
 .contact_d {
-	color: #337abe;
 	font-size: 30px;
 	font-family: "Lato", sans-serif;
 	font-weight: bold;
@@ -62,4 +61,8 @@
 	position: relative;
 	margin-right: 65px;
 }
-
+.sec_middle_title {
+	text-align: center;
+	max-width: 1040px;
+	margin: auto;
+}

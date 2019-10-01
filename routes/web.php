@@ -24,6 +24,10 @@ Route::get('/whome', function () {
     return view('web.welcome');
 });
 
+Route::get('/compprof', function () {
+    return view('web.companyprofile');
+});
+
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
 
 Route::get('/contactform', 'WebFormsController@contactform');

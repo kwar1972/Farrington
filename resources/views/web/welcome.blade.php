@@ -75,7 +75,7 @@
       </div>
     </section>
     <!-- End About Us -->
-
+<div class="container">
     <!-- Icon Blocks -->
     <div class="row no-gutters g-brd-bottom--lg g-brd-gray-light-v4 mt-5">
       <div class="row text-center">
@@ -118,6 +118,7 @@
         </div>
       </div>
     </div>
+</div>
     <!-- End Icon Blocks -->
     <!-- Our Focus -->
 
@@ -284,6 +285,7 @@
     </div>
         </div>
       </div>
+    </div>
     </section>
     <!-- End Gallery -->
     <!-- Our Focus -->
