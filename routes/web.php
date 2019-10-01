@@ -30,6 +30,9 @@ Route::get('/compprof', function () {
 Route::get('/meetteam', function () {
     return view('web.meettheteam');
 });
+Route::get('/tradingben', function () {
+    return view('web.tradingbenefits');
+});
 
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
 
