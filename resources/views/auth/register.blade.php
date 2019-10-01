@@ -1,4 +1,4 @@
-@extends('layouts.frontend') 
+@extends('layouts.web.app') 
 @section('content')
 
 <body class="hold-transition register-page">

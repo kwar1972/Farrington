@@ -1,4 +1,4 @@
-@extends('layouts.frontend') 
+@extends('layouts.web.app') 
 @section('content')
 <section class="container" style="padding: 120px 0px 120px 0px;">
             <div class="row">
