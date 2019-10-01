@@ -91,6 +91,9 @@
  <!-- JS Unify -->
  <script  src="{{ asset('assets/js/components/hs.onscroll-animation.js') }}"></script>
 
+<!-- JS Unify -->
+<script  src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
+
   <script>
     $(document).on('ready', function () {
         // initialization of carousel
@@ -142,6 +145,19 @@
   $(document).ready(function () {
     // initialization of scroll animation
     $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+  });
+
+  $(document).ready(function () {
+    // initialization of carousel
+    $.HSCore.components.HSCarousel.init('[class*="js-carousel"]');
+
+    $('#js-carousel-sync-for').on('init', function (event, slick) {
+      $(slick.$slides).css('height', 'auto');
+    });
+
+    $('#js-carousel-sync-nav').on('init', function (event, slick) {
+      $(slick.$slides).css('height', 'auto');
+    });
   });
   </script>
 </body>

@@ -27,6 +27,9 @@ Route::get('/whome', function () {
 Route::get('/compprof', function () {
     return view('web.companyprofile');
 });
+Route::get('/meetteam', function () {
+    return view('web.meettheteam');
+});
 
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
 
