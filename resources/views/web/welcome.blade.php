@@ -120,15 +120,10 @@
     </div>
 </div>
     <!-- End Icon Blocks -->
-    <!-- Our Focus -->
-
-    
-        <div class="consult_policy_inner consult_policy_area2 ">
+    <!-- Our Banner 1 -->
+        <div class="consult_policy_inner consult_policy_area2">
           <div class="helpline_inner">
             <div class="media">
-                <div class="media-left">
-                  <i class="fa fa-headset"></i>
-                </div>
                 <div class="media-body">
                     <h4 class="g-color-primary">Need consultation?</h4>
                     <h4 class="g-color-white">INVESTMENTS YOU CAN TRUST</h4>
@@ -140,14 +135,10 @@
                 </div>
             </div>
         </div>
-          
       </div>
-      
-
-    
-  <!--End Our Focus -->
-    <!-- Gallery -->
-    <section class="g-flex-centered g-py-100 g-bg-black-opacity-0_9 g-color-white-opacity-0_7">
+  <!--End Banner 1 -->
+    <!-- Gallery Our FOCUS -->
+    <section class="g-flex-centered g-py-50 g-bg-black-opacity-0_9 g-color-white-opacity-0_7">
       <div class="container-fluid">
           <div class="row">
           <div class="col-md-12 w-100">
@@ -301,6 +292,42 @@
         
     </div>
     <!--End Our Focus -->
+    <!------ Banner FORM ---->
+<div class="conteiner-fluid g-bg-primary" style="background-image: url(../../assets/img/bg/pattern5.png);">
+    <div class="row">
+      <div class="col-sm-6  text-center">
+        <h2 class="g-color-block text-uppercase g-pt-20 pb-5">request a free consultation</h2>
+          <form class="" action="#" method="post" id="contactForm" >
+            <div class="row pl-3 pr-3">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+            </div>
+            <div class="form-group col-md-6">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="row pl-3 pr-3">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone number">
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+            </div>
+          </div>
+            <div class="form-group col-md-12">
+                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group col-md-12">
+                <button type="submit" value="submit" class="btn submit_btn btn-secondary btn-xl form-control g-color-primary text-uppercase font-weight-bold">submit now</button>
+            </div>
+        </form>
+      </div>
+      <div class="col-sm-6">
+          <img class="image-responsive" src="img/contact-right.jpg" alt="">
+        </div>
+    </div>
+  </div>
+  <!------ END Banner FORM ---->
     <!-- Call To Action -->
     <section class="g-bg-primary g-color-white g-pa-30" style="background-image: url(../../assets/img/bg/pattern5.png);">
       <div class="justify-content-md-center text-center">
