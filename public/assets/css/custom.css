@@ -72,3 +72,53 @@
 .g-pt-120{
 	padding-top: 120px !important;
 }
+.g-color-black--hover:hover{
+	color: black !important;
+}
+.snip1214 {
+	font-family: 'Raleway', Arial, sans-serif;
+	color: #000000;
+	text-align: center;
+	font-size: 16px;
+	width: 100%;
+	max-width: 1200px;
+	margin: 40px 10px;
+}
+.snip1214 .plan {
+	margin: 0;
+	width: 20%;
+	position: relative;
+	float: left;
+	background-color: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.snip1214 .plan-cost {
+	padding: 0px 10px 20px;
+}
+.snip1214 .plan-price {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-weight: 800;
+	font-size: 2.4em;
+	color: #34495e;
+}
+.snip1214 .plan-type {
+	opacity: 0.6;
+}
+.snip1214 .plan-features {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	list-style: outside none none;
+	font-size: 0.8em;
+}
+.snip1214 .featured {
+	margin-top: -10px;
+	background-color:#72C02C;
+	color: #ffffff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+.snip1214 * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}

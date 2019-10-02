@@ -96,6 +96,19 @@
 
   <script>
     $(document).on('ready', function () {
+      // Hover function for Account Type
+      $('.price').on('mouseenter', function(){
+          $('.change').addClass('g-color-black');
+          $('.change').removeClass('g-color-primary');
+          $('.changeb').addClass('u-btn-outline-black');
+          $('.changeb').removeClass('u-btn-outline-primary');
+        });
+        $('.price').on('mouseleave', function(){
+          $('.change').addClass('g-color-primary');
+          $('.change').removeClass('g-color-black');
+          $('.changeb').addClass('u-btn-outline-primary');
+          $('.changeb').removeClass('u-btn-outline-black');
+        });
         // initialization of carousel
         $.HSCore.components.HSCarousel.init('.js-carousel');
 

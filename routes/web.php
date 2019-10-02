@@ -33,6 +33,9 @@ Route::get('/meetteam', function () {
 Route::get('/tradingben', function () {
     return view('web.tradingbenefits');
 });
+Route::get('/acctype', function () {
+    return view('web.accounttypes');
+});
 
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
 

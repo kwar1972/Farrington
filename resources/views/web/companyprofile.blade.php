@@ -70,16 +70,16 @@ I have worked with many individuals, families and companies and the most importa
 </div>
 </div>
 <!--End Banner 1 -->
-<section class="our_company_area g-bg-black-opacity-0_8">
+<section class="our_company_area ">
     <div class="container-fluid px-5 pb-5">
         <header class="text-center g-width-60x--md mx-auto g-pt-20 g-mb-60">
             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
-              <h2 class="h3 u-heading-v2__title  g-color-white text-uppercase g-font-weight-600">Our Company</h2>
+              <h2 class="h3 u-heading-v2__title  g-color-black text-uppercase g-font-weight-600">Our Company</h2>
             </div>
           </header>
         <br>
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-8">
                 <div class="company_item">
                     <div class="row align-content-center text-center">
                         <div class="col-sm-12">
@@ -88,12 +88,12 @@ I have worked with many individuals, families and companies and the most importa
                           <img src="img/company/company-3.jpg" alt="">
                         </div>
                     </div>
-                    <h6 class="text-justify g-color-white pt-5 px-5 text-bold">When you sign up with <span class="g-color-primary">Steiner Greves</span> this immediately opens doors to the world of investing, guidance in all sectors whatever sector best suits your portfolio, on hand investor mentors with fist class experience in all sectors.</h6><br>
-                    <p class="text-justify g-color-white px-5"> Our main investment focus is on the four sectors and with our track record of getting the timing right when to buy in and when to sell, you can sit back comfortably knowing your money is working for you and your not working for your money. <br><br>Our finance experts continually build upon their insight and understanding of universal sector trends, and value enhancement tactics. We are able to access a deep pool of sector experts, many of whom we have worked with for many years helping to execute their plans for growth and value creation.</p>
+                    <h6 class="text-justify g-color-black pt-5 px-5 text-bold">When you sign up with <span class="g-color-primary">Steiner Greves</span> this immediately opens doors to the world of investing, guidance in all sectors whatever sector best suits your portfolio, on hand investor mentors with fist class experience in all sectors.</h6><br>
+                    <p class="text-justify g-color-black px-5"> Our main investment focus is on the four sectors and with our track record of getting the timing right when to buy in and when to sell, you can sit back comfortably knowing your money is working for you and your not working for your money. <br><br>Our finance experts continually build upon their insight and understanding of universal sector trends, and value enhancement tactics. We are able to access a deep pool of sector experts, many of whom we have worked with for many years helping to execute their plans for growth and value creation.</p>
                 </div>
             </div>
-            <div class="col-md-5">
-                <div id="accordion-07" class="u-accordion g-bg-primary" role="tablist" aria-multiselectable="true">
+            <div class="col-md-4">
+                <div id="accordion-07" class="u-accordion" role="tablist" aria-multiselectable="true">
                     <!-- Card -->
                     <div class="card rounded-0 g-brd-none">
                       <div id="accordion-07-heading-01" class="u-accordion__header g-pa-0 g-bg-primary" role="tab">
@@ -218,7 +218,7 @@ I have worked with many individuals, families and companies and the most importa
           </div>
         </div>
           <div class="form-group col-md-12">
-              <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" id="message" rows="10" placeholder="Message"></textarea>
           </div>
           <div class="form-group col-md-12">
               <button type="submit" value="submit" class="btn g-bg-black btn-xl form-control g-color-primary text-uppercase font-weight-bold">submit now</button>
