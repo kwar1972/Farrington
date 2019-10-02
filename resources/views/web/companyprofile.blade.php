@@ -32,19 +32,22 @@ I have worked with many individuals, families and companies and the most importa
       <div class="col-md-4 g-mb-30">
         <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-4-hidden" data-src="img/service/service-4.jpg" data-caption="Lightbox Gallery">
           <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-4.jpg" alt="Image Description">
-          <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Audit & Assurance </strong>
+          <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-600 g-color-primary g-mt-10 text-uppercase"> Fund Management </strong>
+          <p class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-50">Our team of fund managers are waiting to assist you.</p>
         </a>
       </div>
       <div class="col-md-4 g-mb-30">
         <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-5-hidden" data-src="img/service/service-5.jpg" data-caption="Lightbox Gallery">
           <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-5.jpg" alt="Image Description">
-          <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> investment planning </strong>
+          <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-600 g-color-primary g-mt-10 text-uppercase"> Portfolio Management </strong>
+          <p class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-50">We offer a bespoke portfolio management service.</p>
         </a>
       </div>
       <div class="col-md-4 g-mb-30">
         <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-6-hidden" data-src="img/service/service-6.jpg" data-caption="Lightbox Gallery">
           <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-6.jpg" alt="Image Description">
-          <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> financial analysis </strong>
+          <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-600 g-color-primary g-mt-10 text-uppercase"> Risk Management </strong>
+          <p class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-50">We are proactive in analyzing potential threats.</p>
         </a>
       </div>
     </div>
@@ -199,7 +202,7 @@ I have worked with many individuals, families and companies and the most importa
 <div class="conteiner-fluid g-bg-primary">
   <div class="row">
     <div class="col-sm-6  text-center">
-      <h2 class="g-color-black text-uppercase g-pt-20 pb-5">request a free consultation</h2>
+      <h2 class="g-color-black text-uppercase pt-3 pb-4">request a free consultation</h2>
         <form class="" action="#" method="post" id="contactForm" >
           <div class="row pl-3 pr-3">
           <div class="form-group col-md-6">
