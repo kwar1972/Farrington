@@ -25,7 +25,7 @@
       
               <!-- Figure Image -->
               <div class="col-sm-5 order-sm-1">
-                <img class="w-100" src="img/Graham-Baxter-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/1.jpg" alt="Image Description">
               </div>
               <!-- End Figure Image -->
             </figure>
@@ -47,7 +47,7 @@
       
               <!-- Figure Image -->
               <div class="col-sm-5 order-sm-1">
-                <img class="w-100" src="img/Jonathan-H-Grant-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/2.jpg" alt="Image Description">
               </div>
               <!-- End Figure Image -->
             </figure>
@@ -69,7 +69,7 @@
       
               <!-- Figure Image -->
               <div class="col-sm-5 order-sm-1">
-                <img class="w-100" src="img/James-Colin-Jacobson-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/3.jpg" alt="Image Description">
               </div>
               <!-- End Figure Image -->
             </figure>
@@ -92,7 +92,7 @@
       
               <!-- Figure Image -->
               <div class="col-sm-5 order-sm-1">
-                <img class="w-100" src="img/Sandra-Lienhart-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/4.jpg" alt="Image Description">
               </div>
               <!-- End Figure Image -->
             </figure>
@@ -114,7 +114,7 @@
       
               <!-- Figure Image -->
               <div class="col-sm-5 order-sm-1">
-                <img class="w-100" src="img/Simon-Finch-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/5.jpg" alt="Image Description">
               </div>
               <!-- End Figure Image -->
             </figure>
@@ -136,7 +136,7 @@
           
                   <!-- Figure Image -->
                   <div class="col-sm-5 order-sm-1">
-                    <img class="w-100" src="img/Diana-Jones-baxter-grant.jpg" alt="Image Description">
+                    <img class="w-100" src="img/team/6.jpg" alt="Image Description">
                   </div>
                   <!-- End Figure Image -->
                 </figure>
@@ -148,26 +148,26 @@
             <!-- Carousel Nav -->
             <div id="js-carousel-sync-nav" class="js-carousel u-carousel-v10-nav" data-slides-show="4" data-slides-scroll="1" data-focus-on-select="true" data-center-mode="true" data-nav-for="#js-carousel-sync-for">
               <div class="js-slide g-mx-3">
-                <img class="w-100" src="img/Graham-Baxter-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/1.jpg" alt="Image Description">
               </div>
       
               <div class="js-slide g-mx-3">
-                <img class="w-100" src="img/Jonathan-H-Grant-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/2.jpg" alt="Image Description">
               </div>
       
               <div class="js-slide g-mx-3">
-                <img class="w-100" src="img/James-Colin-Jacobson-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/3.jpg" alt="Image Description">
               </div>
       
               <div class="js-slide g-mx-3">
-                <img class="w-100" src="img/Sandra-Lienhart-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/4.jpg" alt="Image Description">
               </div>
       
               <div class="js-slide g-mx-3">
-                <img class="w-100" src="img/Simon-Finch-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/5.jpg" alt="Image Description">
               </div>
               <div class="js-slide g-mx-3">
-                <img class="w-100" src="img/Diana-Jones-baxter-grant.jpg" alt="Image Description">
+                <img class="w-100" src="img/team/6.jpg" alt="Image Description">
               </div>
             </div>
             <!-- End Carousel Nav -->
