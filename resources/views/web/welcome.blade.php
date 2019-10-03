@@ -55,7 +55,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="g-color-white mt-5 text-justify px-5">We work around the clock with our clients on strategy, planning and problem solving. To determining which marketing techniques best benefit you.</p>
+                    <p class="mt-5 text-justify px-5">We work around the clock with our clients on strategy, planning and problem solving. To determining which marketing techniques best benefit you.</p>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="g-color-white mt-5 text-justify px-5">We work around the clock with our clients on strategy, planning and problem solving. To determining which marketing techniques best benefit you.</p>
+                    <p class="mt-5 text-justify px-5">We work around the clock with our clients on strategy, planning and problem solving. To determining which marketing techniques best benefit you.</p>
                   </div>
                 </div>
               </div>
@@ -85,7 +85,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="g-color-white mt-5 text-justify px-5">This is one of our key functions when investing with Steiner and Greves. The term refers to the various activities relating to the buying and selling of
+                    <p class="mt-5 text-justify px-5">This is one of our key functions when investing with Steiner and Greves. The term refers to the various activities relating to the buying and selling of
                        securities or other financial instruments. Typically we perform these tasks on behalf of our-self and all our clients.</p>
                   </div>
                 </div>
@@ -103,7 +103,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="g-color-white mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
+                    <p class="mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
                   </div>
                 </div>
               </div>
@@ -118,7 +118,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="g-color-white mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
+                    <p class="mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="g-color-white mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
+                    <p class="mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
                   </div>
                 </div>
               </div>
