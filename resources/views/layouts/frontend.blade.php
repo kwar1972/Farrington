@@ -4,7 +4,7 @@
 
 <head>
   <!-- Title -->
-  <title>Farrington</title>
+  <title>Synapsis</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
