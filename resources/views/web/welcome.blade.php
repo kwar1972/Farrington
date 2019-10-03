@@ -42,51 +42,106 @@
       </div>
     </section>
     <!-- End About Us -->
-<div class="container">
+<div class="container" style="height:500px;">
     <!-- Icon Blocks -->
-    <div class="row no-gutters g-brd-bottom--lg g-brd-gray-light-v4 mt-5">
-      <div class="row text-center">
+      <div class="row text-center" style="height:250px;">
         <div class="col-md-4 g-mb-30">
-          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-1-hidden" data-src="img/service/service-1.jpg" data-caption="Lightbox Gallery">
-            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-1.jpg" alt="Image Description">
-            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Business Consulting </strong>
-          </a>
-          <img class="js-fancybox g-hidden-xs-up" data-fancybox="lightbox-gallery-13-2-hidden" data-src="img/service/business-consultant.jpg" data-caption="Lightbox Gallery">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a class="d-block u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after">
+                    <img class="img-fluid" src="img/service/service-1.jpg" alt="Avatar">
+                    <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Business Consulting </strong>
+                  </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="g-color-white mt-5 text-justify px-5">We work around the clock with our clients on strategy, planning and problem solving. To determining which marketing techniques best benefit you.</p>
+                  </div>
+                </div>
+              </div>
         </div>
         <div class="col-md-4 g-mb-30">
-          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-2-hidden" data-src="img/service/service-2.jpg" data-caption="Lightbox Gallery">
-            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-2.jpg" alt="Image Description">
-            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Consultancy </strong>
-          </a>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a class="d-block u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after">
+                    <img class="img-fluid" src="img/service/service-2.jpg" alt="Avatar">
+                    <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Consultancy </strong>
+                  </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="g-color-white mt-5 text-justify px-5">We work around the clock with our clients on strategy, planning and problem solving. To determining which marketing techniques best benefit you.</p>
+                  </div>
+                </div>
+              </div>
         </div>
         <div class="col-md-4 g-mb-30">
-          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-3-hidden" data-src="img/service/service-3.jpg" data-caption="Lightbox Gallery">
-            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-3.jpg" alt="Image Description">
-            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Sales & Trade </strong>
-          </a>
-        </div>
-        <div class="col-md-4 g-mb-30">
-          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-4-hidden" data-src="img/service/service-4.jpg" data-caption="Lightbox Gallery">
-            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-4.jpg" alt="Image Description">
-            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Audit & Assurance </strong>
-          </a>
-        </div>
-        <div class="col-md-4 g-mb-30">
-          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-5-hidden" data-src="img/service/service-5.jpg" data-caption="Lightbox Gallery">
-            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-5.jpg" alt="Image Description">
-            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> investment planning </strong>
-          </a>
-        </div>
-        <div class="col-md-4 g-mb-30">
-          <a class="js-fancybox d-block u-block-hover u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after" href="javascript:;" data-fancybox="lightbox-gallery-13-6-hidden" data-src="img/service/service-6.jpg" data-caption="Lightbox Gallery">
-            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/service/service-6.jpg" alt="Image Description">
-            <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> financial analysis </strong>
-          </a>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a class="d-block u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after">
+                    <img class="img-fluid" src="img/service/service-3.jpg" alt="Avatar">
+                    <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Sales & Trade </strong>
+                  </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="g-color-white mt-5 text-justify px-5">This is one of our key functions when investing with Steiner and Greves. The term refers to the various activities relating to the buying and selling of
+                       securities or other financial instruments. Typically we perform these tasks on behalf of our-self and all our clients.</p>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
-    </div>
+      <div class="row text-center" style="height:250px;">
+        <div class="col-md-4 g-mb-30">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a class="d-block u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after">
+                    <img class="img-fluid" src="img/service/service-4.jpg" alt="Avatar">
+                    <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Audit & Assurance </strong>
+                  </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="g-color-white mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 g-mb-30">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a class="d-block u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after">
+                    <img class="img-fluid" src="img/service/service-5.jpg" alt="Avatar">
+                    <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> investment planning </strong>
+                  </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="g-color-white mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 g-mb-30">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a class="d-block u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after">
+                    <img class="img-fluid" src="img/service/service-6.jpg" alt="Avatar">
+                    <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> financial analysis </strong>
+                  </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="g-color-white mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+<!-- End Icon Blocks -->
 </div>
-    <!-- End Icon Blocks -->
+
     <!-- Our Banner 1 -->
         <div class="consult_policy_inner consult_policy_area2">
           <div class="helpline_inner">
