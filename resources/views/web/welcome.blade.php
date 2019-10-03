@@ -15,7 +15,6 @@
       </div>
     </section>
     <!-- End Promo Block -->
-
     <!-- About Us -->
     <section class="g-py-100">
       <div class="container">
@@ -29,7 +28,7 @@
 
         <div class="row">
           <div class="col-lg-6 align-self-center">
-            <img class="img-fluid u-block-hover__main--zoom-v1" src="img/financial.jpg" alt="Image description">
+            <img class="img-fluid" src="img/financial.jpg" alt="Image description">
           </div>
 
           <div class="col-lg-6 align-self-center g-pl-30--lg g-mb-50 g-mb-0--lg">
@@ -141,7 +140,6 @@
       </div>
 <!-- End Icon Blocks -->
 </div>
-
     <!-- Our Banner 1 -->
         <div class="consult_policy_inner consult_policy_area2">
           <div class="helpline_inner">
@@ -310,8 +308,8 @@
             We pride ourself on giving you the best advice and act on behalf in a timely fashion, putting your best interests above all else.<br>
             We ensure independent oversight of your assets by holding all client accounts at third-party custodians.<br>
             Our fees are based on assets under management; hence, our interests are aligned with yours.<br>
-            The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.<br></p>
-        
+            The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.<br>
+        </p>
     </div>
     <!--End Our Focus -->
 <!------ Banner FORM ---->
@@ -364,5 +362,4 @@
       </div>
     </section>
     <!-- End Call To Action -->
-
 @endsection
