@@ -11,8 +11,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="canonical" href="index"/>
-        <meta property="og:site_name" content="Baxter & Grant"/>
-        <meta property="og:title" content="Baxter & Grant"/>
+        <meta property="og:site_name" content="Synapsis"/>
+        <meta property="og:title" content="Synapsis"/>
         <meta property="og:url" content="index"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
@@ -25,7 +25,7 @@
         <meta itemprop="thumbnailUrl" content="../www.baxtergrant.com/img/bglogo.png"/>
         <link rel="image_src" href="../www.baxtergrantcom/img/bglogo.png" />
         <meta itemprop="image" content=""/>
-        <meta name="twitter:title" content="Baxter & Grant"/>
+        <meta name="twitter:title" content="Synapsis"/>
         <meta name="twitter:image" content="../www.baxtergrantcom/img/bglogo.png"/>
         <meta name="twitter:url" content="https://www.baxtergrantcom/"/>
         <meta name="twitter:card" content="summary"/>
@@ -33,7 +33,7 @@
 
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Baxter & Grant - </title>
+        <title>Synapsis - </title>
         <meta name="key words" content="online trading platform,MT5 system,Stock market investment,investment at baxter and grant, fund management,commodities,forex trading,day trading"/>
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
@@ -656,11 +656,11 @@ div.tp-parallax-wrap
 
 <h6>Commodities are a physical product that has some commercial value and which can be traded bought, sold, produced or consumed. Domestic regulated Commodity Exchanges offer standardized commodity contracts in which one can diversify their portfolio and hedge against risk.</h6><br>
 
-<p>Baxter & Grant accelerates your success with a data driven approach and powerful, award-winning energy and commodities (ETRM and CTRM) trading and risk management solutions. Regardless of your industry, our solutions put you in complete control of energy and commodities value chains, from production and processing through to distribution. We provide full support and transparency for procurement, supply and trading, with continuous risk controls throughout the trade life cycle. That’s why many of the world’s biggest and best-known companies partner with us to sharpen decision making and boost productivity.</p><br>
+<p>Synapsis accelerates your success with a data driven approach and powerful, award-winning energy and commodities (ETRM and CTRM) trading and risk management solutions. Regardless of your industry, our solutions put you in complete control of energy and commodities value chains, from production and processing through to distribution. We provide full support and transparency for procurement, supply and trading, with continuous risk controls throughout the trade life cycle. That’s why many of the world’s biggest and best-known companies partner with us to sharpen decision making and boost productivity.</p><br>
 
 <p>Whether you’re a multinational trading firm or a small to medium-sized commodity merchant, our solutions turn your complexity into simplicity, giving you the crucial and timely information you need to make confident trade decisions and the tools you need to execute. Connect the dots in your organization with complete cross-commodity visibility of your physical and financial assets. Leverage real-time risk analytic and reporting capabilities to drive smarter, faster decision-making, and remove risks from your supply chain. Simplify and automate your most critical business processes, and empower your organization.</p><br>
 
-<p>Join Baxter & Grants family we have over 1,200 energy and commodities clients, for feature-rich, scale-able solutions that strengthen your trading and supply business. Baxter & Grants commodities solutions cover the full spectrum of trade and risk requirements from flexible deal entry and advanced, real-time risk analytic and market data to complex, integrated logistics, inventory, supply chain, shipping and treasury functions.</p><br>
+<p>Join Synapsiss family we have over 1,200 energy and commodities clients, for feature-rich, scale-able solutions that strengthen your trading and supply business. Synapsiss commodities solutions cover the full spectrum of trade and risk requirements from flexible deal entry and advanced, real-time risk analytic and market data to complex, integrated logistics, inventory, supply chain, shipping and treasury functions.</p><br>
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -693,7 +693,7 @@ div.tp-parallax-wrap
                                     </div>
                                     <div id="company_c2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="company2">
                                         <div class="panel-body">
-                                        I am sure we all remember when we received that very first pay-check? The first time you could see the difference in what you made and what you took home. There’s a similarity when investing. There is usually a gap in the amount your portfolio earns in investment returns and in what actually lands in your pocket. However the difference between that and your pay-check, is the investment gap is something you can mitigate. Baxter & Grant can help in keeping your investor returns which can be and often are swallowed up by outrageous fees, bad investor behavior (for example terrible market timing or uncompensated risk from poor diversification), and other inefficiencies like a bad tax approach. This is the main reason Baxter & Grant exists to give all our clients a more secure effective and more rewarding way to invest.
+                                        I am sure we all remember when we received that very first pay-check? The first time you could see the difference in what you made and what you took home. There’s a similarity when investing. There is usually a gap in the amount your portfolio earns in investment returns and in what actually lands in your pocket. However the difference between that and your pay-check, is the investment gap is something you can mitigate. Synapsis can help in keeping your investor returns which can be and often are swallowed up by outrageous fees, bad investor behavior (for example terrible market timing or uncompensated risk from poor diversification), and other inefficiencies like a bad tax approach. This is the main reason Synapsis exists to give all our clients a more secure effective and more rewarding way to invest.
                                         </div>
                                     </div>
                                 </div>
@@ -744,7 +744,7 @@ div.tp-parallax-wrap
                         <div class="media-body">
                             <h6>Need consultation</h6>
                             <h4>INVESTMENTS YOU CAN TRUST</h4>
-                            <p>Baxter & Grant offer the best returns on all investments</p>
+                            <p>Synapsis offer the best returns on all investments</p>
                             <div class="contact_d">
                                 <a href="tel:+43720775910">+437 2077 5910</a>
                                 <a href="mailto:support@baxtergrant.com?subject= Contact from from website">support@baxtergrant.com</a>
@@ -812,7 +812,7 @@ div.tp-parallax-wrap
                         <div class="col-md-4 col-xs-6">
                             <aside class="f_widget about_widget">
                                 
-                                <p>At Baxter & Grant we pride ourselves in giving you the best possible service.
+                                <p>At Synapsis we pride ourselves in giving you the best possible service.
 We operate in an industry built on trust. This can only be achieved through communication and experienced support.</p>
                                 <a class="f_r_link" href="company_profile">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 <ul class="f_social">

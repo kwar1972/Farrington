@@ -11,8 +11,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="canonical" href="index.html"/>
-        <meta property="og:site_name" content="Baxter & Grant"/>
-        <meta property="og:title" content="Baxter & Grant"/>
+        <meta property="og:site_name" content="Synapsis"/>
+        <meta property="og:title" content="Synapsis"/>
         <meta property="og:url" content="index.html"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
@@ -25,7 +25,7 @@
         <meta itemprop="thumbnailUrl" content="../www.baxtergrant.com/img/bglogo.png"/>
         <link rel="image_src" href="../www.baxtergrantcom/img/bglogo.png" />
         <meta itemprop="image" content=""/>
-        <meta name="twitter:title" content="Baxter & Grant"/>
+        <meta name="twitter:title" content="Synapsis"/>
         <meta name="twitter:image" content="../www.baxtergrantcom/img/bglogo.png"/>
         <meta name="twitter:url" content="https://www.baxtergrantcom/"/>
         <meta name="twitter:card" content="summary"/>
@@ -33,7 +33,7 @@
 
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Baxter & Grant - </title>
+        <title>Synapsis - </title>
         <meta name="key words" content="online trading platform,MT5 system,Stock market investment,investment at baxter and grant, fund management,commodities,forex trading,day trading"/>
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
@@ -645,7 +645,7 @@ div.tp-parallax-wrap
             <div class="container">
                 <div class="section_title">
                     <h2>Trading Account Types</h2>
-                    <p>Baxter & Grant understand that each trader is different. We have developed our account types to suit whatever your style. To assist you in selecting the appropriate account we've outlined a few of the features below.
+                    <p>Synapsis understand that each trader is different. We have developed our account types to suit whatever your style. To assist you in selecting the appropriate account we've outlined a few of the features below.
 </p>
                 </div>
     
@@ -778,7 +778,7 @@ div.tp-parallax-wrap
                         <div class="col-md-4 col-xs-6">
                             <aside class="f_widget about_widget">
                                 
-                                <p>At Baxter & Grant we pride ourselves in giving you the best possible service.
+                                <p>At Synapsis we pride ourselves in giving you the best possible service.
 We operate in an industry built on trust. This can only be achieved through communication and experienced support.</p>
                                 <a class="f_r_link" href="company_profile">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 <ul class="f_social">

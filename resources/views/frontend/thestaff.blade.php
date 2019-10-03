@@ -11,8 +11,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="canonical" href="index"/>
-        <meta property="og:site_name" content="Baxter & Grant"/>
-        <meta property="og:title" content="Baxter & Grant"/>
+        <meta property="og:site_name" content="Synapsis"/>
+        <meta property="og:title" content="Synapsis"/>
         <meta property="og:url" content="index"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
@@ -25,7 +25,7 @@
         <meta itemprop="thumbnailUrl" content="../www.baxtergrant.com/img/bglogo.png"/>
         <link rel="image_src" href="../www.baxtergrantcom/img/bglogo.png" />
         <meta itemprop="image" content=""/>
-        <meta name="twitter:title" content="Baxter & Grant"/>
+        <meta name="twitter:title" content="Synapsis"/>
         <meta name="twitter:image" content="../www.baxtergrantcom/img/bglogo.png"/>
         <meta name="twitter:url" content="https://www.baxtergrantcom/"/>
         <meta name="twitter:card" content="summary"/>
@@ -33,7 +33,7 @@
 
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Baxter & Grant - </title>
+        <title>Synapsis - </title>
         <meta name="key words" content="online trading platform,MT5 system,Stock market investment,investment at baxter and grant, fund management,commodities,forex trading,day trading"/>
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
@@ -661,7 +661,7 @@ Co Founder, CEO
                             </div>
                             <div class="lib-row lib-desc">
                                 
-My main reasons for starting Baxter & Grant was this desire I had to create a transparent and open working environment. Working with many people in different companies, all having their flaws and strengths. My idea was to take all the strong points from my experience in my financial background and put them together in the same house. This is what I felt was needed for success, a fully informed and engaging work force to help all our clients in their financial lives whether it is a team based project or a one on one project. There is no job too small when it comes to someone’s finances and I believe it’s a necessity to make myself fully available to all my work force and clients. Having worked with so many families and businesses and more than $1Billion in assets, the most important thing I took with me is that each client whether it be an individual or a banking institute is unique. Baxter & Grant, was put together with the intention to create a corporate culture that removes the word “corporate” and focus on community, transparency being my number one principle. After many years in financial services, there have been occasions in which corporate profits supersede client service. As a fiduciary, Baxter & Grant will always maintain a strong commitment that prides itself on putting people before products. We are a private company, and are responsible to our clients, not to shareholder value.<br>
+My main reasons for starting Synapsis was this desire I had to create a transparent and open working environment. Working with many people in different companies, all having their flaws and strengths. My idea was to take all the strong points from my experience in my financial background and put them together in the same house. This is what I felt was needed for success, a fully informed and engaging work force to help all our clients in their financial lives whether it is a team based project or a one on one project. There is no job too small when it comes to someone’s finances and I believe it’s a necessity to make myself fully available to all my work force and clients. Having worked with so many families and businesses and more than $1Billion in assets, the most important thing I took with me is that each client whether it be an individual or a banking institute is unique. Synapsis, was put together with the intention to create a corporate culture that removes the word “corporate” and focus on community, transparency being my number one principle. After many years in financial services, there have been occasions in which corporate profits supersede client service. As a fiduciary, Synapsis will always maintain a strong commitment that prides itself on putting people before products. We are a private company, and are responsible to our clients, not to shareholder value.<br>
                             </div>
                         </div>
                     </div>
@@ -682,7 +682,7 @@ Co Founder, CEO
                             </div>
                             <div class="lib-row lib-desc">
                                 
-Hi I am the proud Co Founding partner of Baxter & Grant. I have 14 years of banking experience as a Vice President of Bankers Trust Company, where I was involved with management buyout financing, mergers and acquisition advisory assignments and other corporate finance activities. I have also served as Co-Head and Co-Founder of Global Technology Industry Team. I served as a Co-Head of Industrial at KKR & Co. L.P. and also served as its Head of Industrial Industry Team, North American Private Equity firm.<br>
+Hi I am the proud Co Founding partner of Synapsis. I have 14 years of banking experience as a Vice President of Bankers Trust Company, where I was involved with management buyout financing, mergers and acquisition advisory assignments and other corporate finance activities. I have also served as Co-Head and Co-Founder of Global Technology Industry Team. I served as a Co-Head of Industrial at KKR & Co. L.P. and also served as its Head of Industrial Industry Team, North American Private Equity firm.<br>
                             </div>
                         </div>
                     </div>
@@ -711,7 +711,7 @@ CFO, Head of Business Development
                             </div>
                             <div class="lib-row lib-desc">
                                 
-Hi I am the head of business development at Baxter & Grant. I obtained my CFA designation in 1998, and I am a proud member of the South African Institute of Chartered Accountants. I have a Post Graduate Diploma in Accounting and Bachelor of Commerce from the University of Natal – Durban. I entered into the hedge fund industry in 1996 since them I have gained a lot of experience in all aspects of distribution I take great pride in my work, there is no better feeling than making life changing decisions and getting it right. My main roles consist of product development and financial marketing. I moved to Austria in the year of 2013, and since joining the Baxter & Grant family I have acquired a thorough knowledge of the highly diverse qualified Investor markets.<br>
+Hi I am the head of business development at Synapsis. I obtained my CFA designation in 1998, and I am a proud member of the South African Institute of Chartered Accountants. I have a Post Graduate Diploma in Accounting and Bachelor of Commerce from the University of Natal – Durban. I entered into the hedge fund industry in 1996 since them I have gained a lot of experience in all aspects of distribution I take great pride in my work, there is no better feeling than making life changing decisions and getting it right. My main roles consist of product development and financial marketing. I moved to Austria in the year of 2013, and since joining the Synapsis family I have acquired a thorough knowledge of the highly diverse qualified Investor markets.<br>
                             </div>
                         </div>
                     </div>
@@ -732,7 +732,7 @@ COO, Head of Operations and Due Dilligence
                             </div>
                             <div class="lib-row lib-desc">
                                
-Hi I am Sandra and head of operations and due diligence at Baxter & Grant. I have broad-based experience in many aspects of international financial services, with many years in management transactions implementation and business development. My experience in transaction execution consists of conducting all due diligence and risk assessments on target acquisitions, as well as negotiating legal contracts. In business development I have revamped many departments providing them with key tools to boost efficiency within various banks and financial services companies (Deloitte Consulting, Toyo Trust, Daiwa Securities, Nedbank and KBL) to meet strategic objectives.
+Hi I am Sandra and head of operations and due diligence at Synapsis. I have broad-based experience in many aspects of international financial services, with many years in management transactions implementation and business development. My experience in transaction execution consists of conducting all due diligence and risk assessments on target acquisitions, as well as negotiating legal contracts. In business development I have revamped many departments providing them with key tools to boost efficiency within various banks and financial services companies (Deloitte Consulting, Toyo Trust, Daiwa Securities, Nedbank and KBL) to meet strategic objectives.
 <br>
 I hold an MBA in International Banking from City University, Zurich Campus, and a BA in International Relations from Lake Forest College (Illinois, USA).<br>
                             </div>
@@ -763,7 +763,7 @@ Chief Human Resources Officer
                             </div>
                             <div class="lib-row lib-desc">
 
-Hi I am the chief resource officer at Baxter & Grant. I currently hold a degree in Classics from Cambridge University and I am qualified solicitor of England and Wales. I joined Baxter & Grant in March 2010. as the Chief Human Resources Officer, focusing on strategic projects and operational support for the people of Baxter & Grant and advising on talent matters in relation to the portfolio companies. Prior to joining Baxter & Grant, I was at Goldman Sachs, spending 5 years in the Human Capital Management and Legal Department. Previously, I was a lawyer at Freshfields Bruckhaus Deringer and Slaughter & May.<br>
+Hi I am the chief resource officer at Synapsis. I currently hold a degree in Classics from Cambridge University and I am qualified solicitor of England and Wales. I joined Synapsis in March 2010. as the Chief Human Resources Officer, focusing on strategic projects and operational support for the people of Synapsis and advising on talent matters in relation to the portfolio companies. Prior to joining Synapsis, I was at Goldman Sachs, spending 5 years in the Human Capital Management and Legal Department. Previously, I was a lawyer at Freshfields Bruckhaus Deringer and Slaughter & May.<br>
                             </div>
                         </div>
                     </div>
@@ -784,7 +784,7 @@ Head of Legal, Risk and Compliance
                             <div class="lib-row lib-desc">
                                
 
-Hi my name is Diana Jones and I am Head of Legal, Risk and Compliance, I have extensive experience in legal, compliance and product development for alternative asset managers as well as legal and structuring expertise for derivative products in investment banking. I have held various senior legal positions with such firms as EIM, UBP, Credit Suisse and Morgan Stanley. I am also a qualified English solicitor with a Master of Law from the University of Des Sciences Sociales in Toulouse. <br>I moved to Austria to join the Baxter & Grant family in 2012. The decision to move was the glowing reports I had heard about Baxter & Grant’s approach on the world of finance, fresh and innovative. This was also a great opportunity to move forward in my career.<br>
+Hi my name is Diana Jones and I am Head of Legal, Risk and Compliance, I have extensive experience in legal, compliance and product development for alternative asset managers as well as legal and structuring expertise for derivative products in investment banking. I have held various senior legal positions with such firms as EIM, UBP, Credit Suisse and Morgan Stanley. I am also a qualified English solicitor with a Master of Law from the University of Des Sciences Sociales in Toulouse. <br>I moved to Austria to join the Synapsis family in 2012. The decision to move was the glowing reports I had heard about Synapsis’s approach on the world of finance, fresh and innovative. This was also a great opportunity to move forward in my career.<br>
                             </div>
                         </div>
                     </div>
@@ -811,7 +811,7 @@ Hi my name is Diana Jones and I am Head of Legal, Risk and Compliance, I have ex
                         <div class="col-md-4 col-xs-6">
                             <aside class="f_widget about_widget">
                                 
-                                <p>At Baxter & Grant we pride ourselves in giving you the best possible service.
+                                <p>At Synapsis we pride ourselves in giving you the best possible service.
 We operate in an industry built on trust. This can only be achieved through communication and experienced support.</p>
                                 <a class="f_r_link" href="company_profile">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 <ul class="f_social">

@@ -11,8 +11,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="canonical" href="index"/>
-        <meta property="og:site_name" content="Baxter & Grant"/>
-        <meta property="og:title" content="Baxter & Grant"/>
+        <meta property="og:site_name" content="Synapsis"/>
+        <meta property="og:title" content="Synapsis"/>
         <meta property="og:url" content="index"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
@@ -25,7 +25,7 @@
         <meta itemprop="thumbnailUrl" content="../www.baxtergrant.com/img/bglogo.png"/>
         <link rel="image_src" href="../www.baxtergrantcom/img/bglogo.png" />
         <meta itemprop="image" content=""/>
-        <meta name="twitter:title" content="Baxter & Grant"/>
+        <meta name="twitter:title" content="Synapsis"/>
         <meta name="twitter:image" content="../www.baxtergrantcom/img/bglogo.png"/>
         <meta name="twitter:url" content="https://www.baxtergrantcom/"/>
         <meta name="twitter:card" content="summary"/>
@@ -33,7 +33,7 @@
 
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Baxter & Grant - </title>
+        <title>Synapsis - </title>
         <meta name="key words" content="online trading platform,MT5 system,Stock market investment,investment at baxter and grant, fund management,commodities,forex trading,day trading"/>
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
@@ -656,7 +656,7 @@ div.tp-parallax-wrap
                             <h6>We have a sound understanding of the financial equity markets and the importance that they serve to our clients’ success. This is why when we present a recommendation to you, it has already been thoroughly researched and analytically proven to be worthy for your consideration as a viable investment opportunity.</h6><br>
 <p>We do not present clients with recommendations that are based on hearsay or historical performance, far from it. The disciplined approach adopted by our award-winning team of analysts, who constantly research markets for opportunities that are not only current, but worthy of meeting the exacting demands that our clients expect. This disciplined approach to market analysis is why, on occasions, we will offer opportunities that our competitors may deem ‘out-of-the box’.</p><br>
 
-<p>As Warren Buffett famously said, “We don’t have to be smarter than the rest. We have to be more disciplined that the rest,” and at Baxter & Grant, it is our disciplined approach that ensures we only ever present thoroughly researched opportunities to our clients, which allows our continued success to be reflected by that of theirs.</p><br>
+<p>As Warren Buffett famously said, “We don’t have to be smarter than the rest. We have to be more disciplined that the rest,” and at Synapsis, it is our disciplined approach that ensures we only ever present thoroughly researched opportunities to our clients, which allows our continued success to be reflected by that of theirs.</p><br>
 
 <p>Whether your previous experience and interests related to Blue-chip Stock, Ordinary Shares, Initial Public Offerings, (IPOs), Start-up Funding, Preferred Stock or Common Stock is not important to us. Presenting you with analytically researched investment opportunities, over a diverse range of financial products, in multiple markets and on numerous platforms which are worthy for your consideration, is of importance to us.</p>
 
@@ -695,7 +695,7 @@ div.tp-parallax-wrap
                                     </div>
                                     <div id="company_c2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="company2">
                                         <div class="panel-body">
-                                        I am sure we all remember when we received that very first pay-check? The first time you could see the difference in what you made and what you took home. There’s a similarity when investing. There is usually a gap in the amount your portfolio earns in investment returns and in what actually lands in your pocket. However the difference between that and your pay-check, is the investment gap is something you can mitigate. Baxter & Grant can help in keeping your investor returns which can be and often are swallowed up by outrageous fees, bad investor behavior (for example terrible market timing or uncompensated risk from poor diversification), and other inefficiencies like a bad tax approach. This is the main reason Baxter & Grant exists to give all our clients a more secure effective and more rewarding way to invest.
+                                        I am sure we all remember when we received that very first pay-check? The first time you could see the difference in what you made and what you took home. There’s a similarity when investing. There is usually a gap in the amount your portfolio earns in investment returns and in what actually lands in your pocket. However the difference between that and your pay-check, is the investment gap is something you can mitigate. Synapsis can help in keeping your investor returns which can be and often are swallowed up by outrageous fees, bad investor behavior (for example terrible market timing or uncompensated risk from poor diversification), and other inefficiencies like a bad tax approach. This is the main reason Synapsis exists to give all our clients a more secure effective and more rewarding way to invest.
                                         </div>
                                     </div>
                                 </div>
@@ -746,7 +746,7 @@ div.tp-parallax-wrap
                         <div class="media-body">
                             <h6>Need consultation</h6>
                             <h4>INVESTMENTS YOU CAN TRUST</h4>
-                            <p>Baxter & Grant offer the best returns on all investments</p>
+                            <p>Synapsis offer the best returns on all investments</p>
                             <div class="contact_d">
                                 <a href="tel:+43720775910">+437 2077 5910</a>
                                 <a href="mailto:support@baxtergrant.com?subject= Contact from from website">support@baxtergrant.com</a>
@@ -811,7 +811,7 @@ div.tp-parallax-wrap
                         <div class="col-md-4 col-xs-6">
                             <aside class="f_widget about_widget">
                                 
-                                <p>At Baxter & Grant we pride ourselves in giving you the best possible service.
+                                <p>At Synapsis we pride ourselves in giving you the best possible service.
 We operate in an industry built on trust. This can only be achieved through communication and experienced support.</p>
                                 <a class="f_r_link" href="company_profile">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 <ul class="f_social">
