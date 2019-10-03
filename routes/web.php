@@ -13,7 +13,7 @@
 
 // FRONTEND
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('login');
 });
 
 Route::get('/contactform', 'WebFormsController@contactform');
