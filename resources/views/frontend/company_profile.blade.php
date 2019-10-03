@@ -11,8 +11,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="canonical" href="index"/>
-        <meta property="og:site_name" content="Baxter & Grant"/>
-        <meta property="og:title" content="Baxter & Grant"/>
+        <meta property="og:site_name" content="Synapsis"/>
+        <meta property="og:title" content="Synapsis"/>
         <meta property="og:url" content="index"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
@@ -25,7 +25,7 @@
         <meta itemprop="thumbnailUrl" content="../www.baxtergrant.com/img/bglogo.png"/>
         <link rel="image_src" href="../www.baxtergrantcom/img/bglogo.png" />
         <meta itemprop="image" content=""/>
-        <meta name="twitter:title" content="Baxter & Grant"/>
+        <meta name="twitter:title" content="Synapsis"/>
         <meta name="twitter:image" content="../www.baxtergrantcom/img/bglogo.png"/>
         <meta name="twitter:url" content="https://www.baxtergrantcom/"/>
         <meta name="twitter:card" content="summary"/>
@@ -33,7 +33,7 @@
 
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Baxter & Grant - </title>
+        <title>Synapsis - </title>
         <meta name="key words" content="online trading platform,MT5 system,Stock market investment,investment at baxter and grant, fund management,commodities,forex trading,day trading"/>
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
@@ -637,15 +637,15 @@ div.tp-parallax-wrap
            <div id="about_us" class="container" style="margin-top: 40px;> 
          
                     <br>
-          <h3>Baxter & Grant are there for you.</h3><br>
+          <h3>Synapsis are there for you.</h3><br>
           <div class="row">
             <div class="col-md-4">
                 <img src="img/Graham-Baxter.jpg" width="350" class="img-rounded" alt="Graham baxter">
              </div>
             <div class="col-md-8">
-                <P style="font-size:17px">Starting Baxter & Grant, was an easy decision. I have worked in finance for over 20 years alongside some of the most influential financial experts in all areas of finance. <br><br>I decided to take what I had learnt and create a business with the outlook to create an open atmosphere where clients are always informed and engaged in their financial lives by our financial experts on a day to day basis. <br><br>It has always been and always be my number one priority to keep an open mind and fully engage with all clients whether they be old or new clients, helping them make that ultimate decision to take control of their finances with the expert guidance of Baxter & Grant.<br><br>
+                <P style="font-size:17px">Starting Synapsis, was an easy decision. I have worked in finance for over 20 years alongside some of the most influential financial experts in all areas of finance. <br><br>I decided to take what I had learnt and create a business with the outlook to create an open atmosphere where clients are always informed and engaged in their financial lives by our financial experts on a day to day basis. <br><br>It has always been and always be my number one priority to keep an open mind and fully engage with all clients whether they be old or new clients, helping them make that ultimate decision to take control of their finances with the expert guidance of Synapsis.<br><br>
 
-I have worked with many individuals, families and companies and the most important thing is that each client management is unique. Transparency in my opinion has to be the main principle when working side by side with clients. <br><br>Being in the financial services for 20 years has taught me one vital lesson, I have been witness where corporate profits are more important than individual client service. Here at Baxter & Grant we thrive on treating everyone with the same courtesy. <br><br><strong>We are a family company with a family outlook when dealing with all our clients making us unique in the financial world.</strong></p><br>
+I have worked with many individuals, families and companies and the most important thing is that each client management is unique. Transparency in my opinion has to be the main principle when working side by side with clients. <br><br>Being in the financial services for 20 years has taught me one vital lesson, I have been witness where corporate profits are more important than individual client service. Here at Synapsis we thrive on treating everyone with the same courtesy. <br><br><strong>We are a family company with a family outlook when dealing with all our clients making us unique in the financial world.</strong></p><br>
 <div class="pull-right"><img src="img/about-signature.png" alt="Graham baxter"></div>
              </div>
           </div>
@@ -713,7 +713,7 @@ I have worked with many individuals, families and companies and the most importa
                         <div class="media-body">
                             <h6>Need consultation</h6>
                             <h4>INVESTMENTS YOU CAN TRUST</h4>
-                            <p>Baxter & Grant offer the best returns on all investments</p>
+                            <p>Synapsis offer the best returns on all investments</p>
                             <div class="contact_d">
                                 <a href="tel:+43720775910">+437 2077 5910</a>
                                 <a href="mailto:support@baxtergrant.com?subject= Contact from from website">support@baxtergrant.com</a>
@@ -747,7 +747,7 @@ I have worked with many individuals, families and companies and the most importa
                                     </div>
                                 </div>
                             </div>
-                            <h6>When you sign up with Baxter & Grant this immediately opens doors to the world of investing, guidance in all sectors whatever sector best suits your portfolio, on hand investor mentors with fist class experience in all sectors.</h6><br>
+                            <h6>When you sign up with Synapsis this immediately opens doors to the world of investing, guidance in all sectors whatever sector best suits your portfolio, on hand investor mentors with fist class experience in all sectors.</h6><br>
                             <p> Our main investment focus is on the four sectors and with our track record of getting the timing right when to buy in and when to sell, you can sit back comfortably knowing your money is working for you and your not working for your money. <br><br>Our finance experts continually build upon their insight and understanding of universal sector trends, and value enhancement tactics. We are able to access a deep pool of sector experts, many of whom we have worked with for many years helping to execute their plans for growth and value creation.</p>
                         </div>
                     </div>
@@ -781,7 +781,7 @@ I have worked with many individuals, families and companies and the most importa
                                     </div>
                                     <div id="company_c2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="company2">
                                         <div class="panel-body">
-                                        I am sure we all remember when we received that very first pay-check? The first time you could see the difference in what you made and what you took home. There’s a similarity when investing. There is usually a gap in the amount your portfolio earns in investment returns and in what actually lands in your pocket. However the difference between that and your pay-check, is the investment gap is something you can mitigate. Baxter & Grant can help in keeping your investor returns which can be and often are swallowed up by outrageous fees, bad investor behavior (for example terrible market timing or uncompensated risk from poor diversification), and other inefficiencies like a bad tax approach. This is the main reason Baxter & Grant exists to give all our clients a more secure effective and more rewarding way to invest.
+                                        I am sure we all remember when we received that very first pay-check? The first time you could see the difference in what you made and what you took home. There’s a similarity when investing. There is usually a gap in the amount your portfolio earns in investment returns and in what actually lands in your pocket. However the difference between that and your pay-check, is the investment gap is something you can mitigate. Synapsis can help in keeping your investor returns which can be and often are swallowed up by outrageous fees, bad investor behavior (for example terrible market timing or uncompensated risk from poor diversification), and other inefficiencies like a bad tax approach. This is the main reason Synapsis exists to give all our clients a more secure effective and more rewarding way to invest.
                                         </div>
                                     </div>
                                 </div>
@@ -935,7 +935,7 @@ I have worked with many individuals, families and companies and the most importa
                         <div class="col-md-4 col-xs-6">
                             <aside class="f_widget about_widget">
                                 
-                                <p>At Baxter & Grant we pride ourselves in giving you the best possible service.
+                                <p>At Synapsis we pride ourselves in giving you the best possible service.
 We operate in an industry built on trust. This can only be achieved through communication and experienced support.</p>
                                 <a class="f_r_link" href="company_profile">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 <ul class="f_social">

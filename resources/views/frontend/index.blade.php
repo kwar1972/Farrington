@@ -10,8 +10,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="canonical" href="index"/>
-        <meta property="og:site_name" content="Baxter & Grant"/>
-        <meta property="og:title" content="Baxter & Grant"/>
+        <meta property="og:site_name" content="Synapsis"/>
+        <meta property="og:title" content="Synapsis"/>
         <meta property="og:url" content="index"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Baxter and Grant-Investment Banking and Corporate Financial Advisory services - based in Austria"/>
@@ -24,7 +24,7 @@
         <meta itemprop="thumbnailUrl" content="../www.baxtergrant.com/img/bglogo.png"/>
         <link rel="image_src" href="../www.baxtergrantcom/img/bglogo.png" />
         <meta itemprop="image" content=""/>
-        <meta name="twitter:title" content="Baxter & Grant"/>
+        <meta name="twitter:title" content="Synapsis"/>
         <meta name="twitter:image" content="../www.baxtergrantcom/img/bglogo.png"/>
         <meta name="twitter:url" content="https://www.baxtergrantcom/"/>
         <meta name="twitter:card" content="summary"/>
@@ -32,7 +32,7 @@
 
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Baxter & Grant - </title>
+        <title>Synapsis - </title>
         <meta name="key words" content="online trading platform,MT5 system,Stock market investment,investment at baxter and grant, fund management,commodities,forex trading,day trading"/>
         <meta name="description" content="Baxter and Grant based in Austria Europe amily for its central location. Offers its clients new and old, several unquie ways of trading. With managed accounts and Online trading been at the top."/>
         <!-- Icon css link -->
@@ -803,15 +803,15 @@ div.tp-parallax-wrap
                     <div class="col-md-8">
                         <div class="welcome_c_left">
                             <div class="sec_middle_title">
-                                <h2>Welcome to <span>Baxter & Grant</span> </h2>
+                                <h2>Welcome to <span>Synapsis</span> </h2>
                             </div>
                             <div class="welcome_c_text">
                                 <h6>Our continued success is dependent on an understanding of all our clients. Our strategy is an in-depth discovery process, allowing us to best understand your values, goals and concerns.   </h6>
-                                <P style="font-size:17px">We recognize that your financial future represents a significant emotional investment, but we also know that it is critical to manage that future with logic and process rather than emotions alone. The Baxter & Grant team will create a detailed road map tailored to your individual situation, supported by a globally diversified investment strategy. No one in the investment industry can predict the outcome of capital markets, what we can assure you is that if you put your faith in us, we will be developing a partnership based on respect and investment expertise.</p>
+                                <P style="font-size:17px">We recognize that your financial future represents a significant emotional investment, but we also know that it is critical to manage that future with logic and process rather than emotions alone. The Synapsis team will create a detailed road map tailored to your individual situation, supported by a globally diversified investment strategy. No one in the investment industry can predict the outcome of capital markets, what we can assure you is that if you put your faith in us, we will be developing a partnership based on respect and investment expertise.</p>
                             </div>
                             <div class="welcome_quality">
                                 <h3><strong>Quality and reliability</strong></h3>
-                                <P style="font-size:17px">At Baxter & Grant we promise to always provide unbiased and astute advice based on rational experience and disciplined practice.</p>
+                                <P style="font-size:17px">At Synapsis we promise to always provide unbiased and astute advice based on rational experience and disciplined practice.</p>
 
 
 
@@ -925,7 +925,7 @@ div.tp-parallax-wrap
                                     <div class="cases_image">
                                         <a class="cases_before" >
                                             <img src="img/baxter_and_grant_free_advice.jpg" alt="baxter_and_grant_free_advice"></a>
-                                       <h4>Baxter & Grant</h4>
+                                       <h4>Synapsis</h4>
                                     </div>
                                     <h5>Pride</h5>
                                     <p>We pride ourself on giving you the best advice and act on behalf in a timely fashion, putting your best interests above all else.</p>
@@ -935,7 +935,7 @@ div.tp-parallax-wrap
                                 <div class="cases_item">
                                     <div class="cases_image">
                                         <a class="cases_before" ><img src="img/baxter_and_grant_independant.jpg" alt="baxter_and_grant_independant"></a>
-                                        <h4>Baxter & Grant</h4>
+                                        <h4>Synapsis</h4>
                                     </div>
                                     <h5>Oversight</h5>
                                     <p>We ensure independent oversight of your assets by holding all client accounts at third-party custodians.</p>
@@ -945,7 +945,7 @@ div.tp-parallax-wrap
                                 <div class="cases_item">
                                     <div class="cases_image">
                                         <a class="cases_before" ><img src="img/baxter_and_grant_no_hidden_fees.jpg" alt="baxter_and_grant_no_hidden_fees"></a>
-                                        <h4>Baxter & Grant</h4>
+                                        <h4>Synapsis</h4>
                                     </div>
                                     <h5>Same Idea</h5>
                                     <p>Our fees are based on assets under management; hence, our interests are aligned with yours.</p>
@@ -955,7 +955,7 @@ div.tp-parallax-wrap
                                 <div class="cases_item">
                                     <div class="cases_image">
                             <a class="cases_before" ><img src="img/baxter_and_grant_managed_accounts.jpg" alt=""></a>
-                                       <h4>Baxter & Grant</h4>
+                                       <h4>Synapsis</h4>
                                     </div>
                                    <h5>Management</h5>
                                     <p>We will manage your investments for you, with 24 hour assistance</p>
@@ -965,27 +965,27 @@ div.tp-parallax-wrap
                                 <div class="cases_item">
                                     <div class="cases_image">
                                         <a class="cases_before" ><img src="img/baxter_and_grant_time_is_money.jpg" alt="baxter_and_grant_free_caring_advice"></a>
-                                      <h4>Baxter & Grant</h4>
+                                      <h4>Synapsis</h4>
                                     </div>
                                    <h5>Time is money</h5>
-                                    <p>Only takes minutes to open an account with Baxter & Grant. Once your account is set up, you will immediately have full access to all our investment research.</p>
+                                    <p>Only takes minutes to open an account with Synapsis. Once your account is set up, you will immediately have full access to all our investment research.</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="cases_item">
                                     <div class="cases_image">
                                         <a class="cases_before" ><img src="img/baxter_and_grant_ask_about_no_fees.jpg" alt="baxter_and_grant_ask_about_no_fees"></a>
-                                       <h4>Baxter & Grant</h4>
+                                       <h4>Synapsis</h4>
                                     </div>
                                    <h5>No Fees</h5>
-                                    <p>There are no fees to open or maintain your account at Baxter & Grant and there are no fees to transfer investments. Please ask one our advisors for information about fees.</p>
+                                    <p>There are no fees to open or maintain your account at Synapsis and there are no fees to transfer investments. Please ask one our advisors for information about fees.</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="cases_item">
                                     <div class="cases_image">
                                         <a class="cases_before" ><img src="img/baxter_and_grant_free_caring_advice.jpg" alt="baxter_and_grant_free_caring_advice"></a>
-                                       <h4>Baxter & Grant</h4>
+                                       <h4>Synapsis</h4>
                                     </div>
                                    <h5>Caring is helping</h5>
                                     <p>The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.</p>
@@ -1028,7 +1028,7 @@ div.tp-parallax-wrap
                         <div class="media-body">
                             <h6>Need consultation</h6>
                             <h4>INVESTMENTS YOU CAN TRUST</h4>
-                            <p>Baxter & Grant offer the best returns on all investments</p>
+                            <p>Synapsis offer the best returns on all investments</p>
                             <div class="contact_d">
                                 <a href="tel:+43720775910">+437 2077 5910</a>
                                 <a href="mailto:support@baxtergrant.com?subject= Contact from from website">support@baxtergrant.com</a>
@@ -1086,7 +1086,7 @@ div.tp-parallax-wrap
             <div class="container">
                 <div class="section_title">
                     <h2>The Managment Team</h2>
-                    <p>Baxter & Grants Management professionals provides a unique, innovative and disciplined service,
+                    <p>Synapsiss Management professionals provides a unique, innovative and disciplined service,
 designed to consistently grow your assets.<br>
 Everyone in our a management position, strives to provide excellence in all aspects of portfolio management, including investment performance, communication and administration. We have an experienced investment and management team, a disciplined approach to managing portfolios, and the back-office support of a large financial institution.</p>
                 </div>
@@ -1253,7 +1253,7 @@ Everyone in our a management position, strives to provide excellence in all aspe
                         <div class="col-md-4 col-xs-6">
                             <aside class="f_widget about_widget">
                                 
-                                <p>At Baxter & Grant we pride ourselves in giving you the best possible service.
+                                <p>At Synapsis we pride ourselves in giving you the best possible service.
 We operate in an industry built on trust. This can only be achieved through communication and experienced support.</p>
                                 <a class="f_r_link" href="company_profile">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 <ul class="f_social">

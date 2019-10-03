@@ -22,7 +22,7 @@ class WebFormsController extends Controller
             ), function($message)
             {
                 $message->from('sinapsys@baxtergrant.com');
-                $message->to('admin@baxtergrant.com', 'Admin')->subject('Baxter & Grant Contact Form');
+                $message->to('admin@baxtergrant.com', 'Admin')->subject('Synapsis Contact Form');
             });
 
          return back()->with('success', 'Thanks for contacting us!'); 
@@ -44,7 +44,7 @@ class WebFormsController extends Controller
             ), function($message)
             {
                 $message->from('sinapsys@baxtergrant.com');
-                $message->to('admin@baxtergrant.com', 'Admin')->subject('Baxter & Grant Contact Form');
+                $message->to('admin@baxtergrant.com', 'Admin')->subject('Synapsis Contact Form');
             });
 
          return back()->with('success', 'Thanks for contacting us!'); 
