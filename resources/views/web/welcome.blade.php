@@ -8,7 +8,7 @@
               We are <img class="pb-3" src="img/logo-small.png" alt="Steiner Greves"  style="max-width: 70px;">
               <span class="u-text-animation u-text-animation--typing"></span>
             </h2>
-          <p class="g-font-size-24 g-color-primary g-font-weight-600">Business everywhere!</p>
+          <p class="g-font-size-24 g-color-primary g-font-weight-600">Investing in your future</p>
         </div>
 
         <a class="js-go-to btn u-btn-outline-white g-color-white g-bg-white-opacity-0_1 g-color-black--hover g-bg-primary--hover g-font-weight-600 text-uppercase g-rounded-50 g-px-30 g-py-13" href="#!" data-target="#content">Get Started</a>
