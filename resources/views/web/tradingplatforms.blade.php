@@ -11,30 +11,30 @@
         <div class="card g-mx-10 u-shadow-v1-2">
             <img class="card-img-top" src="img/baxter-and-grant-austria-trading-company.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Live Integrated Reports</h4>
-                <p class="card-text">Check out the latest economic news, updates and important events of the global market around the world. With full antivirus protection and secure AES-256 encryption. </p>
+                <h4 class="card-title text-center font-weight-bold">Live Integrated Reports</h4>
+                <p class="card-text text-justify">Check out the latest economic news, updates and important events of the global market around the world. With full antivirus protection and secure AES-256 encryption. </p>
             </div>
         </div>
         <div class="card g-mx-10 u-shadow-v1-2">
             <img class="card-img-top" src="img/baxter-and-grant-austria-stock-market-company.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Powerful Trading Charts</h4>
-                <p class="card-text">Be one step ahead of the market’s next move! Analyze trends and grab opportunities as they occur with the help of over 60 indicators, interactive chart tools and timeframes.</p>
+                <h4 class="card-title text-center font-weight-bold">Powerful Trading Charts</h4>
+                <p class="card-text text-justify">Be one step ahead of the market’s next move! Analyze trends and grab opportunities as they occur with the help of over 60 indicators, interactive chart tools and timeframes.</p>
             </div>
         </div>
         <div class="card g-mx-10 u-shadow-v1-2">
             <img class="card-img-top" src="img/baxter-and-grant-investment-company.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Guaranteed Pricing</h4>
-                <p class="card-text">NO requotes, NO slippage! Plus,
+                <h4 class="card-title text-center font-weight-bold">Guaranteed Pricing</h4>
+                <p class="card-text text-justify">NO requotes, NO slippage! Plus,
                     Direct access to a wide range of global assets, including forex currencies, metals, commodities, stocks and indices</p>
             </div>
         </div>
         <div class="card g-mx-10 u-shadow-v1-2">
             <img class="card-img-top" src="img/baxter-and-grant-investment-online-trading.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Secure Trading on the Go</h4>
-                <p class="card-text">Forex and Derivative Trading with the highest security standards! MetaTrader4 allows you to trade instantly from any web browser, Android or iPhone/iPad device.</p>
+                <h4 class="card-title text-center font-weight-bold">Secure Trading on the Go</h4>
+                <p class="card-text text-justify">Forex and Derivative Trading with the highest security standards! MetaTrader4 allows you to trade instantly from any web browser, Android or iPhone/iPad device.</p>
             </div>
         </div>
     </div>
