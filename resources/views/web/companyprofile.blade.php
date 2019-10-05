@@ -10,7 +10,7 @@
 <h3><span class="g-color-primary">Steiner Greves</span> are there for you.</h3><br>
 <div class="row">
 <div class="col-md-4">
-<img src="img/Graham-steiner.jpg" class="img-rounded" alt="Steiner Greves" width="350">
+<img src="img/team/1.jpg" class="img-rounded" alt="Steiner Greves" width="350">
 </div>
 <div class="col-md-8">
 <p style="font-size:17px">Starting <span class="g-color-primary">Steiner Greves</span>, was an easy decision. I have worked in finance for over 20 years alongside some of the most influential financial experts in all areas of finance. <br><br>I decided to take what I had learnt and create a business with the outlook to create an open atmosphere where clients are always informed and engaged in their financial lives by our financial experts on a day to day basis. <br><br>It has always been and always be my number one priority to keep an open mind and fully engage with all clients whether they be old or new clients, helping them make that ultimate decision to take control of their finances with the expert guidance of <span class="g-color-primary">Steiner Greves</span>.<br><br>

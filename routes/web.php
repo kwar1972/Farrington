@@ -36,6 +36,10 @@ Route::get('/tradingben', function () {
 Route::get('/acctype', function () {
     return view('web.accounttypes');
 });
+Route::get('/tradingplatforms', function () {
+    return view('web.tradingplatforms');
+});
+
 
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
 

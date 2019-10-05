@@ -176,4 +176,40 @@
       </div>
       <!-- End Team Block -->
 </div>
+      <!------ Banner FORM ---->
+      <div class="conteiner-fluid g-bg-primary mt-5">
+        <div class="row">
+          <div class="col-sm-6  text-center">
+            <h2 class="g-color-black text-uppercase pt-3 pb-4">request a free consultation</h2>
+              <form class="" action="#" method="post" id="contactForm" >
+                <div class="row pl-3 pr-3">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="row pl-3 pr-3">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone number">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                </div>
+              </div>
+                <div class="form-group col-md-12">
+                    <textarea class="form-control" name="message" id="message" rows="10" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                    <button type="submit" value="submit" class="btn g-bg-black btn-xl form-control g-color-primary text-uppercase font-weight-bold">submit now</button>
+                </div>
+            </form>
+          </div>
+          <div class="col-sm-6">
+              <img class="image-responsive" src="img/contact-right.jpg" alt="">
+            </div>
+        </div>
+      </div>
+      <!------ END Banner FORM ---->
 @endsection
