@@ -7,233 +7,180 @@
             </div>
         </header>
         <br>
-        <div class="snip1214">
-                <div class="plan">
-                  <br><br>
-                  <div class="plan-cost" style="
-              margin-bottom: 20px;
-          "><span class="plan-price"></span><span class="plan-type"></span></div>
-                  <ul class="plan-features">
-                    <li><i class="ion-checkmark"> </i>Minimum Deposit</li>
-                    <li><i class="ion-checkmark"> </i>Minimum Lot Size</li>
-                    <li><i class="ion-checkmark"> </i>Spreads</li>
-                    <li><i class="ion-checkmark"> </i>Trading Platforms</li>
-                    <li><i class="ion-checkmark"> </i>Daily Analysis</li>
-                    <li><i class="ion-checkmark"> </i>Account Manager</li>
-                    <li><i class="ion-checkmark"> </i>Mobile Trading</li>
-                    <li><i class="ion-checkmark"> </i>24 Hour Support</li>
-                     <li><i class="ion-checkmark"> </i>Free Bank Wire</li>
-                  </ul>
-                  <div class="select"><a href="#"></a></div>
-                </div>
-                <div class="plan">
-                  <h3 class="plan-title">
-                    BEGINNER
-                  </h3>
-                   <!--<div class="plan-cost"><span class="plan-price">Register</span></div> -->
-                  <ul class="plan-features">
-                    <li><i class="ion-checkmark"> </i>250 USD</li>
-                    <li><i class="ion-checkmark"> </i>0.1</li>
-                    <li><i class="ion-checkmark"> </i>Floating</li>
-                    <li><i class="ion-checkmark"> </i>Meta Trader 4</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>No</li>
-                  </ul>
-                 <!--  <div class="plan-select"><a href="">Select</a></div>-->
-                </div>
-                <div class="plan featured">
-                  <h3 class="plan-title">
-                    SILVER
-                  </h3>
-                  <!-- <div class="plan-cost"><span class="plan-price">Register</span></div>-->
-                  <ul class="plan-features">
-                    <li><i class="ion-checkmark"> </i>5,000 USD</li>
-                    <li><i class="ion-checkmark"> </i>0.1</li>
-                    <li><i class="ion-checkmark"> </i>Floating</li>
-                    <li><i class="ion-checkmark"> </i>Meta Trader 4</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>No</li>
-                  </ul>
-                  <!-- <div class="plan-select"><a href="">Select</a></div>-->
-                </div>
-                    <div class="plan">
-                      <h3 class="plan-title">
-                        GOLD
-                      </h3>
-                      <!-- <div class="plan-cost"><span class="plan-price">Register</span></div>-->
-                      <ul class="plan-features">
-                        <li><i class="ion-checkmark"> </i>20,000 USD</li>
-                    <li><i class="ion-checkmark"> </i>0.1</li>
-                    <li><i class="ion-checkmark"> </i>Fixed</li>
-                    <li><i class="ion-checkmark"> </i>Meta Trader 4</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                      </ul>
-                      <!--  <div class="plan-select"><a href="">Select</a></div>-->
-                    </div>
-                    <div class="plan">
-                      <h3 class="plan-title">
-                        PLATINUM
-                      </h3>
-                     
-                      <ul class="plan-features">
-                        <li><i class="ion-checkmark"> </i>100,000 USD</li>
-                    <li><i class="ion-checkmark"> </i>0.1</li>
-                    <li><i class="ion-checkmark"> </i>Fixed</li>
-                    <li><i class="ion-checkmark"> </i>Meta Trader 4</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                    <li><i class="ion-checkmark"> </i>Yes</li>
-                      </ul>
-                     
-                    </div>
-                  </div>
-{{-- <div class="row no-gutters align-items-center">
-        <div class="col-lg col-md-4 col-sm-6 g-mb-30">
-          <!-- Article --> 
-          <article class="h-100 g-pos-rel g-bg-gray-light-v5 g-bg-primary-opacity-0_8--hover g-brd-right--sm g-brd-gray-light-v4 g-brd-transparent--hover g-color-black g-transform-scale-1_05--hover g-transition-0_3 g-pt-40 g-px-20 g-pb-105 price">
-            <!-- Article Title -->
-            <h4 class="g-font-size-20 g-font-weight-700 g-mb-25 g-color-primary change">BEGINNER</h4>
-            <!-- End Article Title -->
-            <strong class="d-block g-font-size-32 g-line-height-0_7 g-mb-25">
-              <span class="g-font-size-default">Minimum Deposit</span>
-              <span class="g-font-size-default g-font-weight-600 g-color-primary change"> 250 USD</span>
-            </strong>
-            <p class="g-mb-20">Facilisis at tortor vel, blandit tristique enim</p>
-            <ul class="list-unstyled mb-0">
-              <li class="g-mb-5">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                Support forum
-              </li>
-              <li class="g-mb-5">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                Unlimited traffic
-              </li>
-              <li class="g-mb-5">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                1GB of storage space
-              </li>
-            </ul>
-      
-            <footer class="g-pos-abs g-bottom-10 g-left-0 g-right-0 g-pa-20">
-              <a class="btn u-btn-outline-black g-brd-1 g-rounded-50 g-font-weight-600 g-pa-15-20" href="#!">Order Now</a>
-            </footer>
-          </article>
-          <!-- End Article -->
-        </div>
-      
-        <div class="col-lg col-md-4 col-sm-6 g-mb-30">
-          <!-- Article -->
-          <article class="h-100 g-pos-rel g-bg-black g-bg-primary-opacity-0_8--hover g-brd-right--md g-brd-gray-light-v4 g-brd-transparent--hover g-color-black g-transform-scale-1_05--hover g-transition-0_3 g-pt-40 g-px-20 g-pb-105 price">
-            <!-- Article Title -->
-            <h4 class="g-font-size-20 g-font-weight-700 g-mb-25 g-color-primary change">SILVER</h4>
-            <!-- End Article Title -->
-            <strong class="d-block g-font-size-32 g-line-height-0_7 g-mb-25 g-color-white">
-              <span class="g-valign-top g-font-size-default g-color-white">$</span>
-              9.90
-              <span class="g-font-size-default g-font-weight-400 g-color-primary change">/ month</span>
-            </strong>
-            <p class="g-mb-20 g-color-white">Facilisis at tortor vel, blandit tristique enim</p>
-            <ul class="list-unstyled mb-0">
-              <li class="g-mb-5 g-color-white">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                Support forum
-              </li>
-              <li class="g-mb-5 g-color-white">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                Unlimited traffic
-              </li>
-              <li class="g-mb-5 g-color-white">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                4GB of storage space
-              </li>
-            </ul>
-      
-            <footer class="g-pos-abs g-bottom-10 g-left-0 g-right-0 g-pa-20">
-              <a class="btn u-btn-outline-primary u-btn-outline-black--hover g-brd-1 g-rounded-50 g-font-weight-600 g-pa-15-20 changeb" href="#!">Order Now</a>
-            </footer>
-          </article>
-          <!-- End Article -->
-        </div>
-      
-        <div class="col-lg col-md-4 col-sm-6 g-mb-30">
-          <!-- Article -->
-          <article class="h-100 g-pos-rel g-bg-gray-light-v5 g-bg-primary-opacity-0_8--hover g-brd-right--sm g-brd-gray-light-v4 g-brd-right-0--md g-brd-right-1--lg g-brd-transparent--hover g-color-black g-transform-scale-1_05--hover g-transition-0_3 g-pt-40 g-px-20 g-pb-105 price">
-            <!-- Article Title -->
-            <h4 class="g-font-size-20 g-font-weight-700 g-mb-25 g-color-primary change">GOLD</h4>
-            <!-- End Article Title -->
-            <strong class="d-block g-font-size-32 g-line-height-0_7 g-mb-25">
-              <span class="g-valign-top g-font-size-default">$</span>
-              14.90
-              <span class="g-font-size-default g-font-weight-400 g-color-primary change">/ month</span>
-            </strong>
-            <p class="g-mb-20">Facilisis at tortor vel, blandit tristique enim</p>
-            <ul class="list-unstyled mb-0">
-              <li class="g-mb-5">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                Support forum
-              </li>
-              <li class="g-mb-5">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                Unlimited traffic
-              </li>
-              <li class="g-mb-5">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                12GB of storage space
-              </li>
-            </ul>
-      
-            <footer class="g-pos-abs g-bottom-10 g-left-0 g-right-0 g-pa-20">
-              <a class="btn u-btn-outline-black g-brd-1 g-rounded-50 g-font-weight-600 g-pa-15-20" href="#!">Order Now</a>
-            </footer>
-          </article>
-          <!-- End Article -->
-        </div>
-      
-        <div class="col-lg col-md-4 col-sm-6 g-mb-30">
-          <!-- Article -->
-          <article class="h-100 g-pos-rel g-bg-gray-light-v5 g-bg-primary-opacity-0_8--hover g-brd-right--md g-brd-gray-light-v4 g-brd-transparent--hover g-color-black g-transform-scale-1_05--hover g-transition-0_3 g-pt-40 g-px-20 g-pb-105 price">
-            <!-- Article Title -->
-            <h4 class="g-font-size-20 g-font-weight-700 g-mb-25 g-color-primary change">PLATINUM</h4>
-            <!-- End Article Title -->
-            <strong class="d-block g-font-size-32 g-line-height-0_7 g-mb-25">
-              <span class="g-valign-top g-font-size-default">$</span>
-              19.90
-              <span class="g-font-size-default g-font-weight-400 g-color-primary change">/ month</span>
-            </strong>
-            <p class="g-mb-20">Facilisis at tortor vel, blandit tristique enim</p>
-            <ul class="list-unstyled mb-0">
-              <li class="g-mb-5">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                Support forum
-              </li>
-              <li class="g-mb-5">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                Unlimited traffic
-              </li>
-              <li class="g-mb-5">
-                <i class="fa fa-check-circle g-mr-5 g-color-primary change"></i>
-                32GB of storage space
-              </li>
-            </ul>
-      
-            <footer class="g-pos-abs g-bottom-10 g-left-0 g-right-0 g-pa-20">
-              <a class="btn u-btn-outline-black g-brd-1 g-rounded-50 g-font-weight-600 g-pa-15-20" href="#!">Order Now</a>
-            </footer>
-          </article>
-          <!-- End Article -->
-        </div>
-      </div> --}}
+  <div class="table-responsive g-px-15">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="g-hidden-md-down g-brd-none g-py-50">&nbsp;</th>
+          <th class="text-center g-brd-bottom-none g-bg-primary g-valign-middle g-font-weight-400 g-py-50">
+            <h3 class="g-font-weight-600 mb-15 g-color-white">BEGINNER</h3>
+          </th>
+          <th class="text-center g-brd-bottom-none g-bg-gray-dark-v2 g-valign-middle g-font-weight-400 g-py-50 mt-5" style="box-shadow: -2px 0px 40px -6px black;">
+            <h3 class="g-font-weight-600 mb-15 g-color-primary">SILVER</h3>
+          </th>
+          <th class="text-center g-brd-bottom-none g-bg-primary g-valign-middle g-font-weight-400 g-py-50">
+            <h3 class="g-font-weight-600 mb-15 g-color-white">GOLD</h3>
+          </th>
+          <th class="text-center g-brd-bottom-none g-bg-primary g-valign-middle g-font-weight-400 g-py-50">
+            <h3 class="g-font-weight-600 mb-15 g-color-white">PLATINUM</h3>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="g-font-size-20">
+          <td class="g-hidden-md-down g-py-30 g-bg-gray-light-v5">Minimum Deposit</td>
+          <td class="text-center g-py-30 g-bg-gray-light-v5 g-color-black">250 USD
+          </td>
+          <td class="text-center g-py-30 g-bg-gray-dark-v2 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">5,000 USD
+          </td>
+          <td class="text-center g-py-30 g-bg-gray-light-v5 g-color-black">20,000 USD
+          </td>
+          <td class="text-center g-py-30 g-bg-gray-light-v5 g-color-black">100,000 USD
+          </td>
+        </tr>
+        <tr>
+          <td class="g-hidden-md-down">Minimum Lot Size</td>
+          <td class="text-center">
+            <span class="d-block g-color-black">0.1</span>
+          </td>
+          <td class="text-center g-bg-gray-dark-v3 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">
+            <span class="d-block">0.1</span>
+          </td>
+          <td class="text-center">
+            <span class="d-block g-color-black">0.1</span>
+          </td>
+          <td class="text-center">
+            <span class="d-block g-color-black">0.1</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="g-hidden-md-down g-bg-gray-light-v5">Spreads</td>
+          <td class="text-center g-bg-gray-light-v5 g-color-black">Floating
+          </td>
+          <td class="text-center g-bg-gray-dark-v2 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">Floating
+          </td>
+          <td class="text-center g-bg-gray-light-v5 g-color-black">Fixed
+          </td>
+          <td class="text-center g-bg-gray-light-v5 g-color-black">Fixed
+          </td>
+        </tr>
+        <tr>
+          <td class="g-hidden-md-down">Trading Platform</td>
+          <td class="text-center g-color-black">Meta Trader 4
+          </td>
+          <td class="text-center g-bg-gray-dark-v3 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">Meta Trader 4
+          </td>
+          <td class="text-center g-color-black">Meta Trader 4
+          </td>
+          <td class="text-center g-color-black">Meta Trader 4
+          </td>
+        </tr>
+        <tr>
+          <td class="g-hidden-md-down g-bg-gray-light-v5">Daily Analysis</td>
+          <td class="text-center g-bg-gray-light-v5">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-dark-v2 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-light-v5">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-light-v5">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="g-hidden-md-down">Account Manager</td>
+          <td class="text-center">
+              <i class="g-color-primary icon-check"></i>
+            </td>
+            <td class="text-center g-bg-gray-dark-v3 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">
+              <i class="g-color-primary icon-check"></i>
+            </td>
+            <td class="text-center">
+              <i class="g-color-primary icon-check"></i>
+            </td>
+            <td class="text-center">
+              <i class="g-color-primary icon-check"></i>
+            </td>
+        </tr>
+        <tr>
+          <td class="g-hidden-md-down g-bg-gray-light-v5">Mobile Trading</td>
+          <td class="text-center g-bg-gray-light-v5">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-dark-v2 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-light-v5">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-light-v5">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="g-hidden-md-down">24 Hour Support</td>
+          <td class="text-center">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-dark-v3 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="g-hidden-md-down g-bg-gray-light-v5">Free Bank Wire</td>
+          <td class="text-center g-bg-gray-light-v5">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-dark-v2 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-light-v5">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+          <td class="text-center g-bg-gray-light-v5">
+            <i class="g-color-primary icon-check"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="g-hidden-md-down g-bg-gray-dark-v3 g-color-white">&nbsp;</td>
+          <td class="text-center g-bg-gray-dark-v2 g-color-white">
+            <a href="#!" class="btn rounded-0 u-btn-outline-primary g-px-20 g-py-10">Purchase</a>
+          </td>
+          <td class="text-center g-bg-gray-dark-v3 g-color-white " style="box-shadow: -2px 0px 40px -6px black;">
+            <a href="#!" class="btn rounded-0 g-color-white g-bg-primary g-color-primary g-bg-white--hover g-px-20 g-py-10">Purchase</a>
+          </td>
+          <td class="text-center g-bg-gray-dark-v2 g-color-white">
+            <a href="#!" class="btn rounded-0 u-btn-outline-primary g-px-20 g-py-10">Purchase</a>
+          </td>
+          <td class="text-center g-bg-gray-dark-v3 g-color-white">
+            <a href="#!" class="btn rounded-0 u-btn-outline-primary g-px-20 g-py-10">Purchase</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
+ <!-- Call To Action -->
+ <section class="g-bg-primary g-color-white g-pa-30" style="background-image: url(../../assets/img/bg/pattern5.png);">
+  <div class="justify-content-md-center text-center">
+    <div class="align-self-md-center">
+      <p class="lead g-font-weight-400 g-mr-20--md g-mb-15 g-mb-0--md g-color-black g-font-weight-600">NOT A CLIENT? OPEN A TRADING ACCOUNT TODAY</p>
+      <p class="g-color-black">Take advantage of our competitive trading Strategies</p>
+    </div>
+    <div class="align-self-md-center">
+      <a class="btn btn-lg u-btn-black text-uppercase g-font-weight-600 g-font-size-12" target="_blank" href="#">Register</a>
+      <a class="btn btn-lg u-btn-white text-uppercase g-font-weight-600 g-font-size-12" target="_blank" href="#">Account Types</a>
+    </div>
+  </div>
+</section>
+<!-- End Call To Action -->
 @endsection
