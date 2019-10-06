@@ -66,13 +66,13 @@
         </tr>
         <tr>
           <td class="g-hidden-md-down">Trading Platform</td>
-          <td class="text-center g-color-black">Synapsis v2.0
+          <td class="text-center g-color-black">Synapsis v1.0
           </td>
-          <td class="text-center g-bg-gray-dark-v3 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">Synapsis v2.0
+          <td class="text-center g-bg-gray-dark-v3 g-color-white" style="box-shadow: -2px 0px 40px -6px black;">Synapsis v1.0
           </td>
-          <td class="text-center g-color-black">Synapsis v2.0
+          <td class="text-center g-color-black">Synapsis v1.0
           </td>
-          <td class="text-center g-color-black">Synapsis v2.0
+          <td class="text-center g-color-black">Synapsis v1.0
           </td>
         </tr>
         <tr>

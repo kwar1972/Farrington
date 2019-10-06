@@ -42,7 +42,7 @@
             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
               <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Robust Trading <span class="g-color-primary">Execution</span></h2>
             </div>
-            <p class="lead text-center"><span class="g-color-primary">Synapsis v2.0</span> , a platform you can depend on!</p>
+            <p class="lead text-center"><span class="g-color-primary">Synapsis v1.0</span> , a platform you can depend on!</p>
           </header>
     
 </div>
@@ -55,7 +55,7 @@
     <div class="col-lg-5 g-bg-gray-dark-v1 g-pt-140 g-pb-40 g-px-40">
       <header class="text-uppercase g-mb-35">
         <div class="g-mb-30">
-          <h2 class="h2 g-color-white g-font-weight-700 mb-0">Synapsis V2.0</h2>
+          <h2 class="h2 g-color-white g-font-weight-700 mb-0">Synapsis v1.0</h2>
           <h5 class="g-color-primary" >A platform you can depend on!</h5>
         </div>
       </header>
