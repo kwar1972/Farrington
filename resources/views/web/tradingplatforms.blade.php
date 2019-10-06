@@ -9,14 +9,14 @@
               </header>
     <div class="card-group g-mx-10 g-my-30">
         <div class="card g-mx-10 u-shadow-v1-2">
-            <img class="card-img-top" src="img/baxter-and-grant-austria-trading-company.jpg" alt="Card image cap">
+            <img class="card-img-top" src="img/screens/graph2.png" alt="Card image cap">
             <div class="card-body">
                 <h4 class="card-title text-center font-weight-bold">Live Integrated Reports</h4>
                 <p class="card-text text-justify">Check out the latest economic news, updates and important events of the global market around the world. With full antivirus protection and secure AES-256 encryption. </p>
             </div>
         </div>
         <div class="card g-mx-10 u-shadow-v1-2">
-            <img class="card-img-top" src="img/baxter-and-grant-austria-stock-market-company.jpg" alt="Card image cap">
+            <img class="card-img-top" src="img/screens/graph1.png" alt="Card image cap">
             <div class="card-body">
                 <h4 class="card-title text-center font-weight-bold">Powerful Trading Charts</h4>
                 <p class="card-text text-justify">Be one step ahead of the market’s next move! Analyze trends and grab opportunities as they occur with the help of over 60 indicators, interactive chart tools and timeframes.</p>
@@ -46,6 +46,70 @@
           </header>
     
 </div>
+<!-- Info Blocks -->
+<div class="row no-gutters">
+    <!-- Info Image -->
+    <div class="col-lg-7 g-bg-size-cover g-bg-pos-center" data-bg-img-src="img/screens/synapsis-1.png"></div>
+    <!-- End Info Image -->
+  
+    <div class="col-lg-5 g-bg-gray-dark-v1 g-pt-40 g-pb-40 g-px-40">
+      <header class="text-uppercase g-mb-35">
+        <div class="g-mb-30">
+          <h2 class="h2 g-color-white g-font-weight-700 mb-0">Synapsis V2.0, a platform you can depend on!</h2>
+        </div>
+        <div class="g-width-70 g-brd-bottom g-brd-2 g-brd-primary"></div>
+      </header>
+      <div class="row align-items-stretch">
+        <div class="col-sm-6 g-mb-30">
+          <!-- Article -->
+          <article class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-bg-black-opacity-0_8 g-transition-0_3 g-pa-20">
+            <div class="g-flex-middle-item">
+              <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">Access Global Markets</h4>
+              <p class="g-color-white-opacity-0_7 mb-0">Direct access to a wide range of global assets, including forex currencies, metals, commodities, stocks and indices</p>
+            </div>
+          </article>
+          <!-- End Article -->
+        </div>
+  
+        <div class="col-sm-6 g-mb-30">
+          <!-- Article -->
+          <article class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-bg-black-opacity-0_8 g-transition-0_3 g-pa-20">
+            <div class="g-flex-middle-item">
+              <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">Powerful Trading Charts</h4>
+              <p class="g-color-white-opacity-0_7 mb-0">Be one step ahead of the market’s next move!  Analyze trends and grab opportunities as they occur with the help of over 60 indicators, interactive chart tools and timeframes.</p>
+            </div>
+          </article>
+          <!-- End Article -->
+        </div>
+      </div>
+  
+      <div class="row align-items-stretch">
+        <div class="col-sm-6 g-mb-30">
+          <!-- Article -->
+          <article class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-bg-black-opacity-0_8 g-transition-0_3 g-pa-20">
+            <div class="g-flex-middle-item">
+              <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">Guaranteed Pricing</h4>
+              <p class="g-color-white-opacity-0_7 mb-0">NO requotes, NO slippage!</p>
+            </div>
+          </article>
+          <!-- End Article -->
+        </div>
+  
+        <div class="col-sm-6 g-mb-30">
+          <!-- Article -->
+          <article class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-bg-black-opacity-0_8 g-transition-0_3 g-pa-20">
+            <div class="g-flex-middle-item">
+              <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">Secure Trading on the Go</h4>
+              <p class="g-color-white-opacity-0_7 mb-0">Forex and Derivative Trading with the highest security standards! MetaTrader4 allows you to trade instantly from any web browser, Android or iPhone/iPad device.</p>
+            </div>
+          </article>
+          <!-- End Article -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Info Blocks -->
+
 <!-- Call To Action -->
 <section class="g-bg-primary g-color-white w-100 g-pa-30" style="background-image: url(../../assets/img/bg/pattern5.png);">
     <div class="justify-content-md-center text-center">

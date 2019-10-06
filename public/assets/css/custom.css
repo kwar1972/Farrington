@@ -181,3 +181,17 @@
 	transform: scale(1.05);
 	transition: all .3s ease;
   }
+  .text-shad-black{
+	text-shadow: 2px 5px 20px #000;
+  }
+  .text-shad-primary{
+	text-shadow: 2px 5px 20px #72C02C;
+  }
+  .panel1{
+	  border-color: grey;
+	  border-width: 1px;
+  }
+  .mx-150{
+	  margin-right: 350px !important;
+	  margin-left: 350px !important;
+  }

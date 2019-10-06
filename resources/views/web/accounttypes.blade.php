@@ -13,16 +13,16 @@
         <tr>
           <th class="g-hidden-md-down g-brd-none g-py-50">&nbsp;</th>
           <th class="text-center g-brd-bottom-none g-bg-primary g-valign-middle g-font-weight-400 g-py-50">
-            <h3 class="g-font-weight-600 mb-15 g-color-white">BEGINNER</h3>
+            <h3 class="g-font-weight-600 mb-15 g-color-black text-shad-black">BEGINNER</h3>
           </th>
           <th class="text-center g-brd-bottom-none g-bg-gray-dark-v2 g-valign-middle g-font-weight-400 g-py-50 mt-5" style="box-shadow: -2px 0px 40px -6px black;">
-            <h3 class="g-font-weight-600 mb-15 g-color-primary">SILVER</h3>
+            <h3 class="g-font-weight-600 mb-15 g-color-primary text-shad-primary">SILVER</h3>
           </th>
           <th class="text-center g-brd-bottom-none g-bg-primary g-valign-middle g-font-weight-400 g-py-50">
-            <h3 class="g-font-weight-600 mb-15 g-color-white">GOLD</h3>
+            <h3 class="g-font-weight-600 mb-15 g-color-black text-shad-black">GOLD</h3>
           </th>
           <th class="text-center g-brd-bottom-none g-bg-primary g-valign-middle g-font-weight-400 g-py-50">
-            <h3 class="g-font-weight-600 mb-15 g-color-white">PLATINUM</h3>
+            <h3 class="g-font-weight-600 mb-15 g-color-black text-shad-black">PLATINUM</h3>
           </th>
         </tr>
       </thead>
