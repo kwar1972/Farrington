@@ -49,15 +49,15 @@
 <!-- Info Blocks -->
 <div class="row no-gutters">
     <!-- Info Image -->
-    <div class="col-lg-7 g-bg-size-cover g-bg-pos-center" data-bg-img-src="img/screens/synapsis-1.png"></div>
+    <div class="col-lg-7 g-min-height-360 g-bg-size-cover g-bg-pos-center" data-bg-img-src="img/screens/synapsis-1.png"></div>
     <!-- End Info Image -->
   
-    <div class="col-lg-5 g-bg-gray-dark-v1 g-pt-40 g-pb-40 g-px-40">
+    <div class="col-lg-5 g-bg-gray-dark-v1 g-pt-140 g-pb-40 g-px-40">
       <header class="text-uppercase g-mb-35">
         <div class="g-mb-30">
-          <h2 class="h2 g-color-white g-font-weight-700 mb-0">Synapsis V2.0, a platform you can depend on!</h2>
+          <h2 class="h2 g-color-white g-font-weight-700 mb-0">Synapsis V2.0</h2>
+          <h5 class="g-color-primary" >A platform you can depend on!</h5>
         </div>
-        <div class="g-width-70 g-brd-bottom g-brd-2 g-brd-primary"></div>
       </header>
       <div class="row align-items-stretch">
         <div class="col-sm-6 g-mb-30">
