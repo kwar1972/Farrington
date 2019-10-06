@@ -53,7 +53,7 @@
                               <hr class="g-color-white mt-0 mb-0">
                             </li>
                             <li class="dropdown-item">
-                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="#!">Live Account</a>
+                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="liveaccount">Live Account</a>
                               <hr class="g-color-white mt-0 mb-0">
                             </li>
                             <li class="dropdown-item">

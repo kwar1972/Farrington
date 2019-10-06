@@ -39,6 +39,9 @@ Route::get('/acctype', function () {
 Route::get('/tradingplatforms', function () {
     return view('web.tradingplatforms');
 });
+Route::get('/liveaccount', function () {
+    return view('web.liveaccount');
+});
 
 
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
