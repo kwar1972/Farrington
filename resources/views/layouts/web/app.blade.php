@@ -35,6 +35,9 @@
   <link rel="stylesheet" href="{{ asset('assets/css/unify-components.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/unify-globals.css') }}">
 
+  <!-- CSS Implementing Plugins -->
+  <link  rel="stylesheet" href="{{ asset('assets/vendor/jquery-ui/themes/base/jquery-ui.min.css') }}">
+  
   <!-- CSS Customization -->
   <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
 </head>
@@ -63,8 +66,10 @@
   <!-- JS Global Compulsory -->
   <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
   <script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/jquery-ui/jquery-ui.min.js') }}"></script>
   <script src="{{ asset('assets/vendor/popper.min.js') }}"></script>
   <script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
+  
 
 
   <!-- JS Implementing Plugins -->
@@ -88,14 +93,26 @@
  <!-- JS Implementing Plugins -->
  <script  src="{{ asset('assets/vendor/appear.js') }}"></script>
 
+ <!-- jQuery UI Core -->
+<script  src="{{ asset('assets/vendor/jquery-ui/ui/widget.js') }}"></script>
+<script  src="{{ asset('assets/vendor/jquery-ui/ui/version.js') }}"></script>
+<script  src="{{ asset('assets/vendor/jquery-ui/ui/keycode.js') }}"></script>
+<script  src="{{ asset('assets/vendor/jquery-ui/ui/position.js') }}"></script>
+<script  src="{{ asset('assets/vendor/jquery-ui/ui/unique-id.js') }}"></script>
+<script  src="{{ asset('assets/vendor/jquery-ui/ui/safe-active-element.js') }}"></script>
+
+<!-- jQuery UI Helpers -->
+<script  src="{{ asset('assets/vendor/jquery-ui/ui/widgets/menu.js') }}"></script>
+<script  src="{{ asset('assets/vendor/jquery-ui/ui/widgets/mouse.js') }}"></script>
+
  <!-- JS Unify -->
  <script  src="{{ asset('assets/js/components/hs.onscroll-animation.js') }}"></script>
-
-<!-- JS Unify -->
+ <script  src="{{ asset('assets/js/components/hs.datepicker.js') }}"></script>
 <script  src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
 
   <script>
     $(document).on('ready', function () {
+      $.HSCore.components.HSDatepicker.init('#datepickerDefault, #datepickerInline, #datepickerInlineFrom, #datepickerFrom');
       // Hover function for Account Type
       $('.price').on('mouseenter', function(){
           $('.change').addClass('g-color-black');
@@ -103,7 +120,7 @@
           $('.changeb').addClass('u-btn-outline-black');
           $('.changeb').removeClass('u-btn-outline-primary');
         });
-        $('.price').on('mouseleave', function(){
+          $('.price').on('mouseleave', function(){
           $('.change').addClass('g-color-primary');
           $('.change').removeClass('g-color-black');
           $('.changeb').addClass('u-btn-outline-primary');
