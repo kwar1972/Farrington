@@ -38,11 +38,11 @@
             </div>
         </div>
     </div>
-    <header class="text-center g-width-60x--md mx-auto g-mb-60">
+    <header class="text-center g-width-60x--md mx-auto g-mb-60 g-mt-80">
             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
               <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Robust Trading <span class="g-color-primary">Execution</span></h2>
             </div>
-            <p class="lead text-center"><span class="g-color-primary">Synapsis v1.0</span> , a platform you can depend on!</p>
+            <p class="lead text-center"><span class="g-color-primary g-font-weight-600">Synapsis v1.0</span> , a platform you can depend on!</p>
           </header>
     
 </div>
