@@ -2,9 +2,6 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use App\Notifications\VerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Permission\Traits\HasRoles;
 use App;
@@ -12,9 +9,8 @@ Use App\Transaction;
 Use App\Bank;
 Use App\Holding;
 
-class User extends Authenticatable implements MustVerifyEmail
+class User extends Authenticatable
 {
-    use Notifiable;
     use HasRoles;
    
     protected $guard_name = 'web';
@@ -44,16 +40,6 @@ class User extends Authenticatable implements MustVerifyEmail
      * @return \Illuminate\Http\Response
      */
     
-     /**
-     * Send the email verification notification.
-     *
-     * @return void
-     */
-    public function sendEmailVerificationNotification()
-    {
-        $this->notify(new VerifyEmail); // my notification
-    }
-
     public function getRole($id){
         $role = self::find($id);
         
