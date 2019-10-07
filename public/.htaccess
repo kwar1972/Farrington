@@ -5,7 +5,8 @@
 
     RewriteEngine On
     # Added to Force HTTPS
-
+    RewriteCond %{SERVER_PORT} !=443
+    RewriteRule ^(.*)$ https://baxtergrant.com/$1 [R=301,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
