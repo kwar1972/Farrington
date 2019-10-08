@@ -14,7 +14,6 @@ class AddForeingKeyToTradeWUsers extends Migration
     public function up()
     {
         Schema::table('trades', function (Blueprint $table) {
-            $table->unsignedBigInteger('userid',20)->change();
             $table->foreign('userid')->references('id')->on('users')->onDelete("CASCADE")->onUpdate("NO ACTION");
         });
     }
