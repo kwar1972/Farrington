@@ -13,22 +13,22 @@ class CreateTableTrades extends Migration
      */
     public function up()
     {
-        Schema::create('trades', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('userid');
-            $table->string('bankname');
-            $table->string('country');
-            $table->string('accid');
-            $table->string('account');
-            $table->string('accname');
-            $table->string('swift');
-            $table->string('iban');
-            $table->date('sent_at');
-            $table->date('purchased_at');
-            $table->timestamps();
-            $table->foreign('userid')->references('id')->on('users')->onDelete("CASCADE")->onUpdate("NO ACTION");
+        // Schema::create('trades', function (Blueprint $table) {
+            // $table->increments('id');
+            // $table->integer('userid');
+            // $table->string('bankname');
+            // $table->string('country');
+            // $table->string('accid');
+            // $table->string('account');
+            // $table->string('accname');
+            // $table->string('swift');
+            // $table->string('iban');
+            // $table->date('sent_at');
+            // $table->date('purchased_at');
+            // $table->timestamps();
+            // $table->foreign('userid')->references('id')->on('users')->onDelete("CASCADE")->onUpdate("NO ACTION");
         
-        });
+        // });
     }
 
     /**
@@ -38,6 +38,6 @@ class CreateTableTrades extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('trades');
+        // Schema::dropIfExists('trades');
     }
 }
