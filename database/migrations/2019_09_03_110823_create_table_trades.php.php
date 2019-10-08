@@ -26,6 +26,7 @@ class CreateTableTrades extends Migration
             $table->date('sent_at');
             $table->date('purchased_at');
             $table->timestamps();
+            $table->foreign('userid')->references('id')->on('users')->onDelete("CASCADE")->onUpdate("NO ACTION");
         
         });
     }
