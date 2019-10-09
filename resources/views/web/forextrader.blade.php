@@ -11,10 +11,10 @@
         <div class="col-sm-7 g-px-120">
             <div class="row">
                 <div class="col-sm-6">
-                    <img src="img/company/company-1.jpg" alt="">
+                    <img src="img/forex-1.jpg" alt="">
                 </div>
                 <div class="col-sm-6">
-                    <img src="img/company/company-2.jpg" alt="">
+                    <img src="img/forex-2.jpg" alt="">
                 </div>
             </div>
             <p class="text-justify g-pr-40 pt-4 text-uppercase"><strong>What is Forex?</strong></p>
