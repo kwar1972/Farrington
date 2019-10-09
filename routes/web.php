@@ -33,14 +33,20 @@ Route::get('/meetteam', function () {
 Route::get('/tradingben', function () {
     return view('web.tradingbenefits');
 });
-Route::get('/acctype', function () {
-    return view('web.accounttypes');
-});
 Route::get('/tradingplatforms', function () {
     return view('web.tradingplatforms');
 });
 Route::get('/liveaccount', function () {
     return view('web.liveaccount');
+});
+Route::get('/equity', function () {
+    return view('web.equitystock');
+});
+Route::get('/forext', function () {
+    return view('web.forextrader');
+});
+Route::get('/commodities', function () {
+    return view('web.commodities');
 });
 
 

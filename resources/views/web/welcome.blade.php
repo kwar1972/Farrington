@@ -312,10 +312,10 @@
     </div>
     <!--End Our Focus -->
 <!------ Banner FORM ---->
-<div class="conteiner-fluid g-bg-primary">
+<div class="conteiner-fluid g-bg-black">
   <div class="row">
     <div class="col-sm-6  text-center">
-      <h2 class="g-color-black text-uppercase pt-3 pb-4">request a free consultation</h2>
+      <h2 class="g-color-primary text-uppercase pt-3 pb-4">request a free consultation</h2>
         <form class="" action="#" method="post" id="contactForm" >
           <div class="row pl-3 pr-3">
           <div class="form-group col-md-6">
@@ -337,7 +337,7 @@
               <textarea class="form-control" name="message" id="message" rows="10" placeholder="Message"></textarea>
           </div>
           <div class="form-group col-md-12">
-              <button type="submit" value="submit" class="btn g-bg-black btn-xl form-control g-color-primary text-uppercase font-weight-bold">submit now</button>
+              <button type="submit" value="submit" class="btn g-bg-primary btn-xl form-control g-color-black text-uppercase font-weight-bold">submit now</button>
           </div>
       </form>
     </div>
