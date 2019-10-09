@@ -565,7 +565,7 @@ div.tp-parallax-wrap
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trading Tools</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="account_types">Account Types</a></li>
+                                        
                                         <li><a href="live_account">Live Account</a></li>
                                         <li><a href="research">Research</a></li>
                                         <li><a href="trading_platforms">Trading Platforms</a></li>
@@ -812,10 +812,6 @@ div.tp-parallax-wrap
                             <div class="welcome_quality">
                                 <h3><strong>Quality and reliability</strong></h3>
                                 <P style="font-size:17px">At Baxter & Grant we promise to always provide unbiased and astute advice based on rational experience and disciplined practice.</p>
-
-
-
-
                             </div>
                         </div>
                     </div>

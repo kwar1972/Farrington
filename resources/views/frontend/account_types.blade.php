@@ -566,7 +566,7 @@ div.tp-parallax-wrap
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trading Tools</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="account_types">Account Types</a></li>
+                                        
                                         <li><a href="live_account">Live Account</a></li>
                                         <li><a href="research">Research</a></li>
                                         <li><a href="trading_platforms">Trading Platforms</a></li>
