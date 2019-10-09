@@ -5,7 +5,7 @@
       <div class="container g-color-white text-center g-z-index-1">
         <div class="mb-5">
           <h2 class="g-font-weight-700 g-font-size-40 g-font-size-70--md text-uppercase g-mb-30">
-              We are <img class="pb-3" src="img/logo-small.png" alt="Steiner Greves"  style="max-width: 70px;">
+            <img class="pb-3" src="img/logo-small.png" alt="Steiner Greves"  style="max-width: 70px;">  
               <span class="u-text-animation u-text-animation--typing"></span>
             </h2>
           <p class="g-font-size-24 g-color-primary g-font-weight-600">Investing in your future</p>
@@ -23,7 +23,7 @@
             <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600">About Our Company</h2>
           </div>
           <h3>Welcome to <span class="g-color-primary">Steiner Greves</span></h3>
-          <p class="lead text-justify">Our continued <strong>success</strong> is dependent on an understanding of all our clients. Our <strong>strategy</strong> is an in-depth discovery process, allowing us to best understand your values, <strong>goals</strong> and concerns. </p>
+          <p class="lead text-justify">Our <strong>success</strong> is due to the understanding we have of all our clients. Our <strong>strategy</strong> is to work side by side having an in-depth discovery process, allowing us to best understand your values, <strong>goals</strong> and concerns. </p>
         </header>
 
         <div class="row">
@@ -69,7 +69,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="mt-5 text-justify px-5">We work around the clock with our clients on strategy, planning and problem solving. To determining which marketing techniques best benefit you.</p>
+                    <p class="mt-5 text-justify px-5">We strategies helping you overcome challenges, meet strategic goals or offer strategic ideas on how to grow your portfolio successfully and profitably in the face of ever-increasing market pressure and change.</p>
                   </div>
                 </div>
               </div>
@@ -84,8 +84,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="mt-5 text-justify px-5">This is one of our key functions when investing with Steiner and Greves. The term refers to the various activities relating to the buying and selling of
-                       securities or other financial instruments. Typically we perform these tasks on behalf of our-self and all our clients.</p>
+                    <p class="mt-5 text-justify px-5">This is one of our key functions when investing with Steiner and Greves. The term refers to the various activities relating to the buying and selling of securities or other financial instruments. Typically we perform these tasks on behalf of our-self and all our clients.</p>
                   </div>
                 </div>
               </div>
@@ -117,7 +116,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
+                    <p class="mt-5 text-justify px-5">Before investing in a company, it's vital to have a clear plan and understanding of exactly why you are investing in a certain company, and how you aim to achieve your goals.</p>
                   </div>
                 </div>
               </div>
@@ -132,7 +131,7 @@
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="mt-5 text-justify px-5">We approach your audit with a deep understanding of your business, the industry in which you operate, the risks your company faces and the latest regulatory.</p>
+                    <p class="mt-5 text-justify px-5">This involves us using financial data to assess a company's performance and make recommendations on how it can improve your portfolio and benefit you going forward.</p>
                   </div>
                 </div>
               </div>

@@ -135,9 +135,7 @@
         // initialization of text animation (typing)
         $(".u-text-animation.u-text-animation--typing").typed({
           strings: [
-            "awesome",
-            "creative",
-            "Steiner Greves"
+            "Understanding our Clients needs"
           ],
           typeSpeed: 60,
           loop: true,
