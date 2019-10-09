@@ -10,10 +10,10 @@
         <div class="col-sm-7 g-px-120">
             <div class="row">
                 <div class="col-sm-6">
-                    <img src="img/company/company-1.jpg" alt="">
+                    <img src="img/equity-1.jpg" alt="">
                 </div>
                 <div class="col-sm-6">
-                    <img src="img/company/company-2.jpg" alt="">
+                    <img src="img/equity-2.jpg" alt="">
                 </div>
             </div>
             <p class="text-justify g-pr-40 pt-4"><strong>We have a sound understanding of the financial equity markets and the importance that they serve to our clients’ success. This is why when we present a recommendation to you, it has already been thoroughly researched and analytically proven to be worthy for your consideration as a viable investment opportunity.</strong></p>
