@@ -79,10 +79,10 @@
                     </a>
                   </li>
                   <li class="nav-item g-mx-20--lg">
-                    <a href="#!" class="nav-link px-0 g-color-primary--hover">FAQ</a>
+                    <a href="/faq" class="nav-link px-0 g-color-primary--hover">FAQ</a>
                   </li>
                   <li class="nav-item g-ml-20--lg g-mr-0--lg">
-                    <a href="#!" class="nav-link px-0 g-color-primary--hover">Contact Us</a>
+                    <a href="/contact" class="nav-link px-0 g-color-primary--hover">Contact Us</a>
                   </li>
                 </ul>
                 <ul class="navbar-nav text-uppercase g-font-weight-600 pull-right">
