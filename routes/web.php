@@ -48,8 +48,14 @@ Route::get('/forext', function () {
 Route::get('/commodities', function () {
     return view('web.commodities');
 });
+Route::get('/faq', function () {
+    return view('web.faq');
+});
+Route::get('/contact', function () {
+    return view('web.contact');
+});
 
-
+// BACKEND
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
 
 Route::get('/contactform', 'WebFormsController@contactform');

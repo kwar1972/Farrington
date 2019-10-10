@@ -88,7 +88,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                
                 
                 <!-- Card -->
                 <div class="card rounded-0 g-bg-gray-light-v3 g-brd-none">
@@ -110,6 +110,7 @@
                   </div>
                 </div>
                 <!-- End Card -->
+              </div>
         </div>
     </div>
 </div>
