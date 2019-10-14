@@ -7,10 +7,29 @@
       </div>
       <p class="lead text-center"><span class="g-color-black">Fill out the application form below with your details to officially <span class="g-color-primary g-font-weight-600">start trading!</span></p>
     </header>
-    <form action="liveacc" method="post">
+    <form action="{{ route('register') }}" method="post">
+      @csrf
         <div class="row g-px-100">
             <div class="col-sm-6">
                 <h5 class="g-font-weight-600">Personal Details</h5>
+                <!-- Teal Alert -->
+                @if(Session::has('success'))
+                <div class="alert alert-dismissible fade show g-bg-teal g-color-white rounded-0" role="alert">
+                  <button type="button" class="close u-alert-close--light" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                
+                  <div class="media">
+                    <span class="d-flex g-mr-10 g-mt-5">
+                      <i class="icon-check g-font-size-25"></i>
+                    </span>
+                    <span class="media-body align-self-center">
+                      The form has been successfully sent!
+                    </span>
+                  </div>
+                </div>
+                @endif
+                <!-- End Teal Alert -->
                 <div class="form-group">
                   <select class="form-control" name="title" id="title">
                     <option value="Mr">Mr.</option>
@@ -19,24 +38,29 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Type your name" aria-describedby="helpId">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Type your name" aria-describedby="helpId"  value="{{ old('name') }}">
+                  <span class="text-danger">{{ $errors->first('name') }}</span>
                 </div>
                 <div class="form-group">
-                  <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Type your surname" aria-describedby="helpId">
+                  <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Type your surname" aria-describedby="helpId"  value="{{ old('lastname') }}">
+                  <span class="text-danger">{{ $errors->first('lastname') }}</span>
                 </div>
                 <div class="form-group">
-                  <input type="email" name="email" id="email" class="form-control" placeholder="Type your email" aria-describedby="helpId">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Type your email" aria-describedby="helpId"  value="{{ old('email') }}">
+                  <span class="text-danger">{{ $errors->first('email') }}</span>
                 </div>
                 <div class="form-group">
-                  <input type="phone" name="phone" id="phone" class="form-control" placeholder="Type your phone" aria-describedby="helpId">
+                  <input type="phone" name="phone" id="phone" class="form-control" placeholder="Type your phone" aria-describedby="helpId"  value="{{ old('phone') }}">
+                  <span class="text-danger">{{ $errors->first('phone') }}</span>
                 </div>
                 <div class="form-group">
                     <div class="input-group g-brd-primary--focus">
-                      <input id="datepickerDefault" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" placeholder="Date of birth" type="text">
+                      <input id="datepickerDefault" name="datepickerDefault" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" placeholder="Date of birth" type="text">
                       <div class="input-group-append">
                         <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-calendar"></i></span>
                       </div>
                     </div>
+                    <span class="text-danger">{{ $errors->first('datepickerDefault') }}</span>
                 </div>
                 <div class="form-group">
                     <select class="form-control" name="countryc" id="countryc" placeholder="Choose your country">
@@ -286,6 +310,7 @@
                             <option value="Zambia">Zambia</option>
                             <option value="Zimbabwe">Zimbabwe</option>
                   </select>
+                  <span class="text-danger">{{ $errors->first('countryc') }}</span>
                 </div>
                 <div class="form-group">
                   <select class="form-control" name="coin" id="coin">
@@ -294,24 +319,30 @@
                     <option value="EURO">EURO</option>
                     <option value="GBP">GBP</option>
                   </select>
+                  <span class="text-danger">{{ $errors->first('coin') }}</span>
                 </div>
                 <div class="form-group">
-                  <input type="text" name="referral" id="referral" class="form-control" placeholder="Referral (if applicable)" aria-describedby="helpId">
+                  <input type="text" name="referral" id="referral" class="form-control" placeholder="Referral (if applicable)" aria-describedby="helpId"  value="{{ old('referral') }}">
+                  <span class="text-danger">{{ $errors->first('referral') }}</span>
                 </div>
             </div>
             <div class="col-sm-6">
                 <h5 class="g-font-weight-600">Contact Details</h5>
                  <div class="form-group">
-                  <input type="text" name="addr1" id="addr1" class="form-control" placeholder="Type your address" aria-describedby="helpId">
+                  <input type="text" name="addr1" id="addr1" class="form-control" placeholder="Type your address" aria-describedby="helpId"  value="{{ old('addr1') }}">
+                  <span class="text-danger">{{ $errors->first('addr1') }}</span>
                 </div>
                 <div class="form-group">
-                  <input type="text" name="addr2" id="addr2" class="form-control" placeholder="Type your address" aria-describedby="helpId">
+                  <input type="text" name="addr2" id="addr2" class="form-control" placeholder="Type your address" aria-describedby="helpId"  value="{{ old('addr2') }}">
+                  <span class="text-danger">{{ $errors->first('addr2') }}</span>
                 </div>
                 <div class="form-group">
-                  <input type="text" name="city" id="city" class="form-control" placeholder="Type your city" aria-describedby="helpId">
+                  <input type="text" name="city" id="city" class="form-control" placeholder="Type your city" aria-describedby="helpId"  value="{{ old('city') }}">
+                  <span class="text-danger">{{ $errors->first('city') }}</span>
                 </div>
                 <div class="form-group">
-                  <input type="text" name="zip" id="zip" class="form-control" placeholder="Type your zip code" aria-describedby="helpId">
+                  <input type="text" name="zip" id="zip" class="form-control" placeholder="Type your zip code" aria-describedby="helpId"  value="{{ old('zip') }}">
+                  <span class="text-danger">{{ $errors->first('zip') }}</span>
                 </div>
                 <div class="form-group">
                     <select class="form-control" name="country" id="country" placeholder="Choose your country">
@@ -561,15 +592,17 @@
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
+                    <span class="text-danger">{{ $errors->first('country') }}</span>
                 </div>
                 <div class="form-group">
-                    <label class="form-check-inline u-check g-pl-30 g-pt-10">
-                      <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <label class="form-check-inline u-check g-pl-25 g-pt-10">
+                      <input id="agreed" name="agreed" class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
                       <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
                         <i class="fa" data-check-icon=""></i>
                       </div>
                       <p>I have read the <a class="g-color-primary" href="">Terms and Conditions of Use</a>, <a class="g-color-primary" href="">Risk Disclosure</a>, <a class="g-color-primary" href="">Privacy Policy</a>, <a class="g-color-primary" href="">Conflict of Interest</a> & <a class="g-color-primary" href="">Order Execution Policy</a>. I fully understand every part of it and I am willing to comply with each of them.</p>
                     </label>
+                    <span class="text-danger">{{ $errors->first('agreed') }}</span>
                 </div>
             </div>
         </div>
