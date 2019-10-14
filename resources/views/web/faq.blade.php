@@ -8,13 +8,32 @@
     </header>
     <div class="row">
       <div class="col-sm-3">
+        <!-- Teal Alert -->
+        @if(Session::has('success'))
+        <div class="alert alert-dismissible fade show g-bg-teal g-color-white rounded-0" role="alert">
+          <button type="button" class="close u-alert-close--light" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        
+          <div class="media">
+            <span class="d-flex g-mr-10 g-mt-5">
+              <i class="icon-check g-font-size-25"></i>
+            </span>
+            <span class="media-body align-self-center">
+              The form has been successfully sent!
+            </span>
+          </div>
+        </div>
+        @endif
+        <!-- End Teal Alert -->
         <div class="h5 g-bg-primary g-color-white text-center u-heading-v2__title py-3">Ask A Question? </div>
-        <form action="/faqform" method="post">
+        <form action="/contactform" method="post">
+          @csrf
           <div class="form-group">
             <input type="text" name="name" id="name" class="form-control" placeholder="Name" aria-describedby="helpId">
           </div>
           <div class="form-group">
-            <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Surname" aria-describedby="helpId">
+            <input type="text" name="surname" id="surname" class="form-control" placeholder="Surname" aria-describedby="helpId">
           </div>
           <div class="form-group">
             <input type="email" name="email" id="email" class="form-control" placeholder="Email" aria-describedby="helpId">
@@ -251,18 +270,5 @@
       </div>
     </div>
 </div>
-<!-- Call To Action -->
-<section class="g-bg-primary g-color-white w-100 g-pa-30" style="background-image: url(../../assets/img/bg/pattern5.png);">
-    <div class="justify-content-md-center text-center">
-      <div class="align-self-md-center">
-        <p class="lead g-font-weight-400 g-mr-20--md g-mb-15 g-mb-0--md g-color-black g-font-weight-600">NOT A CLIENT? OPEN A TRADING ACCOUNT TODAY</p>
-        <p class="g-color-black">Take advantage of our competitive trading Strategies</p>
-      </div>
-      <div class="align-self-md-center">
-        <a class="btn btn-lg u-btn-black text-uppercase g-font-weight-600 g-font-size-12" target="_blank" href="#">Register</a>
-        <a class="btn btn-lg u-btn-white text-uppercase g-font-weight-600 g-font-size-12" target="_blank" href="#">Account Types</a>
-      </div>
-    </div>
-</section>
-<!-- End Call To Action -->
+@include('partials.calltoaction') 
 @endsection

@@ -1,4 +1,4 @@
-You received a message from : {{ $name }} {{ $surname }}
+You received a message from : {{ $name }} {{ $surname }}<br>
 <p>
 Name: {{ $name }} {{ $surname }}
 </p>

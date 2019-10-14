@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('tickers', 'TickerController@index')->name('tickers');
 // FRONTEND
 Route::get('/', function () {
     return view('web.coming');
@@ -58,7 +58,8 @@ Route::get('/contact', function () {
 // BACKEND
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
 
-Route::get('/contactform', 'WebFormsController@contactform');
+Route::post('/contactform', 'WebFormsController@contactform');
+Route::post('/formcall', 'WebFormsController@formCall');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
@@ -83,7 +84,7 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
         Route::get('/resenduseremail/{id}', 'UsermanController@resendVerificationEmail');
         //Ticker Manager
         Route::get('tickerman', 'DashboardController@tickerman')->name('userman');
-        Route::get('tickers', 'TickerController@index')->name('tickers');
+        
         Route::get('/tickerdetail/{id}', 'TickerController@show');
         Route::post('/tickeredit/{id}', 'TickerController@update');
         Route::get('/tickercreate', 'TickerController@store');
