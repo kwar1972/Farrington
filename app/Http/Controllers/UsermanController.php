@@ -291,6 +291,7 @@ class UsermanController extends Controller
         $user->name = $request->name;
         $user->lastname = $request->lastname;
         $user->email = $request->email;
+        dd($request->password);
         // if($request->password !== null){
             $user->password = Hash::make($request->password);
         // };
