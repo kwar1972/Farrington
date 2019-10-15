@@ -23,7 +23,7 @@ class TradesController extends Controller
     public function index()
     {
         $Trades = Trade::with('getUsers')->with('getAgent')->with('getTicker')->get();
-        
+
         return response()->json($Trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
         JSON_UNESCAPED_UNICODE);
     }
@@ -118,7 +118,7 @@ class TradesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
         $trade = New Trade;
         $trade->userid = $request->clientid;
         $trade->tickerid = $request->tickerid;

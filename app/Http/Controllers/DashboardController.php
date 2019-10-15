@@ -21,7 +21,6 @@ class DashboardController extends Controller
             $tickers = $ticker->pluck('getTicker');
             $tickers = $tickers->unique('ticker');
             
-            //dd($tvalue);
             return view('client.dashboard')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers);
         }else {
             return view('dashboard.dashboard');
