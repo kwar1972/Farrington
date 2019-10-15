@@ -58,6 +58,7 @@ $(document).ready(function() {
         "name" : $('#name').val(),
         "lastname" : $('#lastname').val(),
         "email" : $('#email').val(),
+        "password": $('#password').val(),
         "phone" : $('#phone').val(),
         "mobile" : $('#mobile').val(),
         "addr" : $('#addr').val(),
