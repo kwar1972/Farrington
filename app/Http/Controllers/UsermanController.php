@@ -291,9 +291,9 @@ class UsermanController extends Controller
         $user->name = $request->name;
         $user->lastname = $request->lastname;
         $user->email = $request->email;
-        if($request->password !== null){
+        // if($request->password !== null){
             $user->password = Hash::make($request->password);
-        };
+        // };
         $user->phone = $request->phone;
         $user->mobile = $request->mobile;
         $user->addr = $request->addr;
