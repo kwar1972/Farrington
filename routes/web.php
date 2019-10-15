@@ -103,7 +103,7 @@ Route::get('/clientdet/{id}', 'UsermanController@clientDetails')->middleware('ro
 Route::get('/clientbank/{id}', 'BankController@show')->middleware('role:client');
 Route::get('/savenewbank/{id}', 'BankController@savenewbank')->middleware('role:client');
 Route::get('/savebank/{id}', 'BankController@savebank')->middleware('role:client');
-Route::get('/saveclient/{id}', 'UsermanController@savedetails')->middleware('role:client');
+Route::post('/saveclient/{id}', 'UsermanController@savedetails')->middleware('role:client');
 Route::get('/chartbig?tvwidgetsymbol={id}', 'UsermanController@savedetails')->middleware('role:client');
 Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:client');
 Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client');
