@@ -52,7 +52,7 @@ Route::get('contactus', function () {
     return view('frontend.contactus');
 });
 
-Route::get('/myholdingslist', 'HoldingController@holdingsList');
+
 
 Route::get('/contactform', 'WebFormsController@contactform');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
@@ -109,4 +109,4 @@ Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:clie
 Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client');
 Route::get('/myholdings', 'HoldingController@clientHoldings')->middleware('role:client');
 Route::get('/stockprice/{id}', 'HoldingController@stockprice')->middleware('role:admin|agent|loader|client');
-// ->middleware('role:client');
+Route::get('/myholdingslist', 'HoldingController@holdingsList')->middleware('role:client');
