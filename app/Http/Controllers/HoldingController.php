@@ -86,35 +86,42 @@ class HoldingController extends Controller
     {   
 
         $ticker1f = Ticker::find($id);
-        $ticker1f = $ticker1f->ticker;
-        $curl = curl_init();
-        $ticker1f = preg_replace('/:/', '', strstr($ticker1f, ':'));
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_TIMEOUT => 30000,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_SSL_VERIFYHOST => false,
-            CURLOPT_SSL_VERIFYPEER => false,
-            CURLOPT_CUSTOMREQUEST => "GET",
-            CURLOPT_HTTPHEADER => array(
-                'Access-Control-Allow-Origin: *',
-                'Content-Type: application/json',
-            ),
-        ));
- 
-        $response = curl_exec($curl);
-        $err = curl_error($curl);
-        curl_close($curl);
+        $isipo = $ticker1f->ipo;
+        $paidprice = $ticker1f->price;
+        if($isipo !== 1){
+            $ticker1f = $ticker1f->ticker;
+            $curl = curl_init();
+            $ticker1f = preg_replace('/:/', '', strstr($ticker1f, ':'));
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_TIMEOUT => 30000,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_SSL_VERIFYHOST => false,
+                CURLOPT_SSL_VERIFYPEER => false,
+                CURLOPT_CUSTOMREQUEST => "GET",
+                CURLOPT_HTTPHEADER => array(
+                    'Access-Control-Allow-Origin: *',
+                    'Content-Type: application/json',
+                ),
+            ));
         
-        if ($err) {
-            echo "cURL Error #:" . $err;
-        } else {
-            $array = json_decode($response, true);
-            $response = $array;
-            $response = $response['data'][0]['price'];
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
+            curl_close($curl);
+
+            if ($err) {
+                echo "cURL Error #:" . $err;
+            } else {
+                $array = json_decode($response, true);
+                $response = $array;
+                $response = $response['data'][0]['price'];
+                return $response;
+            }
+        }else{
+            $response = $paidprice;
             return $response;
-        }
+        };
     }
     public function intraDay($tickers,$tickerscount)
     {
