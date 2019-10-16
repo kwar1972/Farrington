@@ -201,8 +201,7 @@ class HoldingController extends Controller
 
     public function holdingsList()
     {   
-        // $id = auth()->user()->id;
-        $id = 28;
+        $id = auth()->user()->id;
         $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
 
         if($deposits !== 0){
