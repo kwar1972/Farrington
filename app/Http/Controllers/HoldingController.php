@@ -201,7 +201,8 @@ class HoldingController extends Controller
 
     public function holdingsList()
     {   
-        $id = auth()->user()->id;
+        // $id = auth()->user()->id;
+        $id = 28;
         $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
 
         if($deposits !== 0){
@@ -218,16 +219,21 @@ class HoldingController extends Controller
         $tradesraw1 = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
         $tradesraw1 = $tradesraw1->toArray();
         foreach($tradesraw1 as $tradesraw){
-            $ticker = $tradesraw['get_ticker']['ticker'];
-            $amount = $tradesraw['amount'];
-            $pricepaid = $tradesraw['price'];
-            $ticker1 = preg_replace('/:/', '', strstr($ticker, ':'));
-            $pricesell = $tickerdata->where('symbol', $ticker1);
-            $pricesell = $pricesell->pluck('price');
-            $pricesell = $pricesell->toArray();
-            $key = array_keys($pricesell);
-            $key = $key[0];
-            $pricesell = $pricesell[$key];
+            $ipocheck = $tradesraw['get_ticker']['ipo'];
+            if($ipocheck !== 1){
+                $ticker = $tradesraw['get_ticker']['ticker'];
+                $amount = $tradesraw['amount'];
+                $pricepaid = $tradesraw['price'];
+                $ticker1 = preg_replace('/:/', '', strstr($ticker, ':'));
+                $pricesell = $tickerdata->where('symbol', $ticker1);
+                $pricesell = $pricesell->pluck('price');
+                $pricesell = $pricesell->toArray();
+                $key = array_keys($pricesell);
+                $key = $key[0];
+                $pricesell = $pricesell[$key];
+            }else{
+                $pricesell = $tradesraw['get_ticker']['price'];
+            };
             $totalpaid = $tradesraw['total'];
             $totpos = $amount * $pricesell;
             $totearn = $totpos - $totalpaid;
