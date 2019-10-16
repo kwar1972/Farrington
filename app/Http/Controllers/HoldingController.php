@@ -218,6 +218,7 @@ class HoldingController extends Controller
         $trades = array();
         $tradesraw1 = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
         $tradesraw1 = $tradesraw1->toArray();
+        
         foreach($tradesraw1 as $tradesraw){
             $ipocheck = $tradesraw['get_ticker']['ipo'];
             if($ipocheck !== 1){
@@ -232,6 +233,8 @@ class HoldingController extends Controller
                 $key = $key[0];
                 $pricesell = $pricesell[$key];
             }else{
+                $ticker = $tradesraw['get_ticker']['ticker'];
+                $amount = $tradesraw['amount'];
                 $pricesell = $tradesraw['get_ticker']['price'];
             };
             $totalpaid = $tradesraw['total'];
