@@ -95,6 +95,15 @@
               </a>
             </li>
             @endif
+            @else
+            <li class="nav-item">
+              <a href="/myholdings" class="nav-link">
+              <i class="nav-icon fas fa-hand-holding-usd g-color-white"></i>
+              <p class="g-color-white">
+              Holdings
+              </p>
+              </a>
+            </li>
            @endif
           @endhasanyrole
             </ul>
