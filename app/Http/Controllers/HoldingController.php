@@ -173,6 +173,8 @@ class HoldingController extends Controller
             $tickerdata = $this->stockData($tickers,$tickerscount);
             $tickerdata = collect($tickerdata['data'], true);
             $intra2 = array();
+            $tickers = $tickers->where('ipo', '<>', 1);
+            
             foreach($tickers as $ticker){
                 $intraday = $this->intraDay($ticker,$tickerscount);
                 $intra = collect($intraday['intraday'], true);
@@ -180,8 +182,9 @@ class HoldingController extends Controller
                 array_push($intra2, $intra);
             }
             $intraday = collect($intra2, true);
+                        
             
-            return view('client.myholdings')->with('trade', $trade)->with('tickerdata', $tickerdata)->with('intraday', $intraday);
+            return view('client.myholdings')->with('trade', $trade)->with('tickerdata', $tickerdata);
         }else{
 
             $nodata = 0;
