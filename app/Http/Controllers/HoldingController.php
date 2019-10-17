@@ -161,9 +161,10 @@ class HoldingController extends Controller
     public function clientHoldings()
     {
         $id = auth()->user()->id;
-        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
-
-        if($deposits !== 0){
+        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->get();
+        $deposits = $deposits->wherein('ipo', 0);
+        
+        if($deposits->count() !== 0 ){
             $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
             $trade = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
             $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
@@ -202,9 +203,9 @@ class HoldingController extends Controller
     public function holdingsList()
     {   
         $id = auth()->user()->id;
-        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
-
-        if($deposits !== 0){
+        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->get();
+        $deposits = $deposits->wherein('ipo', 0);
+        if($deposits->count() !== 0){
             $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
             $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
             $tickers = $ticker->pluck('getTicker');
