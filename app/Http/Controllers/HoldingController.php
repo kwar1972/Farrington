@@ -236,7 +236,7 @@ class HoldingController extends Controller
                 $ticker = $tradesraw['get_ticker']['ticker'];
                 $amount = $tradesraw['amount'];
                 $pricepaid = $tradesraw['price'];
-                $pricesell = $tradesraw['get_ticker']['price'];
+                $pricesell = $tradesraw['price'];
             };
             $totalpaid = $tradesraw['total'];
             $totpos = $amount * $pricesell;
