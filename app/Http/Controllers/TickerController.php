@@ -41,13 +41,22 @@ class TickerController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
         $ticker = New Ticker;
         $ticker->ticker = $request->ticker;
         $ticker->description = $request->description;
         $ticker->quantity = $request->quantity;
         $ticker->price = $request->price;
         $ticker->active = 1;
+        switch($request->ipo){
+            case "false" :
+                $ipo = 1;
+                break;
+            case "true" :
+                $ipo = 0;
+                break;
+        }
+        $ticker->ipo = $ipo;
         $ticker->created_at = Carbon::now()->toDateTimeString();
         $ticker->updated_at = Carbon::now()->toDateTimeString();
         try {
@@ -98,12 +107,20 @@ class TickerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //dd($request->all());
         $ticker = Ticker::find($id);
         $ticker->ticker = $request->ticker;
         $ticker->description = $request->description;
         $ticker->quantity = $request->quantity;
         $ticker->price = $request->price;
+        switch($request->ipo){
+            case "false" :
+                $ipo = 1;
+                break;
+            case "true" :
+                $ipo = 0;
+                break;
+        }
+        $ticker->ipo = $ipo;
         $ticker->created_at = Carbon::now()->toDateTimeString();
         $ticker->updated_at = Carbon::now()->toDateTimeString();
         try {
