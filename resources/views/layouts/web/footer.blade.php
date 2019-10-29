@@ -21,7 +21,7 @@
 
         <article>
           <h3 class="h6 g-mb-2">
-        <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="#!">Client Login</a>
+        <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="login">Client Login</a>
       </h3>
           
         </article>
@@ -30,7 +30,7 @@
 
         <article>
           <h3 class="h6 g-mb-2">
-        <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="#!">Register</a>
+        <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="register">Register</a>
       </h3>
          
         </article>
@@ -49,19 +49,19 @@
           <ul class="list-unstyled g-mt-minus-10 mb-0">
             <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
               <h4 class="h6 g-pr-20 mb-0">
-            <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="#!">Equity Stock</a>
+            <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="equity">Equity Stock</a>
             <i class="fa fa-angle-right g-absolute-centered--y g-right-0 g-color-primary"></i>
           </h4>
             </li>
             <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
               <h4 class="h6 g-pr-20 mb-0">
-            <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="#!">Forex Trader</a>
+            <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="forext">Forex Trader</a>
             <i class="fa fa-angle-right g-absolute-centered--y g-right-0 g-color-primary"></i>
           </h4>
             </li>
             <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
               <h4 class="h6 g-pr-20 mb-0">
-            <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="#!">Commodites</a>
+            <a class="g-color-white-opacity-0_8 g-color-primary--hover" href="commodities">Commodites</a>
             <i class="fa fa-angle-right g-absolute-centered--y g-right-0 g-color-primary"></i>
           </h4>
             </li>
