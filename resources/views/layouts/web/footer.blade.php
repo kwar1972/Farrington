@@ -45,7 +45,7 @@
           <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Services</h2>
         </div>
 
-        <nav class="text-uppercase1">
+         <nav class="text-uppercase1">
           <ul class="list-unstyled g-mt-minus-10 mb-0">
             <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
               <h4 class="h6 g-pr-20 mb-0">
