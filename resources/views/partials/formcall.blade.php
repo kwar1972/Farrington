@@ -1,5 +1,5 @@
 <!------ Banner FORM ---->
-<div class="conteiner-fluid g-bg-black">
+<div class="conteiner-fluid g-bg-black-opacity-0_8">
     <div class="row">
       <div class="col-sm-6  text-center">
         <h2 class="g-color-primary text-uppercase pt-3 pb-4">request a free consultation</h2>

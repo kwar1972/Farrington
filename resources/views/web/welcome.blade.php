@@ -157,16 +157,16 @@
       </div>
   <!--End Banner 1 -->
     <!-- Gallery Our FOCUS -->
-    <section class="g-flex-centered g-py-50 g-bg-black-opacity-0_9 g-color-white-opacity-0_7">
+    <section class="g-flex-centered g-py-50 g-bg-white g-color-black-opacity-0_7">
       <div class="container-fluid">
           <div class="row">
           <div class="col-md-12 w-100">
           <header class="text-center g-width-60x--md mx-auto g-mb-60">
             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
-              <h2 class="h3 u-heading-v2__title g-color-white text-uppercase g-font-weight-600">Our Focus</h2>
+              <h2 class="h3 u-heading-v2__title g-color-black text-uppercase g-font-weight-600">Our Focus</h2>
             </div>
-            <h3 class="g-color-white">In <span class="g-color-primary">Steiner Greves</span></h3>
-            <p class="lead text-center g-color-white">Our objective and discipline further reaches to the way we manage our business</p>
+            <h3 class="g-color-black">In <span class="g-color-primary">Steiner Greves</span></h3>
+            <p class="lead text-center g-color-black">Our objective and discipline further reaches to the way we manage our business</p>
           </header>
           </div>
           </div>
@@ -180,7 +180,7 @@
                               <div class=" g-brd-primary g-mb-20">
                                 <h4 class="h4 g-color-primary text-uppercase g-font-weight-600 g-pt-60">No Fees</h4>
                               </div>
-                              <p class="lead text-center g-color-white">There are no fees to open or maintain your account and there are no fees to transfer investments. Please ask one our advisors for information about fees.</p>
+                              <p class="lead text-center g-color-black">There are no fees to open or maintain your account and there are no fees to transfer investments. Please ask one our advisors for information about fees.</p>
                             </header>
                       </div>
                       <div class="col-sm-7 ">
@@ -198,7 +198,7 @@
                                     <div class=" g-brd-primary g-mb-20">
                                       <h4 class="h4 g-color-primary text-uppercase g-font-weight-600 g-pt-60">Caring is helping</h4>
                                     </div>
-                                    <p class="lead text-center g-color-white">The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.</p>
+                                    <p class="lead text-center g-color-black">The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.</p>
                                   </header>
                                 </div>
                                 <div class="col-sm-7 ">
@@ -215,7 +215,7 @@
                                   <div class="g-brd-primary g-mb-20">
                                     <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Pride</h4>
                                   </div>
-                                  <p class="lead text-center g-color-white">We pride ourself on giving you the best advice and act on behalf in a timely fashion, putting your best interests above all else.</p>
+                                  <p class="lead text-center g-color-black">We pride ourself on giving you the best advice and act on behalf in a timely fashion, putting your best interests above all else.</p>
                                 </header>
                               </div>
                               <div class="col-sm-7 ">
@@ -232,7 +232,7 @@
                               <div class="g-brd-primary g-mb-20">
                                 <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Oversight</h4>
                               </div>
-                              <p class="lead text-center g-color-white">We ensure independent oversight of your assets by holding all client accounts at third-party custodians.</p>
+                              <p class="lead text-center g-color-black">We ensure independent oversight of your assets by holding all client accounts at third-party custodians.</p>
                             </header>
                           </div>
                           <div class="col-sm-7">
@@ -249,7 +249,7 @@
                               <div class="g-brd-primary g-mb-20">
                                 <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Same Idea</h4>
                               </div>
-                              <p class="lead text-center g-color-white">Our fees are based on assets under management; hence, our interests are aligned with yours.</p>
+                              <p class="lead text-center g-color-black">Our fees are based on assets under management; hence, our interests are aligned with yours.</p>
                             </header>
                           </div>
                           <div class="col-sm-7 ">
@@ -266,7 +266,7 @@
                           <div class="g-brd-primary g-mb-20">
                             <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Management</h4>
                           </div>
-                          <p class="lead text-center g-color-white">We will manage your investments for you, with 24 hour assistance.</p>
+                          <p class="lead text-center g-color-black">We will manage your investments for you, with 24 hour assistance.</p>
                         </header>
                       </div>
                       <div class="col-sm-7 ">
@@ -283,7 +283,7 @@
                       <div class="g-brd-primary g-mb-20">
                         <h4 class="h4 g-color-primary text-uppercase g-font-weight-600 g-pt-60">Time is money</h4>
                       </div>
-                      <p class="lead text-center g-color-white">Only takes minutes to open an account with <span class="g-color-primary">Steiner Greves</span>. Once your account is set up, you will immediately have full access to all our investment research.</p>
+                      <p class="lead text-center g-color-black">Only takes minutes to open an account with <span class="g-color-primary">Steiner Greves</span>. Once your account is set up, you will immediately have full access to all our investment research.</p>
                     </header>
                   </div>
                   <div class="col-sm-7 ">
