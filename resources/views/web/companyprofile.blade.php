@@ -198,5 +198,4 @@ I have worked with many individuals, families and companies and the most importa
         </div>
     </div>
 </section>
-@include('partials.formcall')
 @endsection

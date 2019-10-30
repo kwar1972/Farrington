@@ -23,7 +23,7 @@
             <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600">About Our Company</h2>
           </div>
           <h3>Welcome to <span class="g-color-primary">Steiner Greves</span></h3>
-          <p class="lead text-justify">Our <strong>success</strong> is due to the understanding we have of all our clients. Our <strong>strategy</strong> is to work side by side having an in-depth discovery process, allowing us to best understand your values, <strong>goals</strong> and concerns. </p>
+          <p class="lead text-justify">We owe our continued success to our team here at <span class="g-color-primary">Steiner Greves</span> and the understanding we have of our clients. Our ongoing strategy is to work side by side with both team and clients, to best understand their values, goals.</p>
         </header>
 
         <div class="row">
@@ -32,7 +32,7 @@
           </div>
 
           <div class="col-lg-6 align-self-center g-pl-30--lg g-mb-50 g-mb-0--lg">
-            <p class="g-mb-15"><strong>In <span class="g-color-primary">Steiner Greves</span></strong></p>
+            <p class="g-mb-15"><strong>At <span class="g-color-primary">Steiner Greves</span></strong></p>
             <p class="g-mb-40 text-justify">We recognize that your financial future represents a significant emotional investment, but we also know that it is critical to manage that future with logic and process rather than emotions alone. The <span class="g-color-primary">Steiner Greves</span> team will create a detailed road map tailored to your individual situation, supported by a globally diversified investment strategy. No one in the investment industry can predict the outcome of capital markets, what we can assure you is that if you put your faith in us, we will be developing a partnership based on respect and investment expertise.</p>
             <p class="g-mb-15"><strong>Quality and reliability</strong></p>
             <p class="g-mb-5 text-justify">At <span class="g-color-primary">Steiner Greves</span> we promise to always provide unbiased and astute advice based on rational experience and disciplined practice.</p>
@@ -80,11 +80,11 @@
                   <div class="flip-card-front">
                     <a class="d-block u-bg-overlay u-bg-overlay--v1 g-bg-black-opacity-0_5--after">
                     <img class="img-fluid" src="img/service/service-3.jpg" alt="Avatar">
-                    <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Sales & Trade </strong>
+                    <strong class="h5 d-block w-100 u-bg-overlay__inner g-absolute-centered g-px-20 g-font-weight-400 g-color-white g-mt-10 text-uppercase"> Sales & Trading </strong>
                   </a>
                   </div>
                   <div class="flip-card-back">
-                    <p class="mt-5 text-justify px-5">This is one of our key functions when investing with Steiner and Greves. The term refers to the various activities relating to the buying and selling of securities or other financial instruments. Typically we perform these tasks on behalf of our-self and all our clients.</p>
+                    <p class="mt-5 text-justify px-5">This is one of our key functions when investing with Steiner Greves. The term refers to the various activities relating to the buying and selling of securities or other financial instruments. Typically we perform these tasks on behalf of our-self and all our clients.</p>
                   </div>
                 </div>
               </div>
@@ -165,8 +165,6 @@
             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
               <h2 class="h3 u-heading-v2__title g-color-black text-uppercase g-font-weight-600">Our Focus</h2>
             </div>
-            <h3 class="g-color-black">In <span class="g-color-primary">Steiner Greves</span></h3>
-            <p class="lead text-center g-color-black">Our objective and discipline further reaches to the way we manage our business</p>
           </header>
           </div>
           </div>
@@ -174,40 +172,23 @@
           <div class="col-md-12 w-100">
                   <div class="js-carousel text-center g-pb-30" data-infinite="true" data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-35 g-height-40 g-font-size-18  g-bg-primary g-bg-black--hover g-color-black  g-color-primary--hover g-mt-minus-10" data-arrow-left-classes="fa fa-angle-left g-left-0" data-arrow-right-classes="fa fa-angle-right g-right-0">
                     <div class="js-slide">
-                    <div class="row">
-                      <div class="col-sm-5 ">
-                          <header class="text-center g-width-60x--md mx-auto g-mb-60 mt-5">
-                              <div class=" g-brd-primary g-mb-20">
-                                <h4 class="h4 g-color-primary text-uppercase g-font-weight-600 g-pt-60">No Fees</h4>
-                              </div>
-                              <p class="lead text-center g-color-black">There are no fees to open or maintain your account and there are no fees to transfer investments. Please ask one our advisors for information about fees.</p>
-                            </header>
-                      </div>
-                      <div class="col-sm-7 ">
-                          <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_ask_about_no_fees.jpg" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
-                            <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_ask_about_no_fees.jpg" alt="Image Description">
-                          </a>
-                      
+                          <div class="row">
+                              <div class="col-sm-5 ">
+                                  <header class="text-center g-width-60x--md mx-auto g-mb-60 mt-5">
+                                      <div class="g-brd-primary g-mb-20">
+                                        <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Management</h4>
+                                      </div>
+                                      <p class="lead text-center g-color-black">We will manage your investments for you with a personal dedicated accounts manager.</p>
+                                    </header>
+                                  </div>
+                                  <div class="col-sm-7 ">
+                          <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_managed_accounts.jpg" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
+                          <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_managed_accounts.jpg" alt="Image Description" style="max-width: 700px;">
+                        </a>
                       </div>
                       </div>
                     </div>
-                    <div class="js-slide">
-                        <div class="row">
-                            <div class="col-sm-5 ">
-                                <header class="text-center g-width-60x--md mx-auto g-mb-60 mt-5">
-                                    <div class=" g-brd-primary g-mb-20">
-                                      <h4 class="h4 g-color-primary text-uppercase g-font-weight-600 g-pt-60">Caring is helping</h4>
-                                    </div>
-                                    <p class="lead text-center g-color-black">The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.</p>
-                                  </header>
-                                </div>
-                                <div class="col-sm-7 ">
-                        <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_free_caring_advice.jpg" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
-                        <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_free_caring_advice.jpg" alt="Image Description">
-                      </a>
-                    </div>
-                    </div>
-                  </div>
+                    
                   <div class="js-slide">
                       <div class="row">
                           <div class="col-sm-5 ">
@@ -215,67 +196,19 @@
                                   <div class="g-brd-primary g-mb-20">
                                     <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Pride</h4>
                                   </div>
-                                  <p class="lead text-center g-color-black">We pride ourself on giving you the best advice and act on behalf in a timely fashion, putting your best interests above all else.</p>
+                                  <p class="lead text-center g-color-black">We pride our self on giving you the best advice and act on your behalf in a timely fashion.</p>
                                 </header>
                               </div>
                               <div class="col-sm-7 ">
                       <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_free_advice.png" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
-                      <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_free_advice.png" alt="Image Description">
+                      <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_free_advice.png" alt="Image Description" style="max-width: 700px;">
                     </a>
                   </div>
                   </div>
                 </div>
-                <div class="js-slide">
-                  <div class="row">
-                      <div class="col-sm-5 ">
-                          <header class="text-center g-width-60x--md mx-auto g-mb-60 mt-5">
-                              <div class="g-brd-primary g-mb-20">
-                                <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Oversight</h4>
-                              </div>
-                              <p class="lead text-center g-color-black">We ensure independent oversight of your assets by holding all client accounts at third-party custodians.</p>
-                            </header>
-                          </div>
-                          <div class="col-sm-7">
-                  <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_independant.jpg" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
-                  <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_independant.jpg" alt="Image Description">
-                </a>
-              </div>
-              </div>
-            </div>
-            <div class="js-slide">
-                  <div class="row">
-                      <div class="col-sm-5 ">
-                          <header class="text-center g-width-60x--md mx-auto g-mb-60 mt-5">
-                              <div class="g-brd-primary g-mb-20">
-                                <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Same Idea</h4>
-                              </div>
-                              <p class="lead text-center g-color-black">Our fees are based on assets under management; hence, our interests are aligned with yours.</p>
-                            </header>
-                          </div>
-                          <div class="col-sm-7 ">
-                  <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_no_hidden_fees.jpg" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
-                  <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_no_hidden_fees.jpg" alt="Image Description">
-                </a>
-              </div>
-              </div>
-            </div>
-            <div class="js-slide">
-              <div class="row">
-                  <div class="col-sm-5 ">
-                      <header class="text-center g-width-60x--md mx-auto g-mb-60 mt-5">
-                          <div class="g-brd-primary g-mb-20">
-                            <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Management</h4>
-                          </div>
-                          <p class="lead text-center g-color-black">We will manage your investments for you, with 24 hour assistance.</p>
-                        </header>
-                      </div>
-                      <div class="col-sm-7 ">
-              <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_managed_accounts.jpg" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
-              <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_managed_accounts.jpg" alt="Image Description">
-            </a>
-          </div>
-          </div>
-        </div>
+                
+            
+            
         <div class="js-slide">
           <div class="row">
               <div class="col-sm-5 ">
@@ -288,11 +221,46 @@
                   </div>
                   <div class="col-sm-7 ">
           <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_time_is_money.png" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
-          <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_time_is_money.png" alt="Image Description">
+          <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_time_is_money.png" alt="Image Description" style="max-width: 700px;">
         </a>
       </div>
       </div>
     </div>
+    <div class="js-slide">
+      <div class="row">
+          <div class="col-sm-5 ">
+              <header class="text-center g-width-60x--md mx-auto g-mb-60 mt-5">
+                  <div class="g-brd-primary g-mb-20">
+                    <h4 class="h4  g-color-primary text-uppercase g-font-weight-600 g-pt-60">Same Idea</h4>
+                  </div>
+                  <p class="lead text-center g-color-black">Our fees are based on assets under management; hence, our interests are aligned with yours.</p>
+                </header>
+              </div>
+              <div class="col-sm-7 ">
+      <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_no_hidden_fees.jpg" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
+      <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_no_hidden_fees.jpg" alt="Image Description" style="max-width: 700px;">
+    </a>
+  </div>
+  </div>
+</div>
+    <div class="js-slide">
+      <div class="row">
+        <div class="col-sm-5 ">
+            <header class="text-center g-width-60x--md mx-auto g-mb-60 mt-5">
+                <div class=" g-brd-primary g-mb-20">
+                  <h4 class="h4 g-color-primary text-uppercase g-font-weight-600 g-pt-60">No Fees</h4>
+                </div>
+                <p class="lead text-center g-color-black">There are no Fees to open or maintain your account, please ask one of our advisors for information about fees.</p>
+              </header>
+        </div>
+        <div class="col-sm-7 ">
+            <a class="js-fancybox" href="javascript:;" data-fancybox="lightbox-gallery--07-1" data-src="/img/baxter_and_grant_ask_about_no_fees.jpg" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000" data-overlay-blur-bg="true">
+              <img class="img-fluid g-rounded-6" src="/img/baxter_and_grant_ask_about_no_fees.jpg" alt="Image Description" style="max-width: 700px;">
+            </a>
+        
+        </div>
+        </div>
+      </div>
         </div>
       </div>
     </div>
@@ -311,6 +279,5 @@
         </p>
     </div>
     <!--End Our Focus -->
-@include('partials.formcall')
 @include('partials.calltoaction') 
 @endsection

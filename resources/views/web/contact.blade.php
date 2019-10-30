@@ -77,4 +77,5 @@
         </div>
     </form>
 </div>
+@include('partials.formcall') 
 @endsection

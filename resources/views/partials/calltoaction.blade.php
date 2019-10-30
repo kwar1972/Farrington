@@ -6,8 +6,7 @@
         <p class="g-color-black">Take advantage of our competitive trading Strategies</p>
       </div>
       <div class="align-self-md-center">
-        <a class="btn btn-lg u-btn-black text-uppercase g-font-weight-600 g-font-size-12" target="_blank" href="#">Register</a>
-        <a class="btn btn-lg u-btn-white text-uppercase g-font-weight-600 g-font-size-12" target="_blank" href="#">Account Types</a>
+        <a class="btn btn-lg u-btn-black text-uppercase g-font-weight-600 g-font-size-12" href="register">Register</a>
       </div>
     </div>
   </section>
