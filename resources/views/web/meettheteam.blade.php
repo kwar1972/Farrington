@@ -176,5 +176,5 @@
       </div>
       <!-- End Team Block -->
 </div>
-@include('partials.formcall')
+@include('partials.calltoaction')
 @endsection

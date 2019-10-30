@@ -2,19 +2,9 @@
 <div id="contacts-section" class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
   <div class="container">
     <div class="row">
-      <!-- Footer Content -->
-      <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
-        <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
-          <h2 class="u-heading-v2__title h6 text-uppercase mb-0">About Us</h2>
-        </div>
-
-        <p class="text-justify">At <span class="g-color-primary">Steiner Greves</span> we pride ourselves in giving you the best possible service. We operate in an industry built on trust. This can only be achieved through communication and experienced support.</p>
-        <a href="">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-      </div>
-      <!-- End Footer Content -->
 
       <!-- Footer Content -->
-      <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+      <div class="col-lg-4 col-md-6 g-mb-40 g-mb-0--lg">
         <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
           <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Client Area</h2>
         </div>
@@ -40,7 +30,7 @@
       <!-- End Footer Content -->
 
       <!-- Footer Content -->
-      <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+      <div class="col-lg-4 col-md-6 g-mb-40 g-mb-0--lg">
         <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
           <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Services</h2>
         </div>
@@ -71,7 +61,7 @@
       <!-- End Footer Content -->
 
       <!-- Footer Content -->
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-4 col-md-6">
         <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
           <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
         </div>
