@@ -125,7 +125,7 @@ if( typeof data[0] != 'undefined'){
     $('#email').val(data[0].email);
     $('#phone').val(data[0].phone);
     $('#mobile').val(data[0].mobile);
-    $('#password').val(data[0].password);
+    $('#balance').val(data[0].balance);
     $('#addr').val(data[0].addr);
     $('#state').val(data[0].state+' / '+ data[0].city);
     if(typeof data[0].get_bank[0] != 'undefined'){
@@ -199,7 +199,7 @@ if( typeof data[0] != 'undefined'){
     $('#name').val(data[0].name);
     $('#lastname').val(data[0].lastname);
     $('#email').val(data[0].email);
-    $('#password').val(data[0].password);
+    $('#balance').val(data[0].balance);
     $('#phone').val(data[0].phone);
     $('#mobile').val(data[0].mobile);
     $('#addr').val(data[0].addr);
@@ -261,7 +261,7 @@ if( typeof data[0] != 'undefined'){
     $('#name').val(data.name);
     $('#lastname').val(data.lastname);
     $('#email').val(data.email);
-    $('#password').val(data.password);
+    $('#balance').val(data.balance);
     $('#phone').val(data.phone);
     $('#mobile').val(data.mobile);
     $('#addr').val(data.addr);
@@ -318,7 +318,7 @@ if( typeof data[0] != 'undefined'){
     $('#name').val(data.name);
     $('#lastname').val(data.lastname);
     $('#email').val(data.email);
-    $('#password').val(data.password);
+    $('#balance').val(data.balance);
     $('#phone').val(data.phone);
     $('#mobile').val(data.mobile);
     $('#addr').val(data.addr);
@@ -513,6 +513,7 @@ function save_formUC(){
     "state" : $('#state').val(),
     "country" : $('#country').val(),
     "password" : $('#password').val(),
+    "balance" : $('#balance').val(),
     "isadmin" : $('input:radio[name=customRadio]:checked').val(),
     "isactive" : userActive
   }
@@ -575,6 +576,7 @@ function save_formUE(id){
     "country" : $('#country').val(),
     "account" : $('#account').val(),
     "password" : $('#password').val(),
+    "balance" : $('#balance').val(),
     "isadmin" : $('input:radio[name=customRadio]:checked').val(),
     "isactive" : userActive
   }

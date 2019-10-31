@@ -57,5 +57,10 @@ class User extends Authenticatable
     public function getHoldings(){
         return $this->hasMany('App\Holding', 'userid', 'id');
     }
+    
+    public function balance($id){
+        $this->where('id', $id);
+        return $this->balance;
+    }
 
 }

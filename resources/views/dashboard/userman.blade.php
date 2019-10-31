@@ -309,8 +309,9 @@
                           <label class="mb-1" class="mb-0"><b>Password confirmation:</b></label>
                           <input type="password" class="form-control" id="passwordC" name="passwordC" value="">
                         </div>
-                        <div id="sendveriemail" class="col-12 f-size-14 mb-0 text-center">
-                          
+                        <div class="col-3 f-size-14 mb-0">
+                          <label class="mb-1" class="mb-0"><b>Balance:</b></label>
+                          <input type="text" class="form-control" id="balance" name="balance" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
                         </div>

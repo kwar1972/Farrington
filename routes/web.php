@@ -77,6 +77,7 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
         Route::get('/useredit/{id}', 'UsermanController@update');
         Route::get('/userslogins/{id}', 'LoginController@show');
         Route::get('/resenduseremail/{id}', 'UsermanController@resendVerificationEmail');
+        
         //Ticker Manager
         Route::get('tickerman', 'DashboardController@tickerman')->name('userman');
         Route::get('tickers', 'TickerController@index')->name('tickers');
