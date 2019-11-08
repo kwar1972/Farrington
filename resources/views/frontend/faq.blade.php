@@ -547,7 +547,7 @@ div.tp-parallax-wrap
                                 <span class="icon-bar"></span>
                             </button>
 
-                            <a class="navbar-brand" href="index-2"><img src="img/baxter_and_grant_logo.png" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+                            <a class="navbar-brand" href="/"><img src="img/baxter_and_grant_logo.png" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
   text-align: center;"></a>
                         </div>
 
@@ -933,62 +933,6 @@ After your withdrawal request has been successfully approved and released from y
 
 3. Bank Transfer<br>
 Bank Transfer usually takes 4 to 7 business days prior to the date of withdrawal request-approval. Delays may occur beyond the Company’s control due to third-party withdrawal payment methods.<br>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="h_faq2">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faq_acc" href="#c_faq2" aria-expanded="false" aria-controls="c_faq2">
-                                                    What are the documents needed to verify my account?
-                                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="c_faq2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h_faq2">
-                                                <div class="panel-body">
-                                                    To verify your account, upload the following documents or submit it to clients@baxtergrant.com:<br>
-1.Proof of Identity – Personal details (such as serial number, signature, picture, issue date, and expiry date) must be legible from:<br>
-
-• Scanned Copy of Passport or; <br>
-• National Identity Card or; <br>
-• Driving License <br><br>
-2. Proof of Residence – Document must be under your name, and must show the complete address identical to the address registered to your account. Proof of Residence copies must not be older than 3 months, and must be legible from: <br>
-• Stamped Bank Statement <br>
-• Credit Card Statement <br>
-• Official Residence <br>
-• Rental Agreement <br>
-• Utility Bill (Electricity, Gas, Water, Phone) <br>
-Please take into account that electronic (online) bills or statements are not acceptable. <br><br>
-3. Card Copy – If Credit Card or Debit Card was used for depositing, kindly send a copy accordingly: <br>
-
-Front copy must show; <br>
-• First 6 digits and last 4 digits only of the card <br>
-• Expiration date of the card <br>
-• Full name on the card <br>
-
-Back copy must show; <br>
-• Signature <br>
-• CVV must be covered <br>
-When sending the documents, please make sure that the formats are only JPG, GIF, DOC, and/or PDF, without password protection.<br>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="h_faq3">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faq_acc" href="#c_faq3" aria-expanded="false" aria-controls="c_faq3">
-                                                    How can I deposit to my account?
-                                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="c_faq3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h_faq3">
-                                                <div class="panel-body">
-                                                    1. Login to your Client Area and click Deposit Funds<br>
-2. Choose a payment method of your choice<br>
-3. Enter the amount you wish to deposit<br>
-4. Fill and complete deposit forms and proceed accordingly<br>
                                                 </div>
                                             </div>
                                         </div>

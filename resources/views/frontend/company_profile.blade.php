@@ -547,7 +547,7 @@ div.tp-parallax-wrap
                                 <span class="icon-bar"></span>
                             </button>
 
-                            <a class="navbar-brand" href="index-2"><img src="img/baxter_and_grant_logo.png" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+                            <a class="navbar-brand" href="/"><img src="img/baxter_and_grant_logo.png" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
   text-align: center;"></a>
                         </div>
 
@@ -747,7 +747,7 @@ I have worked with many individuals, families and companies and the most importa
                                     </div>
                                 </div>
                             </div>
-                            <h6>When you sign up with Baxter & Grant this immediately opens doors to the world of investing, guidance in all sectors whatever sector best suits your portfolio, on hand investor mentors with fist class experience in all sectors.</h6><br>
+                            <h6>When you sign up with Baxter & Grant this immediately opens doors to the world of investing, guidance in all sectors whatever sector best suits your portfolio, on hand investor mentors with first class experience in all sectors.</h6><br>
                             <p> Our main investment focus is on the four sectors and with our track record of getting the timing right when to buy in and when to sell, you can sit back comfortably knowing your money is working for you and your not working for your money. <br><br>Our finance experts continually build upon their insight and understanding of universal sector trends, and value enhancement tactics. We are able to access a deep pool of sector experts, many of whom we have worked with for many years helping to execute their plans for growth and value creation.</p>
                         </div>
                     </div>

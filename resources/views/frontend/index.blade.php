@@ -546,7 +546,7 @@ div.tp-parallax-wrap
                                 <span class="icon-bar"></span>
                             </button>
 
-                            <a class="navbar-brand" href="index-2"><img src="img/baxter_and_grant_logo.png" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+                            <a class="navbar-brand" href="/"><img src="img/baxter_and_grant_logo.png" alt="Baxter and Grant Austria" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
   text-align: center;"></a>
                         </div>
 
@@ -1002,12 +1002,12 @@ div.tp-parallax-wrap
                 <div class="consult_policy_inner">
                     <img src="img/icon/network-1.png" alt="">
                     <h3>Baxter <span>&</span> Grant</h3>
-                    <p>Our objective and discipline further reaches to the way we manage our business:<br>
+                    <p class="text-justify">Our objective and discipline further reaches to the way we manage our business:
 
-                        We pride ourself on giving you the best advice and act on behalf in a timely fashion, putting your best interests above all else.<br>
-                        We ensure independent oversight of your assets by holding all client accounts at third-party custodians.<br>
-                        Our fees are based on assets under management; hence, our interests are aligned with yours.<br>
-                        The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.<br></p>
+                        We pride ourself on giving you the best advice and act on behalf in a timely fashion, putting your best interests above all else.
+                        We ensure independent oversight of your assets by holding all client accounts at third-party custodians.
+                        Our fees are based on assets under management; hence, our interests are aligned with yours.
+                        The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.</p>
                     
                 </div>
             </div>
