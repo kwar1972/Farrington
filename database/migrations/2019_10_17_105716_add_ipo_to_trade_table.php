@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddForeingKeyToTradeWUsers extends Migration
+class AddIpoToTradeTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,7 @@ class AddForeingKeyToTradeWUsers extends Migration
     public function up()
     {
         Schema::table('trades', function (Blueprint $table) {
-           
-            $table->foreign('userid')->references('id')->on('users')->onDelete("CASCADE")->onUpdate("NO ACTION");
+            $table->boolean('ipo')->default('0')->after('tickerid');
         });
     }
 
@@ -27,7 +26,7 @@ class AddForeingKeyToTradeWUsers extends Migration
     public function down()
     {
         Schema::table('trades', function (Blueprint $table) {
-            $table->foreign('userid')->references('id')->on('users')->onDelete("CASCADE")->onUpdate("NO ACTION");
+            $table->dropColumn('ipo');
         });
     }
 }

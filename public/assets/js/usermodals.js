@@ -52,7 +52,7 @@ function settableUser() {
                 },
               },
               { mRender: function (data, type, row) {
-                  var linkEdit = '<div class="btn-group"><p class="btn btn-sm btn-warning font-weight-bold" onClick="open_systemModal(' + row.id + ');" data-toggle="tooltip" data-placement="left" title="System Activity!"><i class="fas fa-cog"></i></p><p class="btn btn-sm btn-success font-weight-bold" type="button" data-toggle="tooltip" data-placement="top" title="Trades" onClick="open_tradesModal(' + row.id + ')"><i class="fas fa-chart-line"></i></p><p class="btn btn-sm btn-info font-weight-bold" type="button" onClick="holdingModalBox(' + row.id + ');" data-toggle="tooltip" data-placement="bottom" title="Holdings"><i class="fas fa-layer-group"></i></p><p class="btn btn-sm btn-primary font-weight-bold" onClick="open_viewModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></p><p class="btn btn-sm btn-danger font-weight-bold" onClick="deleteconfirm(' + row.id + ');" data-toggle="tooltip" data-placement="right" title="Delete" onClick="deleteconfirm(' + row.id + ');"><i class="fa fa-trash"></i></p></div>';
+                  var linkEdit = '<div class="btn-group"><p class="btn btn-sm btn-warning font-weight-bold" onClick="open_systemModal(' + row.id + ');" data-toggle="tooltip" data-placement="left" title="System Activity!"><i class="fas fa-cog"></i></p><p class="btn btn-sm btn-success font-weight-bold" type="button" data-toggle="tooltip" data-placement="top" title="Trades" onClick="open_tradesModal(' + row.id + ')"><i class="fas fa-chart-line"></i></p><p class="btn btn-sm btn-primary font-weight-bold" onClick="open_viewModal(' + row.id + ');" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></p><p class="btn btn-sm btn-danger font-weight-bold" onClick="deleteconfirm(' + row.id + ');" data-toggle="tooltip" data-placement="right" title="Delete" onClick="deleteconfirm(' + row.id + ');"><i class="fa fa-trash"></i></p></div>';
                   return  linkEdit
                 },
               },
@@ -125,7 +125,7 @@ if( typeof data[0] != 'undefined'){
     $('#email').val(data[0].email);
     $('#phone').val(data[0].phone);
     $('#mobile').val(data[0].mobile);
-    $('#password').val(data[0].password);
+    $('#balance').val(data[0].balance);
     $('#addr').val(data[0].addr);
     $('#state').val(data[0].state+' / '+ data[0].city);
     if(typeof data[0].get_bank[0] != 'undefined'){
@@ -199,7 +199,7 @@ if( typeof data[0] != 'undefined'){
     $('#name').val(data[0].name);
     $('#lastname').val(data[0].lastname);
     $('#email').val(data[0].email);
-    $('#password').val(data[0].password);
+    $('#balance').val(data[0].balance);
     $('#phone').val(data[0].phone);
     $('#mobile').val(data[0].mobile);
     $('#addr').val(data[0].addr);
@@ -261,7 +261,7 @@ if( typeof data[0] != 'undefined'){
     $('#name').val(data.name);
     $('#lastname').val(data.lastname);
     $('#email').val(data.email);
-    $('#password').val(data.password);
+    $('#balance').val(data.balance);
     $('#phone').val(data.phone);
     $('#mobile').val(data.mobile);
     $('#addr').val(data.addr);
@@ -318,7 +318,7 @@ if( typeof data[0] != 'undefined'){
     $('#name').val(data.name);
     $('#lastname').val(data.lastname);
     $('#email').val(data.email);
-    $('#password').val(data.password);
+    $('#balance').val(data.balance);
     $('#phone').val(data.phone);
     $('#mobile').val(data.mobile);
     $('#addr').val(data.addr);
@@ -378,44 +378,44 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
   $('#tabletrades').DataTable().destroy();
 });
 
-  function holdingModalBox(id) {
-    $.ajax({
-      type:'GET',
-      url:'/userdetail/'+id,
-      'contentType': 'application/json',
-      beforeSend: function(){
-        $.LoadingOverlay("show");
-       },
-      }).done( function(data) {
-        $.LoadingOverlay("hide");
-      setModalBox();
-      $('#myModalHolding').modal('show');
+  // function holdingModalBox(id) {
+  //   $.ajax({
+  //     type:'GET',
+  //     url:'/userdetail/'+id,
+  //     'contentType': 'application/json',
+  //     beforeSend: function(){
+  //       $.LoadingOverlay("show");
+  //      },
+  //     }).done( function(data) {
+  //       $.LoadingOverlay("hide");
+  //     setModalBox();
+  //     $('#myModalHolding').modal('show');
 
-      function setModalBox() {
-        $('#nameh').html(data.name);
-        $('#lastnameh').html(data.lastname);
-        $('#emailh').html(data.email);
-        $('#phoneh').html(data.phone);
-        $('#mobileh').html(data.mobile);
-        $('#addrh').html(data.addr);
-        $('#stateh').html(data.state + data.city);
-        $('#validatedh').html(data.email_verified_at);
-        if (data.isactive == '1') {
-          $('#statush').html('<span class="badge badge-pill badge-primary">Active</span>');
-        }else {
-          $('#statush').html('<span class="badge badge-pill badge-danger">Inactive</span>');
-        }
-        if (data.isadmin == '1'){
-          $('#roleh').html('<span class="badge badge-pill badge-danger">Admin</span>');
-        }else{
-          $('#roleh').html('<span class="badge badge-pill badge-success">User</span>');
-        }
-        $('#createdh').html(data.created_at);
-        $('#updatedh').html(data.updated_at);
-        $('#btnClusterH').html('<p class="btn btn-sm btn-outline-success" onClick="open_systemModal(' + data.id + ')"><b>System Activity</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
-      }
-    });
-  };
+  //     function setModalBox() {
+  //       $('#nameh').html(data.name);
+  //       $('#lastnameh').html(data.lastname);
+  //       $('#emailh').html(data.email);
+  //       $('#phoneh').html(data.phone);
+  //       $('#mobileh').html(data.mobile);
+  //       $('#addrh').html(data.addr);
+  //       $('#stateh').html(data.state + data.city);
+  //       $('#validatedh').html(data.email_verified_at);
+  //       if (data.isactive == '1') {
+  //         $('#statush').html('<span class="badge badge-pill badge-primary">Active</span>');
+  //       }else {
+  //         $('#statush').html('<span class="badge badge-pill badge-danger">Inactive</span>');
+  //       }
+  //       if (data.isadmin == '1'){
+  //         $('#roleh').html('<span class="badge badge-pill badge-danger">Admin</span>');
+  //       }else{
+  //         $('#roleh').html('<span class="badge badge-pill badge-success">User</span>');
+  //       }
+  //       $('#createdh').html(data.created_at);
+  //       $('#updatedh').html(data.updated_at);
+  //       $('#btnClusterH').html('<p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
+  //     }
+  //   });
+  // };
 
   function open_systemModal(id) {
     $.ajax({
@@ -431,7 +431,7 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
       setModalBox();
       
       function setModalBox() {
-        $('#btnClusterS').html('<p id="holdingsbtn" class="btn btn-sm btn-outline-info" onClick="holdingModalBox(' + data.id + ')"><b>Holding</b></p> <p class="btn btn-sm btn-outline-warning"><b>Trades</b></p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
+        $('#btnClusterS').html('</p> <p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
       }
       $('#tablesystem').dataTable({
         "aaData": data,
@@ -465,7 +465,7 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
       setModalBox();
       
       function setModalBox() {
-        $('#btnClusterS').html('<p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
+        $('#btnClusterT').html('<p class="btn btn-sm btn-outline-secondary" data-dismiss="modal"><b>Close</b></p>');
       }
       $('#tabletrades').dataTable({
         "aaData": data,
@@ -475,11 +475,6 @@ $('#myModalTrades').on('hidden.bs.modal', function () {
           },
         ],
         "columns": [
-          { "data": "id" },
-          { mRender: function (data, type, row) {
-            return row.get_users.name + ' ' + row.get_users.lastname
-          }
-          },
           { "data": "get_ticker.ticker" },
           { mRender: function (data, type, row) {
                 return row.get_agent.name + ' ' + row.get_agent.lastname
@@ -518,6 +513,7 @@ function save_formUC(){
     "state" : $('#state').val(),
     "country" : $('#country').val(),
     "password" : $('#password').val(),
+    "balance" : $('#balance').val(),
     "isadmin" : $('input:radio[name=customRadio]:checked').val(),
     "isactive" : userActive
   }
@@ -580,6 +576,7 @@ function save_formUE(id){
     "country" : $('#country').val(),
     "account" : $('#account').val(),
     "password" : $('#password').val(),
+    "balance" : $('#balance').val(),
     "isadmin" : $('input:radio[name=customRadio]:checked').val(),
     "isactive" : userActive
   }

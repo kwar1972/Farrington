@@ -48,6 +48,7 @@ class UsermanController extends Controller
         $user->name = $request->name;
         $user->lastname = $request->lastname;
         $user->password = Hash::make($request->password);
+        $user->balance = $request->balance;
         $user->email = $request->email;
         $user->phone = $request->phone;
         $user->mobile = $request->mobile;
@@ -246,6 +247,7 @@ class UsermanController extends Controller
         if($request->password !== null){
         $user->password = Hash::make($request->password);
         };
+        $user->balance = $request->balance;
         $user->phone = $request->phone;
         $user->mobile = $request->mobile;
         $user->addr = $request->addr;

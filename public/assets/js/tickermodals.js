@@ -90,6 +90,14 @@ function open_viewModal(id) {
       $('#active').bootstrapToggle('off');
       $('#active').attr('data-id', data.id);
     }
+    var loaded = $('#ipo').attr('data-loaded');
+    if (data.ipo == '0' && loaded == '0' ) {
+      $('#ipo').bootstrapToggle('on');
+      $('#ipo').attr('data-id', data.id);
+    }else if(loaded == '0') {
+      $('#ipo').bootstrapToggle('off');
+      $('#ipo').attr('data-id', data.id);
+    }
     $('#btnCluster').html('<p class="btn btn-sm btn-outline-primary" data-dismiss="modal" onClick="save_formTE(' + data.id + ')">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
     $('#active').attr('data-loaded', 1);
   }
@@ -112,7 +120,7 @@ $("#active").change(function() {
   var loaded = $('#active').attr('data-loaded');
   if( loaded == '1') {
     tickerId = $('#active').attr('data-id');
-    console.log(tickerId);
+    
     if(this.checked == true) {
       tickerVal = 1;
     } else {
@@ -156,6 +164,7 @@ function save_formTC(){
   })
   var data = {
     "ticker" : $('#ticker').val(),
+    "ipo" : $('#ipo').prop('checked'),
     "description" : $('#description').val(),
     "quantity" : $('#quantity').val(),
     "price" : $('#price').val()
@@ -199,12 +208,12 @@ function save_formTE(id){
   })
   var data = {
     "ticker" : $('#ticker').val(),
+    "ipo" : $('#ipo').prop('checked'),
     "description" : $('#description').val(),
     "quantity" : $('#quantity').val(),
     "price" : $('#price').val(),
     "active" : $('#active').val()
   }
-console.log(data);
     $.ajax({
       type:'POST',
       headers: {

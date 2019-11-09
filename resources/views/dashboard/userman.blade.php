@@ -309,8 +309,9 @@
                           <label class="mb-1" class="mb-0"><b>Password confirmation:</b></label>
                           <input type="password" class="form-control" id="passwordC" name="passwordC" value="">
                         </div>
-                        <div id="sendveriemail" class="col-12 f-size-14 mb-0 text-center">
-                          
+                        <div class="col-3 f-size-14 mb-0">
+                          <label class="mb-1" class="mb-0"><b>Balance:</b></label>
+                          <input type="text" class="form-control" id="balance" name="balance" value="">
                         </div>
                         <div class="col-3 f-size-14 mb-0">
                         </div>
@@ -669,7 +670,7 @@
             </div>
           </div>
             <!-- end of View modal ------------------------------>
-            <!-- Modal Holdings-->
+            {{-- <!-- Modal Holdings-->
               <div class="modal fade bs-example-modal-lg" id="myModalHolding" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1055;">
                 <div class="modal-dialog  modal-lg">
                   <div class="modal-content">
@@ -703,7 +704,7 @@
                 </div>
               </div>
             </div>
-            <!-- end of modal Holdings------------------------------>
+            <!-- end of modal Holdings------------------------------> --}}
             <!-- Modal Trades-->
             <div class="modal fade bs-example-modal-lg" id="myModalTrades" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1055;">
               <div class="modal-dialog  modal-lg">
@@ -716,8 +717,6 @@
                       <table id="tabletrades" class="table table-striped table-bordered dt-responsive nowrap table-hover" style="width:100%;z-index: 1056;">
                           <thead>
                             <tr>
-                              <th class="text-center">id</th>
-                              <th class="text-center">Client</th>
                               <th class="text-center">Ticker</th>
                               <th class="text-center">Agent</th>
                               <th class="text-center">Amount</th>
@@ -732,7 +731,7 @@
                           </tbody>
                         </table>
                 </div>
-                <div id="btnClusterS" class="modal-footer g-bg-grey" id="modal_footerq">
+                <div id="btnClusterT" class="modal-footer g-bg-grey" id="modal_footerq">
                   
                 </div>
               </div>

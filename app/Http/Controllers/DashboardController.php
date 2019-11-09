@@ -15,14 +15,14 @@ class DashboardController extends Controller
     {   
         if(auth()->user()->hasRole('client')){
             $id = auth()->user()->id;
+            $balance = auth()->user()->balance($id);
             $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
             $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
             $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
             $tickers = $ticker->pluck('getTicker');
             $tickers = $tickers->unique('ticker');
             
-            //dd($tvalue);
-            return view('client.dashboard')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers);
+            return view('client.dashboard')->with('trades', $trades)->with('deposits', $deposits)->with('tickers', $tickers)->with('balance', $balance);
         }else {
             return view('dashboard.dashboard');
         }

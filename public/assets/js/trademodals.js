@@ -498,6 +498,7 @@ function deleteconfirm(id){
           $.LoadingOverlay("show");
          },
       }).done( function(data) {
+        $.LoadingOverlay("hide");
         if(data.success == 1){
           Toast.fire({
               background: '#007bff',

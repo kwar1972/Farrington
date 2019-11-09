@@ -23,7 +23,7 @@ class TradesController extends Controller
     public function index()
     {
         $Trades = Trade::with('getUsers')->with('getAgent')->with('getTicker')->get();
-        
+
         return response()->json($Trades, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
         JSON_UNESCAPED_UNICODE);
     }
@@ -118,10 +118,13 @@ class TradesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
+        $ipo = Ticker::where('id', $request->tickerid)->get();
+        
         $trade = New Trade;
         $trade->userid = $request->clientid;
         $trade->tickerid = $request->tickerid;
+        $trade->ipo = $ipo[0]->ipo;
         $trade->agentid = $request->agentid;
         $trade->amount = $request->amount;
         $trade->price = $request->price;
@@ -178,10 +181,13 @@ class TradesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
+    {   
+        $ipo = Ticker::where('id', $request->tickerid)->get();
+
         $trade = Trade::find($id);
         $trade->userid = $request->clientid;
         $trade->tickerid = $request->tickerid;
+        $trade->ipo = $ipo[0]->ipo;
         $trade->agentid = $request->agentid;
         $trade->amount = $request->amount;
         $trade->price = $request->price;
