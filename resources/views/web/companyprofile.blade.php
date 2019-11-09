@@ -7,26 +7,26 @@
         </div>
       </header>
     <br>
-<h3><span class="g-color-primary">Rudolf Lawrence Steiner</span></h3><br>
+<h3><span class="g-color-primary">Joseph Steiner</span></h3><br>
 <div class="row">
 <div class="col-md-4">
 <img src="img/team/1.jpg" class="img-rounded" alt="Steiner Greves" width="350">
 </div>
 <div class="col-md-8">
-<p class="text-justify" style="font-size:17px">The decision to open the doors of Steiner Greves to the world of finance, was an easy decision. I have
+<p class="text-justify" style="font-size:17px">The decision to open the doors of <span class="g-color-primary">Steiner Greves</span> to the world of finance, was an easy decision. I have
   worked in the area of finance for two and half decades. I have had the privilege to have met and work
   alongside some of the most influential financial experts of all time.<br><br>
   It was time to put all them years of experience into practice and create a business with the outlook of an
   open atmosphere where we listen to what our clients and anticipate their financial needs.<br><br>
   My number one priority is to keep an open mind and fully engage with all clients whether they be old
   or new clients, helping them make that very important decision to take control of their finances and
-  with the expert guidance of Steiner Greves a company you can rely on.<br><br>
+  with the expert guidance of <span class="g-color-primary">Steiner Greves</span> a company you can rely on.<br><br>
   I have worked with many individuals, families and companies and the most important thing to
   remember is each client management is unique. Transparency has to be the main principle when
   working side by side with clients.<br><br>
   Being in the financial services for over 20 yerars has taught me one vital lesson, treating everyone with
   the same courtesy whether it be corporate or individual clients is vital. I have been witness where
-  corporate profits are more important than individual client service. Here at Steiner Greves we thrive on
+  corporate profits are more important than individual client service. Here at <span class="g-color-primary">Steiner Greves</span> we thrive on
   treating everyone with the same respect.<br><br>
 <strong>We operate in a family enthused environment with a family outlook when dealing with all our
   clients making us unique in the financial world.</strong></p><br>
