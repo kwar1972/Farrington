@@ -60,7 +60,7 @@
                     </a>
                   </li>
                   <li class="nav-item hs-has-sub-menu g-mx-20--lg active">
-                    <a href="#!" class="nav-link px-0 g-color-primary--hover">Services
+                    <a href="#!" class="nav-link px-0 g-color-primary--hover">Our Services
                         <!-- Submenu -->
                         <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-mt-20 g-mt-10--lg--scrolling g-bg-black-opacity-0_4" id="nav-submenu-1" aria-labelledby="nav-link-1">
                             <li class="dropdown-item">
@@ -73,6 +73,18 @@
                             </li>
                             <li class="dropdown-item">
                               <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/commodities">Commodities</a>
+                              <hr class="g-color-white mt-0 mb-0">
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/commodities">Investment Management</a>
+                              <hr class="g-color-white mt-0 mb-0">
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/commodities">Financial, Tax & Estate Planning</a>
+                              <hr class="g-color-white mt-0 mb-0">
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/commodities">Insurance & Risk Management</a>
                               <hr class="g-color-white mt-0 mb-0">
                             </li>
                         </ul>

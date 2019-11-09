@@ -195,3 +195,10 @@
 	  margin-right: 350px !important;
 	  margin-left: 350px !important;
   }
+  .contact-fix{
+	text-transform: lowercase !important;
+  }
+  .px-20{
+	padding-left: 18% !important;
+	padding-right: 18% !important;
+}

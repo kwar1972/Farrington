@@ -32,9 +32,9 @@
           </div>
 
           <div class="col-lg-6 align-self-center g-pl-30--lg g-mb-50 g-mb-0--lg">
-            <p class="g-mb-15"><strong>At <span class="g-color-primary">Steiner Greves</span></strong></p>
+            <p class="g-mb-15 g-color-primary"><strong>At Steiner Greves</strong></p>
             <p class="g-mb-40 text-justify">We recognize that your financial future represents a significant emotional investment, but we also know that it is critical to manage that future with logic and process rather than emotions alone. The <span class="g-color-primary">Steiner Greves</span> team will create a detailed road map tailored to your individual situation, supported by a globally diversified investment strategy. No one in the investment industry can predict the outcome of capital markets, what we can assure you is that if you put your faith in us, we will be developing a partnership based on respect and investment expertise.</p>
-            <p class="g-mb-15"><strong>Quality and reliability</strong></p>
+            <p class="g-mb-15 g-color-primary"><strong>Quality and reliability</strong></p>
             <p class="g-mb-5 text-justify">At <span class="g-color-primary">Steiner Greves</span> we promise to always provide unbiased and astute advice based on rational experience and disciplined practice.</p>
           </div>
         </div>
@@ -144,12 +144,11 @@
           <div class="helpline_inner">
             <div class="media">
                 <div class="media-body">
-                    <h4 class="g-color-primary">Need consultation?</h4>
-                    <h4 class="g-color-white">INVESTMENTS YOU CAN TRUST</h4>
-                    <p class="g-color-white"><span class="g-color-primary">Steiner Greves</span> offer the best returns on all investments</p>
+                    <h4 class="g-color-white">Contact <span class="g-color-primary">Steiner Greves</span></h4>
+                    <p class="g-color-white">for a No Obligation Consultation</p>
                     <div class="contact_d">
-                        <a href="tel:+43720775910">+437 856 2958</a> <span class="g-color-white"> | </span>
-                        <a href="mailto:support@baxtergrant.com?subject= Contact from from website">support@steinergreves.com</a>
+                        <a class="contact-fix" href="tel:+43720775910">+437 856 2958</a> <span class="g-color-white"> | </span>
+                        <a class="contact-fix" href="mailto:support@steinergraves.com?subject= Contact from from website">support@steinergreves.com</a>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@
                 <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
                   <h2 class="h3 u-heading-v2__title  g-color-black text-uppercase g-font-weight-600">Our Team</h2>
                 </div>
+                <h5 class="text-justify">Our highly qualified team comprises of chosen, dedicated professional whose credentials range from respected financial, investment and accounting firms. Together, we have over 80 years of experience in helping wealthy individuals and their families manage their capital. Among our qualified team at Steiner Greves are a highly qualified group of Chartered Life Underwriters, Financial Consultants, Certified Public Accountants and Financial Analysts. Steiner Greves brings specialized expertise through strategic partnerships that further enhance the depth and experience of our team. We utilize an Advisory Board for a synergistic analysis and direction on business ventures as well as tax issues and investments. Our Board members hold variant backgrounds encompassing legal and investment management, consulting and corporate management.</h5>
               </header>
             <br>
 <!-- Team Block -->
@@ -16,10 +17,12 @@
               <div class="col-sm-6 order-sm-2">
                 <!-- Figure Info -->
                 <div class="g-mb-30">
-                  <h4 class="h5 g-color-black g-mb-5">Graham Greves</h4>
-                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Co Founder, CEO</em>
+                  <h4 class="h5 g-color-black g-mb-5">Joseph Steiner</h4>
+                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">CEO/Senior Wealth Advisor</em>
                 </div>
-                <p class="text-justify">My main reasons for starting <span class="g-color-primary">Steiner Greves</span> was this desire I had to create a transparent and open working environment. Working with many people in different companies, all having their flaws and strengths. My idea was to take all the strong points from my experience in my financial background and put them together in the same house. This is what I felt was needed for success, a fully informed and engaging work force to help all our clients in their financial lives whether it is a team based project or a one on one project. There is no job too small when it comes to someone’s finances and I believe it’s a necessity to make myself fully available to all my work force and clients. Having worked with so many families and businesses and more than $1Billion in assets, the most important thing I took with me is that each client whether it be an individual or a banking institute is unique. <span class="g-color-primary">Steiner Greves</span>, was put together with the intention to create a corporate culture that removes the word “corporate” and focus on community, transparency being my number one principle. After many years in financial services, there have been occasions in which corporate profits supersede client service. As a fiduciary,<span class="g-color-primary">Steiner Greves</span> will always maintain a strong commitment that prides itself on putting people before products. We are a private company, and are responsible to our clients, not to shareholder value.</p>
+                <p class="text-justify">Joseph Steiner is the CEO of <span class="g-color-primary">Steiner Greves</span>, which he founded in 2009. Joseph is focused on the continued success of <span class="g-color-primary">Steiner Greves</span>, and a significant portion of his time is devoted to the strategic direction of the firm. He is   equally devoted to providing clients widespread wealth planning and management service. Joseph is a Member of the firm’s Executive Committee.<br><br>
+                  Joseph has expended his career developing tax and strategical estate planning to address the special needs of the individual and families that have accumulated wealth. With extraordinary professional knowledge gained through years of experience, Joseph has developed and utilizes the Informed tailored approach and other intellectual property and proprietary processes that help clients organize their thinking on important decisions they will face. Once their thinking is focused, he and his team advise and assist clients in making informed decisions.<br><br>
+                  Joseph is a long-standing member and recent Board Member of the prestigious Forum 400, which brings financial service professionals together to exchange ideas on tax and estate planning. Previous to Steiner Greves he served on the Board of Directors of the M&I Bank. Joseph is acknowledged as an expert in his given field, and has addressed several professional groups and associations on estate planning strategies.</p>
                 <!-- End Figure Info -->
               </div>
       
@@ -38,10 +41,13 @@
               <div class="col-sm-6 order-sm-2">
                 <!-- Figure Info -->
                 <div class="g-mb-30">
-                  <h4 class="h5 g-color-black g-mb-5">Peter Lisbon</h4>
-                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Co Founder, CEO</em>
+                  <h4 class="h5 g-color-black g-mb-5">James Greves</h4>
+                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">President, Co Founder/Senior Wealth Advisor</em>
                 </div>
-                <p class="text-justify">Hi I am the proud Co Founding partner of <span class="g-color-primary">Steiner Greves</span>. I have 14 years of banking experience as a Vice President of Bankers Trust Company, where I was involved with management buyout financing, mergers and acquisition advisory assignments and other corporate finance activities. I have also served as Co-Head and Co-Founder of Global Technology Industry Team. I served as a Co-Head of Industrial at KKR & Co. L.P. and also served as its Head of Industrial Industry Team, North American Private Equity firm.</p>
+                <p class="text-justify">James Greves is the President and Co Founder of <span class="g-color-primary">Steiner Greves</span>. His roles are, spending the majority of his time developing and maintaining client relationships, aiding as a sophisticated skilled developer in wealth transfer strategies and overseeing the companies investment management business. James is a member of the companies Investment and Committee Executive Committee.<br><br>
+                Prior to Steiner Greves, he has spent time at Deloitte & Touche, PwC and Ernst & Young, PwC where he was tasked with providing investment, estate and financial planning advice to individuals and families.<br><br>
+                James is very active in the financial industry time served on the advisory board of several financial  institutions he has also served as a member of the board of directors of The Forum 400, for seven years with one year served as President. Greves has spoken to national audiences on topics such as wealth transfer strategies, creative life insurance strategies and practice management.<br><br>
+                James earned his B.B.A. University of Cambridge, Judge Business School with a double major in finance and risk management. He received his J.D. and his LL.M. in taxation from the University of Law. He earned the certifications of Chartered Financial Consultant (ChFC) and Chartered Life Underwriter (CLU).</p>
                 <!-- End Figure Info -->
               </div>
       
@@ -60,10 +66,13 @@
               <div class="col-sm-6 order-sm-2">
                 <!-- Figure Info -->
                 <div class="g-mb-30">
-                  <h4 class="h5 g-color-black g-mb-5">Evan Bohringer</h4>
-                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">CFO, Head of Business Development</em>
+                  <h4 class="h5 g-color-black g-mb-5">Chris Stephens</h4>
+                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Director of Investment Management/Senior Wealth Advisor</em>
                 </div>
-                <p class="text-justify">Hi I am the head of business development at <span class="g-color-primary">Steiner Greves</span>. I obtained my CFA designation in 1998, and I am a proud member of the South African Institute of Chartered Accountants. I have a Post Graduate Diploma in Accounting and Bachelor of Commerce from the University of Natal – Durban. I entered into the hedge fund industry in 1996 since them I have gained a lot of experience in all aspects of distribution I take great pride in my work, there is no better feeling than making life changing decisions and getting it right. My main roles consist of product development and financial marketing. I moved to Austria in the year of 2013, and since joining the <span class="g-color-primary">Steiner Greves</span> family I have acquired a thorough knowledge of the highly diverse qualified Investor markets.</p>
+                <p class="text-justify">Chris is the Director of Investment Management at <span class="g-color-primary">Steiner Greves</span>. Chris’s main tasks include investment research and portfolio management. Additionally, Chris serves as the client relationship team senior member. Hes also a serving Member of <span class="g-color-primary">Steiner Greves</span> Investment Committee and Executive Committee.<br><br>
+                Chris’s role as Director of Investment Management, include overseeing the management of the investment strategies utilized in client portfolios. He is also responsible for portfolio construction, rebalancing of client portfolios investment due diligence/selection, and asset allocation.<br><br>
+                Chris became part of the team at <span class="g-color-primary">Steiner Greves</span> in June 2010 with over 25 years of investment management experience equity mutual funds, managing diversified portfolios, and separate account strategies. Before joining <span class="g-color-primary">Steiner Greves</span>, he was an Investment Officer at Foresight Wealth Management where he was responsible for portfolio construction, asset allocation and investment due diligence/selection.<br><br>
+                Previous to <span class="g-color-primary">Steiner Greves</span>, John spent 15 years at BMO Global Asset Management where he held a variety of investment management roles. Chris was the Fund Manager of the BMO Dividend Income Mutual Fund and BMO Large-Cap Value Mutual Fund. Additionally, Chris ran the companies Fundamental Index strategies, Tax Efficient Portfolio Strategy.</p>
                 <!-- End Figure Info -->
               </div>
       
@@ -82,11 +91,12 @@
               <div class="col-sm-6 order-sm-2">
                 <!-- Figure Info -->
                 <div class="g-mb-30">
-                  <h4 class="h5 g-color-black g-mb-5">Jane Wearne</h4>
-                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">COO, Head of Operations and Due Dilligence</em>
+                  <h4 class="h5 g-color-black g-mb-5">Carolyn Johanna Seeker</h4>
+                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Senior Wealth Advisor</em>
                 </div>
-                <p class="text-justify">Hi I am Jane and head of operations and due diligence at <span class="g-color-primary">Steiner Greves</span>. I have broad-based experience in many aspects of international financial services, with many years in management transactions implementation and business development. My experience in transaction execution consists of conducting all due diligence and risk assessments on target acquisitions, as well as negotiating legal contracts. In business development I have revamped many departments providing them with key tools to boost efficiency within various banks and financial services companies (Deloitte Consulting, Toyo Trust, Daiwa Securities, Nedbank and KBL) to meet strategic objectives.
-                        I hold an MBA in International Banking from City University, Zurich Campus, and a BA in International Relations from Lake Forest College (Illinois, USA).</p>
+                <p class="text-justify">Carolyn is a Senior Wealth Advisor for <span class="g-color-primary">Steiner Greves</span> with over 17 years experience in the financial services industry. Her position in the company. Carolyn is responsible for providing clients with comprehensive wealth management, which includes taxes, legal/estate planning, advising on investments, insurance, and a broad array of financial matters. She is a member of the firm’s Executive and Investment Committees and contributes to numerous firm initiatives.<br><br>
+                Carolyn brings unique past experience to the firm, both professionally and personally. Having spent her early career in corporate finance and public accounting. Prior to that role, Carolyn gathered extensive experience in cash flow projections, complex financial modeling, and scenario planning at same time as assisting an institutional money manager go public through an IPO.<br><br>
+                Carolyn earned her BBA from the City, University of London where she majored in both Finance and Accounting while also earning a Specialization in International Business. Carolyn is a licensed Certified Public Accountant (CPA).</p>
                 <!-- End Figure Info -->
               </div>
       
@@ -105,10 +115,12 @@
               <div class="col-sm-6 order-sm-2">
                 <!-- Figure Info -->
                 <div class="g-mb-30">
-                  <h4 class="h5 g-color-black g-mb-5">Nicholas Robertson</h4>
-                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Chief Human Resources Officer</em>
+                  <h4 class="h5 g-color-black g-mb-5">James Elliot</h4>
+                  <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Senior Wealth Advisor</em>
                 </div>
-                <p class="text-justify">Hi I am the chief resource officer at <span class="g-color-primary">Steiner Greves</span>. I currently hold a degree in Classics from Cambridge University and I am qualified solicitor of England and Wales. I joined <span class="g-color-primary">Steiner Greves</span> in March 2010. as the Chief Human Resources Officer, focusing on strategic projects and operational support for the people of <span class="g-color-primary">Steiner Greves</span> and advising on talent matters in relation to the portfolio companies. Prior to joining <span class="g-color-primary">Steiner Greves</span>, I was at Goldman Sachs, spending 5 years in the Human Capital Management and Legal Department. Previously, I was a lawyer at Freshfields Bruckhaus Deringer and Slaughter & May.</p>
+                <p class="text-justify">James Elliot is a Senior Wealth Advisor at <span class="g-color-primary">Steiner Greves</span> with nine years of expertise in the financial services. James has a successful history of providing logical sensible advice to clients that leads them to create a secure financial future.<br><br>
+                  Part of his role as Senior Wealth Advisor, is providing clients with comprehensive wealth management and developing and maintaining client relationships. James is also the firm expert with regard to Medicare Insurance. James helps clients understand the process and products available when transitioning their health care to Medicare Insurance. In addition, he assists clients with the acquisition of the appropriate Medicare Supplement policies, Medicare Part C Advantage plans, and Part D drug plans.<br><br>
+                  James has 22 years of sales experience in the building industry where he was a consistent top performer stemming from his ability to listen carefully to clients, identify their specific needs and provide the appropriate solution. James started his transition to the financial services industry  six years ago when he developed an expertise in the Medicare enrollment process and Medicare Insurance policies.</p>
                 <!-- End Figure Info -->
               </div>
       
@@ -126,11 +138,12 @@
                   <div class="col-sm-6 order-sm-2">
                     <!-- Figure Info -->
                     <div class="g-mb-30">
-                      <h4 class="h5 g-color-black g-mb-5">Inga Popovich</h4>
-                      <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Head of Legal, Risk and Compliance</em>
+                      <h4 class="h5 g-color-black g-mb-5">Johanna Shutts</h4>
+                      <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Office Manager</em>
                     </div>
-                    <p class="text-justify">Hi my name is Inga Popovich and I am Head of Legal, Risk and Compliance, I have extensive experience in legal, compliance and product development for alternative asset managers as well as legal and structuring expertise for derivative products in investment banking. I have held various senior legal positions with such firms as EIM, UBP, Credit Suisse and Morgan Stanley. I am also a qualified English solicitor with a Master of Law from the University of Des Sciences Sociales in Toulouse.
-                            I moved to Austria to join the <span class="g-color-primary">Steiner Greves</span> family in 2012. The decision to move was the glowing reports I had heard about <span class="g-color-primary">Steiner Greves</span>’s approach on the world of finance, fresh and innovative. This was also a great opportunity to move forward in my career.</p>
+                    <p class="text-justify">Johanna is the Receptionist/Office Manager at Richardson Financial Group and in that role she is responsible for serving as the initial point of contact for clients, vendors and guests of the firm. Johanna is also responsible for maintaining and improving all operational aspects of the firm. She is also a member of the investment and insurance client service teams where she assists with various service issues.<br><br>
+                    Johanna attended Vienna University of Technology Technical College and has a Masters in Business Administration (MBA). She has over 22 years of experience as an executive assistant and office manager. She has also worked for several top advertising agencies.<br><br>
+                    </p>
                     <!-- End Figure Info -->
                   </div>
           
