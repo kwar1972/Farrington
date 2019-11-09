@@ -3,7 +3,7 @@
 <div class="container-fluid g-pt-120 g-pb-60">
     <header class="text-center g-width-60x--md mx-auto g-mb-60">
       <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
-        <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Frequent Asked <span class="g-color-primary">Questions</span></h2>
+        <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Frequently Asked <span class="g-color-primary">Questions</span></h2>
       </div>
     </header>
     <div class="row">
@@ -68,6 +68,7 @@
                 </div>
                 <div id="accordion-06-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-06-heading-01" data-parent="#accordion-06">
                   <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
+                    <p class="g-font-weight-700">Withdrawal requests take up to 1 business day to process. The time taken to receive your payment may vary depending on the payment provider involved.</p>
                     <ul>
                       <li class="g-font-weight-700">Credit Card or Debit Card</li>
                         <p>After your withdrawal request has been successfully approved and released from your account, it will take 3 to 5 business days for you to  receive it.</p>
@@ -86,7 +87,7 @@
                 <div id="accordion-06-heading-02" class="u-accordion__header g-pa-20" role="tab">
                   <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
                     <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-02" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-02">
-                      What are the documents needed to verify my account?
+                        What Documents are needed to verify my Account?
                       <span class="u-accordion__control-icon g-ml-10">
                         <i class="fa fa-angle-down"></i>
                         <i class="fa fa-angle-up"></i>
@@ -96,6 +97,10 @@
                 </div>
                 <div id="accordion-06-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-02" data-parent="#accordion-06">
                   <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
+                    <p class="g-font-weight-700">When you agree to come onboard as a preferred client you will receive two documents. The first
+                        document is a Stock Purchase Agreement, this requires your signature allowing us to move forward and
+                        lock you into the trade at the price given. The second document is a W-8BEN this document is for a
+                        Non-US Citizen who are not eligible to pay taxes in the US. This needs to be filled out in full and filed.</p>
                     <p class="g-font-weight-700">To verify your account, upload the following documents or submit it to <span class="g-color-primary">clients@steinergreves.com</span></p>
                     <ol>
                       <li>
@@ -136,57 +141,12 @@
               </div>
               <!-- End Card -->
             
-              <!-- Card -->
-              <div class="card rounded-0 g-bg-gray-light-v4 g-brd-none">
-                <div id="accordion-06-heading-03" class="u-accordion__header g-pa-20" role="tab">
-                  <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
-                    <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-03" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-03">
-                      How can I deposit to my account?
-                      <span class="u-accordion__control-icon g-ml-10">
-                        <i class="fa fa-angle-down"></i>
-                        <i class="fa fa-angle-up"></i>
-                      </span>
-                    </a>
-                  </h5>
-                </div>
-                <div id="accordion-06-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-03" data-parent="#accordion-06">
-                  <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                    <ol>
-                      <li>Login to your Client Area and click Deposit Funds</li>
-                      <li>Choose a payment method of your choice</li>
-                      <li>Enter the amount you wish to deposit</li>
-                      <li>Fill and complete deposit forms and proceed accordingly</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            <!-- End Card -->
-            <!-- Card -->
-            <div class="card rounded-0 g-bg-gray-light-v3 g-brd-none">
-              <div id="accordion-06-heading-04" class="u-accordion__header g-pa-20" role="tab">
-                <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
-                  <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-04" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-04">
-                    How much is the minimum deposit?
-                    <span class="u-accordion__control-icon g-ml-10">
-                      <i class="fa fa-angle-down"></i>
-                      <i class="fa fa-angle-up"></i>
-                    </span>
-                  </a>
-                </h5>
-              </div>
-              <div id="accordion-06-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-04" data-parent="#accordion-06">
-                <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                  <p>There is no limit on the minimum or maximum that you can deposit.</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Card -->
             <!-- Card -->
             <div class="card rounded-0 g-bg-gray-light-v4 g-brd-none">
                 <div id="accordion-06-heading-05" class="u-accordion__header g-pa-20" role="tab">
                   <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
                     <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-05" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-05">
-                      What are the factors that I should consider when choosing an asset class?
+                        What Factors Should I Consider In My Allocation Plan:
                       <span class="u-accordion__control-icon g-ml-10">
                         <i class="fa fa-angle-down"></i>
                         <i class="fa fa-angle-up"></i>
@@ -196,9 +156,15 @@
                 </div>
                 <div id="accordion-06-body-05" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-05" data-parent="#accordion-06">
                   <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                    <p>Diversification and exposure. The private tech market is quickly becoming a meaningful portion of the suite of asset classes available in today’s financial markets.
-                        Assuming you already have a sufficiently diversified portfolio across a range of safe and moderately safe securities, it is certainly worth considering for inclusion in a balanced portfolio.
-                        Of course, each investor's situation is different, and suitability is a case-by-case conversation. But for many accredited investors, late-stage private market investments can certainly offer compelling investment opportunities while the companies are in the rapid value creation phase.</p>
+                    <ul>
+                      <li>Investment Horizon. In a general, your investments should be matched with your need for the money.</li>
+                      <li>Risk Tolerance.</li>
+                      <li>Diversification.</li>
+                      <li>Costs / Expenses.</li>
+                      <li>Investment Vehicles.</li>
+                      <li>Rebalancing.</li>
+                      <li>Guidance.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -218,7 +184,8 @@
                 </div>
                 <div id="accordion-06-body-06" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-06" data-parent="#accordion-06">
                   <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                    <p>There are no fees or deposits required to open an account with <span class="g-color-primary">Steiner Greves</span>. Creating an account gives you access to your investment details of past and ongoing trades.</p>
+                    <p>There are no fees or deposits required to open an account with Baxter & Grant.
+                        The standard commission for full-service brokers are between 1% to 2% of a client's managed assets.</p>
                   </div>
                 </div>
               </div>
@@ -238,15 +205,15 @@
                   </div>
                   <div id="accordion-06-body-07" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-07" data-parent="#accordion-06">
                     <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                      <p>There is risk of loss associated with investing in securities regardless of the method used. New investors need to understand the principles of investing, their own risk tolerance, and their investment goals before venturing into the market.</p>
-                      <p>In addition, online investors may want to consider these other risks. High Internet traffic may affect online investors' ability to access their account or transmit their orders.</p>
-                      <p>Online investors should be skeptical of stock advice and tips provided in chat rooms or bulletin boards. Investors should do their own research before acting on these tips. Also, for some online investors, there is a temptation to "overtrade" by trading too frequently or impulsively without considering their investment goals or risk tolerance. Overtrading can effect investment performance, raise trading costs, and complicate your tax situation.</p>
+                      <p>There is risk of loss associated with investing in securities regardless of the method used. New
+                          investors need to understand the principles of investing, their own risk tolerance, and their investment
+                          goals before venturing into the market.</p>
                     </div>
                   </div>
                 </div>
                 <!-- End Card -->
                 <!-- Card -->
-              <div class="card rounded-0 g-bg-gray-light-v3 g-brd-none">
+                <div class="card rounded-0 g-bg-gray-light-v3 g-brd-none">
                   <div id="accordion-06-heading-08" class="u-accordion__header g-pa-20" role="tab">
                     <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
                       <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-08" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-08">
@@ -260,8 +227,107 @@
                   </div>
                   <div id="accordion-06-body-08" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-08" data-parent="#accordion-06">
                     <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                      <p>If a customer chooses to borrow funds from a firm, the customer will open a margin account with that firm. The portion of the purchase price that the customer must deposit is called margin and is the customer's initial equity in the account.</p>
-                      <p>The loan from the firm is secured by the securities that are purchased by the customer. Customers generally use margin to leverage their investments and increase their purchasing power. At the same time, customers who trade securities on margin incur the potential for higher losses; therefore, customers should make sure they clearly understand this concept before opening a margin account and entering the investing arena.</p>
+                      <p>Buying on margin is borrowing money from a broker in order to purchase stock. You can think of it as
+                          a loan from your brokerage. Margin trading allows you to buy more stock than you'd be able to
+                          normally. To trade on margin, you need a margin account.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Card -->
+                <!-- Card -->
+                <div class="card rounded-0 g-bg-gray-light-v4 g-brd-none">
+                  <div id="accordion-06-heading-09" class="u-accordion__header g-pa-20" role="tab">
+                    <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                      <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-09" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-09">
+                        What is Market Growth?
+                        <span class="u-accordion__control-icon g-ml-10">
+                          <i class="fa fa-angle-down"></i>
+                          <i class="fa fa-angle-up"></i>
+                        </span>
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="accordion-06-body-09" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-09" data-parent="#accordion-06">
+                    <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
+                      <p>A rise in interest for a particular product or service over a period of time. Market growth can be delayed
+                          if buyers do not adopt a high demand or find a product or service practical for their price level.<br><br>
+                          For example, a current technology might only be marketable to a limited set of buyers, however if the
+                          price of the technology reduces and its benefits in every day life increase, more buyers could strengthen
+                          demand. Our expert analyst are continually watching the movement of a stock and can almost
+                          determine when a particular product will hit its bottom or hit its high.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Card -->
+                <!-- Card -->
+                <div class="card rounded-0 g-bg-gray-light-v3 g-brd-none">
+                  <div id="accordion-06-heading-10" class="u-accordion__header g-pa-20" role="tab">
+                    <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                      <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-10" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-10">
+                        How do I get the Best Returns from my Investment?
+                        <span class="u-accordion__control-icon g-ml-10">
+                          <i class="fa fa-angle-down"></i>
+                          <i class="fa fa-angle-up"></i>
+                        </span>
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="accordion-06-body-10" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-10" data-parent="#accordion-06">
+                    <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
+                      <p>I am sure we all remember when we received that very first pay-check? The first time you could see the
+                          difference in what you made and what you took home. There’s a similarity when investing. There is
+                          usually a gap in the amount your portfolio earns in investment returns and in what actually lands in
+                          your pocket. However the difference between that and your pay-check, is the investment gap is
+                          something you can mitigate.<br><br>
+                          <span class="g-color-primary">Steiner Greves</span> can help in keeping your investor returns which can be and often are swallowed up by
+                          outrageous fees, bad investor behavior (for example terrible market timing or uncompensated risk from
+                          poor diversification), and other inefficiencies like a bad tax approach. This is the main reason Steiner
+                          Greves exists to give all our clients a more secure effective and more rewarding way to invest.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Card -->
+                <!-- Card -->
+                <div class="card rounded-0 g-bg-gray-light-v4 g-brd-none">
+                  <div id="accordion-06-heading-09" class="u-accordion__header g-pa-20" role="tab">
+                    <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                      <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-09" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-09">
+                        What is a Build and Buy Strategy?
+                        <span class="u-accordion__control-icon g-ml-10">
+                          <i class="fa fa-angle-down"></i>
+                          <i class="fa fa-angle-up"></i>
+                        </span>
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="accordion-06-body-09" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-09" data-parent="#accordion-06">
+                    <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
+                      <p>The strategy we used to build the business was to attract higher valuations and focus on helping our
+                          portfolio companies gain growth, grow in a short space of time but keeping a sensible and safe attitude
+                          – this is achieved through the pursuit of a buy and build strategy.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Card -->
+                <!-- Card -->
+                <div class="card rounded-0 g-bg-gray-light-v3 g-brd-none">
+                  <div id="accordion-06-heading-10" class="u-accordion__header g-pa-20" role="tab">
+                    <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                      <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-10" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-10">
+                        What is your Investment Experience at Steiner Greves ?
+                        <span class="u-accordion__control-icon g-ml-10">
+                          <i class="fa fa-angle-down"></i>
+                          <i class="fa fa-angle-up"></i>
+                        </span>
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="accordion-06-body-10" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-10" data-parent="#accordion-06">
+                    <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
+                      <p>Our team of investors from juniors to executive have a number of years of investment experience
+                          between them. Our aim is to ensure all our investors that this combined knowledge is applied in all
+                          investment, to assist our portfolio companies and individual clients to build the right portfolio and
+                          reach their maximum potential.</p>
                     </div>
                   </div>
                 </div>
