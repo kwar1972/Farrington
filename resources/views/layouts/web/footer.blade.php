@@ -61,7 +61,7 @@
       <!-- End Footer Content -->
 
       <!-- Footer Content -->
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6" style="padding-left: 150px !important;">
         <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
           <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
         </div>
