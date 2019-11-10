@@ -76,15 +76,15 @@
                               <hr class="g-color-white mt-0 mb-0">
                             </li>
                             <li class="dropdown-item">
-                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/commodities">Investment Management</a>
+                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/investman">Investment Management</a>
                               <hr class="g-color-white mt-0 mb-0">
                             </li>
                             <li class="dropdown-item">
-                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/commodities">Financial, Tax & Estate Planning</a>
+                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/fintax">Financial, Tax & Estate Planning</a>
                               <hr class="g-color-white mt-0 mb-0">
                             </li>
                             <li class="dropdown-item">
-                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/commodities">Insurance & Risk Management</a>
+                              <a class="nav-link g-px-0 g-color-white g-color-primary--hover" href="/insurance">Insurance & Risk Management</a>
                               <hr class="g-color-white mt-0 mb-0">
                             </li>
                         </ul>

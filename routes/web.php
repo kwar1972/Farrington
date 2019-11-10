@@ -48,6 +48,15 @@ Route::get('/forext', function () {
 Route::get('/commodities', function () {
     return view('web.commodities');
 });
+Route::get('/investman', function () {
+    return view('web.investman');
+});
+Route::get('/fintax', function () {
+    return view('web.fintax');
+});
+Route::get('/insurance', function () {
+    return view('web.insurance');
+});
 Route::get('/faq', function () {
     return view('web.faq');
 });
