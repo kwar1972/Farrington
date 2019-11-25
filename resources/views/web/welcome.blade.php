@@ -19,11 +19,8 @@
     <section class="g-py-100">
       <div class="container">
         <header class="text-center g-width-60x--md mx-auto g-mb-60">
-          <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
-            <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600">About Our Company</h2>
-          </div>
           <h3>Welcome to <span class="g-color-primary">Steiner Greves</span></h3>
-          <p class="lead text-justify">We owe our continued success to our team here at <span class="g-color-primary">Steiner Greves</span> and the understanding we have of our clients. Our ongoing strategy is to work side by side with both team and clients, to best understand their values, goals.</p>
+          <p class="lead text-justify">We owe our continued success to our team here at <span class="g-color-primary">Steiner Greves</span> and the understanding we have of our clients. Our ongoing strategy is to work side by side with our clients, to best understand their values and goals.</p>
         </header>
 
         <div class="row">
@@ -267,15 +264,12 @@
     <!-- End Gallery -->
     <!-- Our Focus -->
     <div class="consult_policy_inner consult_policy_area ">
-        <i class="fa fa-line-chart g-color-white pb-4" style="font-size: 46px;"></i>
         <h3 class="g-color-primary pb-4">Steiner Greves</h3>
-        <p class="g-color-white">Our objective and discipline further reaches to the way we manage our business:<br>
-
-            We pride ourself on giving you the best advice and act on behalf in a timely fashion, putting your best interests above all else.<br>
-            We ensure independent oversight of your assets by holding all client accounts at third-party custodians.<br>
-            Our fees are based on assets under management; hence, our interests are aligned with yours.<br>
-            The heart of what we do depends on helping our clients achieve their goals and obtain the peace of mind that a successful financial plan provides.<br>
-        </p>
+        <p class="g-color-white">We strive to give you the best advice possible and act in a timely fashion, putting
+          your interests above all else.<br>Through a personal Finance Manager we offer independent oversight of
+          your assets by holding all client accounts at third-party custodians.<br>Our fees are based on assets under
+          management; hence, our interests are aligned with yours.<br>The heart of what we do is helping our clients
+          achieve their financial goals, giving you a piece of mind that a successful financial plan provides.</p>
     </div>
     <!--End Our Focus -->
 @include('partials.calltoaction') 

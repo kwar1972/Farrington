@@ -5,7 +5,13 @@
                 <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
                   <h2 class="h3 u-heading-v2__title  g-color-black text-uppercase g-font-weight-600">Our Team</h2>
                 </div>
-                <h5 class="text-justify">Our highly qualified team comprises of chosen, dedicated professional whose credentials range from respected financial, investment and accounting firms. Together, we have over 80 years of experience in helping wealthy individuals and their families manage their capital. Among our qualified team at Steiner Greves are a highly qualified group of Chartered Life Underwriters, Financial Consultants, Certified Public Accountants and Financial Analysts. Steiner Greves brings specialized expertise through strategic partnerships that further enhance the depth and experience of our team. We utilize an Advisory Board for a synergistic analysis and direction on business ventures as well as tax issues and investments. Our Board members hold variant backgrounds encompassing legal and investment management, consulting and corporate management.</h5>
+                <h5 class="text-justify">Our highly qualified team comprises of chosen dedicated professional, whose credentials range from varied
+                  respected financial backgrounds, investment and accounting, chartered life underwriters, financial consultants,
+                  certified public accountants and financial analysts. Together, we have over 80 years of experience in helping wealthy
+                  individuals and their families manage their capital. Steiner Greves brings specialized expertise through strategic
+                  partnerships that further enhance the depth and experience of our team. We utilize an advisory board for a
+                  synergistic analysis and direction on business ventures as well as tax issues and investments. Our board members
+                  hold variant backgrounds encompassing legal and investment management, consulting and corporate management.</h5>
               </header>
             <br>
 <!-- Team Block -->
