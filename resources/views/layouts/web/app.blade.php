@@ -128,7 +128,11 @@
         });
         // initialization of carousel
         $.HSCore.components.HSCarousel.init('.js-carousel');
-
+        $('#carousel3').slick('setOption', 'customPaging', function (slider, i) {
+          var title = $(slider.$slides[i]).data('title');
+            
+          return '<i class="u-dot-line-v2 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mb-15--sm"><span class="u-dot-line-v2__inner g-bg-white--before g-brd-3--before--active g-brd-gray-light-v2--before g-brd-primary--before--active g-transition--ease-in g-transition-0_2"></span></i><span class="g-hidden-sm-down g-color-black g-font-size-15">' + title + '</span>';
+        }, true);
         // initialization of tabs
         $.HSCore.components.HSTabs.init('[role="tablist"]');
 

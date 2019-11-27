@@ -63,6 +63,9 @@ Route::get('/faq', function () {
 Route::get('/contact', function () {
     return view('web.contact');
 });
+Route::get('/investprocess', function () {
+    return view('web.investpro');
+});
 
 // BACKEND
 Route::get('/debug/{status}', 'HoldingController@checkDebug');

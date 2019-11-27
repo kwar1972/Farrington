@@ -206,3 +206,7 @@
 	padding-left: 24% !important;
 	padding-right: 24% !important;
   }
+}
+.g-min-height-600 {
+    min-height: 600px;
+}
