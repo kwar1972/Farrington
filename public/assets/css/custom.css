@@ -202,3 +202,6 @@
 	padding-left: 18% !important;
 	padding-right: 18% !important;
 }
+.g-min-height-600 {
+    min-height: 600px;
+}
