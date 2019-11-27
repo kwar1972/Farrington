@@ -188,6 +188,7 @@ class TradesController extends Controller
         $trade->userid = $request->clientid;
         $trade->tickerid = $request->tickerid;
         $trade->ipo = $ipo[0]->ipo;
+        $trade->sellpriceipo = $request->sellpriceipo;
         $trade->agentid = $request->agentid;
         $trade->amount = $request->amount;
         $trade->price = $request->price;

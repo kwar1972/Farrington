@@ -129,7 +129,14 @@
                                 </span>
                           </div>
                       </div>
-                      <div class="col-4 text-center">
+                      <div id="ipo" class="col-4 text-center">
+                          <label class="mb-1" class="mb-0"><b>IPO Price:</b></label>
+                          <div class='input-group'>
+                          <div class="input-group-prepend">
+                              <span class="input-group-text formicon-dark"><i class="fas fa-dollar-sign"></i></span>
+                            </div>
+                        <input type="text" class="form-control" id="ipoprice" name="ipoprice" value="">
+                      </div>
                       </div>
                       <div class="col-4 text-center">
                       </div>
