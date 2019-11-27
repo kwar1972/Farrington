@@ -178,12 +178,11 @@ class HoldingController extends Controller
             
             foreach($tickers as $ticker){
                 $intraday = $this->intraDay($ticker,$tickerscount);
-                if(!$intraday){
-                $intra = null;    
+                if(array_key_exists("intraday")){
+                    $intra = collect($intraday['intraday'], true);
+                    $intra->toArray();
+                    array_push($intra2, $intra);
                 }
-                $intra = collect($intraday['intraday'], true);
-                $intra->toArray();
-                array_push($intra2, $intra);
             }
             $intraday = collect($intra2, true);
                         
