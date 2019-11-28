@@ -5,7 +5,9 @@
                 <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
                   <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600">Our <span class="g-color-primary"> Investment Process</span></h2>
                 </div>
-                <p class="lead text-center">Benefits and trading conditions ideal for individual traders.</p>
+                <p class="lead text-center g-font-weight-700 g-color-primary">Benefits and trading conditions ideal for individual traders.</p>
+                <p>You will be assigned a personal finance manager: Your financial manager is responsible for providing
+                    you with financial guidance and support helping you make sound business decisions.</p>
               </header>
 
     <div class="row">
