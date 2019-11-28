@@ -16,12 +16,33 @@
                     <img src="img/company/company-2.jpg" alt="">
                 </div>
             </div>
-            <p class="text-justify g-pr-40 pt-4"><strong>Commodities are a physical product that has some commercial value and which can be traded bought, sold, produced or consumed. Domestic regulated Commodity Exchanges offer standardized commodity contracts in which one can diversify their portfolio and hedge against risk.</strong></p>
-            <p class="text-justify g-pr-40 pt-2"><span class="g-color-primary">Steiner Greves</span> accelerates your success with a data driven approach and powerful, award-winning energy and commodities (ETRM and CTRM) trading and risk management solutions. Regardless of your industry, our solutions put you in complete control of energy and commodities value chains, from production and processing through to distribution. We provide full support and transparency for procurement, supply and trading, with continuous risk controls throughout the trade life cycle. That’s why many of the world’s biggest and best-known companies partner with us to sharpen decision making and boost productivity.</p>
+            <p class="text-justify g-pr-40 pt-4"><strong>Commodities can be traded, bought, sold, produced or consumed due to being a
+              physical product that has commercial value. Regulated by Commodity
+              Exchanges who offer consistent commodity contracts in which one can diversify
+              their portfolio and hedge against risk.</strong></p>
+            <p class="text-justify g-pr-40 pt-2"><span class="g-color-primary">Steiner Greves</span> stimulates your progress with a data driven approach and impressive,
+              award-winning energy and commodities (ETRM and CTRM) trading and risk management
+              solutions. Regardless of the industry, our solutions put you in the driving seat, giving you
+              complete control of energy and commodities value chains, from distribution through to
+              production and processing. As well as giving you full support there will total transparency
+              for acquirement, supply and trading, with continuous risk controls throughout the trade
+              life cycle. This is why many of the globes largest and most well known companies partner
+              with us to sharpen their decision making, boost productivity and minimize risk.</p>
 
-            <p class="text-justify g-pr-40 pt-2">Whether you’re a multinational trading firm or a small to medium-sized commodity merchant, our solutions turn your complexity into simplicity, giving you the crucial and timely information you need to make confident trade decisions and the tools you need to execute. Connect the dots in your organization with complete cross-commodity visibility of your physical and financial assets. Leverage real-time risk analytic and reporting capabilities to drive smarter, faster decision-making, and remove risks from your supply chain. Simplify and automate your most critical business processes, and empower your organization.</p>
+            <p class="text-justify g-pr-40 pt-2">Whether you’re a multinational commodity trading company or a small to medium-sized
+              merchant, our solutions change your complexity to simplicity, offering you the crucial and
+              well timed information needed to make satisfied trade decisions along with the tools you
+              need to execute. Join the dots in your organization with full cross-commodity visibility of
+              your physical and financial holdings. Leverage real-time risk analytic and narrating
+              capabilities to drive smarter, quicker decision-making, and dismiss risks from your supply
+              chain. Reduce and automate your most critical business processes, and empower your
+              organization.</p>
                     
-            <p class="text-justify g-pr-40 pt-2">Join <span class="g-color-primary">Steiner Greves's</span> family we have over 1,200 energy and commodities clients, for feature-rich, scale-able solutions that strengthen your trading and supply business. <span class="g-color-primary">Steiner Greves</span>s commodities solutions cover the full spectrum of trade and risk requirements from flexible deal entry and advanced, real-time risk analytic and market data to complex, integrated logistics, inventory, supply chain, shipping and treasury functions.</p>
+            <p class="text-justify g-pr-40 pt-2">Join <span class="g-color-primary">Steiner Greves's</span> with over 5,000 energy and commodities clients, for feature-rich,
+              extensive solutions that bolster your trading and supply business. Steiner Greves
+              commodities solutions with a full spectrum of trade and risk obligation from malleable
+              deal entry and leading-edge, actual risk analytic, market data to complex, integrate
+              logistics, shipping, supply chain.</p>
         </div>
         <div class="col-sm-5 g-pr-40">
             <div id="accordion-06" class="u-accordion" role="tablist" aria-multiselectable="true">
@@ -30,7 +51,7 @@
                     <div id="accordion-06-heading-01" class="u-accordion__header g-pa-20" role="tab">
                       <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
                         <a class="d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-01" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="true" aria-controls="accordion-06-body-01">
-                          Market Growth
+                          Options trading gives you many advantages
                           <span class="u-accordion__control-icon g-ml-10">
                             <i class="fa fa-angle-down"></i>
                             <i class="fa fa-angle-up"></i>
@@ -40,8 +61,16 @@
                     </div>
                     <div id="accordion-06-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-06-heading-01" data-parent="#accordion-06">
                       <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                             <p>A rise in interest for a particular product or service over a period of time. Market growth can be delayed if buyers do not adopt a high demand or find a product or service practical for their price level.</p>
-                             <p>For example, a current technology might only be marketable to a limited set of buyers, however if the price of the technology reduces and its benefits in every day life increase, more buyers could strengthen demand. Our expert analyst are continually watching the movement ofastock and can almost determine when a particular product will hit its bottom or hit its high.</p>
+                        <p>Options trading gives you an array of powerful and effective advantages:</p>
+                        <ul>
+                          <li>Opportunity to speculate using the efficiency of leverage. This gives for
+                            greater potential returns, however this can also result in losses.</li>
+                            <li>Hedge your position to help minimize potential downside risk or to
+                              potentially generate income depending on whether you are bullish, bearish,
+                              or neutral.</li>
+                              <li>Access options on thousands of publicly traded stocks, indices, or other
+                                exchange-traded products to execute your trading plans.</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -52,7 +81,7 @@
                     <div id="accordion-06-heading-02" class="u-accordion__header g-pa-20" role="tab">
                       <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
                         <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-02" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-02">
-                          Getting the best returns
+                          Full access to the U.S markets
                           <span class="u-accordion__control-icon g-ml-10">
                             <i class="fa fa-angle-down"></i>
                             <i class="fa fa-angle-up"></i>
@@ -62,8 +91,17 @@
                     </div>
                     <div id="accordion-06-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-02" data-parent="#accordion-06">
                       <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                             <p>I am sure we all remember when we received that very first pay-check? The first time you could see the difference in what you made and what you took home. There’s a similarity when investing. There is usually a gap in the amount your portfolio earns in investment returns andinwhat actually lands in your pocket. However the difference between that and your pay-check, is the investment gap is something you can mitigate.</p>
-                             <p><span class="g-color-primary">Steiner Greves</span> can help in keeping your investor returns which can be and often are swallowed up by outrageous fees, bad investor behavior (for example terrible market timing or uncompensated risk from poor diversification), andotherinefficiencies like a bad tax approach. This is the main reason <span class="g-color-primary">Steiner Greves</span> exists to give all our clients a more secure effective and more rewarding way to invest.</p>
+                             <p>Trading options on the U.S markets gives you access to the largest liquid options
+                              market around the globe. With a greater more optionable stocks and indices
+                              accessible than there is on the Hong Kong Exchange, you will have direct access
+                              to larger trading opportunities and the potential to generate further
+                              diversification.</p>
+                             <p>Unalike warrants, equity-linked investments, or CBBC for which the cost and
+                              terms are decided by the issuers, the cost and terms of U.S options are decided
+                              by market factors. The contract size for most U.S equity options contracts is 100
+                              shares of the underlying stock, although contract size of Hong Kong options can
+                              differ largely from underlying stock to stock. Determine your strike price and
+                              expiry, based on your appetite for risk and trading objectives.</p>
                       </div>
                     </div>
                   </div>
@@ -74,7 +112,7 @@
                     <div id="accordion-06-heading-03" class="u-accordion__header g-pa-20" role="tab">
                       <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
                         <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-03" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-03">
-                          Buy and build strategy
+                          Trading in Futures
                           <span class="u-accordion__control-icon g-ml-10">
                             <i class="fa fa-angle-down"></i>
                             <i class="fa fa-angle-up"></i>
@@ -84,7 +122,29 @@
                     </div>
                     <div id="accordion-06-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-03" data-parent="#accordion-06">
                       <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                        <p>The strategy we used to build the business was to attract higher valuations and focus on helping our portfolio companies gain growth, grow in a short space of time but keeping a sensible and safe attitude – this is achieved through the pursuit of a buy and build strategy. </p>
+                        <h4>Discover al l you need to trade futures right here</h4>
+                        <p>Steiner Greves offers a very wide array of futures trading tools. The leading
+                            thinkorswim trading platform offers, total interaction, free technical studies,
+                            professional trading assistance, training and live futures pit audio are just part of
+                            the benefits you get, with no cost.</p>
+                        <h4>Futures Trading</h4>
+                        <p>Experienced derivatives traders enjoy the advantages of futures trading, such as
+                            diversification, leverage, and a nearly 24/6 market.</p>
+                        <p>Our clients have access to more than 50 futures products in commodities,
+                                currencies, energies, financials, indexes, and metals. You also have access to all
+                                the major futures exchanges. We charge no additional fees for streaming realtime
+                                futures data, charting, or news.</p>
+                        <h4>Transparency</h4>
+                        <p>Futures trading is conducted in a centralised open market where all participants
+                            can see trades, quotes, and rates.</p>
+                        <h4>Products</h4>
+                        <p>A wide range of futures products provides more opportunities to hedge positions
+                            in stock indexes, interest rates, currencies, agriculture, energy, and metals.</p>
+                        <h4>Risk</h4>
+                        <p>Unlike over-the-counter products, the futures that we offer are all exchange
+                            traded. Instead of dealing with multiple counterparties, every futures trade is
+                            cleared through the Chicago Mercantile Exchange (CME) clearing house, one of
+                            the world's leading central counterparty clearing providers.</p>
                       </div>
                     </div>
                   </div>
@@ -95,7 +155,7 @@
                   <div id="accordion-06-heading-04" class="u-accordion__header g-pa-20" role="tab">
                     <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
                       <a class="collapsed d-flex justify-content-between g-color-primary g-text-underline--none--hover" href="#accordion-06-body-04" data-toggle="collapse" data-parent="#accordion-06" aria-expanded="false" aria-controls="accordion-06-body-04">
-                        Investment Experience
+                        Trade stocks and ETFs with confidence
                         <span class="u-accordion__control-icon g-ml-10">
                           <i class="fa fa-angle-down"></i>
                           <i class="fa fa-angle-up"></i>
@@ -105,7 +165,16 @@
                   </div>
                   <div id="accordion-06-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-04" data-parent="#accordion-06">
                     <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                      <p>Our team of investors from juniors to executive have a number of years of investment experience between them. Our aim is to ensure all our investors that this combined knowledge is applied in all investment, to assist our portfolio companies and individual clients to build therightportfolio and reach their maximum potential. </p>
+                      <p>Trade stocks and ETFs by accessing a spectrum of resources like real-time quotes,
+                          charts, third-party analysis reports, and the most advanced trading platforms to
+                          ensure you have the power to build your strategy the way you want.</p>
+                      <h4>ETFs made easier</h4>
+                      <p>ETFs are essentially a basket of investments that:</p>
+                      <ul>
+                        <li>Trade like stocks, providing diversification at a low cost</li>
+                        <li>Have the diversity of a managed fund, but with higher liquidity and usually
+                            lower fund management fees</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
