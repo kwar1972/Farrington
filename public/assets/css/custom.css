@@ -210,3 +210,7 @@
 .g-min-height-600 {
     min-height: 600px;
 }
+.text-justify{
+	text-align: justify;
+	text-justify: inter-character !important;
+  }
