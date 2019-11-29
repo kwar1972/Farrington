@@ -39,27 +39,26 @@
         </div>
     </div>
     <header class="text-center g-width-60x--md mx-auto g-mb-60 g-mt-80">
-            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-10">
+            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
               <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Robust Trading <span class="g-color-primary">Execution</span></h2>
             </div>
-            {{-- <p class="lead text-center"><span class="g-color-primary g-font-weight-600">Synapsis v1.0</span> , a platform you can depend on!</p> --}}
+            <p class="lead text-center"><span class="g-color-primary g-font-weight-600">Synapsis v1.0</span> , a platform you can depend on!</p>
           </header>
+    
 </div>
-{{-- <div class="text-center pb-5"><img src="img/screens/synapsis-1.png"></div> --}}
 <!-- Info Blocks -->
 <div class="row no-gutters">
     <!-- Info Image -->
-    
+    <div class="col-lg-7 g-min-height-360 g-bg-size-cover g-bg-pos-center" data-bg-img-src="img/screens/synapsis-1.png"></div>
     <!-- End Info Image -->
   
-    <div class="col-lg-12 g-bg-gray-dark-v1 pt-5 g-pb-40 g-px-40">
+    <div class="col-lg-5 g-bg-gray-dark-v1 g-pt-140 g-pb-40 g-px-40">
       <header class="text-uppercase g-mb-35">
-        <div class="g-mb-30 text-center">
+        <div class="g-mb-30">
           <h2 class="h2 g-color-white g-font-weight-700 mb-0">Synapsis v1.0</h2>
           <h5 class="g-color-primary" >A platform you can depend on!</h5>
         </div>
       </header>
-      
       <div class="row align-items-stretch">
         <div class="col-sm-6 g-mb-30">
           <!-- Article -->
