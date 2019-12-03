@@ -139,7 +139,7 @@
         </header>
       <div class="col-sm-2"></div>
       <div class="col-sm-4">
-          <img class="img-fluid float-right pl-5" src="img/equities2.jpg" alt="" >
+          <img class="img-fluid float-right pl-5" src="img/equities4.jpg" alt="" >
       </div>
       <div class="col-sm-4">
         <ul>
@@ -160,7 +160,7 @@
       </header>
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
-        <img class="img-fluid float-right pl-5" src="img/equities2.jpg" alt="" >
+        <img class="img-fluid float-right pl-5" src="img/equities6.png" alt="" >
     </div>
     <div class="col-sm-4">
       <p class="text-justify g-pr-40">Equity investment is when you buy one or more shares in a company and invest directly
@@ -175,7 +175,7 @@
     </div>
     <div class="col-sm-2"></div>
   </div>
-  <div class="row">
+  <div class="row g-mb-60">
       <header class="text-center g-width-60x--md mx-auto g-mb-20">
         <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
           <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Who would benefit from <span class="g-color-primary">investing in equities?</span></h2>
@@ -183,7 +183,7 @@
       </header>
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
-        <img class="img-fluid float-right pl-5" src="img/equities2.jpg" alt="" >
+        <img class="img-fluid float-right pl-5" src="img/equities3.jpg" alt="" >
     </div>
     <div class="col-sm-4">
       <p class="text-justify g-pr-40">Stock markets can fluctuate this is due to country economics and market stress. For this
@@ -204,7 +204,7 @@
       </header>
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
-        <img class="img-fluid float-right pl-5" src="img/equities2.jpg" alt="" >
+        <img class="img-fluid float-right pl-5" src="img/equities5.jpg" alt="" >
     </div>
     <div class="col-sm-4">
           <ul>
