@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
+    $('#ipo').hide()
     $('#status').on('change', function(){
       if($('#status').val() == 'Confirmed' || $('#status').val() == 'Purchased' || $('#status').val() == 'Invoiced' || $('#status').val() == 'Sold'){
         $('#purchaseddeiv').show();
@@ -314,6 +315,7 @@ function getPrice(){
     $('#createModal').modal('show');
     $('#amount').val(' ');
     $('#total').val(' ');
+    $('#ipoprice').val(' ');
   };
 
 
@@ -343,7 +345,8 @@ function getPrice(){
     "amount" : $('#amount').val(),
     "price" : $('#price').val(),
     "fee" : $('#fee').val(),
-    "total" : $('#total').val()
+    "total" : $('#total').val(),
+    "sellpriceipo" : $('#ipoprice').val()
   }
       $.ajax({
         type:'GET',
@@ -416,6 +419,9 @@ function open_editModal(id) {
     $("#status").val(data.status);
     $('#deposit').datepicker().children('input').val(data.deposit_at);
     $('#btnCluster').html('<p class="btn btn-sm btn-outline-success" data-dismiss="modal" onClick="save_formTE(' + data.id + ')">Save</p> <p class="btn btn-sm btn-outline-danger" data-dismiss="modal">Cancel</p>');
+    if(data.ipo == 1){
+      $('#ipo').show()
+    }
   }
 };
 
@@ -437,7 +443,8 @@ function save_formTE(id){
     "total" : $('#total').val(),
     "status" : $('#status').val(),
     "deposit" : $('#deposit').datepicker().children('input').val(),
-    "purchased" : $('#purchased').datepicker().children('input').val()
+    "purchased" : $('#purchased').datepicker().children('input').val(),
+    "sellpriceipo" : $('#ipoprice').val()
   }
       $.ajax({
         type:'GET',
