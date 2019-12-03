@@ -178,9 +178,11 @@ class HoldingController extends Controller
             
             foreach($tickers as $ticker){
                 $intraday = $this->intraDay($ticker,$tickerscount);
-                $intra = collect($intraday['intraday'], true);
-                $intra->toArray();
-                array_push($intra2, $intra);
+                if(array_key_exists("intraday", $intraday)){
+                    $intra = collect($intraday['intraday'], true);
+                    $intra->toArray();
+                    array_push($intra2, $intra);
+                }
             }
             $intraday = collect($intra2, true);
                         
@@ -236,7 +238,7 @@ class HoldingController extends Controller
                 $ticker = $tradesraw['get_ticker']['ticker'];
                 $amount = $tradesraw['amount'];
                 $pricepaid = $tradesraw['price'];
-                $pricesell = $tradesraw['price'];
+                $pricesell = $tradesraw['sellpriceipo'];
             };
             $totalpaid = $tradesraw['total'];
             $totpos = $amount * $pricesell;
