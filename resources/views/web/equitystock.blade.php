@@ -12,8 +12,8 @@
                 <div class="col-sm-12 col-md-6">
                     <img class="img-fluid" src="img/equities1.jpg" alt="" >
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <img class="img-fluid float-right" src="img/equities2.jpg" alt="" >
+                <div class="col-sm-12 col-md-6 text-right">
+                    <img class="img-fluid" src="img/equities2.jpg" alt="" >
                 </div>
             </div>
             <p class="text-justify  pt-4"><strong>We have a unique understanding of the equity markets and the significance it has for our
