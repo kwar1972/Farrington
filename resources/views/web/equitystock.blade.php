@@ -7,42 +7,42 @@
       </div>
     </header>
     <div class="row">
-        <div class="col-sm-7 g-px-120">
+        <div class="col-sm-7">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                     <img class="img-fluid" src="img/equities1.jpg" alt="" >
                 </div>
-                <div class="col-sm-6">
-                    <img class="img-fluid pl-5" src="img/equities2.jpg" alt="" >
+                <div class="col-sm-12 col-md-6">
+                    <img class="img-fluid float-right" src="img/equities2.jpg" alt="" >
                 </div>
             </div>
-            <p class="text-justify g-pr-40 pt-4"><strong>We have a unique understanding of the equity markets and the significance it has for our
+            <p class="text-justify  pt-4"><strong>We have a unique understanding of the equity markets and the significance it has for our
               clients success. When we present a new recommendation to our clients, we have fully
               researched and analytically proved the recommendation to be reliable for their
               consideration, as a viable investment opportunity.</strong></p>
-            <p class="text-justify g-pr-40 pt-2">We do not present clients with recommendations that are based on hearsay or historical
+            <p class="text-justify  pt-2">We do not present clients with recommendations that are based on hearsay or historical
               performance, far from it. The structured approach adopted by our team of analysts, of
               which are continually researching the markets for opportunities that are not only current,
               but worthy of meeting the exacting demands that our clients expect. This disciplined
               approach to market analysis is why, on occasions, we will offer opportunities that our
               competitors may deem ‘out-of-the box’.</p>
 
-            <p class="text-justify g-pr-40 pt-2">Even if your past experience and interests is in Blue-chip Stock, Ordinary Shares, Initial
+            <p class="text-justify  pt-2">Even if your past experience and interests is in Blue-chip Stock, Ordinary Shares, Initial
               Public Offerings, (IPOs), Startup Funding, Preferred Stock or Common Stock. We will
               present you with analytically researched investment opportunities, over a diverse range
               of financial products, in numerous markets and on various platforms which are worthy for
               your consideration, is of priority to us.</p>
                     
-            <p class="text-justify g-pr-40 pt-2">Our equity advisors and managers are fully qualified to impart their knowledge, in
+            <p class="text-justify  pt-2">Our equity advisors and managers are fully qualified to impart their knowledge, in
               conjunction with that of our analysts, with you. They thrive on being able to offer their
               clients opportunities that they know are thoroughly researched winners.</p>
                     
-            <p class="text-justify g-pr-40 pt-2 pb-5">This ensures that we not only earn but build and maintain our reputation with you as a
+            <p class="text-justify  pt-2 pb-5">This ensures that we not only earn but build and maintain our reputation with you as a
               company that you can rely upon for its valued source of impartial and beneficial
               investment advice to its clients.</p>
         </div>
         
-        <div class="col-sm-5 g-pr-40">
+        <div class="col-sm-5 ">
             <div id="accordion-06" class="u-accordion" role="tablist" aria-multiselectable="true">
                   <!-- Card -->
                   <div class="card rounded-0 g-bg-gray-light-v4 g-brd-none">
@@ -163,9 +163,9 @@
         <img class="img-fluid float-right pl-5" src="img/equities6.png" alt="" >
     </div>
     <div class="col-sm-4">
-      <p class="text-justify g-pr-40">Equity investment is when you buy one or more shares in a company and invest directly
+      <p class="text-justify ">Equity investment is when you buy one or more shares in a company and invest directly
           in that business.</p>
-      <p class="text-justify g-pr-40">You buy your equity shares and receive returns in the form of a dividend which the
+      <p class="text-justify ">You buy your equity shares and receive returns in the form of a dividend which the
           company may choose to pay – often annually, however it can be at the company's
           discretion. It's important to note that the value of your equity investment may increase
           or fall depending on the underlying value of the company.Many investors, treat equity
@@ -186,7 +186,7 @@
         <img class="img-fluid float-right pl-5" src="img/equities3.jpg" alt="" >
     </div>
     <div class="col-sm-4">
-      <p class="text-justify g-pr-40">Stock markets can fluctuate this is due to country economics and market stress. For this
+      <p class="text-justify ">Stock markets can fluctuate this is due to country economics and market stress. For this
           reason equities are suited for those who:</p>
           <ul>
             <li>Are willing to invest for the extensive term.</li>
