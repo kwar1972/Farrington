@@ -9,10 +9,10 @@
     <div class="row">
         <div class="col-sm-7">
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6 text-center">
                     <img class="img-fluid" src="img/equities1.jpg" alt="" >
                 </div>
-                <div class="col-sm-12 col-md-6 text-right">
+                <div class="col-sm-12 col-md-6 text-center">
                     <img class="img-fluid" src="img/equities2.jpg" alt="" >
                 </div>
             </div>
