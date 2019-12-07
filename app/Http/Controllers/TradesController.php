@@ -133,7 +133,7 @@ class TradesController extends Controller
         $trade->status = 'Pending';
         $trade->created_at = Carbon::now()->toDateTimeString();
         $trade->updated_at = Carbon::now()->toDateTimeString();
-        
+        //dd($trade);
         try {
             $trade->save();
             $message = '1';

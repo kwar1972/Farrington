@@ -14,7 +14,7 @@ class AddIpopriceToTrade extends Migration
     public function up()
     {
         Schema::table('trades', function (Blueprint $table) {
-            $table->decimal('sellpriceipo',11,2)->after('ipo');
+            $table->decimal('sellpriceipo',11,2)->after('ipo')->nullable();
         });
     }
 
