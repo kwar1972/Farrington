@@ -43,7 +43,7 @@
       <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
         <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Personal <span class="g-color-primary">Finance Manager</span></h2>
       </div>
-      <img class="img-responsive mb-4" src="img/Woman on phone.png">
+      <img class="img-fluid mb-4" src="img/Woman on phone.png">
       <p class="lead text-center"><span class="g-color-black g-font-weight-600">Your personal finance manager at <span class="g-color-primary">Steiner Greves</span><br>is on hand to help you with your trading platform and
         account queries.</p>
     </header>
