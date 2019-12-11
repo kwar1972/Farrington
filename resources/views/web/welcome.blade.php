@@ -41,9 +41,9 @@
       </div>
     </section>
     <!-- End About Us -->
-<div class="container" style="height:500px;">
+<div class="container" style="height:1000px;">
     <!-- Icon Blocks -->
-      <div class="row text-center" style="height:250px;">
+      <div class="row text-center" style="height:500px;">
         <div class="col-md-4 g-mb-30">
             <div class="flip-card">
                 <div class="flip-card-inner">
@@ -90,7 +90,7 @@
               </div>
         </div>
       </div>
-      <div class="row text-center" style="height:250px;">
+      <div class="row text-center" style="height:400px;">
         <div class="col-md-4 g-mb-30">
             <div class="flip-card">
                 <div class="flip-card-inner">
