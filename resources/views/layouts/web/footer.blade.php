@@ -120,7 +120,7 @@
           <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2018 &copy; All Rights Reserved.</small>
           <ul class="u-list-inline">
             <li class="list-inline-item">
-              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/docs/Steiner-Greves-Policy-on-Privacy-Protection.pdf">Policy on Privacy Protection</a>
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/docs/Steiner-Greves-Policy-on-Privacy-Protection.pdf">Privacy Policy</a>
             </li>
             <li class="list-inline-item">
               <span>|</span>
@@ -136,6 +136,9 @@
             </li>
             <li class="list-inline-item">
               <span>|</span>
+            </li>
+            <li class="list-inline-item">
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/docs/Steiner-Greves-Risk-Disclosure.pdf">Risk Disclosure</a>
             </li>
           </ul>
         </div>
