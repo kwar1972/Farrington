@@ -139,10 +139,10 @@
                     <!-- Figure Info -->
                     <div class="g-mb-30">
                       <h4 class="h5 g-color-black g-mb-5">Johanna Shutts</h4>
-                      <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Office Manager</em>
+                      <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Administrative Manager</em>
                     </div>
-                    <p class="text-justify">Johanna is the Receptionist/Office Manager at Richardson Financial Group and in that role she is responsible for serving as the initial point of contact for clients, vendors and guests of the firm. Johanna is also responsible for maintaining and improving all operational aspects of the firm. She is also a member of the investment and insurance client service teams where she assists with various service issues.<br><br>
-                    Johanna attended Vienna University of Technology Technical College and has a Masters in Business Administration (MBA). She has over 22 years of experience as an executive assistant and office manager. She has also worked for several top advertising agencies.<br><br>
+                    <p class="text-justify">Johanna is the Administrative Manager at Steiner Greves and in that role she is responsible for serving as the initial point of contact for clients, vendors and guests of the firm. Johanna is also responsible for maintaining and improving all operational aspects of the firm. She is also a member of the investment and insurance client service teams where she assists with various service issues.<br><br>
+                    Johanna attended Vienna University of Technology Technical College and has a Masters in Business Administration (MBA). She has over 11 years of experience as an executive assistant and Administrative Manager. She has also worked for several top advertising agencies.<br><br>
                     </p>
                     <!-- End Figure Info -->
                   </div>
