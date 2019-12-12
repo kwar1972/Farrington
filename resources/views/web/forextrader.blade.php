@@ -8,7 +8,7 @@
       <p class="lead text-center g-font-size-20 text-uppercase"><span class="g-color-black">Do you want to <span class="g-color-primary g-font-weight-600">trade now ?</span></p>
     </header>
     <div class="row">
-        <div class="col-sm-7 g-px-120">
+        <div class="col-sm-12 g-px-120">
             <div class="row">
                 <div class="col-sm-12">
                     <img class="img-fluid" src="img/forex2.jpg" alt="">
@@ -44,140 +44,6 @@
               the Chinese currency against another currency, say, the US dollar. The more the Chinese currency
               devalued against the US dollar, the higher your profits. If the Chinese currency increases in value while
               you have your sell position open, then your losses increase and you want to get out of the trade.</p>
-        </div>
-        <div class="col-sm-5 g-pr-40">
-            <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https:/s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-    {
-    "colorTheme": "dark",
-    "dateRange": "12m",
-    "showChart": true,
-    "locale": "en",
-    "largeChartUrl": "",
-    "isTransparent": false,
-    "width": "400",
-    "height": "660",
-    "plotLineColorGrowing": "rgba(33, 150, 243, 1)",
-    "plotLineColorFalling": "rgba(33, 150, 243, 1)",
-    "gridLineColor": "rgba(233, 233, 234, 1)",
-    "scaleFontColor": "rgba(120, 123, 134, 1)",
-    "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
-    "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
-    "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
-    "tabs": [
-      {
-        "title": "Indices",
-        "symbols": [
-          {
-            "s": "INDEX:NKY",
-            "d": "Nikkei 225"
-          },
-          {
-            "s": "OANDA:UK100GBP",
-            "d": "FTSE 100"
-          },
-          {
-            "s": "TSX:ABX",
-            "d": "Barrick Gold Corp"
-          },
-          {
-            "s": "NASDAQ:GWPH",
-            "d": "GW Pharmaceuticals"
-          }
-        ],
-        "originalTitle": "Indices"
-      },
-      {
-        "title": "Commodities",
-        "symbols": [
-          {
-            "s": "CME_MINI:ES1!",
-            "d": "E-Mini S&P"
-          },
-          {
-            "s": "CME:E61!",
-            "d": "Euro"
-          },
-          {
-            "s": "COMEX:GC1!",
-            "d": "Gold"
-          },
-          {
-            "s": "NYMEX:CL1!",
-            "d": "Crude Oil"
-          },
-          {
-            "s": "NYMEX:NG1!",
-            "d": "Natural Gas"
-          },
-          {
-            "s": "CBOT:ZC1!",
-            "d": "Corn"
-          }
-        ],
-        "originalTitle": "Commodities"
-      },
-      {
-        "title": "Bonds",
-        "symbols": [
-          {
-            "s": "CME:GE1!",
-            "d": "Eurodollar"
-          },
-          {
-            "s": "CBOT:ZB1!",
-            "d": "T-Bond"
-          },
-          {
-            "s": "CBOT:UD1!",
-            "d": "Ultra T-Bond"
-          },
-          {
-            "s": "EUREX:GG1!",
-            "d": "Euro Bund"
-          },
-          {
-            "s": "EUREX:II1!",
-            "d": "Euro BTP"
-          },
-          {
-            "s": "EUREX:HR1!",
-            "d": "Euro BOBL"
-          }
-        ],
-        "originalTitle": "Bonds"
-      },
-      {
-        "title": "Forex",
-        "symbols": [
-          {
-            "s": "FX:EURUSD"
-          },
-          {
-            "s": "FX:GBPUSD"
-          },
-          {
-            "s": "FX:USDJPY"
-          },
-          {
-            "s": "FX:USDCHF"
-          },
-          {
-            "s": "FX:AUDUSD"
-          },
-          {
-            "s": "FX:USDCAD"
-          }
-        ],
-        "originalTitle": "Forex"
-      }
-    ]
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
         </div>
     </div>
 </div>
