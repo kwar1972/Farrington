@@ -8,7 +8,7 @@
       <p class="lead text-center g-font-size-20 text-uppercase"><span class="g-color-black">Do you want to <span class="g-color-primary g-font-weight-600">trade now ?</span></p>
     </header>
     <div class="row">
-        <div class="col-sm-12 g-px-120">
+        <div class="col-sm-12 g-px-150">
             <div class="row">
                 <div class="col-sm-12">
                     <img class="img-fluid" src="img/forex2.jpg" alt="">
