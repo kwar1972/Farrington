@@ -121,5 +121,5 @@
   </div>
   <!-- End Info Blocks -->
 
-
+@include('partials.calltoaction') 
 @endsection
