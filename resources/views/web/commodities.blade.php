@@ -7,9 +7,9 @@
       </div>
     </header>
     <div class="row">
-        <div class="col-sm-7 g-px-120">
+        <div class="col-sm-12 g-px-120 pb-5">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 text-center">
                     <img class="img-fluid" src="img/commodities2.jpg" alt="">
                 </div>
             </div>
@@ -41,7 +41,9 @@
               deal entry and leading-edge, actual risk analytic, market data to complex, integrate
               logistics, shipping, supply chain.</p>
         </div>
-        <div class="col-sm-5 g-pr-40">
+    </div>
+        <div class="row">
+        <div class="col-sm-12 g-px-120">
             <div id="accordion-06" class="u-accordion" role="tablist" aria-multiselectable="true">
                   <!-- Card -->
                   <div class="card rounded-0 g-bg-gray-light-v4 g-brd-none">
