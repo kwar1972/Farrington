@@ -10,7 +10,7 @@
         <div class="col-sm-7 g-px-120">
             <div class="row">
                 <div class="col-sm-12">
-                    <img class="img-fluid" src="img/commodities.png" alt="">
+                    <img class="img-fluid" src="img/commodities.jpg" alt="">
                 </div>
             </div>
             <p class="text-justify pt-4"><strong>Commodities can be traded, bought, sold, produced or consumed due to being a
