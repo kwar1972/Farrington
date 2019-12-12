@@ -14,14 +14,22 @@
                     <img class="img-fluid" src="img/forex2.jpg" alt="">
                 </div>
             </div>
-            <p class="text-justify g-pr-40 pt-4 text-uppercase"><strong>What is <span class="g-color-primary g-font-weight-600">Forex</span>?</strong></p>
-            <p class="text-justify g-pr-40">Forex, also referred to as the foreign exchange, FX or currency trading, is a decentralized world market
+            <header class="text-center g-width-60x--md mx-auto g-mb-20 g-mt-20">
+              <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+                <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">What is <span class="g-color-primary g-font-weight-600">Forex?</span></h2>
+              </div>
+            </header>
+            <p class="text-justify g-pr-40 g-pb-20">Forex, also referred to as the foreign exchange, FX or currency trading, is a decentralized world market
               where all the world's currencies trade. The forex market is the biggest, most liquid market on the planet
               with an average daily trading volume exceeding $5 trillion. All the world's combined stock markets
               don't even come close to this. What does that mean to you? Have a closer look at forex trading and you
               may find some exciting trading opportunities unavailable with other investments.</p>
-              
-            <p class="text-justify g-pr-40 pt-2 text-uppercase"><strong>FOREX TRANSACTION: <span class="g-color-primary g-font-weight-600">IT'S ALL IN THE EXCHANGE</span></strong></p>
+            
+            <header class="text-center g-width-60x--md mx-auto g-mb-20 g-mt-20">
+              <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+                <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">FOREX TRANSACTION: <span class="g-color-primary g-font-weight-600">IT'S ALL IN THE EXCHANGE</span></h2>
+              </div>
+            </header>
             <p class="text-justify g-pr-40">If you've ever traveled overseas, you've made a forex transaction. Take a trip to France and you convert
               your pounds into euros. When you do this, the forex exchange rate between the two currencies based
               on supply and demand determines how many euros you get for your pounds. And the exchange rate
@@ -33,8 +41,12 @@
               simply exchanging one currency for another costs you more depending on when you do it? These few
               pennies add up quickly. In both cases, you as a traveler or a business owner may want to hold your
               money until the forex exchange rate is more favorable.</p>
-              
-            <p class="text-justify g-pr-40 pt-2 text-uppercase"><strong>IN FOREX: <span class="g-color-primary g-font-weight-600">WHAT'S YOUR OPINION?</span></strong></p>
+            
+            <header class="text-center g-width-60x--md mx-auto g-mb-20 g-mt-20">
+              <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+                <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">IN FOREX: <span class="g-color-primary g-font-weight-600">WHAT'S YOUR OPINION?</span></h2>
+              </div>
+            </header>
             <p class="text-justify g-pr-40 pt-2">Just like stocks, you can trade currency based on what you think its value is (or where it's headed). But
               the big difference with forex is that you can trade up or down just as easily. If you think a currency will
               increase in value, you can buy it. If you think it will decrease, you can sell it. With a market this large,
