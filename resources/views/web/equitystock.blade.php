@@ -96,52 +96,60 @@
       </div>
       <div class="col-sm-3"></div>
     </div>
-  <div class="row g-mb-60">
-      <header class="text-center g-width-60x--md mx-auto g-mb-20">
-        <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
-          <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Who would benefit from <span class="g-color-primary">investing in equities?</span></h2>
+    <div class="row g-mb-60">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <header class="text-center g-width-60x--md mx-auto g-mb-20">
+              <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+                <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Who would benefit from <span class="g-color-primary">investing in equities?</span></h2>
+              </div>
+            </header>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="img-fluid float-right pl-5" src="img/equities3.jpg" alt="" >
+            </div>
+            <div class="col-sm-8">
+                <p class="text-justify ">Stock markets can fluctuate this is due to country economics and market stress. For this
+                    reason equities are suited for those who:</p>
+                    <ul>
+                      <li>Are willing to invest for the extensive term.</li>
+                      <li>Have an awareness and understanding of the market accept that while they are
+                          likely to receive great returns, they can also potentially lose money.</li>
+                    </ul>
+            </div>
+          </div>
         </div>
-      </header>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-4">
-        <img class="img-fluid float-right pl-5" src="img/equities3.jpg" alt="" >
-    </div>
-    <div class="col-sm-4">
-      <p class="text-justify ">Stock markets can fluctuate this is due to country economics and market stress. For this
-          reason equities are suited for those who:</p>
-          <ul>
-            <li>Are willing to invest for the extensive term.</li>
-            <li>Have an awareness and understanding of the market accept that while they are
-                likely to receive great returns, they can also potentially lose money.</li>
-          </ul>
-    </div>
-    <div class="col-sm-2"></div>
-  </div>
-  <div class="row g-mb-60">
-      <header class="text-center g-width-60x--md mx-auto g-mb-20">
-        <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
-          <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Risks <span class="g-color-primary">and benefits</span></h2>
+        <div class="col-sm-3"></div>
+      </div>
+      <div class="row g-mb-60">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+              <header class="text-center g-width-60x--md mx-auto g-mb-20">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+                  <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600 text-uppercase">Risks <span class="g-color-primary">and benefits</span></h2>
+                </div>
+              </header>
+            <div class="row">
+              <div class="col-sm-4">
+                <img class="img-fluid float-right pl-5" src="img/equities5.jpg" alt="" >
+              </div>
+              <div class="col-sm-8">
+                  <ul>
+                      <li>You will potentially get higher returns than if you invested in cash deposits bonds.</li>
+                      <li>The cost of stocks and shares may rise over time, making your portfolio worth
+                          probably more in the future.</li>
+                      <li>The returns you will get are not known so it can be hard to plan your finances. You
+                          may lose all your investment, if the company you invested in goes bankrupt.</li>
+                      <li>The cost of a stock can shift in the financial market and fluctuation can be
+                          extreme. Consequently you will experience investment loss if the cost falls. Past
+                          performance is not indicative of future results, investments can go down as well as
+                          up.</li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3"></div>
         </div>
-      </header>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-4">
-        <img class="img-fluid float-right pl-5" src="img/equities5.jpg" alt="" >
-    </div>
-    <div class="col-sm-4">
-          <ul>
-            <li>You will potentially get higher returns than if you invested in cash deposits bonds.</li>
-            <li>The cost of stocks and shares may rise over time, making your portfolio worth
-                probably more in the future.</li>
-            <li>The returns you will get are not known so it can be hard to plan your finances. You
-                may lose all your investment, if the company you invested in goes bankrupt.</li>
-            <li>The cost of a stock can shift in the financial market and fluctuation can be
-                extreme. Consequently you will experience investment loss if the cost falls. Past
-                performance is not indicative of future results, investments can go down as well as
-                up.</li>
-          </ul>
-    </div>
-    <div class="col-sm-2"></div>
-  </div>
 </div>
 @include('partials.calltoaction') 
 @endsection
