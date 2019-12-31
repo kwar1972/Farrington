@@ -74,7 +74,7 @@
             <i class="fa fa-map-marker g-color-primary"></i>
           </span>
         </div>
-        <p class="mb-0">795 Folsom Ave, Suite 600, <br> Austria, AU 94107 795</p>
+        <p class="mb-0">Rotenturmstraße 16-18,<br> 1010 Wien, Austria</p>
       </div>
       <!-- End Location -->
 
@@ -85,7 +85,7 @@
             <i class="fa fa-phone g-color-primary"></i>
           </span>
         </div>
-        <p class="mb-0">(+437) 856 2958 <br> (+437) 856 2959</p>
+        <p class="mb-0">+43 720 022054 <br> +43 720 022076</p>
       </div>
       <!-- End Phone -->
 

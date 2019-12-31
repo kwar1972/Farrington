@@ -147,7 +147,7 @@
                     <h4 class="g-color-white">Contact <span class="g-color-primary">Steiner Greves</span></h4>
                     <p class="g-color-white">for a No Obligation Consultation</p>
                     <div class="contact_d">
-                        <a class="contact-fix" href="tel:+43720775910">+437 856 2958</a> <span class="g-color-white"> | </span>
+                        <a class="contact-fix" href="tel:+43720775910">+43 720 022054</a> <span class="g-color-white"> | </span>
                         <a class="contact-fix" href="mailto:support@steinergraves.com?subject= Contact from from website">support@steinergreves.com</a>
                     </div>
                 </div>
