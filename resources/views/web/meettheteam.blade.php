@@ -69,7 +69,7 @@
                   <h4 class="h5 g-color-black g-mb-5">Chris Stephens</h4>
                   <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Director of Investment Management/Senior Wealth Advisor</em>
                 </div>
-                <p class="text-justify">Chris is the Director of Investment Management at <span class="g-color-primary">Steiner Greves</span>. Chris’s main tasks include investment research and portfolio management. Additionally, Chris serves as the client relationship team senior member. Hes also a serving Member of <span class="g-color-primary">Steiner Greves</span> Investment Committee and Executive Committee.<br><br>
+                <p class="text-justify">Chris is the Director of Investment Management at <span class="g-color-primary">Steiner Greves</span>. Chris’s main tasks include investment research and portfolio management. Additionally, Chris serves as the client relationship team senior member. Hes also a serving Member of <span class="g-color-primary">Steiner Greves</span> Investment Committee and Executive Committee.<br>
                 Chris’s role as Director of Investment Management, include overseeing the management of the investment strategies utilized in client portfolios. He is also responsible for portfolio construction, rebalancing of client portfolios investment due diligence/selection, and asset allocation.<br><br>
                 Chris became part of the team at <span class="g-color-primary">Steiner Greves</span> in June 2010 with over 25 years of investment management experience equity mutual funds, managing diversified portfolios, and separate account strategies. Before joining <span class="g-color-primary">Steiner Greves</span>, he was an Investment Officer at Foresight Wealth Management where he was responsible for portfolio construction, asset allocation and investment due diligence/selection.<br><br>
                 Previous to <span class="g-color-primary">Steiner Greves</span>, John spent 15 years at BMO Global Asset Management where he held a variety of investment management roles. Chris was the Fund Manager of the BMO Dividend Income Mutual Fund and BMO Large-Cap Value Mutual Fund. Additionally, Chris ran the companies Fundamental Index strategies, Tax Efficient Portfolio Strategy.</p>
@@ -156,7 +156,7 @@
                 <!-- End Figure -->
               </div>
         </div>
-        <div class="row">
+        <div class="row pt-5">
           <div class="col-md-6 ml-md-auto">
             <!-- Carousel Nav -->
             <div id="js-carousel-sync-nav" class="js-carousel u-carousel-v10-nav" data-slides-show="4" data-slides-scroll="1" data-focus-on-select="true" data-center-mode="true" data-nav-for="#js-carousel-sync-for">
