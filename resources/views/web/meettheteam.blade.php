@@ -157,7 +157,7 @@
               </div>
         </div>
         <div class="row pt-5">
-          <div class="col-md-6 ml-md-auto">
+          <div class="col-md-6 ml-md-auto mt-5 pt-5">
             <!-- Carousel Nav -->
             <div id="js-carousel-sync-nav" class="js-carousel u-carousel-v10-nav" data-slides-show="4" data-slides-scroll="1" data-focus-on-select="true" data-center-mode="true" data-nav-for="#js-carousel-sync-for">
               <div class="js-slide g-mx-3">
