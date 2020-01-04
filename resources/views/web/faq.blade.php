@@ -184,7 +184,7 @@
                 </div>
                 <div id="accordion-06-body-06" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-06" data-parent="#accordion-06">
                   <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
-                    <p>There are no fees or deposits required to open an account with Baxter & Grant.
+                    <p>There are no fees or deposits required to open an account with Steiner Greves.
                         The standard commission for full-service brokers are between 1% to 2% of a client's managed assets.</p>
                   </div>
                 </div>
