@@ -21,7 +21,7 @@ class WebFormsController extends Controller
                 'user_message' => $request->get('message')
             ), function($message)
             {
-                $message->from('sinapsys@steinergreves.com');
+                $message->from('webmaster@steinergreves.com');
                 $message->to('admin@steinergreves.com', 'Admin')->subject('Steiner Greves Contact Form');
             });
 
@@ -43,7 +43,7 @@ class WebFormsController extends Controller
                 'user_message' => $request->get('message')
             ), function($message)
             {
-                $message->from('sinapsys@steinergreves.com');
+                $message->from('webmaster@steinergreves.com');
                 $message->to('admin@steinergreves.com', 'Admin')->subject('Steiner Greves Contact Form');
             });
 
