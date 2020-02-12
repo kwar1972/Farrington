@@ -25,11 +25,14 @@ function settableUser() {
               { "data": "lastname" },
               { "data": "email" },
               { mRender: function (data, type, row) {
+                  var roleSysAdmin = '<span class="badge badge-pill badge-danger">SysAdmin</span>';
                   var roleClient = '<span class="badge badge-pill badge-success">Client</span>';
                   var roleAgent = '<span class="badge badge-pill badge-primary">Agent</span>';
                   var roleAdmin = '<span class="badge badge-pill badge-danger">Admin</span>';
                   var roleLoader = '<span class="badge badge-pill badge-secondary">Loader</span>';
                   switch(row.isadmin) {
+                    case 1:
+                      return roleSysAdmin
                     case 2:
                       return roleAdmin
                     case 3:
