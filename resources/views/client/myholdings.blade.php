@@ -50,6 +50,7 @@
     </table>
   </div>
   </div>
+  @if(isset($tickerdata))
   @foreach($tickerdata as $ticker)
   <div class="row">
       <div class="col-lg-3">
@@ -213,6 +214,7 @@ function data(data,a,b,c) {
       </div>
 </div>
 @endforeach
+@endif
 @else
 <div class="row">
   <div class="col-sm-12 text-center">

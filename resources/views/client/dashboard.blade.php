@@ -180,12 +180,12 @@
         <div class="col-lg-3 col-6">
           <div class="small-box bg-danger">
             <div class="inner">
-              <h3>Coming soon!</h3>
+              <h3>{{$balance}} usd</h3>
 
-              <p>Messages</p>
+              <p>Balance</p>
             </div>
             <div class="icon">
-              <i class="fas fa-envelope"></i>
+              <i class="fas fa-balance-scale"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>

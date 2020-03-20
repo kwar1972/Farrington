@@ -21,8 +21,8 @@ class WebFormsController extends Controller
                 'user_message' => $request->get('message')
             ), function($message)
             {
-                $message->from('sinapsys@baxtergrant.com');
-                $message->to('admin@baxtergrant.com', 'Admin')->subject('Baxter & Grant Contact Form');
+                $message->from('webmaster@steinergreves.com');
+                $message->to('admin@steinergreves.com', 'Admin')->subject('Steiner Greves Contact Form');
             });
 
          return back()->with('success', 'Thanks for contacting us!'); 
@@ -43,8 +43,8 @@ class WebFormsController extends Controller
                 'user_message' => $request->get('message')
             ), function($message)
             {
-                $message->from('sinapsys@baxtergrant.com');
-                $message->to('admin@baxtergrant.com', 'Admin')->subject('Baxter & Grant Contact Form');
+                $message->from('webmaster@steinergreves.com');
+                $message->to('admin@steinergreves.com', 'Admin')->subject('Steiner Greves Contact Form');
             });
 
          return back()->with('success', 'Thanks for contacting us!'); 

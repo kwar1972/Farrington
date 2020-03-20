@@ -35,19 +35,20 @@
                           <input type="text" class="form-control" id="price" name="price" value="">
                         </div>
                       </div>
-                      <div id="tickerStatus" class="row mt-3">
-                        <div class="col-5 f-size-14 mb-0">
+                      <div class="row mt-3">
+                        <div id="tickerStatus" class="col-5 f-size-14 mb-0">
                           <label><b>Status:</b></label>&nbsp;
-                          <input id="active" type="checkbox" checked data-toggle="toggle" data-onstyle="outline-primary" data-offstyle="outline-danger" data-id="" data-on="Enabled" data-loaded="0" data-off="Disabled" data-width="80" data-size="sm">
+                          <input id="active" type="checkbox" data-toggle="toggle" data-onstyle="primary" data-offstyle="danger" data-id="" data-on="Enabled" data-loaded="0" data-off="Disabled" data-width="80" data-size="sm">
                           
                         </div>
-                        <div class="col-2 f-size-14 mb-0">
-                         
+                        <div class="col-5 f-size-14 mb-0">
+                          <label><b>Stock type:</b></label>&nbsp;
+                          <input id="ipo" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="warning" data-id="" data-on="Regular" data-loaded="0" data-off="IPO" data-width="80" data-size="sm">
                         </div>
-                        <div class="col-2 f-size-14 mb-0">
+                        <div class="col-1 f-size-14 mb-0">
                           
                         </div>
-                        <div class="col-3 f-size-14 mb-0">
+                        <div class="col-1 f-size-14 mb-0">
                           
                         </div>
                       </div>

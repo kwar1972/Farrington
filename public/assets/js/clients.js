@@ -58,6 +58,7 @@ $(document).ready(function() {
         "name" : $('#name').val(),
         "lastname" : $('#lastname').val(),
         "email" : $('#email').val(),
+        "password": $('#password').val(),
         "phone" : $('#phone').val(),
         "mobile" : $('#mobile').val(),
         "addr" : $('#addr').val(),
@@ -68,7 +69,7 @@ $(document).ready(function() {
     }
     console.log(data);
     $.ajax({
-        type:'GET',
+        type:'POST',
         headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
       },
