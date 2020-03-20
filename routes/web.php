@@ -13,12 +13,6 @@
 Route::get('tickers', 'TickerController@index')->name('tickers');
 // FRONTEND
 Route::get('/', function () {
-<<<<<<< HEAD
-    return view('welcome');
-});
-
-Route::get('/contactform', 'WebFormsController@contactform');
-=======
     return view('web.welcome');
 });
 
@@ -78,7 +72,6 @@ Route::get('/debug/{status}', 'HoldingController@checkDebug');
 
 Route::post('/contactform', 'WebFormsController@contactform');
 Route::post('/formcall', 'WebFormsController@formCall');
->>>>>>> steinermerge
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
@@ -101,11 +94,7 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
         Route::get('/useredit/{id}', 'UsermanController@update');
         Route::get('/userslogins/{id}', 'LoginController@show');
         Route::get('/resenduseremail/{id}', 'UsermanController@resendVerificationEmail');
-<<<<<<< HEAD
-
-=======
         
->>>>>>> steinermerge
         //Ticker Manager
         Route::get('tickerman', 'DashboardController@tickerman')->name('userman');
         
