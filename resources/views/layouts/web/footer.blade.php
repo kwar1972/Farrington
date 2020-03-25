@@ -85,7 +85,7 @@
             <i class="fa fa-phone g-color-primary"></i>
           </span>
         </div>
-        <p class="mb-0">(+437) 856 2958 <br> (+437) 856 2959</p>
+        <p class="mb-0">(+437) 720 022054<br> (+437) 720 022076</p>
       </div>
       <!-- End Phone -->
 
