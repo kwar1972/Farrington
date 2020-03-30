@@ -74,7 +74,7 @@
             <i class="fa fa-map-marker g-color-primary"></i>
           </span>
         </div>
-        <p class="mb-0">Rotenturmstrabe 16-18, 1010 Wien, Austria, AU 94107 795</p>
+        <p class="mb-0">Rotenturmstrabe 16-18, 1010 Wien, Austria</p>
       </div>
       <!-- End Location -->
 
