@@ -7,7 +7,7 @@
         </div>
       </header>
     <br>
-<h3><span class="g-color-primary">Joseph Steiner</span></h3><br>
+<h3><span class="g-color-primary">Rudolf Steiner</span></h3><br>
 <div class="row">
 <div class="col-md-4">
 <img src="img/team/1.jpg" class="img-rounded" alt="Steiner Greves" width="350">
