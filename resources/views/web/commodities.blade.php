@@ -7,20 +7,17 @@
       </div>
     </header>
     <div class="row">
-        <div class="col-sm-7 g-px-120">
+        <div class="col-sm-12 g-px-120 pb-5">
             <div class="row">
-                <div class="col-sm-6">
-                    <img src="img/commodities.jpg" alt="">
-                </div>
-                <div class="col-sm-6">
-                    <img src="img/company/company-2.jpg" alt="">
+                <div class="col-sm-12 text-center">
+                    <img class="img-fluid" src="img/commodities2.jpg" alt="">
                 </div>
             </div>
-            <p class="text-justify g-pr-40 pt-4"><strong>Commodities can be traded, bought, sold, produced or consumed due to being a
+            <p class="text-justify pt-4"><strong>Commodities can be traded, bought, sold, produced or consumed due to being a
               physical product that has commercial value. Regulated by Commodity
               Exchanges who offer consistent commodity contracts in which one can diversify
               their portfolio and hedge against risk.</strong></p>
-            <p class="text-justify g-pr-40 pt-2"><span class="g-color-primary">Steiner Greves</span> stimulates your progress with a data driven approach and impressive,
+            <p class="text-justify pt-2"><span class="g-color-primary">Steiner Greves</span> stimulates your progress with a data driven approach and impressive,
               award-winning energy and commodities (ETRM and CTRM) trading and risk management
               solutions. Regardless of the industry, our solutions put you in the driving seat, giving you
               complete control of energy and commodities value chains, from distribution through to
@@ -29,7 +26,7 @@
               life cycle. This is why many of the globes largest and most well known companies partner
               with us to sharpen their decision making, boost productivity and minimize risk.</p>
 
-            <p class="text-justify g-pr-40 pt-2">Whether you’re a multinational commodity trading company or a small to medium-sized
+            <p class="text-justify pt-2">Whether you’re a multinational commodity trading company or a small to medium-sized
               merchant, our solutions change your complexity to simplicity, offering you the crucial and
               well timed information needed to make satisfied trade decisions along with the tools you
               need to execute. Join the dots in your organization with full cross-commodity visibility of
@@ -38,13 +35,15 @@
               chain. Reduce and automate your most critical business processes, and empower your
               organization.</p>
                     
-            <p class="text-justify g-pr-40 pt-2">Join <span class="g-color-primary">Steiner Greves's</span> with over 5,000 energy and commodities clients, for feature-rich,
-              extensive solutions that bolster your trading and supply business. Steiner Greves
+            <p class="text-justify pt-2">Join <span class="g-color-primary">Steiner Greves's</span> with over 5,000 energy and commodities clients, for feature-rich,
+              extensive solutions that bolster your trading and supply business. <span class="g-color-primary">Steiner Greves</span>
               commodities solutions with a full spectrum of trade and risk obligation from malleable
               deal entry and leading-edge, actual risk analytic, market data to complex, integrate
               logistics, shipping, supply chain.</p>
         </div>
-        <div class="col-sm-5 g-pr-40">
+    </div>
+        <div class="row">
+        <div class="col-sm-12 g-px-120">
             <div id="accordion-06" class="u-accordion" role="tablist" aria-multiselectable="true">
                   <!-- Card -->
                   <div class="card rounded-0 g-bg-gray-light-v4 g-brd-none">

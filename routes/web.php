@@ -48,6 +48,15 @@ Route::get('/forext', function () {
 Route::get('/commodities', function () {
     return view('web.commodities');
 });
+Route::get('/investman', function () {
+    return view('web.investman');
+});
+Route::get('/fintax', function () {
+    return view('web.fintax');
+});
+Route::get('/insurance', function () {
+    return view('web.insurance');
+});
 Route::get('/faq', function () {
     return view('web.faq');
 });
@@ -65,10 +74,10 @@ Route::post('/contactform', 'WebFormsController@contactform');
 Route::post('/formcall', 'WebFormsController@formCall');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('/debug/{status}', 'HoldingController@checkDebug');
 
-
-Auth::routes(['verify' => true]);
-Route::get('home', 'DashboardController@versionone')->name('home')->middleware('verified');
+Auth::routes();
+Route::get('home', 'DashboardController@versionone')->name('home');
 
 //ADMINs
 Route::get('/userdelete/{id}', 'UsermanController@destroy')->middleware('role:admin');
@@ -85,6 +94,7 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
         Route::get('/useredit/{id}', 'UsermanController@update');
         Route::get('/userslogins/{id}', 'LoginController@show');
         Route::get('/resenduseremail/{id}', 'UsermanController@resendVerificationEmail');
+        
         //Ticker Manager
         Route::get('tickerman', 'DashboardController@tickerman')->name('userman');
         
@@ -106,15 +116,15 @@ Route::group(['middleware' => ['role:admin|loader|agent']], function () {
 });
 
 // CLIENTS
-Route::get('/mydetails', 'UsermanController@showClient')->middleware('role:client')->middleware('verified');
-Route::get('/clientdet/{id}', 'UsermanController@clientDetails')->middleware('role:client')->middleware('verified');
-Route::get('/clientbank/{id}', 'BankController@show')->middleware('role:client')->middleware('verified');
-Route::get('/savenewbank/{id}', 'BankController@savenewbank')->middleware('role:client')->middleware('verified');
-Route::get('/savebank/{id}', 'BankController@savebank')->middleware('role:client')->middleware('verified');
-Route::get('/saveclient/{id}', 'UsermanController@savedetails')->middleware('role:client')->middleware('verified');
-Route::get('/chartbig?tvwidgetsymbol={id}', 'UsermanController@savedetails')->middleware('role:client')->middleware('verified');
-Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:client')->middleware('verified');
-Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client')->middleware('verified');
-Route::get('/myholdings', 'HoldingController@clientHoldings')->middleware('role:client')->middleware('verified');
-Route::get('/stockprice/{id}', 'HoldingController@stockprice')->middleware('role:admin|agent|loader|client')->middleware('verified');
-Route::get('/myholdingslist', 'HoldingController@holdingsList')->middleware('role:client')->middleware('verified');
+Route::get('/mydetails', 'UsermanController@showClient')->middleware('role:client');
+Route::get('/clientdet/{id}', 'UsermanController@clientDetails')->middleware('role:client');
+Route::get('/clientbank/{id}', 'BankController@show')->middleware('role:client');
+Route::get('/savenewbank/{id}', 'BankController@savenewbank')->middleware('role:client');
+Route::get('/savebank/{id}', 'BankController@savebank')->middleware('role:client');
+Route::post('/saveclient/{id}', 'UsermanController@savedetails')->middleware('role:client');
+Route::get('/chartbig?tvwidgetsymbol={id}', 'UsermanController@savedetails')->middleware('role:client');
+Route::get('/mytrades', 'UsermanController@clientTrades')->middleware('role:client');
+Route::get('/mytradelist', 'UsermanController@mytradelist')->middleware('role:client');
+Route::get('/myholdings', 'HoldingController@clientHoldings')->middleware('role:client');
+Route::get('/stockprice/{id}', 'HoldingController@stockprice')->middleware('role:admin|agent|loader|client');
+Route::get('/myholdingslist', 'HoldingController@holdingsList')->middleware('role:client');

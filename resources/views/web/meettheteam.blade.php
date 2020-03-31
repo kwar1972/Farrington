@@ -17,12 +17,12 @@
               <div class="col-sm-6 order-sm-2">
                 <!-- Figure Info -->
                 <div class="g-mb-30">
-                  <h4 class="h5 g-color-black g-mb-5">Joseph Steiner</h4>
+                  <h4 class="h5 g-color-black g-mb-5">Rudolf Steiner</h4>
                   <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">CEO/Senior Wealth Advisor</em>
                 </div>
-                <p class="text-justify">Joseph Steiner is the CEO of <span class="g-color-primary">Steiner Greves</span>, which he founded in 2009. Joseph is focused on the continued success of <span class="g-color-primary">Steiner Greves</span>, and a significant portion of his time is devoted to the strategic direction of the firm. He is   equally devoted to providing clients widespread wealth planning and management service. Joseph is a Member of the firm’s Executive Committee.<br><br>
-                  Joseph has expended his career developing tax and strategical estate planning to address the special needs of the individual and families that have accumulated wealth. With extraordinary professional knowledge gained through years of experience, Joseph has developed and utilizes the Informed tailored approach and other intellectual property and proprietary processes that help clients organize their thinking on important decisions they will face. Once their thinking is focused, he and his team advise and assist clients in making informed decisions.<br><br>
-                  Joseph is a long-standing member and recent Board Member of the prestigious Forum 400, which brings financial service professionals together to exchange ideas on tax and estate planning. Previous to Steiner Greves he served on the Board of Directors of the M&I Bank. Joseph is acknowledged as an expert in his given field, and has addressed several professional groups and associations on estate planning strategies.</p>
+                <p class="text-justify">Rudolf Steiner is the CEO of <span class="g-color-primary">Steiner Greves</span>, which he founded in 2009. Rudolf is focused on the continued success of <span class="g-color-primary">Steiner Greves</span>, and a significant portion of his time is devoted to the strategic direction of the firm. He is   equally devoted to providing clients widespread wealth planning and management service. Rudolf is a Member of the firm’s Executive Committee.<br><br>
+                  Rudolf has expended his career developing tax and strategical estate planning to address the special needs of the individual and families that have accumulated wealth. With extraordinary professional knowledge gained through years of experience, Rudolf has developed and utilizes the Informed tailored approach and other intellectual property and proprietary processes that help clients organize their thinking on important decisions they will face. Once their thinking is focused, he and his team advise and assist clients in making informed decisions.<br><br>
+                  Rudolf is a long-standing member and recent Board Member of the prestigious Forum 400, which brings financial service professionals together to exchange ideas on tax and estate planning. Previous to Steiner Greves he served on the Board of Directors of the M&I Bank. Rudolf is acknowledged as an expert in his given field, and has addressed several professional groups and associations on estate planning strategies.</p>
                 <!-- End Figure Info -->
               </div>
       
@@ -69,7 +69,7 @@
                   <h4 class="h5 g-color-black g-mb-5">Chris Stephens</h4>
                   <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Director of Investment Management/Senior Wealth Advisor</em>
                 </div>
-                <p class="text-justify">Chris is the Director of Investment Management at <span class="g-color-primary">Steiner Greves</span>. Chris’s main tasks include investment research and portfolio management. Additionally, Chris serves as the client relationship team senior member. Hes also a serving Member of <span class="g-color-primary">Steiner Greves</span> Investment Committee and Executive Committee.<br><br>
+                <p class="text-justify">Chris is the Director of Investment Management at <span class="g-color-primary">Steiner Greves</span>. Chris’s main tasks include investment research and portfolio management. Additionally, Chris serves as the client relationship team senior member. Hes also a serving Member of <span class="g-color-primary">Steiner Greves</span> Investment Committee and Executive Committee.<br>
                 Chris’s role as Director of Investment Management, include overseeing the management of the investment strategies utilized in client portfolios. He is also responsible for portfolio construction, rebalancing of client portfolios investment due diligence/selection, and asset allocation.<br><br>
                 Chris became part of the team at <span class="g-color-primary">Steiner Greves</span> in June 2010 with over 25 years of investment management experience equity mutual funds, managing diversified portfolios, and separate account strategies. Before joining <span class="g-color-primary">Steiner Greves</span>, he was an Investment Officer at Foresight Wealth Management where he was responsible for portfolio construction, asset allocation and investment due diligence/selection.<br><br>
                 Previous to <span class="g-color-primary">Steiner Greves</span>, John spent 15 years at BMO Global Asset Management where he held a variety of investment management roles. Chris was the Fund Manager of the BMO Dividend Income Mutual Fund and BMO Large-Cap Value Mutual Fund. Additionally, Chris ran the companies Fundamental Index strategies, Tax Efficient Portfolio Strategy.</p>
@@ -139,10 +139,10 @@
                     <!-- Figure Info -->
                     <div class="g-mb-30">
                       <h4 class="h5 g-color-black g-mb-5">Johanna Shutts</h4>
-                      <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Office Manager</em>
+                      <em class="d-block u-info-v1-5__item g-color-primary g-font-style-normal g-font-size-11 text-uppercase">Administrative Manager</em>
                     </div>
-                    <p class="text-justify">Johanna is the Receptionist/Office Manager at Richardson Financial Group and in that role she is responsible for serving as the initial point of contact for clients, vendors and guests of the firm. Johanna is also responsible for maintaining and improving all operational aspects of the firm. She is also a member of the investment and insurance client service teams where she assists with various service issues.<br><br>
-                    Johanna attended Vienna University of Technology Technical College and has a Masters in Business Administration (MBA). She has over 22 years of experience as an executive assistant and office manager. She has also worked for several top advertising agencies.<br><br>
+                    <p class="text-justify">Johanna is the Administrative Manager at Steiner Greves and in that role she is responsible for serving as the initial point of contact for clients, vendors and guests of the firm. Johanna is also responsible for maintaining and improving all operational aspects of the firm. She is also a member of the investment and insurance client service teams where she assists with various service issues.<br><br>
+                    Johanna attended Vienna University of Technology Technical College and has a Masters in Business Administration (MBA). She has over 11 years of experience as an executive assistant and Administrative Manager. She has also worked for several top advertising agencies.<br><br>
                     </p>
                     <!-- End Figure Info -->
                   </div>
@@ -156,8 +156,8 @@
                 <!-- End Figure -->
               </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 ml-md-auto">
+        <div class="row pt-5">
+          <div class="col-md-6 ml-md-auto mt-5 pt-5">
             <!-- Carousel Nav -->
             <div id="js-carousel-sync-nav" class="js-carousel u-carousel-v10-nav" data-slides-show="4" data-slides-scroll="1" data-focus-on-select="true" data-center-mode="true" data-nav-for="#js-carousel-sync-for">
               <div class="js-slide g-mx-3">

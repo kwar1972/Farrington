@@ -14,6 +14,7 @@ class AddForeingKeyToTradeWUsers extends Migration
     public function up()
     {
         Schema::table('trades', function (Blueprint $table) {
+           
             $table->foreign('userid')->references('id')->on('users')->onDelete("CASCADE")->onUpdate("NO ACTION");
         });
     }

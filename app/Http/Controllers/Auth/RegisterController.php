@@ -53,17 +53,6 @@ class RegisterController extends Controller
             'lastname' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-            'phone' => 'required', 
-            'datepickerDefault' => 'required',
-            'countryc' => 'required', 
-            'coin' => 'required', 
-            'referral' => 'nullable', 
-            'addr1' => 'required', 
-            'addr2' => 'nullable', 
-            'city' => 'required', 
-            'zip' => 'required', 
-            'country' => 'required', 
-            'agreed' => 'required'
         ]);
     }
 
@@ -80,37 +69,6 @@ class RegisterController extends Controller
             'lastname' => $data['lastname'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'phone' => $data['phone'],
-            'datepickerDefault' => $data['datepickerDefault'],
-            'countryc' => $data['countryc'],
-            'coin' => $data['coin'],
-            'referral' => $data['referral'],
-            'addr1' => $data['addr1'],
-            'addr2' => $data['addr2'],
-            'city' => $data['city'],
-            'zip' => $data['zip'],
-            'country' => $data['country'],
         ]);
-        
-        Mail::send('email.contact',
-            array(
-                'name' => $data['name'],
-                'lastname' => $data['lastname'],
-                'email' => $data['email'],
-                'phone' => $data['phone'],
-                'datepickerDefault' => $data['datepickerDefault'],
-                'countryc' => $data['countryc'],
-                'coin' => $data['coin'],
-                'referral' => $data['referral'],
-                'addr1' => $data['addr1'],
-                'addr2' => $data['addr2'],
-                'city' => $data['city'],
-                'zip' => $data['zip'],
-                'country' => $data['country'],
-            ), function($message)
-            {
-                $message->from('webmaster@steinergreves.com');
-                $message->to('admin@steinergreves.com', 'Admin')->subject('Steiner Greves New Registration!');
-            });
     }
 }

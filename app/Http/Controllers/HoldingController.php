@@ -86,35 +86,42 @@ class HoldingController extends Controller
     {   
 
         $ticker1f = Ticker::find($id);
-        $ticker1f = $ticker1f->ticker;
-        $curl = curl_init();
-        $ticker1f = preg_replace('/:/', '', strstr($ticker1f, ':'));
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_TIMEOUT => 30000,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_SSL_VERIFYHOST => false,
-            CURLOPT_SSL_VERIFYPEER => false,
-            CURLOPT_CUSTOMREQUEST => "GET",
-            CURLOPT_HTTPHEADER => array(
-                'Access-Control-Allow-Origin: *',
-                'Content-Type: application/json',
-            ),
-        ));
- 
-        $response = curl_exec($curl);
-        $err = curl_error($curl);
-        curl_close($curl);
+        $isipo = $ticker1f->ipo;
+        $paidprice = $ticker1f->price;
+        if($isipo !== 1){
+            $ticker1f = $ticker1f->ticker;
+            $curl = curl_init();
+            $ticker1f = preg_replace('/:/', '', strstr($ticker1f, ':'));
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_TIMEOUT => 30000,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_SSL_VERIFYHOST => false,
+                CURLOPT_SSL_VERIFYPEER => false,
+                CURLOPT_CUSTOMREQUEST => "GET",
+                CURLOPT_HTTPHEADER => array(
+                    'Access-Control-Allow-Origin: *',
+                    'Content-Type: application/json',
+                ),
+            ));
         
-        if ($err) {
-            echo "cURL Error #:" . $err;
-        } else {
-            $array = json_decode($response, true);
-            $response = $array;
-            $response = $response['data'][0]['price'];
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
+            curl_close($curl);
+
+            if ($err) {
+                echo "cURL Error #:" . $err;
+            } else {
+                $array = json_decode($response, true);
+                $response = $array;
+                $response = $response['data'][0]['price'];
+                return $response;
+            }
+        }else{
+            $response = $paidprice;
             return $response;
-        }
+        };
     }
     public function intraDay($tickers,$tickerscount)
     {
@@ -154,9 +161,10 @@ class HoldingController extends Controller
     public function clientHoldings()
     {
         $id = auth()->user()->id;
-        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
-
-        if($deposits !== 0){
+        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->get();
+        $deposits = $deposits->wherein('ipo', 0);
+        
+        if($deposits->count() !== 0 ){
             $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
             $trade = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
             $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
@@ -166,15 +174,20 @@ class HoldingController extends Controller
             $tickerdata = $this->stockData($tickers,$tickerscount);
             $tickerdata = collect($tickerdata['data'], true);
             $intra2 = array();
+            $tickers = $tickers->where('ipo', '<>', 1);
+            
             foreach($tickers as $ticker){
                 $intraday = $this->intraDay($ticker,$tickerscount);
-                $intra = collect($intraday['intraday'], true);
-                $intra->toArray();
-                array_push($intra2, $intra);
+                if(array_key_exists("intraday", $intraday)){
+                    $intra = collect($intraday['intraday'], true);
+                    $intra->toArray();
+                    array_push($intra2, $intra);
+                }
             }
             $intraday = collect($intra2, true);
+                        
             
-            return view('client.myholdings')->with('trade', $trade)->with('tickerdata', $tickerdata)->with('intraday', $intraday);
+            return view('client.myholdings')->with('trade', $trade)->with('tickerdata', $tickerdata);
         }else{
 
             $nodata = 0;
@@ -192,9 +205,9 @@ class HoldingController extends Controller
     public function holdingsList()
     {   
         $id = auth()->user()->id;
-        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->sum('total');
-
-        if($deposits !== 0){
+        $deposits = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->get();
+        $deposits = $deposits->wherein('ipo', 0);
+        if($deposits->count() !== 0){
             $trades = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->count();
             $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
             $tickers = $ticker->pluck('getTicker');
@@ -207,17 +220,26 @@ class HoldingController extends Controller
         $trades = array();
         $tradesraw1 = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
         $tradesraw1 = $tradesraw1->toArray();
+        
         foreach($tradesraw1 as $tradesraw){
-            $ticker = $tradesraw['get_ticker']['ticker'];
-            $amount = $tradesraw['amount'];
-            $pricepaid = $tradesraw['price'];
-            $ticker1 = preg_replace('/:/', '', strstr($ticker, ':'));
-            $pricesell = $tickerdata->where('symbol', $ticker1);
-            $pricesell = $pricesell->pluck('price');
-            $pricesell = $pricesell->toArray();
-            $key = array_keys($pricesell);
-            $key = $key[0];
-            $pricesell = $pricesell[$key];
+            $ipocheck = $tradesraw['get_ticker']['ipo'];
+            if($ipocheck !== 1){
+                $ticker = $tradesraw['get_ticker']['ticker'];
+                $amount = $tradesraw['amount'];
+                $pricepaid = $tradesraw['price'];
+                $ticker1 = preg_replace('/:/', '', strstr($ticker, ':'));
+                $pricesell = $tickerdata->where('symbol', $ticker1);
+                $pricesell = $pricesell->pluck('price');
+                $pricesell = $pricesell->toArray();
+                $key = array_keys($pricesell);
+                $key = $key[0];
+                $pricesell = $pricesell[$key];
+            }else{
+                $ticker = $tradesraw['get_ticker']['ticker'];
+                $amount = $tradesraw['amount'];
+                $pricepaid = $tradesraw['price'];
+                $pricesell = $tradesraw['sellpriceipo'];
+            };
             $totalpaid = $tradesraw['total'];
             $totpos = $amount * $pricesell;
             $totearn = $totpos - $totalpaid;

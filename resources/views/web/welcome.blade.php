@@ -11,7 +11,7 @@
           <p class="g-font-size-24 g-color-primary g-font-weight-600">Investing in your future</p>
         </div>
 
-        <a class="js-go-to btn u-btn-outline-white g-color-white g-bg-white-opacity-0_1 g-color-black--hover g-bg-primary--hover g-font-weight-600 text-uppercase g-rounded-50 g-px-30 g-py-13" href="register" data-target="#content">Get Started</a>
+        <a class=" btn u-btn-outline-white g-color-white g-bg-white-opacity-0_1 g-color-black--hover g-bg-primary--hover g-font-weight-600 text-uppercase g-rounded-50 g-px-30 g-py-13" href="{{ route('register') }}">Get Started</a>
       </div>
     </section>
     <!-- End Promo Block -->
@@ -41,9 +41,9 @@
       </div>
     </section>
     <!-- End About Us -->
-<div class="container" style="height:500px;">
+<div class="container" style="height:1000px;">
     <!-- Icon Blocks -->
-      <div class="row text-center" style="height:250px;">
+      <div class="row text-center" style="height:500px;">
         <div class="col-md-4 g-mb-30">
             <div class="flip-card">
                 <div class="flip-card-inner">
@@ -90,7 +90,7 @@
               </div>
         </div>
       </div>
-      <div class="row text-center" style="height:250px;">
+      <div class="row text-center" style="height:400px;">
         <div class="col-md-4 g-mb-30">
             <div class="flip-card">
                 <div class="flip-card-inner">
@@ -147,7 +147,7 @@
                     <h4 class="g-color-white">Contact <span class="g-color-primary">Steiner Greves</span></h4>
                     <p class="g-color-white">for a No Obligation Consultation</p>
                     <div class="contact_d">
-                        <a class="contact-fix" href="tel:+43720775910">+437 856 2958</a> <span class="g-color-white"> | </span>
+                        <a class="contact-fix" href="tel:+43720775910">+43 720 022054</a> <span class="g-color-white"> | </span>
                         <a class="contact-fix" href="mailto:support@steinergraves.com?subject= Contact from from website">support@steinergreves.com</a>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
           <div class="col-md-12 w-100">
           <header class="text-center g-width-60x--md mx-auto g-mb-60">
             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
-              <h2 class="h3 u-heading-v2__title g-color-black text-uppercase g-font-weight-600">Our Focus</h2>
+              <h2 class="h3 u-heading-v2__title g-color-black text-uppercase g-font-weight-600">Our Strategy</h2>
             </div>
           </header>
           </div>
@@ -267,7 +267,6 @@
     <!-- End Gallery -->
     <!-- Our Focus -->
     <div class="consult_policy_inner consult_policy_area ">
-        <i class="fa fa-line-chart g-color-white pb-4" style="font-size: 46px;"></i>
         <h3 class="g-color-primary pb-4">Steiner Greves</h3>
         <p class="g-color-white">Our objective and discipline further reaches to the way we manage our business:<br>
 

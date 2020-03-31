@@ -74,7 +74,7 @@
             <i class="fa fa-map-marker g-color-primary"></i>
           </span>
         </div>
-        <p class="mb-0">Rotenturmstrabe 16-18, 1010 Wien, Austria</p>
+        <p class="mb-0">Rotenturmstraße 16-18,<br> 1010 Wien, Austria</p>
       </div>
       <!-- End Location -->
 
@@ -85,7 +85,7 @@
             <i class="fa fa-phone g-color-primary"></i>
           </span>
         </div>
-        <p class="mb-0">(+437) 720 022054<br> (+437) 720 022076</p>
+        <p class="mb-0">+43 720 022054 <br> +43 720 022076</p>
       </div>
       <!-- End Phone -->
 
@@ -114,69 +114,34 @@
 <!-- Copyright Footer -->
 <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+    <div class="row text-center">
+      <div class="col-md-12 text-center  g-mb-10 g-mb-0--md">
         <div class="d-lg-flex">
-          <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2018 &copy; All Rights Reserved.</small>
+          <small class="d-block g-font-size-default g-mb-10 g-mb-0--md">2018 &copy; All Rights Reserved.</small>
           <ul class="u-list-inline">
             <li class="list-inline-item">
-              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">Privacy Policy</a>
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/docs/Steiner-Greves-Policy-on-Privacy-Protection.pdf">Privacy Policy</a>
             </li>
             <li class="list-inline-item">
               <span>|</span>
             </li>
             <li class="list-inline-item">
-              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">Terms of Use</a>
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/docs/Steiner-Greves-Terms-and-Conditions.pdf">Terms &amp; Conditions</a>
             </li>
             <li class="list-inline-item">
               <span>|</span>
             </li>
             <li class="list-inline-item">
-              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">License</a>
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/docs/Steiner-Greves-Order-Execution-Policy.pdf">Order of Execution</a>
             </li>
             <li class="list-inline-item">
               <span>|</span>
             </li>
             <li class="list-inline-item">
-              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">Support</a>
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/docs/Steiner-Greves-Risk-Disclosure.pdf">Risk Disclosure</a>
             </li>
           </ul>
         </div>
-      </div>
-
-      <div class="col-md-4 align-self-center">
-        <ul class="list-inline text-center text-md-right mb-0">
-          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Facebook">
-            <a href="#!" class="g-color-primary g-color-white--hover">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Skype">
-            <a href="#!" class="g-color-primary g-color-white--hover">
-              <i class="fa fa-skype"></i>
-            </a>
-          </li>
-          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Linkedin">
-            <a href="#!" class="g-color-primary g-color-white--hover">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Pinterest">
-            <a href="#!" class="g-color-primary g-color-white--hover">
-              <i class="fa fa-pinterest"></i>
-            </a>
-          </li>
-          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Twitter">
-            <a href="#!" class="g-color-primary g-color-white--hover">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Dribbble">
-            <a href="#!" class="g-color-primary g-color-white--hover">
-              <i class="fa fa-dribbble"></i>
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
