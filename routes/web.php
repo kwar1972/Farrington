@@ -13,7 +13,7 @@
 Route::get('tickers', 'TickerController@index')->name('tickers');
 // FRONTEND
 Route::get('/', function () {
-    return view('web.coming');
+    return view('web.welcome');
 });
 
 Route::get('/webtest', function () {
