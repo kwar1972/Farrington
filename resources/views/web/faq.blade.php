@@ -101,41 +101,7 @@
                         document is a Stock Purchase Agreement, this requires your signature allowing us to move forward and
                         lock you into the trade at the price given. The second document is a W-8BEN this document is for a
                         Non-US Citizen who are not eligible to pay taxes in the US. This needs to be filled out in full and filed.</p>
-                    <p class="g-font-weight-700">To verify your account, upload the following documents or submit it to <span class="g-color-primary">clients@steinergreves.com</span></p>
-                    <ol>
-                      <li>
-                          <span class="g-font-weight-700">Proof of Identity – Personal details (such as serial number, signature, picture, issue date, and expiry date) must be legible from any of the following:</span>
-                          <ul>
-                            <li>Scanned Copy of Passport</li>
-                            <li>National Identity Card</li>
-                            <li>Driving License</li>
-                          </ul>
-                      </li>
-                      <li>
-                        <span class="g-font-weight-700">Proof of Residence – Document must be under your name, and must show the complete address identical to the address registered to your account. Proof of Residence copies must not be older than 3 months, and must be legible from:</span>
-                        <ul>
-                          <li>Stamped Bank Statement</li>
-                          <li>Credit Card Statement</li>
-                          <li>Official Residence</li>
-                          <li>Rental Agreement</li>
-                          <li>Utility Bill (Electricity, Gas, Water, Phone)</li>
-                          <p class="g-color-primary g-font-weight-700">Please take into account that electronic (online) bills or statements are not acceptable. </p>
-                        </ul>
-                      </li>
-                      <li>
-                        <span class="g-font-weight-700">Card Copy – If Credit Card or Debit Card was used for depositing, kindly send a copy accordingly:</span>
-                        <ul>
-                          <span class="g-color-primary">Front copy must show:</span>
-                          <li>First 6 digits and last 4 digits only of the card</li>
-                          <li>Expiration date of the card</li>
-                          <li>Full name on the card</li>
-                          <span class="g-color-primary">Back copy must show:</span>
-                          <li>Signature</li>
-                          <li>CVV must be covered</li>
-                          <span class="g-color-primary g-font-weight-700">When sending the documents, please make sure that the formats are only JPG, GIF, DOC, and/or PDF, without password protection.</span>
-                        </ul>
-                      </li>
-                    </ol>
+                    
                   </div>
                 </div>
               </div>
@@ -157,7 +123,7 @@
                 <div id="accordion-06-body-05" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-05" data-parent="#accordion-06">
                   <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
                     <ul>
-                      <li>Investment Horizon. In a general, your investments should be matched with your need for the money.</li>
+                      <li>Investment Horizon. In general, your investments should be matched with your need for the money.</li>
                       <li>Risk Tolerance.</li>
                       <li>Diversification.</li>
                       <li>Costs / Expenses.</li>
@@ -326,7 +292,7 @@
                     <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20 text-justify">
                       <p>Our team of investors from juniors to executive have a number of years of investment experience
                           between them. Our aim is to ensure all our investors that this combined knowledge is applied in all
-                          investment, to assist our portfolio companies and individual clients to build the right portfolio and
+                          investments, to assist our portfolio companies and individual clients to build the right portfolio and
                           reach their maximum potential.</p>
                     </div>
                   </div>

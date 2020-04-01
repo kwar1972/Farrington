@@ -29,8 +29,8 @@
         <div class="card g-mx-10 u-shadow-v1-2">
             <img class="card-img-top" src="img/screens/graph2.png" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title text-center font-weight-bold">Live Integrated Reports</h4>
-                <p class="card-text text-justify">Check out the latest economic news, updates and important events of the global market around the world. With full antivirus protection and secure AES-256 encryption. </p>
+                <h4 class="card-title text-center font-weight-bold">Integrated Reports</h4>
+                <p class="card-text text-justify">Get the most recent economic news and important events, of what’s happening in the Global Markets. With full antivirus protection and secure encryption. </p>
             </div>
         </div>
         <div class="card g-mx-10 u-shadow-v1-2">
