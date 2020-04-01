@@ -110,7 +110,7 @@
                             <a href="{{ url('/home') }}" class="nav-link px-0 g-color-primary--hover">Dashboard</a>
                         @else
                             <a href="{{ route('login') }}" class="nav-link px-0 d-inline-block g-color-primary--hover"><i class="fa fa-sign-in g-color-primary"></i> Login</a><span class="g-color-primary"> | </span>
-                            <a href="{{ route('register') }}" class="nav-link px-0 d-inline-block g-color-primary--hover"><i class="fa  fa-sign-out g-color-primary"></i> Register</a>
+                            <a href="{{ route('register2') }}" class="nav-link px-0 d-inline-block g-color-primary--hover"><i class="fa  fa-sign-out g-color-primary"></i> Register</a>
                         @endauth
                     </div>
                     @endif

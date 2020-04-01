@@ -8,7 +8,7 @@
     </div>
     <p class="lead text-center"><span class="g-color-black">Fill out the application form below with your details to officially <span class="g-color-primary g-font-weight-600">start trading!</span></p>
   </header>
-  <form action="{{ route('register2') }}" method="post">
+  <form action="{{ route('registerfinal') }}" method="post">
     @csrf
       <div class="row g-px-100">
           <div class="col-sm-6">
@@ -25,7 +25,7 @@
                     <i class="icon-check g-font-size-25"></i>
                   </span>
                   <span class="media-body align-self-center">
-                    The form has been successfully sent!
+                    Registration request successfully sent!
                   </span>
                 </div>
               </div>

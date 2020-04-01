@@ -71,6 +71,8 @@ Route::get('/investprocess', function () {
 Route::get('/debug/{status}', 'HoldingController@checkDebug');
 
 Route::post('/contactform', 'WebFormsController@contactform');
+Route::get('/register2', 'WebFormsController@register2')->name('register2');
+Route::post('/registerfinal', 'WebFormsController@registerFinal')->name('registerfinal');
 Route::post('/formcall', 'WebFormsController@formCall');
 Route::get('/liveaccform', 'WebFormsController@liveaccform');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
