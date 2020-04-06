@@ -213,10 +213,10 @@ class HoldingController extends Controller
             $ticker = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
             $tickers = $ticker->pluck('getTicker');
             $tickers = $tickers->unique('ticker');
-            dd($tickers);
+            
             $tickerscount = $tickers->count();
             $tickerdata = $this->stockData($tickers,$tickerscount);
-            $this->stockprice($id);
+           
             $tickerdata = collect($tickerdata['data'], true);
         }
         $trades = array();
@@ -230,6 +230,8 @@ class HoldingController extends Controller
                 $amount = $tradesraw['amount'];
                 $pricepaid = $tradesraw['price'];
                 $ticker1 = preg_replace('/:/', '', strstr($ticker, ':'));
+                dd($ticker1);
+                $tickerprice = $this->stockprice($id);
                 $pricesell = $tickerdata->where('symbol', $ticker1);
                 $pricesell = $pricesell->pluck('price');
                 $pricesell = $pricesell->toArray();
