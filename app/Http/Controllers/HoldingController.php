@@ -90,7 +90,7 @@ class HoldingController extends Controller
         }else{
             $ticker1f = Ticker::where('ticker', 'like', '%' . $id . '%')->get();
         }
-        dd($ticker1f);
+        
         $isipo = $ticker1f->ipo;
         $paidprice = $ticker1f->price;
         if($isipo !== 1){
