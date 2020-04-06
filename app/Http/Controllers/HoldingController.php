@@ -177,15 +177,15 @@ class HoldingController extends Controller
             $intra2 = array();
             $tickers = $tickers->where('ipo', '<>', 1);
             
-            foreach($tickers as $ticker){
-                $intraday = $this->intraDay($ticker,$tickerscount);
-                if(array_key_exists("intraday", $intraday)){
-                    $intra = collect($intraday['intraday'], true);
-                    $intra->toArray();
-                    array_push($intra2, $intra);
-                }
-            }
-            $intraday = collect($intra2, true);
+            // foreach($tickers as $ticker){
+            //     $intraday = $this->intraDay($ticker,$tickerscount);
+            //     if(array_key_exists("intraday", $intraday)){
+            //         $intra = collect($intraday['intraday'], true);
+            //         $intra->toArray();
+            //         array_push($intra2, $intra);
+            //     }
+            // }
+            // $intraday = collect($intra2, true);
                         
             
             return view('client.myholdings')->with('trade', $trade)->with('tickerdata', $tickerdata);
