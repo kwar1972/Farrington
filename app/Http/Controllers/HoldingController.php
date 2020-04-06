@@ -85,7 +85,12 @@ class HoldingController extends Controller
     public function stockprice($id)
     {   
 
-        $ticker1f = Ticker::find($id);
+        if(is_numeric($id)){
+            $ticker1f = Ticker::find($id);
+        }else{
+            $ticker1f = Ticker::where('ticker', 'like', '%' . $id . '%')->get();
+        }
+        dd($ticker1f);
         $isipo = $ticker1f->ipo;
         $paidprice = $ticker1f->price;
         if($isipo !== 1){
@@ -230,19 +235,20 @@ class HoldingController extends Controller
                 $amount = $tradesraw['amount'];
                 $pricepaid = $tradesraw['price'];
                 $ticker1 = preg_replace('/:/', '', strstr($ticker, ':'));
-                dd($ticker1);
-                $tickerprice = $this->stockprice($id);
-                $pricesell = $tickerdata->where('symbol', $ticker1);
-                $pricesell = $pricesell->pluck('price');
-                $pricesell = $pricesell->toArray();
-                $key = array_keys($pricesell);
-                $key = $key[0];
-                $pricesell = $pricesell[$key];
+                $tickerprice = $this->stockprice($ticker);
+                $pricesell = $tickerprice;
+                //$pricesell = $pricesell->pluck('price');
+                // $pricesell = $pricesell->toArray();
+                // $key = array_keys($pricesell);
+                // $key = $key[0];
+                // $pricesell = $pricesell[$key];
             }else{
                 $ticker = $tradesraw['get_ticker']['ticker'];
                 $amount = $tradesraw['amount'];
                 $pricepaid = $tradesraw['price'];
-                $pricesell = $tradesraw['sellpriceipo'];
+                // $pricesell = $tradesraw['sellpriceipo'];
+                $tickerprice = $this->stockprice($ticker);
+                $pricesell = $tickerprice;
             };
             $totalpaid = $tradesraw['total'];
             $totpos = $amount * $pricesell;
