@@ -144,7 +144,7 @@
           <!-- small box -->
           <div class="small-box bg-info">
               <div class="inner">
-              <h3>{{rtrim($deposits, '.00')}} <span style="font-size: 18px;">USD</span></h3>
+              <h3>{{$deposits}} <span style="font-size: 18px;">USD</span></h3>
   
                 <p>Deposits</p>
               </div>
