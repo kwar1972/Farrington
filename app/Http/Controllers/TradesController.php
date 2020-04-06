@@ -81,7 +81,7 @@ class TradesController extends Controller
         $curl = curl_init();
         $ticker1 = $tickereal;
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+            CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4 ",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_TIMEOUT => 30000,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,

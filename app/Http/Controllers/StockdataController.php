@@ -12,7 +12,7 @@ class StockdataController extends Controller
         $ticker1 = "BABA";
         $ticker2 = "QCOM";
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://intraday.worldtradingdata.com/api/v1/intraday?symbol=".$ticker1.",".$ticker2."&&range=7&interval=60&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+            CURLOPT_URL => "https://intraday.worldtradingdata.com/api/v1/intraday?symbol=".$ticker1.",".$ticker2."&&range=7&interval=60&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4 ",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_TIMEOUT => 30000,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,

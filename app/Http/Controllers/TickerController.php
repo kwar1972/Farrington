@@ -192,7 +192,7 @@ class TickerController extends Controller
     //         }
     
     //         $str1 = "https://api.worldtradingdata.com/api/v1/stock?symbol=";
-    //         $str2 = "&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4";
+    //         $str2 = "&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4 ";
             
     //         function create_query_string($tickerfinal) {
             
@@ -221,7 +221,7 @@ class TickerController extends Controller
             
     //         $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
     //         curl_setopt_array($curl, array(
-    //             CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+    //             CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4 ",
     //             CURLOPT_RETURNTRANSFER => true,
     //             CURLOPT_TIMEOUT => 30000,
     //             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
