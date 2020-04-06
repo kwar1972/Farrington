@@ -27,7 +27,7 @@ class HoldingController extends Controller
                 array_push($tickerfinal, $ticker1f.',');
             }
             $str1 = "https://api.worldtradingdata.com/api/v1/stock?symbol=";
-            $str2 = "&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4  ";
+            $str2 = "&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4";
             
             function create_query_string1($tickerfinal) {
             
@@ -55,7 +55,7 @@ class HoldingController extends Controller
             $ticker1 = $tickers[0]->ticker;
             $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
             curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4  ",
+                CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_TIMEOUT => 30000,
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
@@ -93,7 +93,7 @@ class HoldingController extends Controller
             $curl = curl_init();
             $ticker1f = preg_replace('/:/', '', strstr($ticker1f, ':'));
             curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4  ",
+                CURLOPT_URL => "https://finnhub.io/api/v1/quote?symbol=".$ticker1f."&token=bq5ivvvrh5rdc1bgf9l0",
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_TIMEOUT => 30000,
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
@@ -109,13 +109,14 @@ class HoldingController extends Controller
             $response = curl_exec($curl);
             $err = curl_error($curl);
             curl_close($curl);
-
+            
             if ($err) {
                 echo "cURL Error #:" . $err;
             } else {
                 $array = json_decode($response, true);
                 $response = $array;
-                $response = $response['data'][0]['price'];
+                $response = $response['c'];
+                
                 return $response;
             }
         }else{
@@ -128,11 +129,11 @@ class HoldingController extends Controller
         $curl = curl_init();
         
         $str1 = "https://intraday.worldtradingdata.com/api/v1/intraday?symbol=";
-        $str2 = "&range=7&interval=60&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4   ";
+        $str2 = "&range=7&interval=60&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4";
         $ticker1 = $tickers->ticker;
         $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://intraday.worldtradingdata.com/api/v1/intraday?symbol=".$ticker1f."&range=7&interval=60&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4  ",
+            CURLOPT_URL => "https://intraday.worldtradingdata.com/api/v1/intraday?symbol=".$ticker1f."&range=7&interval=60&api_token=",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_TIMEOUT => 30000,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
