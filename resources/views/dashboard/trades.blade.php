@@ -109,7 +109,7 @@
                               <div class="input-group-prepend">
                                   <span class="input-group-text formicon-dark"><i class="fas fa-calendar-alt"></i></span>
                                 </div>
-                              <input class="form-control" type='text' class="form-control" />
+                              <input id="deposit" class="form-control" type='text' class="form-control" />
                               <span class="input-group-addon">
                                   <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                               </span>
@@ -123,7 +123,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text formicon-dark"><i class="fas fa-calendar-alt"></i></span>
                                   </div>
-                                <input class="form-control" type='text' class="form-control" />
+                                <input id="purchased" class="form-control" type='text' class="form-control" />
                                 <span class="input-group-addon">
                                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                                 </span>
