@@ -91,11 +91,11 @@ class HoldingController extends Controller
             $ticker1f = Ticker::where('ticker', 'like', '%' . $id . '%')->get();
         }
         
-        $isipo = $ticker1f[0]->ipo;
+        $isipo = $ticker1f->ipo;
         
-        $paidprice = $ticker1f[0]->price;
+        $paidprice = $ticker1f->price;
         if($isipo !== 1){
-            $ticker1f = $ticker1f[0]->ticker;
+            $ticker1f = $ticker1f->ticker;
             $curl = curl_init();
             $ticker1f = preg_replace('/:/', '', strstr($ticker1f, ':'));
             curl_setopt_array($curl, array(
