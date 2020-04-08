@@ -90,7 +90,7 @@ class HoldingController extends Controller
         }else{
             $ticker1f = Ticker::where('ticker', 'like', '%' . $id . '%')->get();
         }
-        
+        dd($ticker1f);
         $isipo = $ticker1f->ipo;
         
         $paidprice = $ticker1f->price;
@@ -226,7 +226,7 @@ class HoldingController extends Controller
            
             $tickerdata = collect($tickerdata['data'], true);
         }
-
+        
         $trades = array();
         $tradesraw1 = Trade::where('userid', $id)->where('status', '<>' , 'Cancelled')->with('getTicker')->get();
         $tradesraw1 = $tradesraw1->toArray();
@@ -240,7 +240,7 @@ class HoldingController extends Controller
                 $amount = $tradesraw['amount'];
                 $pricepaid = $tradesraw['price'];
                 $ticker1 = preg_replace('/:/', '', strstr($ticker, ':'));
-                $tickerprice = 112;
+                $tickerprice = $this->stockprice($ticker);
                 $pricesell = $tickerprice;
                 //$pricesell = $pricesell->pluck('price');
                 // $pricesell = $pricesell->toArray();
