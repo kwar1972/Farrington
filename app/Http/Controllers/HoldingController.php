@@ -92,9 +92,9 @@ class HoldingController extends Controller
         }
        
         $isipo = $ticker1f->ipo;
-        
-        $paidprice = $ticker1f->price;
         dd($isipo);
+        $paidprice = $ticker1f->price;
+        
         if($isipo !== 1){
             $ticker1f = $ticker1f->ticker;
             $curl = curl_init();
