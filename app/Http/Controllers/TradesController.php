@@ -183,17 +183,19 @@ class TradesController extends Controller
     public function update(Request $request, $id)
     {   
         $ipo = Ticker::where('id', $request->tickerid)->get();
-
+        dd($request);
         $trade = Trade::find($id);
         $trade->userid = $request->clientid;
+        $trade->agentid = $request->agentid;
         $trade->tickerid = $request->tickerid;
         $trade->ipo = $ipo[0]->ipo;
-        $trade->sellpriceipo = $request->sellpriceipo;
-        $trade->agentid = $request->agentid;
+        
         $trade->amount = $request->amount;
         $trade->price = $request->price;
-        $trade->fee = $request->fee;
+        //$trade->paidprice = $request->;
+        $trade->sellpriceipo = $request->sellpriceipo;
         $trade->total = $request->total;
+        $trade->fee = $request->fee;
         $trade->status = $request->status;
         $trade->deposit_at = $request->deposit;
         $trade->purchased_at = $request->purchased;
