@@ -198,7 +198,7 @@ class TradesController extends Controller
         if(isset($request->deposit)){
             
         }
-        $trade->sellpriceipo = $request->sellpriceipo;
+//        $trade->sellpriceipo = $request->sellpriceipo;
         $trade->total = $request->total;
         $trade->fee = $request->fee;
         $trade->status = $request->status;
