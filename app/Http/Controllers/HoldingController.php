@@ -91,8 +91,7 @@ class HoldingController extends Controller
             $ticker1f = Ticker::where('ticker', 'like', '%' . $id . '%')->get();
         }
        
-        $isipo = $ticker1f[0]->ipo;
-        dd($isipo);
+        $isipo = $ticker1f->ipo;
         $paidprice = $ticker1f->price;
         
         if($isipo !== 1){
@@ -131,6 +130,56 @@ class HoldingController extends Controller
             return $response;
         };
     }
+
+    public function stockpriceH($id)
+    {   
+
+        if(is_numeric($id)){
+            $ticker1f = Ticker::find($id);
+        }else{
+            $ticker1f = Ticker::where('ticker', 'like', '%' . $id . '%')->get();
+        }
+       
+        $isipo = $ticker1f[0]->ipo;
+        $paidprice = $ticker1f[0]->price;
+        
+        if($isipo !== 1){
+            $ticker1f = $ticker1f[0]->ticker;
+            $curl = curl_init();
+            $ticker1f = preg_replace('/:/', '', strstr($ticker1f, ':'));
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://finnhub.io/api/v1/quote?symbol=".$ticker1f."&token=bq5ivvvrh5rdc1bgf9l0",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_TIMEOUT => 30000,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_SSL_VERIFYHOST => false,
+                CURLOPT_SSL_VERIFYPEER => false,
+                CURLOPT_CUSTOMREQUEST => "GET",
+                CURLOPT_HTTPHEADER => array(
+                    'Access-Control-Allow-Origin: *',
+                    'Content-Type: application/json',
+                ),
+            ));
+        
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
+            curl_close($curl);
+            
+            if ($err) {
+                echo "cURL Error #:" . $err;
+            } else {
+                $array = json_decode($response, true);
+                $response = $array;
+                $response = $response['c'];
+                
+                return $response;
+            }
+        }else{
+            $response = $paidprice;
+            return $response;
+        };
+    }
+
     public function intraDay($tickers,$tickerscount)
     {
         $curl = curl_init();
@@ -241,7 +290,7 @@ class HoldingController extends Controller
                 $amount = $tradesraw['amount'];
                 $pricepaid = $tradesraw['price'];
                 $ticker1 = preg_replace('/:/', '', strstr($ticker, ':'));
-                $tickerprice = $this->stockprice($ticker);
+                $tickerprice = $this->stockpriceH($ticker);
                 $pricesell = $tickerprice;
                 //$pricesell = $pricesell->pluck('price');
                 // $pricesell = $pricesell->toArray();
