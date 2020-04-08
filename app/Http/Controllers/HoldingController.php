@@ -230,8 +230,9 @@ class HoldingController extends Controller
         $tradesraw1 = $tradesraw1->toArray();
         
         foreach($tradesraw1 as $tradesraw){
-            
+            dd($tradesraw);
             $ipocheck = $tradesraw['get_ticker']['ipo'];
+            
             if($ipocheck !== 1){
                 $ticker = $tradesraw['get_ticker']['ticker'];
                 $amount = $tradesraw['amount'];
