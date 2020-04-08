@@ -232,7 +232,7 @@ class HoldingController extends Controller
         foreach($tradesraw1 as $tradesraw){
             
             $ipocheck = $tradesraw['get_ticker']['ipo'];
-            dd($ipocheck);
+            
             if($ipocheck !== 1){
                 $ticker = $tradesraw['get_ticker']['ticker'];
                 $amount = $tradesraw['amount'];
