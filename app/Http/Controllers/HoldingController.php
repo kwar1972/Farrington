@@ -91,7 +91,7 @@ class HoldingController extends Controller
             $ticker1f = Ticker::where('ticker', 'like', '%' . $id . '%')->get();
         }
        
-        $isipo = $ticker1f->ipo;
+        $isipo = $ticker1f[0]->ipo;
         dd($isipo);
         $paidprice = $ticker1f->price;
         
