@@ -192,12 +192,16 @@ class TradesController extends Controller
         
         $trade->amount = $request->amount;
         $trade->price = $request->price;
-        //$trade->paidprice = $request->;
+        if(isset($request->deposit)){
+            $trade->deposit_at = $request->deposit;
+        }
+        if(isset($request->deposit)){
+            
+        }
         $trade->sellpriceipo = $request->sellpriceipo;
         $trade->total = $request->total;
         $trade->fee = $request->fee;
         $trade->status = $request->status;
-        $trade->deposit_at = $request->deposit;
         $trade->purchased_at = $request->purchased;
         $trade->updated_at = Carbon::now()->toDateTimeString();
         
