@@ -53,62 +53,7 @@
   @if(isset($tickerdata))
   @foreach($tickerdata as $ticker)
   <div class="row">
-      <div class="col-lg-3">
-        <!-- About Me Box -->
-        <div class="card " style="height: 735px;">
-            <div class="card-header g-bg-navy g-color-white">
-              <h3 class="card-title">{{$ticker['name']}}</h3>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-12">
-                  <strong><i class="fas fa-book mr-1"></i>Stock Exchange / Symbol</strong>
-
-                  <p class="text-muted">
-                      {{$ticker['symbol']}}
-                  </p>
-
-                  <hr>
-
-                  <strong><i class="fas fa-map-marker-alt mr-1"></i>Company Name</strong>
-                  
-                  <p class="text-muted">{{$ticker['name']}}</p>
-                  
-                  <hr>
-                
-                  <strong><i class="fas fa-dollar-sign mr-1 mb-1"></i>Price variations</strong>
-                
-                  <p class="g-color-black"><b>Opening Price: </b>{{$ticker['price_open']}} usd.</p>
-                  <p><span class="g-color-green-op"><b>Day High: </b></span><span class="g-color-black">{{$ticker['day_high']}} usd.</span></p>
-                  <p><span class="g-color-red-op"><b>Day Low: </b></span><span class="g-color-black">{{$ticker['day_low']}} usd.</span></p>
-                  <p><span class="text-primary"><b>Close Yesterday: </b></span><span class="g-color-black">{{$ticker['close_yesterday']}} usd.</span></p>
-                  
-                    <hr>
-                    <strong><i class="fas fa-dollar-sign mr-1"></i>Stock Exchange / Price</strong>
-
-                    <p class="text-muted">
-                        Price:<span class="g-color-red"> {{$ticker['price']}}</span>
-                    </p>
-                    
-                  
-                    <hr>
-                   
-                    <strong><i class="fas fa-search mr-1"></i> Total Shares / Market Capital</strong>
-                  
-                    <p class="text-muted">
-                      <span class="tag tag-danger">{{$ticker['shares']}} / </span>
-                      <span class="tag tag-success">{{$ticker['market_cap']}}</span>
-  
-                    </p>
-                  </div>
-              </div>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
-      </div>
-      <div class="col-lg-9">
+      <div class="col-lg-12">
                  <!-- solid sales graph -->
                  <div class="card g-bg-navy" style="min-height: 610px;">
                     <div class="card-header border-0">
@@ -128,7 +73,7 @@
   "autosize": true,
   // "width": 980,
   // "height": 610,
-  "symbol": "{{$ticker['stock_exchange_short']}}:{{$ticker['symbol']}}",
+  "symbol": "{{$ticker['symbol']}}",
   "interval": "D",
   "timezone": "Etc/UTC",
   "theme": "Dark",

@@ -26,9 +26,11 @@ class HoldingController extends Controller
                 $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
                 array_push($tickerfinal, $ticker1f.',');
             }
-            $str1 = "https://api.worldtradingdata.com/api/v1/stock?symbol=";
-            $str2 = "&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4";
             
+            // $str1 = "https://api.worldtradingdata.com/api/v1/stock?symbol=";
+            $str1 = "https://fmpcloud.io/api/v3/profile/";
+            // $str2 = "&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4";
+            $str2 = "?apikey=6deaac495a5a08f4919cd77aaed7c81d";
             function create_query_string1($tickerfinal) {
             
                 return implode($tickerfinal);
@@ -36,10 +38,9 @@ class HoldingController extends Controller
             
             $url = create_query_string1($tickerfinal);
             $url = substr_replace($url ,"", -1);
-            $url = $str1.$url.$str2; 
-           
+            $url2 = $str1.$url.$str2; 
             curl_setopt_array($curl, array(
-                CURLOPT_URL => $url,
+                CURLOPT_URL => $url2,
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_TIMEOUT => 30000,
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
@@ -77,7 +78,6 @@ class HoldingController extends Controller
         } else {
             $array = json_decode($response, true);
             $response = $array;
-        
             return $response;
         }
     }
@@ -229,10 +229,9 @@ class HoldingController extends Controller
             $tickers = $tickers->unique('ticker');
             $tickerscount = $tickers->count();
             $tickerdata = $this->stockData($tickers,$tickerscount);
-            $tickerdata = collect($tickerdata['data'], true);
+            $tickerdata = collect($tickerdata, true);
             $intra2 = array();
             $tickers = $tickers->where('ipo', '<>', 1);
-            
             // foreach($tickers as $ticker){
             //     $intraday = $this->intraDay($ticker,$tickerscount);
             //     if(array_key_exists("intraday", $intraday)){
@@ -274,7 +273,7 @@ class HoldingController extends Controller
             $tickerscount = $tickers->count();
             $tickerdata = $this->stockData($tickers,$tickerscount);
            
-            $tickerdata = collect($tickerdata['data'], true);
+            $tickerdata = collect($tickerdata, true);
         }
         
         $trades = array();
