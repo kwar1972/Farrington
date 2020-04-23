@@ -56,7 +56,7 @@ class HoldingController extends Controller
             $ticker1 = $tickers[0]->ticker;
             $ticker1f = preg_replace('/:/', '', strstr($ticker1, ':'));
             curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://api.worldtradingdata.com/api/v1/stock?symbol=".$ticker1f."&api_token=rB9QJvzUdrXiIA6hWwJYAYZRkH9xPBcS31oxpqkwLahSDRXaUkut5xFXA7i4",
+                CURLOPT_URL => "https://fmpcloud.io/api/v3/profile/".$ticker1f."?apikey=6deaac495a5a08f4919cd77aaed7c81d",
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_TIMEOUT => 30000,
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
@@ -241,7 +241,6 @@ class HoldingController extends Controller
             //     }
             // }
             // $intraday = collect($intra2, true);
-                        
             
             return view('client.myholdings')->with('trade', $trade)->with('tickerdata', $tickerdata);
         }else{
